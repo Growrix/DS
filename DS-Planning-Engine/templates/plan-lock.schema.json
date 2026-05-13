@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "https://growrixos/ds-planning-engine/plan-lock.schema.json",
+  "title": "Plan Lock",
+  "description": "Sign-off artifact emitted alongside site-plan.json. Records lock status + reasoning so the executor can decide whether to run.",
+  "type": "object",
+  "required": ["version", "status", "site_plan_path", "ds_contract_path", "summary"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "type": "integer", "const": 1 },
+    "status": {
+      "type": "string",
+      "enum": ["passed", "needs_ds_extension", "partial_coverage", "needs_clarification"]
+    },
+    "site_plan_path": {
+      "type": "string",
+      "description": "Relative path from this lock file to site-plan.json, typically './site-plan.json'."
+    },
+    "ds_contract_path": {
+      "type": "string",
+      "description": "Path to the DS contract used at plan time. Records which DS snapshot the plan was authored against."
+    },
+    "ds_contract_version": { "type": "string" },
+    "summary": {
+      "type": "object",
+      "required": ["pages_planned", "sections_planned", "gaps_found"],
+      "additionalProperties": false,
+      "properties": {
+        "pages_planned": { "type": "integer", "minimum": 0 },
+        "sections_planned": { "type": "integer", "minimum": 0 },
+        "gaps_found": { "type": "integer", "minimum": 0 },
+        "critical_gaps_found": { "type": "integer", "minimum": 0, "description": "Gaps on conversion-critical surfaces (hero, primary CTA, pricing on /quote, etc.)." }
+      }
+    },
+    "rationale": {
+      "type": "string",
+      "description": "One paragraph human-readable explanation of the lock status. Mandatory when status != 'passed'."
+    },
+    "operator_overrides": {
+      "type": "array",
+      "description": "If status was 'needs_ds_extension' and the operator chose to ship anyway, this records the override + the gaps accepted.",
+      "items": {
+        "type": "object",
+        "required": ["from_status", "to_status", "accepted_gaps"],
+        "additionalProperties": false,
+        "properties": {
+          "from_status": { "type": "string" },
+          "to_status": { "type": "string" },
+          "accepted_gaps": {
+            "type": "array",
+            "items": { "type": "string", "description": "kind:archetype identifiers, e.g. 'pricing:local-business-trust'" }
+          },
+          "operator": { "type": "string" },
+          "timestamp": { "type": "string" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "next_steps": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Concrete instructions for the operator. Always populated when status != 'passed'."
+    }
+  },
+
+  "allOf": [
+    {
+      "if": { "not": { "properties": { "status": { "const": "passed" } } } },
+      "then": { "required": ["rationale", "next_steps"] }
+    }
+  ]
+}

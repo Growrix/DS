@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "version": "1.0",
+  "purpose": "Machine-readable scope contract for AI agents working on the DS-Planning-Engine. Any AI agent invoked against this folder MUST read this file first (along with AGENTS.md) and obey it.",
+  "audience": [
+    "Copilot Chat agents",
+    "Claude Code agents",
+    "Replit AI agents",
+    "Custom orchestration agents (e.g., DS_site_planner)"
+  ],
+  "topLevelRule": "This planning engine is DS-bound. Every section kind, archetype, motion preset, and theme it emits MUST exist in ../Frontend-Master_DS/generated/ds.contract.json. When the brief asks for something the DS does not expose, the planner records a gap in ds-gap-report.md and locks the plan with status: 'needs_ds_extension' — it MUST NOT invent a workaround.",
+  "discoveryFiles": {
+    "humanContract": "AGENTS.md",
+    "agentContract": "AI-AGENT-CONTRACT.md",
+    "planSchema": "templates/site-plan.schema.json",
+    "lockSchema": "templates/plan-lock.schema.json",
+    "dsContract": "../Frontend-Master_DS/generated/ds.contract.json",
+    "dsAgentsEntry": "../Frontend-Master_DS/AGENTS.md"
+  },
+  "fileScopes": {
+    "locked": {
+      "description": "Source of truth. Agents MUST NOT edit. Edits require explicit human approval.",
+      "globs": [
+        "AGENTS.md",
+        "AI-AGENT-CONTRACT.md",
+        "README.md",
+        ".ai-scope.json",
+        "core/planning-protocol.md",
+        "core/ds-awareness-rules.md",
+        "core/archetype-mapping.md",
+        "core/quality-gates.md",
+        "core/industry-patterns/_index.md",
+        "agents/**/*.md",
+        "templates/site-plan.schema.json",
+        "templates/plan-lock.schema.json",
+        "templates/brief-intake.template.md",
+        "templates/ds-gap-report.template.md",
+        "scripts/**"
+      ]
+    },
+    "extensible": {
+      "description": "Agents MAY ADD NEW FILES that follow the documented convention. MUST NOT edit existing files in these paths.",
+      "globs": [
+        "core/industry-patterns/*.md"
+      ],
+      "additionRules": [
+        {
+          "path": "core/industry-patterns/<industry-slug>.md",
+          "requires": [
+            "default_site_map",
+            "default_journeys",
+            "default_trust_signals",
+            "default_section_kinds_by_page",
+            "recommended_archetype",
+            "forbidden_patterns"
+          ],
+          "thenRegisterIn": "core/industry-patterns/_index.md"
+        }
+      ]
+    },
+    "consumable": {
+      "description": "Agents READ these to drive planning decisions. Reading is free; writing is forbidden.",
+      "globs": [
+        "core/planning-protocol.md",
+        "core/ds-awareness-rules.md",
+        "core/archetype-mapping.md",
+        "core/quality-gates.md",
+        "core/industry-patterns/*.md",
+        "templates/site-plan.schema.json",
+        "templates/plan-lock.schema.json",
+        "templates/brief-intake.template.md",
+        "templates/ds-gap-report.template.md",
+        "../Frontend-Master_DS/generated/ds.contract.json",
+        "../Frontend-Master_DS/AGENTS.md",
+        "../Frontend-Master_DS/AI-AGENT-CONTRACT.md"
+      ]
+    },
+    "runOutput": {
+      "description": "Per-invocation plan output. Planner WRITES here. Once a plan locks, the run folder is frozen — do not edit prior runs.",
+      "globs": [
+        "output/runs/<timestamp>-<project-slug>/**"
+      ]
+    }
+  },
+  "forbiddenActions": [
+    "Editing any file matching fileScopes.locked.globs",
+    "Inventing section kinds not present in ds.contract.json",
+    "Inventing motion presets not present in ds.contract.json",
+    "Inventing archetypes not present in ds.contract.json",
+    "Inventing theme names other than 'dark' / 'light'",
+    "Emitting a plan with lock_status: 'passed' when ds_gaps[] is non-empty",
+    "Modifying any file under ../Frontend-Master_DS/ (the DS is locked separately)",
+    "Adding new top-level dependencies without human approval",
+    "Emitting copy that contradicts the brief's voice or forbidden_words",
+    "Writing output anywhere outside output/runs/<timestamp>-<project-slug>/"
+  ],
+  "allowedActions": [
+    "Reading any file in the engine, in ../Frontend-Master_DS/, or in ../DOC/",
+    "Running the planner agent (DS_site_planner) via its documented invocation",
+    "Running scripts/verify-plan.mjs against any run",
+    "Adding new industry pattern files under core/industry-patterns/ per the extension rule",
+    "Writing new run output under output/runs/<timestamp>-<project-slug>/"
+  ],
+  "verificationGate": {
+    "command": "node DS-Planning-Engine/scripts/verify-plan.mjs DS-Planning-Engine/output/runs/<run-id>",
+    "exitCode": "0 = plan ready for executor; non-zero = invalid",
+    "rule": "DS_Frontend_developer MUST NOT be invoked against a plan that has not passed verify-plan.mjs."
+  },
+  "lockStatusValues": [
+    "passed",
+    "needs_ds_extension",
+    "partial_coverage",
+    "needs_clarification"
+  ]
+}

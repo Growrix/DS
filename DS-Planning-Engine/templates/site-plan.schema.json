@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "https://growrixos/ds-planning-engine/site-plan.schema.json",
+  "title": "Site Plan",
+  "description": "Authoritative output of DS_site_planner. Directly consumed by DS_Frontend_developer with zero translation.",
+  "type": "object",
+  "required": ["version", "generated_by", "project", "brand", "site_map", "pages", "content_library", "ds_dependency", "ds_gaps", "lock_status"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "type": "integer", "const": 1 },
+    "generated_by": { "type": "string", "description": "Producing agent + version, e.g. 'DS_site_planner v1'" },
+    "generated_at": { "type": "string", "description": "Optional ISO 8601 timestamp. Excluded from determinism hashes." },
+
+    "project": {
+      "type": "object",
+      "required": ["name", "slug", "locale", "business_type", "audience"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "slug": { "type": "string", "pattern": "^[a-z][a-z0-9-]*[a-z0-9]$" },
+        "locale": { "type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$", "examples": ["en", "en-US", "en-AU", "bn"] },
+        "business_type": {
+          "type": "string",
+          "examples": ["local-services", "modern-saas", "ecommerce-dtc", "creator-portfolio", "ai-product", "professional-services"]
+        },
+        "audience": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string" }
+      }
+    },
+
+    "brand": {
+      "type": "object",
+      "required": ["archetype", "theme_default", "voice", "footer_attribution"],
+      "additionalProperties": false,
+      "properties": {
+        "archetype": {
+          "type": "string",
+          "enum": ["editorial-premium", "modern-saas", "bold-consumer", "ai-product", "startup-conversion", "local-business-trust", "dashboard-ops", "portfolio-craft"]
+        },
+        "theme_default": { "type": "string", "enum": ["dark", "light"] },
+        "voice": { "type": "string", "minLength": 1, "description": "Free-form voice description used by content generation. Forbidden words inferred per industry pattern." },
+        "palette_accent_override": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$", "description": "Optional accent hex; merged into DS tokens as project override only." }
+          ]
+        },
+        "font_override": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["display", "body"],
+              "properties": {
+                "display": { "type": "string" },
+                "body": { "type": "string" }
+              }
+            }
+          ]
+        },
+        "footer_attribution": {
+          "type": "object",
+          "required": ["enabled"],
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "text": { "type": "string" },
+            "link_text": { "type": "string" },
+            "url": { "type": "string", "format": "uri" },
+            "aria_label": { "type": "string" },
+            "new_tab": { "type": "boolean" }
+          }
+        }
+      }
+    },
+
+    "site_map": {
+      "type": "object",
+      "required": ["primary_nav", "mobile_bottom_nav", "footer_columns"],
+      "additionalProperties": false,
+      "properties": {
+        "primary_nav": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "label", "href"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string" },
+              "label": { "type": "string" },
+              "href": { "type": "string" },
+              "icon": { "type": "string", "description": "Optional lucide icon name; resolved by DS Icon component." }
+            }
+          }
+        },
+        "mobile_bottom_nav": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "required": ["id", "label", "href"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string" },
+              "label": { "type": "string" },
+              "href": { "type": "string" },
+              "icon": { "type": "string" }
+            }
+          }
+        },
+        "footer_columns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "title", "links"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string" },
+              "title": { "type": "string" },
+              "links": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["label", "href"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "label": { "type": "string" },
+                    "href": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "pages": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["id", "route", "sections"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "route": { "type": "string", "pattern": "^/" },
+          "title": { "type": "string" },
+          "archetype_override": {
+            "oneOf": [
+              { "type": "null" },
+              {
+                "type": "string",
+                "enum": ["editorial-premium", "modern-saas", "bold-consumer", "ai-product", "startup-conversion", "local-business-trust", "dashboard-ops", "portfolio-craft"]
+              }
+            ]
+          },
+          "sections": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["id", "kind"],
+              "additionalProperties": true,
+              "properties": {
+                "id": { "type": "string" },
+                "kind": {
+                  "type": "string",
+                  "description": "Section kind. MUST exist in ../Frontend-Master_DS/generated/ds.contract.json sectionVariants[].kind",
+                  "examples": ["hero", "features", "testimonials", "faq", "blogList", "cta", "newsletter", "stats-band", "process-steps", "logo-cloud", "case-studies"]
+                },
+                "variant": {
+                  "oneOf": [
+                    { "type": "null" },
+                    { "type": "string", "description": "Variant id from DS contract. If null, executor picks default for kind+archetype." }
+                  ]
+                },
+                "content": {
+                  "type": "object",
+                  "description": "Content fields shaped to match the kind's content shape in DS publicSitePreset.ts discriminated union."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "content_library": {
+      "type": "object",
+      "description": "Project content keyed flat. Either flat key→string, or nested per locale.",
+      "additionalProperties": true
+    },
+
+    "ds_dependency": {
+      "type": "object",
+      "required": ["ds_root", "ds_contract_version", "ds_contract_counts"],
+      "additionalProperties": false,
+      "properties": {
+        "ds_root": { "type": "string", "examples": ["../Frontend-Master_DS"] },
+        "ds_contract_version": { "type": "string" },
+        "ds_contract_counts": {
+          "type": "object",
+          "required": ["variants", "archetypes", "motionPresets", "themes"],
+          "additionalProperties": true,
+          "properties": {
+            "variants": { "type": "integer", "minimum": 0 },
+            "archetypes": { "type": "integer", "minimum": 0 },
+            "motionPresets": { "type": "integer", "minimum": 0 },
+            "themes": { "type": "integer", "minimum": 0 },
+            "presets": { "type": "integer", "minimum": 0 }
+          }
+        }
+      }
+    },
+
+    "ds_gaps": {
+      "type": "array",
+      "description": "Variants the plan needs that DS does NOT currently expose. Empty array = no gaps. Non-empty = lock_status MUST be needs_ds_extension or partial_coverage.",
+      "items": {
+        "type": "object",
+        "required": ["kind", "archetype", "needed_for"],
+        "additionalProperties": false,
+        "properties": {
+          "kind": { "type": "string" },
+          "archetype": { "type": "string" },
+          "needed_for": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          },
+          "recommended_variant_id": { "type": "string" },
+          "effort_estimate": { "type": "string", "examples": ["30 min", "1 hour", "2 hours"] },
+          "fallback_variant_id": {
+            "oneOf": [
+              { "type": "null" },
+              { "type": "string" }
+            ]
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+
+    "lock_status": {
+      "type": "string",
+      "enum": ["passed", "needs_ds_extension", "partial_coverage", "needs_clarification"]
+    },
+
+    "open_questions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Operator-visible questions the planner could not resolve autonomously."
+    }
+  },
+
+  "allOf": [
+    {
+      "if": { "properties": { "lock_status": { "const": "passed" } } },
+      "then": {
+        "properties": {
+          "ds_gaps": { "type": "array", "maxItems": 0 }
+        }
+      }
+    }
+  ]
+}
