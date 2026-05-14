@@ -247,6 +247,28 @@ import { PRICING_BOLD_CONSUMER_1_META, PricingBoldConsumer1 } from "./variants/p
 import { TEAM_BOLD_CONSUMER_1_META, TeamBoldConsumer1 } from "./variants/team/team-bold-consumer-1";
 import { CONTACT_BOLD_CONSUMER_1_META, ContactBoldConsumer1 } from "./variants/contact/contact-bold-consumer-1";
 
+
+// scaffold-variants batch — imports
+import { HERO_AI_PRODUCT_2_META, HeroAiProduct2 } from "./variants/hero/hero-ai-product-2";
+import { HERO_AI_PRODUCT_3_META, HeroAiProduct3 } from "./variants/hero/hero-ai-product-3";
+import { FEATURES_AI_PRODUCT_1_META, FeaturesAiProduct1 } from "./variants/features/features-ai-product-1";
+import { FEATURES_AI_PRODUCT_2_META, FeaturesAiProduct2 } from "./variants/features/features-ai-product-2";
+import { TESTIMONIALS_AI_PRODUCT_1_META, TestimonialsAiProduct1 } from "./variants/testimonials/testimonials-ai-product-1";
+import { TESTIMONIALS_AI_PRODUCT_2_META, TestimonialsAiProduct2 } from "./variants/testimonials/testimonials-ai-product-2";
+import { FAQ_AI_PRODUCT_1_META, FaqAiProduct1 } from "./variants/faq/faq-ai-product-1";
+import { BLOGLIST_AI_PRODUCT_1_META, BloglistAiProduct1 } from "./variants/blogList/bloglist-ai-product-1";
+import { CTA_AI_PRODUCT_1_META, CtaAiProduct1 } from "./variants/cta/cta-ai-product-1";
+import { CTA_AI_PRODUCT_2_META, CtaAiProduct2 } from "./variants/cta/cta-ai-product-2";
+import { NEWSLETTER_AI_PRODUCT_1_META, NewsletterAiProduct1 } from "./variants/newsletter/newsletter-ai-product-1";
+import { STATS_BAND_AI_PRODUCT_1_META, StatsBandAiProduct1 } from "./variants/stats-band/stats-band-ai-product-1";
+import { PROCESS_STEPS_AI_PRODUCT_1_META, ProcessStepsAiProduct1 } from "./variants/process-steps/process-steps-ai-product-1";
+import { LOGO_CLOUD_AI_PRODUCT_1_META, LogoCloudAiProduct1 } from "./variants/logo-cloud/logo-cloud-ai-product-1";
+import { CASE_STUDIES_AI_PRODUCT_1_META, CaseStudiesAiProduct1 } from "./variants/case-studies/case-studies-ai-product-1";
+import { PRICING_AI_PRODUCT_1_META, PricingAiProduct1 } from "./variants/pricing/pricing-ai-product-1";
+import { TEAM_AI_PRODUCT_1_META, TeamAiProduct1 } from "./variants/team/team-ai-product-1";
+import { CONTACT_AI_PRODUCT_1_META, ContactAiProduct1 } from "./variants/contact/contact-ai-product-1";
+import { FOOTER_CONTENT_AI_PRODUCT_1_META, FooterContentAiProduct1 } from "./variants/footer-content/footer-content-ai-product-1";
+
 import type {
   SectionKind,
   SectionRegistry,
@@ -509,6 +531,27 @@ export const SECTION_REGISTRY: SectionRegistry = {
   [PRICING_BOLD_CONSUMER_1_META.id]: { meta: PRICING_BOLD_CONSUMER_1_META, component: PricingBoldConsumer1 },
   [TEAM_BOLD_CONSUMER_1_META.id]: { meta: TEAM_BOLD_CONSUMER_1_META, component: TeamBoldConsumer1 },
   [CONTACT_BOLD_CONSUMER_1_META.id]: { meta: CONTACT_BOLD_CONSUMER_1_META, component: ContactBoldConsumer1 },
+
+  // scaffold-variants batch — entries
+  [HERO_AI_PRODUCT_2_META.id]: { meta: HERO_AI_PRODUCT_2_META, component: HeroAiProduct2 },
+  [HERO_AI_PRODUCT_3_META.id]: { meta: HERO_AI_PRODUCT_3_META, component: HeroAiProduct3 },
+  [FEATURES_AI_PRODUCT_1_META.id]: { meta: FEATURES_AI_PRODUCT_1_META, component: FeaturesAiProduct1 },
+  [FEATURES_AI_PRODUCT_2_META.id]: { meta: FEATURES_AI_PRODUCT_2_META, component: FeaturesAiProduct2 },
+  [TESTIMONIALS_AI_PRODUCT_1_META.id]: { meta: TESTIMONIALS_AI_PRODUCT_1_META, component: TestimonialsAiProduct1 },
+  [TESTIMONIALS_AI_PRODUCT_2_META.id]: { meta: TESTIMONIALS_AI_PRODUCT_2_META, component: TestimonialsAiProduct2 },
+  [FAQ_AI_PRODUCT_1_META.id]: { meta: FAQ_AI_PRODUCT_1_META, component: FaqAiProduct1 },
+  [BLOGLIST_AI_PRODUCT_1_META.id]: { meta: BLOGLIST_AI_PRODUCT_1_META, component: BloglistAiProduct1 },
+  [CTA_AI_PRODUCT_1_META.id]: { meta: CTA_AI_PRODUCT_1_META, component: CtaAiProduct1 },
+  [CTA_AI_PRODUCT_2_META.id]: { meta: CTA_AI_PRODUCT_2_META, component: CtaAiProduct2 },
+  [NEWSLETTER_AI_PRODUCT_1_META.id]: { meta: NEWSLETTER_AI_PRODUCT_1_META, component: NewsletterAiProduct1 },
+  [STATS_BAND_AI_PRODUCT_1_META.id]: { meta: STATS_BAND_AI_PRODUCT_1_META, component: StatsBandAiProduct1 },
+  [PROCESS_STEPS_AI_PRODUCT_1_META.id]: { meta: PROCESS_STEPS_AI_PRODUCT_1_META, component: ProcessStepsAiProduct1 },
+  [LOGO_CLOUD_AI_PRODUCT_1_META.id]: { meta: LOGO_CLOUD_AI_PRODUCT_1_META, component: LogoCloudAiProduct1 },
+  [CASE_STUDIES_AI_PRODUCT_1_META.id]: { meta: CASE_STUDIES_AI_PRODUCT_1_META, component: CaseStudiesAiProduct1 },
+  [PRICING_AI_PRODUCT_1_META.id]: { meta: PRICING_AI_PRODUCT_1_META, component: PricingAiProduct1 },
+  [TEAM_AI_PRODUCT_1_META.id]: { meta: TEAM_AI_PRODUCT_1_META, component: TeamAiProduct1 },
+  [CONTACT_AI_PRODUCT_1_META.id]: { meta: CONTACT_AI_PRODUCT_1_META, component: ContactAiProduct1 },
+  [FOOTER_CONTENT_AI_PRODUCT_1_META.id]: { meta: FOOTER_CONTENT_AI_PRODUCT_1_META, component: FooterContentAiProduct1 },
 
 };
 

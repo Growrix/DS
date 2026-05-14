@@ -1,0 +1,42 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import * as React from "react";
+
+import type { PublicSectionModel } from "@/ds/platform/publicSitePreset";
+import type { SectionVariantMeta } from "@/ds/composition/sections/_schema";
+
+type Model = Extract<PublicSectionModel, { kind: "newsletter" }>;
+
+export const NEWSLETTER_AI_PRODUCT_1_META: SectionVariantMeta = {
+  id: "newsletter-ai-product-1",
+  kind: "newsletter",
+  archetype: "ai-product",
+  label: "Newsletter â€” AI Inline Form",
+  description: "Inline newsletter form (email + submit) with headline above; posts to /subscribe; fade-in entry.",
+  supportsThemes: ["dark", "light"],
+  motionPresets: ["fade-in"],
+  effects: {},
+  density: "comfortable",
+  complexity: "minimal",
+};
+
+export function NewsletterAiProduct1(props: Model) {
+  const { header, title } = props as any;
+  return (
+    <section className="sv-section-root sv-newsletter-ai-product-1" data-variant="newsletter-ai-product-1">
+      <div className="sv-newsletter-ai-product-1__inner">
+        <div className="sv-newsletter-ai-product-1__copy">
+          {header?.kicker ? <div className="sv-newsletter-ai-product-1__kicker">{header.kicker}</div> : null}
+          <h2 className="sv-newsletter-ai-product-1__title">{header?.title ?? title ?? "Subscribe"}</h2>
+          {header?.lede ? <p className="sv-newsletter-ai-product-1__lede">{header.lede}</p> : null}
+        </div>
+        <form className="sv-newsletter-ai-product-1__form" action="/subscribe" method="post">
+          <label className="sv-newsletter-ai-product-1__field">
+            <span className="sv-newsletter-ai-product-1__label">Email</span>
+            <input className="sv-newsletter-ai-product-1__input" type="email" name="email" required placeholder="you@example.com" />
+          </label>
+          <button className="sv-newsletter-ai-product-1__submit" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  );
+}

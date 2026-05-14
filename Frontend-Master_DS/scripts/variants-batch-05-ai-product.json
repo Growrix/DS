@@ -1,0 +1,302 @@
+[
+  {
+    "id": "hero-ai-product-2",
+    "kind": "hero",
+    "archetype": "ai-product",
+    "label": "Hero â€” AI Centred Reveal",
+    "description": "Centred hero with reveal-glass intro on headline + lede; primary CTA pair beneath; max 60ch lede width.",
+    "density": "comfortable",
+    "complexity": "minimal",
+    "motionPresets": [
+      "reveal-glass",
+      "fade-in"
+    ],
+    "effects": {},
+    "template": "hero-centered"
+  },
+  {
+    "id": "hero-ai-product-3",
+    "kind": "hero",
+    "archetype": "ai-product",
+    "label": "Hero â€” AI Split with Media",
+    "description": "Split hero with stagger-text-60 reveal across headline lines and media tile right; primary CTA in accent.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "motionPresets": [
+      "reveal-glass",
+      "stagger-text-60"
+    ],
+    "effects": {},
+    "template": "hero-split"
+  },
+  {
+    "id": "features-ai-product-1",
+    "kind": "features",
+    "archetype": "ai-product",
+    "label": "Features â€” AI 3-Col Grid",
+    "description": "Three-column feature grid on raised surface; stagger-text-60 across cards; foreground-secondary body copy.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "motionPresets": [
+      "fade-in",
+      "stagger-text-60"
+    ],
+    "effects": {},
+    "template": "features-grid",
+    "templateOptions": {
+      "cols": 3
+    }
+  },
+  {
+    "id": "features-ai-product-2",
+    "kind": "features",
+    "archetype": "ai-product",
+    "label": "Features â€” AI Numbered Stack",
+    "description": "Numbered feature stack with two-digit numerals in accent; mesh-drift backdrop on section; rise on entry.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "motionPresets": [
+      "fade-in",
+      "mesh-drift"
+    ],
+    "effects": {
+      "gradientMesh": true
+    },
+    "template": "features-stacked"
+  },
+  {
+    "id": "testimonials-ai-product-1",
+    "kind": "testimonials",
+    "archetype": "ai-product",
+    "label": "Testimonials â€” AI Large Quote",
+    "description": "Single oversized pull-quote with glass-style scrim panel; reveal-glass entry; attribution beneath quote.",
+    "density": "comfortable",
+    "complexity": "minimal",
+    "motionPresets": [
+      "reveal-glass"
+    ],
+    "effects": {
+      "glassmorphism": true
+    },
+    "template": "testimonials-large-quote"
+  },
+  {
+    "id": "testimonials-ai-product-2",
+    "kind": "testimonials",
+    "archetype": "ai-product",
+    "label": "Testimonials â€” AI 3-Col Cards",
+    "description": "Three-column testimonial cards on raised surface; stagger-text-60 across cards; quote glyph in accent.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "motionPresets": [
+      "fade-in",
+      "stagger-text-60"
+    ],
+    "effects": {},
+    "template": "testimonials-cards",
+    "templateOptions": {
+      "cols": 3
+    }
+  },
+  {
+    "id": "faq-ai-product-1",
+    "kind": "faq",
+    "archetype": "ai-product",
+    "label": "FAQ â€” AI Accordion",
+    "description": "Single-column accordion using native details/summary; fade-in per row; caret rotates on open via CSS.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "motionPresets": [
+      "fade-in"
+    ],
+    "effects": {},
+    "template": "faq-accordion"
+  },
+  {
+    "id": "bloglist-ai-product-1",
+    "kind": "blogList",
+    "archetype": "ai-product",
+    "label": "Blog List â€” AI 3-Col Cards",
+    "description": "Three-column blog cards with cover, title, date, excerpt; stagger-text-60 across cards on entry.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "motionPresets": [
+      "fade-in",
+      "stagger-text-60"
+    ],
+    "effects": {},
+    "template": "bloglist-cards",
+    "templateOptions": {
+      "cols": 3
+    }
+  },
+  {
+    "id": "cta-ai-product-1",
+    "kind": "cta",
+    "archetype": "ai-product",
+    "label": "CTA â€” AI Centred Card",
+    "description": "Centred CTA card on raised surface with headline, sub-line, and primary CTA; reveal-glass entry.",
+    "density": "comfortable",
+    "complexity": "minimal",
+    "motionPresets": [
+      "reveal-glass"
+    ],
+    "effects": {
+      "glassmorphism": true
+    },
+    "template": "cta-card"
+  },
+  {
+    "id": "cta-ai-product-2",
+    "kind": "cta",
+    "archetype": "ai-product",
+    "label": "CTA â€” AI Banner Bar",
+    "description": "Full-width banner CTA on accent background with single primary action; fade-in entry.",
+    "density": "comfortable",
+    "complexity": "minimal",
+    "motionPresets": [
+      "fade-in"
+    ],
+    "effects": {},
+    "template": "cta-banner"
+  },
+  {
+    "id": "newsletter-ai-product-1",
+    "kind": "newsletter",
+    "archetype": "ai-product",
+    "label": "Newsletter â€” AI Inline Form",
+    "description": "Inline newsletter form (email + submit) with headline above; posts to /subscribe; fade-in entry.",
+    "density": "comfortable",
+    "complexity": "minimal",
+    "motionPresets": [
+      "fade-in"
+    ],
+    "effects": {},
+    "template": "newsletter-static"
+  },
+  {
+    "id": "stats-band-ai-product-1",
+    "kind": "stats-band",
+    "archetype": "ai-product",
+    "label": "Stats Band â€” AI 4-Col",
+    "description": "Four-column stats band with oversized accent numerals and short labels; stagger-text-60 reveal across cells.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "motionPresets": [
+      "fade-in",
+      "stagger-text-60"
+    ],
+    "effects": {},
+    "template": "stats-band",
+    "templateOptions": {
+      "cols": 4
+    }
+  },
+  {
+    "id": "process-steps-ai-product-1",
+    "kind": "process-steps",
+    "archetype": "ai-product",
+    "label": "Process Steps â€” AI Vertical Numbered",
+    "description": "Vertical numbered process list with accent numerals; fade-in per step with 60ms stagger.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "motionPresets": [
+      "fade-in",
+      "stagger-text-60"
+    ],
+    "effects": {},
+    "template": "process-steps-vertical"
+  },
+  {
+    "id": "logo-cloud-ai-product-1",
+    "kind": "logo-cloud",
+    "archetype": "ai-product",
+    "label": "Logo Cloud â€” AI Auto-Fit Grid",
+    "description": "Auto-fit logo grid at 9rem min cell with foreground-muted opacity; fade-in entry; raised surface.",
+    "density": "comfortable",
+    "complexity": "minimal",
+    "motionPresets": [
+      "fade-in"
+    ],
+    "effects": {},
+    "template": "logo-cloud-grid"
+  },
+  {
+    "id": "case-studies-ai-product-1",
+    "kind": "case-studies",
+    "archetype": "ai-product",
+    "label": "Case Studies â€” AI 3-Col Grid",
+    "description": "Three-column case study cards with cover image, client tag and outcome line; stagger-text-60 across cards.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "motionPresets": [
+      "fade-in",
+      "stagger-text-60"
+    ],
+    "effects": {},
+    "template": "case-studies-grid",
+    "templateOptions": {
+      "cols": 3
+    }
+  },
+  {
+    "id": "pricing-ai-product-1",
+    "kind": "pricing",
+    "archetype": "ai-product",
+    "label": "Pricing â€” AI Single Tier",
+    "description": "Single pricing tier card with accent price, feature list and primary CTA; centered on raised surface.",
+    "density": "comfortable",
+    "complexity": "minimal",
+    "motionPresets": [
+      "fade-in"
+    ],
+    "effects": {},
+    "template": "pricing-single"
+  },
+  {
+    "id": "team-ai-product-1",
+    "kind": "team",
+    "archetype": "ai-product",
+    "label": "Team â€” AI 4-Col Grid",
+    "description": "Four-column team grid with circular avatars, names and role lines; stagger-text-60 across cells.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "motionPresets": [
+      "fade-in",
+      "stagger-text-60"
+    ],
+    "effects": {},
+    "template": "team-grid",
+    "templateOptions": {
+      "cols": 4
+    }
+  },
+  {
+    "id": "contact-ai-product-1",
+    "kind": "contact",
+    "archetype": "ai-product",
+    "label": "Contact â€” AI Channel Cards",
+    "description": "Three-column channel cards (email, phone, address) with accent icons and labels; no form; fade-in entry.",
+    "density": "comfortable",
+    "complexity": "minimal",
+    "motionPresets": [
+      "fade-in"
+    ],
+    "effects": {},
+    "template": "contact-channels"
+  },
+  {
+    "id": "footer-content-ai-product-1",
+    "kind": "footer-content",
+    "archetype": "ai-product",
+    "label": "Footer â€” AI Columns",
+    "description": "Three-column footer with nav groups, address block and legal row; fade-in entry; foreground-secondary copy.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "motionPresets": [
+      "fade-in"
+    ],
+    "effects": {},
+    "template": "footer-columns"
+  }
+]
