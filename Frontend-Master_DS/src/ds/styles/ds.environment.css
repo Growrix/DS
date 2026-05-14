@@ -1,0 +1,93 @@
+/* ==========================================================================
+   ds.environment.css — Phase 12K
+   Environment-aware adaptations: print, reduced-motion, forced-colors.
+   Lives under ds.utilities layer so it has high specificity but never
+   overrides explicit project overrides in ds.overrides.
+   ========================================================================== */
+
+@layer ds.utilities {
+  /* ------------------------------------------------------------------------
+     Print — collapse interactive chrome, ensure ink-friendly contrast.
+     ------------------------------------------------------------------------ */
+  @media print {
+    :root {
+      --ds-color-bg: #ffffff;
+      --ds-color-bg-elev: #ffffff;
+      --ds-color-fg: #000000;
+      --ds-color-fg-muted: #333333;
+      --ds-color-border: #888888;
+    }
+
+    .ui-sticky-top,
+    .ui-only-mobile,
+    [data-print-hide="true"] {
+      display: none !important;
+    }
+
+    a[href]::after {
+      content: " (" attr(href) ")";
+      font-size: 0.85em;
+      color: #444;
+    }
+
+    .ui-page,
+    .ui-page-main {
+      background: #fff !important;
+      color: #000 !important;
+    }
+
+    /* Avoid splitting headings + figures across pages. */
+    h1, h2, h3, h4, figure, .ds-image, .ds-video {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    img, .ds-image > img, .ds-video {
+      max-width: 100% !important;
+    }
+  }
+
+  /* ------------------------------------------------------------------------
+     Reduced motion — global belt-and-suspenders pass.
+     Individual motion presets already declare their own reducedMotionFallback;
+     this is the defence in depth for any third-party / project CSS.
+     ------------------------------------------------------------------------ */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* ------------------------------------------------------------------------
+     Forced colors (Windows High-Contrast) — let the OS palette through;
+     remove decorative backgrounds; ensure focus rings stay visible.
+     ------------------------------------------------------------------------ */
+  @media (forced-colors: active) {
+    :root {
+      --ds-color-bg: Canvas;
+      --ds-color-bg-elev: Canvas;
+      --ds-color-fg: CanvasText;
+      --ds-color-fg-muted: GrayText;
+      --ds-color-border: CanvasText;
+      --ds-color-accent: LinkText;
+      --ds-focus-ring-color: Highlight;
+    }
+
+    .ui-button,
+    .ui-card,
+    .ui-band {
+      forced-color-adjust: none;
+      border-color: CanvasText;
+    }
+
+    :focus-visible {
+      outline: 2px solid Highlight;
+      outline-offset: 2px;
+    }
+  }
+}
