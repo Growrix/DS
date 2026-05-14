@@ -1,0 +1,45 @@
+.previewRoot {
+  --ds-color-accent: var(--ds-color-warning);
+  --ds-color-accent-hover: color-mix(in oklab, var(--ds-color-warning) 88%, black);
+  --ds-color-accent-active: color-mix(in oklab, var(--ds-color-warning) 74%, black);
+  --ds-color-accent-muted: color-mix(in oklab, var(--ds-color-warning) 18%, var(--ds-color-background));
+  --ds-color-accent-foreground: var(--ds-color-foreground-inverse);
+  --ds-color-accent-rgb: var(--ds-color-warning-rgb);
+  --ds-color-gradient-start: var(--ds-color-warning);
+  --ds-color-gradient-end: color-mix(in oklab, var(--ds-color-warning) 62%, white);
+  --ds-container-default: var(--ds-container-wide);
+  --ds-container-wide: var(--ds-container-xl);
+  --ds-space-card-padding: var(--ds-space-8);
+  --ds-shadow-sm: var(--ds-shadow-md);
+  --ds-shadow-md: var(--ds-shadow-lg);
+  --ds-radius-md: var(--ds-radius-lg);
+}
+
+.utilityBar {
+  border-bottom: 1px solid color-mix(in oklab, var(--ds-color-accent) 40%, transparent);
+}
+
+.utilityInner {
+  gap: var(--ds-space-3);
+}
+
+@media (max-width: 48rem) {
+  .utilityInner {
+    align-items: flex-start;
+  }
+}
+
+.utilityCopy,
+.utilityActions {
+  gap: var(--ds-space-3);
+}
+
+.utilityAction {
+  color: var(--ds-color-accent-foreground);
+  text-decoration: none;
+  font-weight: var(--ds-font-weight-semibold);
+}
+
+.utilityAction:hover {
+  text-decoration: underline;
+}

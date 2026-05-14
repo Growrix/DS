@@ -320,7 +320,23 @@ import {
   PRICING_LOCAL_BUSINESS_TRUST_PLAN_CARDS_META,
   PricingLocalBusinessTrustPlanCards,
 } from "./variants/pricing/pricing-local-business-trust-plan-cards";
+import {
+  PRICING_LOCAL_BUSINESS_TRUST_CONVERSION_GRID_META,
+  PricingLocalBusinessTrustConversionGrid,
+} from "./variants/pricing/pricing-local-business-trust-conversion-grid";
 import { TEAM_LOCAL_BUSINESS_TRUST_1_META, TeamLocalBusinessTrust1 } from "./variants/team/team-local-business-trust-1";
+import {
+  TESTIMONIALS_LOCAL_BUSINESS_TRUST_EDITORIAL_STACK_META,
+  TestimonialsLocalBusinessTrustEditorialStack,
+} from "./variants/testimonials/testimonials-local-business-trust-editorial-stack";
+import {
+  CONTACT_LOCAL_BUSINESS_TRUST_CONCIERGE_META,
+  ContactLocalBusinessTrustConcierge,
+} from "./variants/contact/contact-local-business-trust-concierge";
+import {
+  FOOTER_CONTENT_LOCAL_BUSINESS_TRUST_PREMIUM_META,
+  FooterContentLocalBusinessTrustPremium,
+} from "./variants/footer-content/footer-content-local-business-trust-premium";
 
 
 // scaffold-variants batch — imports
@@ -658,6 +674,10 @@ export const SECTION_REGISTRY: SectionRegistry = {
   [FEATURES_LOCAL_BUSINESS_TRUST_2_META.id]: { meta: FEATURES_LOCAL_BUSINESS_TRUST_2_META, component: FeaturesLocalBusinessTrust2 },
   [FEATURES_LOCAL_BUSINESS_TRUST_MEDIA_CARDS_META.id]: { meta: FEATURES_LOCAL_BUSINESS_TRUST_MEDIA_CARDS_META, component: FeaturesLocalBusinessTrustMediaCards },
   [TESTIMONIALS_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: TESTIMONIALS_LOCAL_BUSINESS_TRUST_1_META, component: TestimonialsLocalBusinessTrust1 },
+  [TESTIMONIALS_LOCAL_BUSINESS_TRUST_EDITORIAL_STACK_META.id]: {
+    meta: TESTIMONIALS_LOCAL_BUSINESS_TRUST_EDITORIAL_STACK_META,
+    component: TestimonialsLocalBusinessTrustEditorialStack,
+  },
   [FAQ_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: FAQ_LOCAL_BUSINESS_TRUST_1_META, component: FaqLocalBusinessTrust1 },
   [BLOGLIST_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: BLOGLIST_LOCAL_BUSINESS_TRUST_1_META, component: BloglistLocalBusinessTrust1 },
   [CTA_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: CTA_LOCAL_BUSINESS_TRUST_1_META, component: CtaLocalBusinessTrust1 },
@@ -669,7 +689,19 @@ export const SECTION_REGISTRY: SectionRegistry = {
   [CASE_STUDIES_LOCAL_BUSINESS_TRUST_GALLERY_META.id]: { meta: CASE_STUDIES_LOCAL_BUSINESS_TRUST_GALLERY_META, component: CaseStudiesLocalBusinessTrustGallery },
   [PRICING_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: PRICING_LOCAL_BUSINESS_TRUST_1_META, component: PricingLocalBusinessTrust1 },
   [PRICING_LOCAL_BUSINESS_TRUST_PLAN_CARDS_META.id]: { meta: PRICING_LOCAL_BUSINESS_TRUST_PLAN_CARDS_META, component: PricingLocalBusinessTrustPlanCards },
+  [PRICING_LOCAL_BUSINESS_TRUST_CONVERSION_GRID_META.id]: {
+    meta: PRICING_LOCAL_BUSINESS_TRUST_CONVERSION_GRID_META,
+    component: PricingLocalBusinessTrustConversionGrid,
+  },
   [TEAM_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: TEAM_LOCAL_BUSINESS_TRUST_1_META, component: TeamLocalBusinessTrust1 },
+  [CONTACT_LOCAL_BUSINESS_TRUST_CONCIERGE_META.id]: {
+    meta: CONTACT_LOCAL_BUSINESS_TRUST_CONCIERGE_META,
+    component: ContactLocalBusinessTrustConcierge,
+  },
+  [FOOTER_CONTENT_LOCAL_BUSINESS_TRUST_PREMIUM_META.id]: {
+    meta: FOOTER_CONTENT_LOCAL_BUSINESS_TRUST_PREMIUM_META,
+    component: FooterContentLocalBusinessTrustPremium,
+  },
 
   // scaffold-variants batch — entries
   [HERO_DASHBOARD_OPS_1_META.id]: { meta: HERO_DASHBOARD_OPS_1_META, component: HeroDashboardOps1 },

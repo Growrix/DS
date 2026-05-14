@@ -31,6 +31,7 @@ const sora = Sora({ variable: "--font-sora", subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Blueprint",
   description: "DS-first starter kit",
+  metadataBase: new URL("http://localhost:3000"),
 };
 
 export default function RootLayout({

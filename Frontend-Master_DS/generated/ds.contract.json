@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "counts": {
-    "variants": 159,
+    "variants": 163,
     "archetypes": 8,
     "motionPresets": 8,
     "themes": 2,
@@ -3056,6 +3056,25 @@
       "isDefault": false
     },
     {
+      "id": "testimonials-local-business-trust-editorial-stack",
+      "kind": "testimonials",
+      "archetype": "local-business-trust",
+      "label": "Testimonials - Local Business Trust Editorial Stack",
+      "description": "Featured trust quote paired with a stacked review column for a more premium service-business proof section.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "rich",
+      "isDefault": false
+    },
+    {
       "id": "faq-local-business-trust-1",
       "kind": "faq",
       "archetype": "local-business-trust",
@@ -3261,6 +3280,25 @@
       "isDefault": false
     },
     {
+      "id": "pricing-local-business-trust-conversion-grid",
+      "kind": "pricing",
+      "archetype": "local-business-trust",
+      "label": "Pricing - Local Business Trust Conversion Grid",
+      "description": "Trust-led service-plan layout with an assurance panel, one featured tier, and transparent monthly-plus-annual pricing.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "rich",
+      "isDefault": false
+    },
+    {
       "id": "team-local-business-trust-1",
       "kind": "team",
       "archetype": "local-business-trust",
@@ -3277,6 +3315,43 @@
       "effects": {},
       "density": "comfortable",
       "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "contact-local-business-trust-concierge",
+      "kind": "contact",
+      "archetype": "local-business-trust",
+      "label": "Contact - Local Business Trust Concierge",
+      "description": "Concierge-style booking surface with trust-first channels, response guidance, and a darker form panel.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in",
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "rich",
+      "isDefault": false
+    },
+    {
+      "id": "footer-content-local-business-trust-premium",
+      "kind": "footer-content",
+      "archetype": "local-business-trust",
+      "label": "Footer Content - Local Business Trust Premium",
+      "description": "Dark scoped pre-footer with newsletter, brand assurance, service columns, and social/legal links.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "rich",
       "isDefault": false
     },
     {

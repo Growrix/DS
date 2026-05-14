@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-import { ACTIVE_SITE_PRESET } from "@/site";
+import { SITE_PREVIEW_PRESET } from "@/app/site-preview-preset";
 
 /**
  * Default Open Graph image — renders the active preset's brand name on a
@@ -9,15 +9,14 @@ import { ACTIVE_SITE_PRESET } from "@/site";
  *
  * Uses the standard 1200x630 OG card size.
  */
-export const runtime = "edge";
 
 export const alt = "Open Graph card";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function OgImage() {
-  const brandName = ACTIVE_SITE_PRESET.config.brand?.name ?? ACTIVE_SITE_PRESET.label;
-  const tagline = ACTIVE_SITE_PRESET.config.brand?.tagline;
+  const brandName = SITE_PREVIEW_PRESET.config.brand?.name ?? SITE_PREVIEW_PRESET.label;
+  const tagline = SITE_PREVIEW_PRESET.config.brand?.tagline;
   return new ImageResponse(
     (
       <div

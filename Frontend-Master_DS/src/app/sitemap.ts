@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-import { ACTIVE_SITE_PRESET } from "@/site";
+import { SITE_PREVIEW_PRESET } from "@/app/site-preview-preset";
 
 /**
  * Site sitemap — generated from the active preset's `pages` map.
@@ -12,7 +12,7 @@ import { ACTIVE_SITE_PRESET } from "@/site";
 export default function sitemap(): MetadataRoute.Sitemap {
   const origin = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
   const now = new Date();
-  return Object.keys(ACTIVE_SITE_PRESET.pages).map((id) => {
+  return Object.keys(SITE_PREVIEW_PRESET.pages).map((id) => {
     const path = id === "home" || id === "/" ? "/" : `/${id.replace(/^\/+/, "")}`;
     return {
       url: `${origin}${path}`,

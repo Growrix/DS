@@ -109,3 +109,20 @@
 **Done criteria:** All gates green.
 **Status:** [x] completed
 **Notes:** `npm run verify` passed: typecheck ✓, lint ✓ (1 pre-existing warning), 126/126 tests ✓, build ✓, ds:audit ✓, ds:a11y ✓.
+
+---
+
+## T09 — Premium service-business preview and visual baseline
+
+**Objective:** Turn the active premium home-services preset into the main marketing preview, deepen the local-business premium pack with additive variants, and lock a homepage screenshot baseline for future visual review.
+**Scope:**
+- Switch `src/app/(marketing)` routes to render `ACTIVE_SITE_PRESET` pages instead of the factory placeholder
+- Apply marketing-root runtime knobs and a project-surface utility bar without editing locked DS shell/token internals
+- Add reusable `local-business-trust` premium variants only through the allowed extension surface
+- Re-author `src/site/presets/premiumHomeServices.ts` against the richer pack
+- Add local visual-regression coverage for the premium homepage
+**Files:** `src/app/(marketing)/**`, `src/site/presets/premiumHomeServices.ts`, `src/ds/composition/sections/variants/**`, `src/ds/composition/sections/_registry.ts`, `src/ds/styles/ds.section-variants.css`, `tests/visual/**`, `public/**`
+**Verification:** `npm run typecheck`, `npm run ds:contract`, `npm run build`, `npm run verify`, `npm run ds:visual -- --update-snapshots`
+**Done criteria:** Main marketing preview renders the premium homepage, new local-business premium variants are registered and used, homepage screenshot baseline is created, and verification gates pass.
+**Status:** [x] completed
+**Notes:** UI mode = `desktop-plus-responsive`. DS policy = `approved-ds-change` limited to additive variants and app-surface preview wiring only. Implemented a new signature preset on editable/extension surfaces, switched the canonical marketing preview and metadata to that preset, localized homepage media under `public/`, added homepage visual-regression baselines, installed `@playwright/test`, and validated with `npm run verify` plus `npm run ds:visual`.
