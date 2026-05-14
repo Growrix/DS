@@ -4,12 +4,16 @@ import path from "node:path";
 const repoRoot = process.cwd();
 
 const tokenFile = path.join(repoRoot, "src/ds/styles/ds.tokens.css");
+const additionalTokenSources = [
+  path.join(repoRoot, "src/ds/styles/ds.typography.css"),
+];
 const targets = [
   "src/ds/styles/ds.components.css",
   "src/ds/styles/ds.base.css",
   "src/ds/styles/ds.utilities.css",
   "src/ds/styles/ds.theme.css",
   "src/ds/styles/ds.section-variants.css",
+  "src/ds/styles/ds.typography.css",
 ].map((p) => path.join(repoRoot, p));
 
 const rules = [
@@ -42,6 +46,12 @@ function getLineNumber(text, index) {
 
 const tokenText = await fs.readFile(tokenFile, "utf8");
 const definedTokens = new Set(Array.from(tokenText.matchAll(/(--ds-[a-z0-9-]+)\s*:/gi), (match) => match[1]));
+for (const extraSource of additionalTokenSources) {
+  const extraText = await fs.readFile(extraSource, "utf8");
+  for (const match of extraText.matchAll(/(--ds-[a-z0-9-]+)\s*:/gi)) {
+    definedTokens.add(match[1]);
+  }
+}
 
 function reportFinding(rel, line, ruleId, snippet) {
   hasFindings = true;

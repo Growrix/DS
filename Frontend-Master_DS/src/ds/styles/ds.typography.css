@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Design System — Typography Extensions (Phase 11A)
+   Adds: extra family slot (quote), display-weight slot, type-scale ratio,
+         editorial utility classes (lede/dropcap/pull-quote/byline/kicker/
+         figcaption), dashboard metric utility classes.
+   Imported into the existing ds.tokens + ds.utilities layers (additive).
+   No existing tokens or classes are modified.
+   ========================================================================== */
+
+@layer ds.tokens {
+  :root {
+    /* ── Phase 11A: extra typography slots (Ch 01 §11A) ── */
+
+    /* Italic / serif slot used by editorial pull-quotes & blockquotes.
+       Defaults to display family so existing variants keep working. */
+    --ds-font-quote: var(--ds-font-display);
+
+    /* Display-weight slot — lets archetypes tune display heaviness without
+       overriding every text-display class. Editorial-Premium → 300/400,
+       Modern-SaaS → 700, Bold-Consumer → 900. */
+    --ds-font-weight-display: var(--ds-font-weight-bold);
+
+    /* Type-scale ratio — exposed for archetype-level rhythm tuning. Variants
+       and utility classes do NOT consume this directly today; FontPreset CSS
+       blocks (Phase 11B) read it to recompute fluid sizes when needed. */
+    --ds-type-scale-ratio: 1.25;
+  }
+}
+
+@layer ds.utilities {
+  /* ════════════════════════════════════════════════════════════════════════
+     T035 — Editorial typography utilities (Ch 01 §13)
+     ════════════════════════════════════════════════════════════════════════ */
+
+  .text-kicker {
+    font-family: var(--ds-font-sans);
+    font-size: var(--ds-font-size-2);
+    font-weight: var(--ds-font-weight-semibold);
+    line-height: var(--ds-line-height-tight);
+    letter-spacing: var(--ds-letter-spacing-widest);
+    text-transform: uppercase;
+    color: var(--ds-color-accent);
+  }
+
+  .text-lede {
+    font-family: var(--ds-font-sans);
+    font-size: var(--ds-font-size-7);
+    font-weight: var(--ds-font-weight-regular);
+    line-height: var(--ds-line-height-relaxed);
+    letter-spacing: var(--ds-letter-spacing-normal);
+    color: var(--ds-color-foreground-secondary);
+    text-wrap: balance;
+  }
+
+  .text-byline {
+    font-family: var(--ds-font-sans);
+    font-size: var(--ds-font-size-3);
+    font-weight: var(--ds-font-weight-medium);
+    line-height: var(--ds-line-height-snug);
+    letter-spacing: var(--ds-letter-spacing-wide);
+    color: var(--ds-color-foreground-muted);
+  }
+
+  .text-figcaption {
+    font-family: var(--ds-font-sans);
+    font-size: var(--ds-font-size-2);
+    font-weight: var(--ds-font-weight-regular);
+    line-height: var(--ds-line-height-snug);
+    letter-spacing: var(--ds-letter-spacing-normal);
+    color: var(--ds-color-foreground-muted);
+    font-style: italic;
+  }
+
+  .text-pull-quote {
+    font-family: var(--ds-font-quote);
+    font-size: var(--ds-font-size-9);
+    font-weight: var(--ds-font-weight-regular);
+    line-height: var(--ds-line-height-snug);
+    letter-spacing: var(--ds-letter-spacing-tight);
+    font-style: italic;
+    color: var(--ds-color-foreground);
+    text-wrap: balance;
+  }
+
+  /* Drop cap — apply to a paragraph as a *modifier* (not a wrapper).
+     Uses ::first-letter so semantic markup is unchanged. */
+  .text-dropcap::first-letter {
+    float: inline-start;
+    font-family: var(--ds-font-display);
+    font-size: 3.5em;
+    font-weight: var(--ds-font-weight-bold);
+    line-height: var(--ds-line-height-none);
+    margin-inline-end: 0.1em;
+    margin-block-start: 0.1em;
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  /* ════════════════════════════════════════════════════════════════════════
+     T036 — Dashboard / metric typography utilities (Ch 01 §14)
+     ════════════════════════════════════════════════════════════════════════ */
+
+  .text-metric {
+    font-family: var(--ds-font-display);
+    font-size: var(--ds-font-size-fluid-h1);
+    font-weight: var(--ds-font-weight-semibold);
+    line-height: var(--ds-line-height-none);
+    letter-spacing: var(--ds-letter-spacing-tight);
+    font-variant-numeric: tabular-nums lining-nums;
+    color: var(--ds-color-foreground);
+  }
+
+  .text-metric-unit {
+    font-family: var(--ds-font-sans);
+    font-size: var(--ds-font-size-4);
+    font-weight: var(--ds-font-weight-medium);
+    line-height: var(--ds-line-height-none);
+    letter-spacing: var(--ds-letter-spacing-normal);
+    color: var(--ds-color-foreground-muted);
+    text-transform: uppercase;
+  }
+
+  .text-metric-delta {
+    font-family: var(--ds-font-mono);
+    font-size: var(--ds-font-size-3);
+    font-weight: var(--ds-font-weight-medium);
+    line-height: var(--ds-line-height-tight);
+    letter-spacing: var(--ds-letter-spacing-normal);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .text-metric-delta--up { color: var(--ds-color-success); }
+  .text-metric-delta--down { color: var(--ds-color-danger); }
+  .text-metric-delta--flat { color: var(--ds-color-foreground-muted); }
+}
