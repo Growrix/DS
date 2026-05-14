@@ -7,6 +7,7 @@ export { createMdxContentAdapter } from "./adapters/mdx";
 export * from "./seo";
 export * from "./formAdapter";
 export * from "./csp";
+export * from "./i18n";
 export { createInMemoryLogAdapter } from "./adapters/forms/inMemoryLog";
 export { createMailtoAdapter } from "./adapters/forms/mailto";
 export { createGenericPostAdapter } from "./adapters/forms/genericPost";

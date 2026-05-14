@@ -1,0 +1,36 @@
+/* ==========================================================================
+   ds.rtl.css — Phase 12G
+   Right-to-left adaptations. The DS is built on CSS logical properties
+   (margin-inline-*, padding-inline-*, inset-inline-*) so most layout flips
+   for free when `<html dir="rtl">`. This file pins the remaining cases:
+   icon flipping, scrolling shadows, slider/track gradients, and any
+   physical-property holdouts.
+   ========================================================================== */
+
+@layer ds.utilities {
+  /* Direction-aware icon flip for arrows + chevrons. Mark any icon that
+     denotes "forward/back" with `data-rtl-flip="auto"`. */
+  [dir="rtl"] [data-rtl-flip="auto"] {
+    transform: scaleX(-1);
+  }
+
+  /* Animation directions that imply "leftwards" in LTR should reverse. */
+  [dir="rtl"] [data-rtl-flip-animation="auto"] {
+    animation-direction: reverse;
+  }
+
+  /* Marquees / horizontal sliders — anchor to inline-start so the start
+     edge is visually correct in both directions. */
+  [dir="rtl"] .ui-marquee,
+  [dir="rtl"] .ui-hscroll {
+    direction: rtl;
+  }
+
+  /* Force decorative gradients that fade-from-left to fade-from-inline-start.
+     Project content using mask-image with `linear-gradient(to right, ...)`
+     should switch to `to inline-end` — this rule provides a safety net for
+     legacy CSS still using `to right`. */
+  [dir="rtl"] [data-rtl-fade="auto"] {
+    transform: scaleX(-1);
+  }
+}
