@@ -16,4 +16,5 @@
 @import "./ds.utilities.css";
 @import "./ds.typography.css";
 @import "./ds.typography-presets.css";
+@import "./ds.media.css";
 @import "./ds.overrides.css";

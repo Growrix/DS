@@ -7,6 +7,7 @@ const tokenFile = path.join(repoRoot, "src/ds/styles/ds.tokens.css");
 const additionalTokenSources = [
   path.join(repoRoot, "src/ds/styles/ds.typography.css"),
   path.join(repoRoot, "src/ds/styles/ds.typography-presets.css"),
+  path.join(repoRoot, "src/ds/styles/ds.media.css"),
 ];
 const targets = [
   "src/ds/styles/ds.components.css",
@@ -16,6 +17,7 @@ const targets = [
   "src/ds/styles/ds.section-variants.css",
   "src/ds/styles/ds.typography.css",
   "src/ds/styles/ds.typography-presets.css",
+  "src/ds/styles/ds.media.css",
 ].map((p) => path.join(repoRoot, p));
 
 const rules = [

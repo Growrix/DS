@@ -1,0 +1,46 @@
+/* ============================================================================
+ * Media token surface (Phase 12D).
+ *
+ * Aspect-ratio tokens for image and video primitives. All consumers MUST
+ * reference these tokens; raw "16/9" or numeric ratios in component code are
+ * disallowed by `ds:audit`.
+ *
+ * Live under @layer ds.tokens so they cascade with the rest of the DS token
+ * surface and remain overridable via theme files.
+ * ============================================================================
+ */
+
+@layer ds.tokens {
+  :root {
+    --ds-aspect-square: 1 / 1;
+    --ds-aspect-portrait: 3 / 4;
+    --ds-aspect-landscape: 4 / 3;
+    --ds-aspect-widescreen: 16 / 9;
+    --ds-aspect-cinema: 21 / 9;
+    --ds-aspect-card: 5 / 4;
+    --ds-aspect-hero: 5 / 2;
+  }
+}
+
+@layer ds.utilities {
+  .ds-aspect-square { aspect-ratio: var(--ds-aspect-square); }
+  .ds-aspect-portrait { aspect-ratio: var(--ds-aspect-portrait); }
+  .ds-aspect-landscape { aspect-ratio: var(--ds-aspect-landscape); }
+  .ds-aspect-widescreen { aspect-ratio: var(--ds-aspect-widescreen); }
+  .ds-aspect-cinema { aspect-ratio: var(--ds-aspect-cinema); }
+  .ds-aspect-card { aspect-ratio: var(--ds-aspect-card); }
+  .ds-aspect-hero { aspect-ratio: var(--ds-aspect-hero); }
+
+  .ds-media-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  .ds-media-fill {
+    object-fit: cover;
+  }
+  .ds-media-video-fill {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

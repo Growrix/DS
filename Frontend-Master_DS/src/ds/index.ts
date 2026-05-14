@@ -16,6 +16,8 @@ export * from "./primitives/RangeSlider";
 export * from "./primitives/Switch";
 export * from "./primitives/Spacer";
 export * from "./primitives/Text";
+export * from "./primitives/DsImage";
+export * from "./primitives/DsVideo";
 
 export * from "./components/Section";
 export * from "./components/Card";
