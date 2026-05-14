@@ -316,6 +316,22 @@ import { CASE_STUDIES_DASHBOARD_OPS_1_META, CaseStudiesDashboardOps1 } from "./v
 import { FAQ_DASHBOARD_OPS_1_META, FaqDashboardOps1 } from "./variants/faq/faq-dashboard-ops-1";
 import { CTA_DASHBOARD_OPS_1_META, CtaDashboardOps1 } from "./variants/cta/cta-dashboard-ops-1";
 
+
+// scaffold-variants batch — imports
+import { HERO_PORTFOLIO_CRAFT_1_META, HeroPortfolioCraft1 } from "./variants/hero/hero-portfolio-craft-1";
+import { HERO_PORTFOLIO_CRAFT_2_META, HeroPortfolioCraft2 } from "./variants/hero/hero-portfolio-craft-2";
+import { FEATURES_PORTFOLIO_CRAFT_1_META, FeaturesPortfolioCraft1 } from "./variants/features/features-portfolio-craft-1";
+import { TESTIMONIALS_PORTFOLIO_CRAFT_1_META, TestimonialsPortfolioCraft1 } from "./variants/testimonials/testimonials-portfolio-craft-1";
+import { FAQ_PORTFOLIO_CRAFT_1_META, FaqPortfolioCraft1 } from "./variants/faq/faq-portfolio-craft-1";
+import { BLOGLIST_PORTFOLIO_CRAFT_1_META, BloglistPortfolioCraft1 } from "./variants/blogList/bloglist-portfolio-craft-1";
+import { CTA_PORTFOLIO_CRAFT_1_META, CtaPortfolioCraft1 } from "./variants/cta/cta-portfolio-craft-1";
+import { CASE_STUDIES_PORTFOLIO_CRAFT_2_META, CaseStudiesPortfolioCraft2 } from "./variants/case-studies/case-studies-portfolio-craft-2";
+import { TEAM_PORTFOLIO_CRAFT_1_META, TeamPortfolioCraft1 } from "./variants/team/team-portfolio-craft-1";
+import { TEAM_PORTFOLIO_CRAFT_2_META, TeamPortfolioCraft2 } from "./variants/team/team-portfolio-craft-2";
+import { CONTACT_PORTFOLIO_CRAFT_1_META, ContactPortfolioCraft1 } from "./variants/contact/contact-portfolio-craft-1";
+import { FOOTER_CONTENT_PORTFOLIO_CRAFT_1_META, FooterContentPortfolioCraft1 } from "./variants/footer-content/footer-content-portfolio-craft-1";
+import { LOGO_CLOUD_PORTFOLIO_CRAFT_1_META, LogoCloudPortfolioCraft1 } from "./variants/logo-cloud/logo-cloud-portfolio-craft-1";
+
 import type {
   SectionKind,
   SectionRegistry,
@@ -643,6 +659,21 @@ export const SECTION_REGISTRY: SectionRegistry = {
   [CASE_STUDIES_DASHBOARD_OPS_1_META.id]: { meta: CASE_STUDIES_DASHBOARD_OPS_1_META, component: CaseStudiesDashboardOps1 },
   [FAQ_DASHBOARD_OPS_1_META.id]: { meta: FAQ_DASHBOARD_OPS_1_META, component: FaqDashboardOps1 },
   [CTA_DASHBOARD_OPS_1_META.id]: { meta: CTA_DASHBOARD_OPS_1_META, component: CtaDashboardOps1 },
+
+  // scaffold-variants batch — entries
+  [HERO_PORTFOLIO_CRAFT_1_META.id]: { meta: HERO_PORTFOLIO_CRAFT_1_META, component: HeroPortfolioCraft1 },
+  [HERO_PORTFOLIO_CRAFT_2_META.id]: { meta: HERO_PORTFOLIO_CRAFT_2_META, component: HeroPortfolioCraft2 },
+  [FEATURES_PORTFOLIO_CRAFT_1_META.id]: { meta: FEATURES_PORTFOLIO_CRAFT_1_META, component: FeaturesPortfolioCraft1 },
+  [TESTIMONIALS_PORTFOLIO_CRAFT_1_META.id]: { meta: TESTIMONIALS_PORTFOLIO_CRAFT_1_META, component: TestimonialsPortfolioCraft1 },
+  [FAQ_PORTFOLIO_CRAFT_1_META.id]: { meta: FAQ_PORTFOLIO_CRAFT_1_META, component: FaqPortfolioCraft1 },
+  [BLOGLIST_PORTFOLIO_CRAFT_1_META.id]: { meta: BLOGLIST_PORTFOLIO_CRAFT_1_META, component: BloglistPortfolioCraft1 },
+  [CTA_PORTFOLIO_CRAFT_1_META.id]: { meta: CTA_PORTFOLIO_CRAFT_1_META, component: CtaPortfolioCraft1 },
+  [CASE_STUDIES_PORTFOLIO_CRAFT_2_META.id]: { meta: CASE_STUDIES_PORTFOLIO_CRAFT_2_META, component: CaseStudiesPortfolioCraft2 },
+  [TEAM_PORTFOLIO_CRAFT_1_META.id]: { meta: TEAM_PORTFOLIO_CRAFT_1_META, component: TeamPortfolioCraft1 },
+  [TEAM_PORTFOLIO_CRAFT_2_META.id]: { meta: TEAM_PORTFOLIO_CRAFT_2_META, component: TeamPortfolioCraft2 },
+  [CONTACT_PORTFOLIO_CRAFT_1_META.id]: { meta: CONTACT_PORTFOLIO_CRAFT_1_META, component: ContactPortfolioCraft1 },
+  [FOOTER_CONTENT_PORTFOLIO_CRAFT_1_META.id]: { meta: FOOTER_CONTENT_PORTFOLIO_CRAFT_1_META, component: FooterContentPortfolioCraft1 },
+  [LOGO_CLOUD_PORTFOLIO_CRAFT_1_META.id]: { meta: LOGO_CLOUD_PORTFOLIO_CRAFT_1_META, component: LogoCloudPortfolioCraft1 },
 
 };
 

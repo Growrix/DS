@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "counts": {
-    "variants": 142,
+    "variants": 155,
     "archetypes": 8,
     "motionPresets": 8,
     "themes": 2,
@@ -3166,6 +3166,254 @@
       ],
       "effects": {},
       "density": "compact",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "hero-portfolio-craft-1",
+      "kind": "hero",
+      "archetype": "portfolio-craft",
+      "label": "Hero — Portfolio Centred Identity",
+      "description": "Centred hero with name, discipline line and primary CTA pair; rise-soft entry; max 60ch lede.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "hero-portfolio-craft-2",
+      "kind": "hero",
+      "archetype": "portfolio-craft",
+      "label": "Hero — Portfolio Full-Bleed Showcase",
+      "description": "Full-bleed showcase photograph with scrim and overlay headline; scroll-scale 1.04 on media; primary CTA in accent.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "scroll-scale-1.04"
+      ],
+      "effects": {
+        "fullBleedPhotograph": true,
+        "scrollDrivenScale": true
+      },
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "features-portfolio-craft-1",
+      "kind": "features",
+      "archetype": "portfolio-craft",
+      "label": "Features — Portfolio 3-Col Capabilities",
+      "description": "Three-column capabilities grid with accent icons, discipline name and short line; fade-in across cards.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "testimonials-portfolio-craft-1",
+      "kind": "testimonials",
+      "archetype": "portfolio-craft",
+      "label": "Testimonials — Portfolio Large Quote",
+      "description": "Single oversized client pull-quote with attribution; quote glyph in accent at 6rem; rise-soft entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "faq-portfolio-craft-1",
+      "kind": "faq",
+      "archetype": "portfolio-craft",
+      "label": "FAQ — Portfolio Accordion",
+      "description": "Native details/summary accordion with accent caret; fade-in per row; foreground-secondary answers.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "bloglist-portfolio-craft-1",
+      "kind": "blogList",
+      "archetype": "portfolio-craft",
+      "label": "Blog List — Portfolio Indexed List",
+      "description": "Indexed list view of journal entries with two-digit numerals, title and date; fade-in entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "cta-portfolio-craft-1",
+      "kind": "cta",
+      "archetype": "portfolio-craft",
+      "label": "CTA — Portfolio Centred Card",
+      "description": "Centred CTA card on raised surface with headline, sub-line and primary action; rise-soft entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "case-studies-portfolio-craft-2",
+      "kind": "case-studies",
+      "archetype": "portfolio-craft",
+      "label": "Case Studies — Portfolio 2-Col Grid",
+      "description": "Two-column project cards with cover image, client tag and outcome line; scroll-scale 1.04 on covers.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "scroll-scale-1.04"
+      ],
+      "effects": {
+        "scrollDrivenScale": true,
+        "perCaseAccent": true
+      },
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "team-portfolio-craft-1",
+      "kind": "team",
+      "archetype": "portfolio-craft",
+      "label": "Team — Portfolio 2-Col Studio",
+      "description": "Two-column studio member grid with circular avatars, names and role lines; rise-soft across cells.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "team-portfolio-craft-2",
+      "kind": "team",
+      "archetype": "portfolio-craft",
+      "label": "Team — Portfolio 4-Col Studio",
+      "description": "Four-column studio member grid with circular avatars, names and role lines; fade-in across cells.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "contact-portfolio-craft-1",
+      "kind": "contact",
+      "archetype": "portfolio-craft",
+      "label": "Contact — Portfolio Channel Cards",
+      "description": "Three-column channel cards (email, phone, address) with accent icons and labels; no form; rise-soft entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "footer-content-portfolio-craft-1",
+      "kind": "footer-content",
+      "archetype": "portfolio-craft",
+      "label": "Footer — Portfolio Minimal Row",
+      "description": "Single-row minimal footer with name, copyright and small nav links; fade-in entry; compact density.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "compact",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "logo-cloud-portfolio-craft-1",
+      "kind": "logo-cloud",
+      "archetype": "portfolio-craft",
+      "label": "Logo Cloud — Portfolio Auto-Fit Clients",
+      "description": "Auto-fit client logo grid at 9rem min cell with foreground-muted opacity; fade-in entry; raised surface.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
       "complexity": "minimal",
       "isDefault": false
     }
