@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "counts": {
-    "variants": 68,
+    "variants": 85,
     "archetypes": 8,
     "motionPresets": 8,
     "themes": 2,
@@ -1780,6 +1780,326 @@
       "motionPresets": [],
       "effects": {},
       "density": "compact",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "hero-bold-consumer-2",
+      "kind": "hero",
+      "archetype": "bold-consumer",
+      "label": "Hero — Bold Split Spotlight",
+      "description": "Split hero with oversized headline left and saturated media tile right; CTA pair uses accent emphasis; motion rise-soft 320ms.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "magnetic-hover"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "hero-bold-consumer-3",
+      "kind": "hero",
+      "archetype": "bold-consumer",
+      "label": "Hero — Bold Full-Bleed Photograph",
+      "description": "Full-bleed photograph with scrim overlay and overlay headline; primary CTA in accent; scroll-scale 1.04 on media.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "scroll-scale-1.04"
+      ],
+      "effects": {
+        "fullBleedPhotograph": true,
+        "scrollDrivenScale": true
+      },
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "features-bold-consumer-1",
+      "kind": "features",
+      "archetype": "bold-consumer",
+      "label": "Features — Bold 3-Col Grid",
+      "description": "Three-column features grid with saturated accent icons and bold headings; rise-soft entry with 60ms stagger between cards.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "features-bold-consumer-2",
+      "kind": "features",
+      "archetype": "bold-consumer",
+      "label": "Features — Bold Numbered Stack",
+      "description": "Numbered feature stack with two-digit numerals in accent; single column max 72rem; idle pulse on numerals after entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "idle-pulse-once"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "testimonials-bold-consumer-1",
+      "kind": "testimonials",
+      "archetype": "bold-consumer",
+      "label": "Testimonials — Bold Large Quote",
+      "description": "Single oversized pull-quote with attribution block beneath; quote glyph in accent at 6rem; rise-soft entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "testimonials-bold-consumer-2",
+      "kind": "testimonials",
+      "archetype": "bold-consumer",
+      "label": "Testimonials — Bold 3-Col Cards",
+      "description": "Three-column testimonial cards on raised surface with bold quote glyph; stagger-text-60 between cards.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "faq-bold-consumer-1",
+      "kind": "faq",
+      "archetype": "bold-consumer",
+      "label": "FAQ — Bold Accordion",
+      "description": "Single-column native details/summary accordion with bold question typography and accent caret; rise-soft entry per row.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "bloglist-bold-consumer-1",
+      "kind": "blogList",
+      "archetype": "bold-consumer",
+      "label": "Blog List — Bold 3-Col Cards",
+      "description": "Three-column blog cards with cover image, bold title, date and excerpt; magnetic-hover lift on card hover.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "magnetic-hover"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "cta-bold-consumer-2",
+      "kind": "cta",
+      "archetype": "bold-consumer",
+      "label": "CTA — Bold Banner Bar",
+      "description": "Full-width banner CTA on accent background with single primary action and supporting line beneath; idle-pulse-once on action.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "idle-pulse-once"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "newsletter-bold-consumer-1",
+      "kind": "newsletter",
+      "archetype": "bold-consumer",
+      "label": "Newsletter — Bold Inline Form",
+      "description": "Inline newsletter form with bold headline above and email input + submit; posts to /subscribe; rise-soft entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "stats-band-bold-consumer-1",
+      "kind": "stats-band",
+      "archetype": "bold-consumer",
+      "label": "Stats Band — Bold 4-Col",
+      "description": "Four-column stats band with oversized accent numerals and short labels; stagger-text-60 reveal across cells.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "process-steps-bold-consumer-1",
+      "kind": "process-steps",
+      "archetype": "bold-consumer",
+      "label": "Process Steps — Bold Vertical Numbered",
+      "description": "Vertical numbered process list with bold accent numerals and titles; rise-soft per step with 60ms stagger.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "logo-cloud-bold-consumer-1",
+      "kind": "logo-cloud",
+      "archetype": "bold-consumer",
+      "label": "Logo Cloud — Bold Auto-Fit Grid",
+      "description": "Auto-fit logo grid at 9rem min cell on raised surface; logos at foreground-muted opacity; rise-soft entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "case-studies-bold-consumer-1",
+      "kind": "case-studies",
+      "archetype": "bold-consumer",
+      "label": "Case Studies — Bold 3-Col Grid",
+      "description": "Three-column case study cards with cover image, client tag, bold title and outcome line; magnetic-hover lift on card.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "magnetic-hover"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "pricing-bold-consumer-1",
+      "kind": "pricing",
+      "archetype": "bold-consumer",
+      "label": "Pricing — Bold Single Tier",
+      "description": "Single pricing tier card with bold accent price, feature list and primary CTA; centered on raised surface.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "team-bold-consumer-1",
+      "kind": "team",
+      "archetype": "bold-consumer",
+      "label": "Team — Bold 4-Col Grid",
+      "description": "Four-column team grid with circular avatars, bold names and role lines; stagger-text-60 across cells.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "contact-bold-consumer-1",
+      "kind": "contact",
+      "archetype": "bold-consumer",
+      "label": "Contact — Bold Channel Cards",
+      "description": "Three-column channel cards (email, phone, address) with bold accent icons and labels; no form; rise-soft entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
       "complexity": "minimal",
       "isDefault": false
     }

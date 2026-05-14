@@ -227,6 +227,26 @@ import { CONTACT_EDITORIAL_PREMIUM_1_META, ContactEditorialPremium1 } from "./va
 import { FOOTER_CONTENT_EDITORIAL_PREMIUM_1_META, FooterContentEditorialPremium1 } from "./variants/footer-content/footer-content-editorial-premium-1";
 import { FOOTER_CONTENT_EDITORIAL_PREMIUM_2_META, FooterContentEditorialPremium2 } from "./variants/footer-content/footer-content-editorial-premium-2";
 
+
+// scaffold-variants batch — imports
+import { HERO_BOLD_CONSUMER_2_META, HeroBoldConsumer2 } from "./variants/hero/hero-bold-consumer-2";
+import { HERO_BOLD_CONSUMER_3_META, HeroBoldConsumer3 } from "./variants/hero/hero-bold-consumer-3";
+import { FEATURES_BOLD_CONSUMER_1_META, FeaturesBoldConsumer1 } from "./variants/features/features-bold-consumer-1";
+import { FEATURES_BOLD_CONSUMER_2_META, FeaturesBoldConsumer2 } from "./variants/features/features-bold-consumer-2";
+import { TESTIMONIALS_BOLD_CONSUMER_1_META, TestimonialsBoldConsumer1 } from "./variants/testimonials/testimonials-bold-consumer-1";
+import { TESTIMONIALS_BOLD_CONSUMER_2_META, TestimonialsBoldConsumer2 } from "./variants/testimonials/testimonials-bold-consumer-2";
+import { FAQ_BOLD_CONSUMER_1_META, FaqBoldConsumer1 } from "./variants/faq/faq-bold-consumer-1";
+import { BLOGLIST_BOLD_CONSUMER_1_META, BloglistBoldConsumer1 } from "./variants/blogList/bloglist-bold-consumer-1";
+import { CTA_BOLD_CONSUMER_2_META, CtaBoldConsumer2 } from "./variants/cta/cta-bold-consumer-2";
+import { NEWSLETTER_BOLD_CONSUMER_1_META, NewsletterBoldConsumer1 } from "./variants/newsletter/newsletter-bold-consumer-1";
+import { STATS_BAND_BOLD_CONSUMER_1_META, StatsBandBoldConsumer1 } from "./variants/stats-band/stats-band-bold-consumer-1";
+import { PROCESS_STEPS_BOLD_CONSUMER_1_META, ProcessStepsBoldConsumer1 } from "./variants/process-steps/process-steps-bold-consumer-1";
+import { LOGO_CLOUD_BOLD_CONSUMER_1_META, LogoCloudBoldConsumer1 } from "./variants/logo-cloud/logo-cloud-bold-consumer-1";
+import { CASE_STUDIES_BOLD_CONSUMER_1_META, CaseStudiesBoldConsumer1 } from "./variants/case-studies/case-studies-bold-consumer-1";
+import { PRICING_BOLD_CONSUMER_1_META, PricingBoldConsumer1 } from "./variants/pricing/pricing-bold-consumer-1";
+import { TEAM_BOLD_CONSUMER_1_META, TeamBoldConsumer1 } from "./variants/team/team-bold-consumer-1";
+import { CONTACT_BOLD_CONSUMER_1_META, ContactBoldConsumer1 } from "./variants/contact/contact-bold-consumer-1";
+
 import type {
   SectionKind,
   SectionRegistry,
@@ -470,6 +490,25 @@ export const SECTION_REGISTRY: SectionRegistry = {
   [CONTACT_EDITORIAL_PREMIUM_1_META.id]: { meta: CONTACT_EDITORIAL_PREMIUM_1_META, component: ContactEditorialPremium1 },
   [FOOTER_CONTENT_EDITORIAL_PREMIUM_1_META.id]: { meta: FOOTER_CONTENT_EDITORIAL_PREMIUM_1_META, component: FooterContentEditorialPremium1 },
   [FOOTER_CONTENT_EDITORIAL_PREMIUM_2_META.id]: { meta: FOOTER_CONTENT_EDITORIAL_PREMIUM_2_META, component: FooterContentEditorialPremium2 },
+
+  // scaffold-variants batch — entries
+  [HERO_BOLD_CONSUMER_2_META.id]: { meta: HERO_BOLD_CONSUMER_2_META, component: HeroBoldConsumer2 },
+  [HERO_BOLD_CONSUMER_3_META.id]: { meta: HERO_BOLD_CONSUMER_3_META, component: HeroBoldConsumer3 },
+  [FEATURES_BOLD_CONSUMER_1_META.id]: { meta: FEATURES_BOLD_CONSUMER_1_META, component: FeaturesBoldConsumer1 },
+  [FEATURES_BOLD_CONSUMER_2_META.id]: { meta: FEATURES_BOLD_CONSUMER_2_META, component: FeaturesBoldConsumer2 },
+  [TESTIMONIALS_BOLD_CONSUMER_1_META.id]: { meta: TESTIMONIALS_BOLD_CONSUMER_1_META, component: TestimonialsBoldConsumer1 },
+  [TESTIMONIALS_BOLD_CONSUMER_2_META.id]: { meta: TESTIMONIALS_BOLD_CONSUMER_2_META, component: TestimonialsBoldConsumer2 },
+  [FAQ_BOLD_CONSUMER_1_META.id]: { meta: FAQ_BOLD_CONSUMER_1_META, component: FaqBoldConsumer1 },
+  [BLOGLIST_BOLD_CONSUMER_1_META.id]: { meta: BLOGLIST_BOLD_CONSUMER_1_META, component: BloglistBoldConsumer1 },
+  [CTA_BOLD_CONSUMER_2_META.id]: { meta: CTA_BOLD_CONSUMER_2_META, component: CtaBoldConsumer2 },
+  [NEWSLETTER_BOLD_CONSUMER_1_META.id]: { meta: NEWSLETTER_BOLD_CONSUMER_1_META, component: NewsletterBoldConsumer1 },
+  [STATS_BAND_BOLD_CONSUMER_1_META.id]: { meta: STATS_BAND_BOLD_CONSUMER_1_META, component: StatsBandBoldConsumer1 },
+  [PROCESS_STEPS_BOLD_CONSUMER_1_META.id]: { meta: PROCESS_STEPS_BOLD_CONSUMER_1_META, component: ProcessStepsBoldConsumer1 },
+  [LOGO_CLOUD_BOLD_CONSUMER_1_META.id]: { meta: LOGO_CLOUD_BOLD_CONSUMER_1_META, component: LogoCloudBoldConsumer1 },
+  [CASE_STUDIES_BOLD_CONSUMER_1_META.id]: { meta: CASE_STUDIES_BOLD_CONSUMER_1_META, component: CaseStudiesBoldConsumer1 },
+  [PRICING_BOLD_CONSUMER_1_META.id]: { meta: PRICING_BOLD_CONSUMER_1_META, component: PricingBoldConsumer1 },
+  [TEAM_BOLD_CONSUMER_1_META.id]: { meta: TEAM_BOLD_CONSUMER_1_META, component: TeamBoldConsumer1 },
+  [CONTACT_BOLD_CONSUMER_1_META.id]: { meta: CONTACT_BOLD_CONSUMER_1_META, component: ContactBoldConsumer1 },
 
 };
 
