@@ -15,10 +15,13 @@
     "ds:font-audit": "node scripts/ds-font-audit.mjs",
     "ds:coverage": "node scripts/ds-coverage.mjs",
     "ds:seo-check": "node scripts/ds-seo-check.mjs",
+    "ds:perf-budget": "node scripts/ds-perf-budget.mjs",
+    "ds:lh": "npx -y @lhci/cli@latest autorun",
+    "ds:visual": "npx -y playwright@latest test --config=playwright.config.ts",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci",
-    "verify": "npm run typecheck && npm run lint && npm test && npm run build && npm run ds:audit && npm run ds:a11y && npm run ds:contract && npm run ds:font-audit"
+    "verify": "npm run typecheck && npm run lint && npm test && npm run build && npm run ds:audit && npm run ds:a11y && npm run ds:contract && npm run ds:font-audit && npm run ds:perf-budget"
   },
   "dependencies": {
     "lucide-react": "^0.563.0",
