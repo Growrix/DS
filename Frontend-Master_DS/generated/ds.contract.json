@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "counts": {
-    "variants": 135,
+    "variants": 142,
     "archetypes": 8,
     "motionPresets": 8,
     "themes": 2,
@@ -3039,6 +3039,134 @@
       "effects": {},
       "density": "comfortable",
       "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "hero-dashboard-ops-1",
+      "kind": "hero",
+      "archetype": "dashboard-ops",
+      "label": "Hero — Ops Centred Title",
+      "description": "Centred operational hero with title, sub-line and dual CTA; fade-in entry; max 60ch lede.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "compact",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "features-dashboard-ops-1",
+      "kind": "features",
+      "archetype": "dashboard-ops",
+      "label": "Features — Ops 3-Col Capabilities",
+      "description": "Three-column capability grid with icons, name and short line; fade-in across cards; magnetic-hover lift on card.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in",
+        "magnetic-hover"
+      ],
+      "effects": {},
+      "density": "compact",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "stats-band-dashboard-ops-1",
+      "kind": "stats-band",
+      "archetype": "dashboard-ops",
+      "label": "Stats Band — Ops 4-Col KPI",
+      "description": "Four-column KPI stats band with accent numerals and short labels; fade-in across cells; compact density.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "compact",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "process-steps-dashboard-ops-1",
+      "kind": "process-steps",
+      "archetype": "dashboard-ops",
+      "label": "Process Steps — Ops Vertical Numbered",
+      "description": "Vertical numbered process list with accent numerals; fade-in per step; compact density.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "compact",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "case-studies-dashboard-ops-1",
+      "kind": "case-studies",
+      "archetype": "dashboard-ops",
+      "label": "Case Studies — Ops 3-Col Grid",
+      "description": "Three-column case study cards with cover, client tag and outcome line; magnetic-hover lift on card.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in",
+        "magnetic-hover"
+      ],
+      "effects": {},
+      "density": "compact",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "faq-dashboard-ops-1",
+      "kind": "faq",
+      "archetype": "dashboard-ops",
+      "label": "FAQ — Ops Two-Column",
+      "description": "Two-column FAQ list (question/answer pairs) for high-density scanning; fade-in across rows; compact density.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "compact",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "cta-dashboard-ops-1",
+      "kind": "cta",
+      "archetype": "dashboard-ops",
+      "label": "CTA — Ops Banner Bar",
+      "description": "Full-width banner CTA on accent background with single primary action; fade-in entry; compact density.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "compact",
+      "complexity": "minimal",
       "isDefault": false
     }
   ],

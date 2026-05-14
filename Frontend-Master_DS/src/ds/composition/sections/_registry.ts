@@ -306,6 +306,16 @@ import { CASE_STUDIES_LOCAL_BUSINESS_TRUST_1_META, CaseStudiesLocalBusinessTrust
 import { PRICING_LOCAL_BUSINESS_TRUST_1_META, PricingLocalBusinessTrust1 } from "./variants/pricing/pricing-local-business-trust-1";
 import { TEAM_LOCAL_BUSINESS_TRUST_1_META, TeamLocalBusinessTrust1 } from "./variants/team/team-local-business-trust-1";
 
+
+// scaffold-variants batch — imports
+import { HERO_DASHBOARD_OPS_1_META, HeroDashboardOps1 } from "./variants/hero/hero-dashboard-ops-1";
+import { FEATURES_DASHBOARD_OPS_1_META, FeaturesDashboardOps1 } from "./variants/features/features-dashboard-ops-1";
+import { STATS_BAND_DASHBOARD_OPS_1_META, StatsBandDashboardOps1 } from "./variants/stats-band/stats-band-dashboard-ops-1";
+import { PROCESS_STEPS_DASHBOARD_OPS_1_META, ProcessStepsDashboardOps1 } from "./variants/process-steps/process-steps-dashboard-ops-1";
+import { CASE_STUDIES_DASHBOARD_OPS_1_META, CaseStudiesDashboardOps1 } from "./variants/case-studies/case-studies-dashboard-ops-1";
+import { FAQ_DASHBOARD_OPS_1_META, FaqDashboardOps1 } from "./variants/faq/faq-dashboard-ops-1";
+import { CTA_DASHBOARD_OPS_1_META, CtaDashboardOps1 } from "./variants/cta/cta-dashboard-ops-1";
+
 import type {
   SectionKind,
   SectionRegistry,
@@ -624,6 +634,15 @@ export const SECTION_REGISTRY: SectionRegistry = {
   [CASE_STUDIES_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: CASE_STUDIES_LOCAL_BUSINESS_TRUST_1_META, component: CaseStudiesLocalBusinessTrust1 },
   [PRICING_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: PRICING_LOCAL_BUSINESS_TRUST_1_META, component: PricingLocalBusinessTrust1 },
   [TEAM_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: TEAM_LOCAL_BUSINESS_TRUST_1_META, component: TeamLocalBusinessTrust1 },
+
+  // scaffold-variants batch — entries
+  [HERO_DASHBOARD_OPS_1_META.id]: { meta: HERO_DASHBOARD_OPS_1_META, component: HeroDashboardOps1 },
+  [FEATURES_DASHBOARD_OPS_1_META.id]: { meta: FEATURES_DASHBOARD_OPS_1_META, component: FeaturesDashboardOps1 },
+  [STATS_BAND_DASHBOARD_OPS_1_META.id]: { meta: STATS_BAND_DASHBOARD_OPS_1_META, component: StatsBandDashboardOps1 },
+  [PROCESS_STEPS_DASHBOARD_OPS_1_META.id]: { meta: PROCESS_STEPS_DASHBOARD_OPS_1_META, component: ProcessStepsDashboardOps1 },
+  [CASE_STUDIES_DASHBOARD_OPS_1_META.id]: { meta: CASE_STUDIES_DASHBOARD_OPS_1_META, component: CaseStudiesDashboardOps1 },
+  [FAQ_DASHBOARD_OPS_1_META.id]: { meta: FAQ_DASHBOARD_OPS_1_META, component: FaqDashboardOps1 },
+  [CTA_DASHBOARD_OPS_1_META.id]: { meta: CTA_DASHBOARD_OPS_1_META, component: CtaDashboardOps1 },
 
 };
 
