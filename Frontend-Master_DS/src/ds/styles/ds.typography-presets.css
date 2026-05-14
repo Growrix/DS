@@ -1,0 +1,158 @@
+/* ==========================================================================
+   Design System — Font Presets (Phase 11B)
+   One [data-font-preset="<id>"] block per FontPresetId in
+   foundation/typography/fontPresetRegistry.ts.
+
+   Each block overrides the four family slots + the display-weight slot.
+   The next/font CSS variables (--font-inter, --font-playfair, etc.) are
+   mounted on <html> by src/app/layout.tsx (Phase 11D mounts the superset).
+   Until then, the var(--font-X, fallback) chain degrades to system fonts.
+
+   Presets take effect by mounting `data-font-preset="<id>"` on any
+   ancestor (the PublicSiteShell does this in Phase 11C). No JS required.
+   ========================================================================== */
+
+@layer ds.tokens {
+  /* ─────────────────────────────────────────────────────────────────────────
+     editorial-classic — Inter / Playfair Display / Source Serif 4 / JetBrains
+     ───────────────────────────────────────────────────────────────────────── */
+  [data-font-preset="editorial-classic"] {
+    --ds-font-sans:
+      var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-display:
+      var(--font-playfair), Georgia, "Times New Roman", "Source Serif Pro",
+      serif;
+    --ds-font-quote:
+      var(--font-source-serif), Georgia, "Times New Roman", serif;
+    --ds-font-mono:
+      var(--font-jetbrains-mono), "JetBrains Mono", "Fira Code", Consolas,
+      Monaco, "Courier New", monospace;
+    --ds-font-weight-display: 400;
+  }
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     editorial-modern — Manrope / Fraunces / Fraunces / JetBrains
+     ───────────────────────────────────────────────────────────────────────── */
+  [data-font-preset="editorial-modern"] {
+    --ds-font-sans:
+      var(--font-manrope), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-display:
+      var(--font-fraunces), Georgia, "Times New Roman", serif;
+    --ds-font-quote:
+      var(--font-fraunces), Georgia, "Times New Roman", serif;
+    --ds-font-mono:
+      var(--font-jetbrains-mono), "JetBrains Mono", "Fira Code", Consolas,
+      Monaco, "Courier New", monospace;
+    --ds-font-weight-display: 500;
+  }
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     saas-modern — Inter / Inter / Source Serif 4 / JetBrains
+     ───────────────────────────────────────────────────────────────────────── */
+  [data-font-preset="saas-modern"] {
+    --ds-font-sans:
+      var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-display:
+      var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-quote:
+      var(--font-source-serif), Georgia, "Times New Roman", serif;
+    --ds-font-mono:
+      var(--font-jetbrains-mono), "JetBrains Mono", "Fira Code", Consolas,
+      Monaco, "Courier New", monospace;
+    --ds-font-weight-display: 700;
+  }
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     saas-precision — Manrope / Manrope / Source Serif 4 / JetBrains
+     ───────────────────────────────────────────────────────────────────────── */
+  [data-font-preset="saas-precision"] {
+    --ds-font-sans:
+      var(--font-manrope), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-display:
+      var(--font-manrope), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-quote:
+      var(--font-source-serif), Georgia, "Times New Roman", serif;
+    --ds-font-mono:
+      var(--font-jetbrains-mono), "JetBrains Mono", "Fira Code", Consolas,
+      Monaco, "Courier New", monospace;
+    --ds-font-weight-display: 600;
+  }
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     consumer-bold — Inter / Montserrat / Playfair / Fira Code
+     ───────────────────────────────────────────────────────────────────────── */
+  [data-font-preset="consumer-bold"] {
+    --ds-font-sans:
+      var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-display:
+      var(--font-display), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-quote:
+      var(--font-playfair), Georgia, "Times New Roman", serif;
+    --ds-font-mono:
+      var(--font-fira-code), "Fira Code", Consolas, Monaco, "Courier New",
+      monospace;
+    --ds-font-weight-display: 900;
+  }
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     ai-technical — Sora / Sora / Sora / JetBrains
+     ───────────────────────────────────────────────────────────────────────── */
+  [data-font-preset="ai-technical"] {
+    --ds-font-sans:
+      var(--font-sora), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-display:
+      var(--font-sora), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-quote:
+      var(--font-sora), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-mono:
+      var(--font-jetbrains-mono), "JetBrains Mono", "Fira Code", Consolas,
+      Monaco, "Courier New", monospace;
+    --ds-font-weight-display: 700;
+  }
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     trust-warm — Inter / Source Serif 4 / Source Serif 4 / Fira Code
+     ───────────────────────────────────────────────────────────────────────── */
+  [data-font-preset="trust-warm"] {
+    --ds-font-sans:
+      var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-display:
+      var(--font-source-serif), Georgia, "Times New Roman", serif;
+    --ds-font-quote:
+      var(--font-source-serif), Georgia, "Times New Roman", serif;
+    --ds-font-mono:
+      var(--font-fira-code), "Fira Code", Consolas, Monaco, "Courier New",
+      monospace;
+    --ds-font-weight-display: 600;
+  }
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     ops-compact — Inter / Inter / Source Serif 4 / JetBrains
+     ───────────────────────────────────────────────────────────────────────── */
+  [data-font-preset="ops-compact"] {
+    --ds-font-sans:
+      var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-display:
+      var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Arial, sans-serif;
+    --ds-font-quote:
+      var(--font-source-serif), Georgia, "Times New Roman", serif;
+    --ds-font-mono:
+      var(--font-jetbrains-mono), "JetBrains Mono", "Fira Code", Consolas,
+      Monaco, "Courier New", monospace;
+    --ds-font-weight-display: 600;
+  }
+}

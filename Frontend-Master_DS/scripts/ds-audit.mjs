@@ -6,6 +6,7 @@ const repoRoot = process.cwd();
 const tokenFile = path.join(repoRoot, "src/ds/styles/ds.tokens.css");
 const additionalTokenSources = [
   path.join(repoRoot, "src/ds/styles/ds.typography.css"),
+  path.join(repoRoot, "src/ds/styles/ds.typography-presets.css"),
 ];
 const targets = [
   "src/ds/styles/ds.components.css",
@@ -14,6 +15,7 @@ const targets = [
   "src/ds/styles/ds.theme.css",
   "src/ds/styles/ds.section-variants.css",
   "src/ds/styles/ds.typography.css",
+  "src/ds/styles/ds.typography-presets.css",
 ].map((p) => path.join(repoRoot, p));
 
 const rules = [
