@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "counts": {
-    "variants": 45,
+    "variants": 68,
     "archetypes": 8,
     "motionPresets": 8,
     "themes": 2,
@@ -1345,6 +1345,434 @@
       "archetype": "modern-saas",
       "label": "Footer — Modern SaaS Minimal Strip",
       "description": "Single-row minimal footer; brand wordmark left, inline legal links centre, attribution right; collapses to centred stack below 720 px.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [],
+      "effects": {},
+      "density": "compact",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "hero-editorial-premium-2",
+      "kind": "hero",
+      "archetype": "editorial-premium",
+      "label": "Hero — Editorial Centred Display",
+      "description": "Centred display headline with narrow lede column and single primary CTA; max 60ch line length; restrained motion via rise-soft.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "features-editorial-premium-2",
+      "kind": "features",
+      "archetype": "editorial-premium",
+      "label": "Features — Editorial Numbered Stack",
+      "description": "Numbered editorial stack of features, large two-digit numerals, generous block padding, single column max-width 72rem.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "testimonials-editorial-premium-1",
+      "kind": "testimonials",
+      "archetype": "editorial-premium",
+      "label": "Testimonials — Editorial Large Quote",
+      "description": "Single oversized italic pull-quote, named attribution beneath; max 60rem container; fade-in only.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in",
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "testimonials-editorial-premium-2",
+      "kind": "testimonials",
+      "archetype": "editorial-premium",
+      "label": "Testimonials — Editorial 2-Column Quotes",
+      "description": "Two-column quote cards with serif emphasis on quote body; light surface-raised cards; max 80rem container.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "faq-editorial-premium-1",
+      "kind": "faq",
+      "archetype": "editorial-premium",
+      "label": "FAQ — Editorial Accordion",
+      "description": "Native details/summary accordion with hairline dividers and oversized question type; max 64rem container.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "faq-editorial-premium-2",
+      "kind": "faq",
+      "archetype": "editorial-premium",
+      "label": "FAQ — Editorial Two-Column List",
+      "description": "Two-column inline FAQ list (all answers visible); generous gap-10; max 80rem container.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "bloglist-editorial-premium-2",
+      "kind": "blogList",
+      "archetype": "editorial-premium",
+      "label": "Blog list — Editorial 2-Column Cards",
+      "description": "Two-column blog cards with 16:10 thumb, large title, restrained excerpt; max 80rem container.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "bloglist-editorial-premium-3",
+      "kind": "blogList",
+      "archetype": "editorial-premium",
+      "label": "Blog list — Editorial Indexed Rows",
+      "description": "Vertical indexed rows of posts with hairline dividers; max 64rem column for long-form reading.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "cta-editorial-premium-1",
+      "kind": "cta",
+      "archetype": "editorial-premium",
+      "label": "CTA — Editorial Centred Card",
+      "description": "Centred surface-raised card with kicker, h2, lede max 60ch, single primary CTA; padding-12.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "cta-editorial-premium-2",
+      "kind": "cta",
+      "archetype": "editorial-premium",
+      "label": "CTA — Editorial Banner Bar",
+      "description": "Horizontal accent banner bar with title-left, single CTA right; max 80rem; radius-xl.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "newsletter-editorial-premium-1",
+      "kind": "newsletter",
+      "archetype": "editorial-premium",
+      "label": "Newsletter — Editorial Centred Subscribe",
+      "description": "Centred subscribe form posting to /subscribe; native form (server-renderable); max 64rem; consent-friendly layout.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "newsletter-editorial-premium-2",
+      "kind": "newsletter",
+      "archetype": "editorial-premium",
+      "label": "Newsletter — Editorial Quiet Subscribe",
+      "description": "Quiet subscribe block, single line CTA, large headline, narrow inline form; emphasis on copy not chrome.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "stats-band-editorial-premium-1",
+      "kind": "stats-band",
+      "archetype": "editorial-premium",
+      "label": "Stats band — Editorial 4-Column",
+      "description": "Four large numeric stats with accent values and muted captions on surface; centred grid; max 80rem.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "process-steps-editorial-premium-1",
+      "kind": "process-steps",
+      "archetype": "editorial-premium",
+      "label": "Process steps — Editorial Numbered Vertical",
+      "description": "Vertical numbered process list with accent-soft circular badges; max 64rem; restrained motion.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "logo-cloud-editorial-premium-1",
+      "kind": "logo-cloud",
+      "archetype": "editorial-premium",
+      "label": "Logo cloud — Editorial Quiet Row",
+      "description": "Quiet logo wall with muted text labels in auto-fit grid; minimal chrome; centred row.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "case-studies-editorial-premium-1",
+      "kind": "case-studies",
+      "archetype": "editorial-premium",
+      "label": "Case studies — Editorial Magazine Grid",
+      "description": "Magazine-style 2-column case grid with 16:10 thumbs, tag pills, oversized titles; max 80rem.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "rich",
+      "isDefault": false
+    },
+    {
+      "id": "case-studies-editorial-premium-2",
+      "kind": "case-studies",
+      "archetype": "editorial-premium",
+      "label": "Case studies — Editorial 3-Column Index",
+      "description": "Three-column case index with smaller thumbs and dense tags; max 80rem; for archive pages.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "pricing-editorial-premium-1",
+      "kind": "pricing",
+      "archetype": "editorial-premium",
+      "label": "Pricing — Editorial Single Tier",
+      "description": "Single tier pricing card centred with editorial type ramp, no toggle, max 48rem; for boutique offerings.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "team-editorial-premium-1",
+      "kind": "team",
+      "archetype": "editorial-premium",
+      "label": "Team — Editorial 4-Column Portrait Grid",
+      "description": "Four-column portrait grid with circular avatars (96px), name + role + bio; max 80rem; spacious gap-6.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "team-editorial-premium-2",
+      "kind": "team",
+      "archetype": "editorial-premium",
+      "label": "Team — Editorial 2-Column Bio Grid",
+      "description": "Two-column larger portrait grid with longer bios; for leadership pages; max 80rem.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "rich",
+      "isDefault": false
+    },
+    {
+      "id": "contact-editorial-premium-1",
+      "kind": "contact",
+      "archetype": "editorial-premium",
+      "label": "Contact — Editorial Channel Cards",
+      "description": "Auto-fit channel cards (email/phone/address) on surface-raised; no inline form; max 64rem.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "footer-content-editorial-premium-1",
+      "kind": "footer-content",
+      "archetype": "editorial-premium",
+      "label": "Footer — Editorial Columns",
+      "description": "Brand block + multi-column nav + legal links + social row; surface-sunken; max 80rem.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "footer-content-editorial-premium-2",
+      "kind": "footer-content",
+      "archetype": "editorial-premium",
+      "label": "Footer — Editorial Minimal Row",
+      "description": "Single-row minimal footer: brand name + legal links + attribution; padding-8; for one-page sites.",
       "supportsThemes": [
         "dark",
         "light"

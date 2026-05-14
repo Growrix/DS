@@ -201,6 +201,32 @@ import {
   ContactModernSaasCenteredForm,
 } from "./variants/contact/contact-modern-saas-centered-form";
 
+
+// scaffold-variants batch — imports
+import { HERO_EDITORIAL_PREMIUM_2_META, HeroEditorialPremium2 } from "./variants/hero/hero-editorial-premium-2";
+import { FEATURES_EDITORIAL_PREMIUM_2_META, FeaturesEditorialPremium2 } from "./variants/features/features-editorial-premium-2";
+import { TESTIMONIALS_EDITORIAL_PREMIUM_1_META, TestimonialsEditorialPremium1 } from "./variants/testimonials/testimonials-editorial-premium-1";
+import { TESTIMONIALS_EDITORIAL_PREMIUM_2_META, TestimonialsEditorialPremium2 } from "./variants/testimonials/testimonials-editorial-premium-2";
+import { FAQ_EDITORIAL_PREMIUM_1_META, FaqEditorialPremium1 } from "./variants/faq/faq-editorial-premium-1";
+import { FAQ_EDITORIAL_PREMIUM_2_META, FaqEditorialPremium2 } from "./variants/faq/faq-editorial-premium-2";
+import { BLOGLIST_EDITORIAL_PREMIUM_2_META, BloglistEditorialPremium2 } from "./variants/blogList/bloglist-editorial-premium-2";
+import { BLOGLIST_EDITORIAL_PREMIUM_3_META, BloglistEditorialPremium3 } from "./variants/blogList/bloglist-editorial-premium-3";
+import { CTA_EDITORIAL_PREMIUM_1_META, CtaEditorialPremium1 } from "./variants/cta/cta-editorial-premium-1";
+import { CTA_EDITORIAL_PREMIUM_2_META, CtaEditorialPremium2 } from "./variants/cta/cta-editorial-premium-2";
+import { NEWSLETTER_EDITORIAL_PREMIUM_1_META, NewsletterEditorialPremium1 } from "./variants/newsletter/newsletter-editorial-premium-1";
+import { NEWSLETTER_EDITORIAL_PREMIUM_2_META, NewsletterEditorialPremium2 } from "./variants/newsletter/newsletter-editorial-premium-2";
+import { STATS_BAND_EDITORIAL_PREMIUM_1_META, StatsBandEditorialPremium1 } from "./variants/stats-band/stats-band-editorial-premium-1";
+import { PROCESS_STEPS_EDITORIAL_PREMIUM_1_META, ProcessStepsEditorialPremium1 } from "./variants/process-steps/process-steps-editorial-premium-1";
+import { LOGO_CLOUD_EDITORIAL_PREMIUM_1_META, LogoCloudEditorialPremium1 } from "./variants/logo-cloud/logo-cloud-editorial-premium-1";
+import { CASE_STUDIES_EDITORIAL_PREMIUM_1_META, CaseStudiesEditorialPremium1 } from "./variants/case-studies/case-studies-editorial-premium-1";
+import { CASE_STUDIES_EDITORIAL_PREMIUM_2_META, CaseStudiesEditorialPremium2 } from "./variants/case-studies/case-studies-editorial-premium-2";
+import { PRICING_EDITORIAL_PREMIUM_1_META, PricingEditorialPremium1 } from "./variants/pricing/pricing-editorial-premium-1";
+import { TEAM_EDITORIAL_PREMIUM_1_META, TeamEditorialPremium1 } from "./variants/team/team-editorial-premium-1";
+import { TEAM_EDITORIAL_PREMIUM_2_META, TeamEditorialPremium2 } from "./variants/team/team-editorial-premium-2";
+import { CONTACT_EDITORIAL_PREMIUM_1_META, ContactEditorialPremium1 } from "./variants/contact/contact-editorial-premium-1";
+import { FOOTER_CONTENT_EDITORIAL_PREMIUM_1_META, FooterContentEditorialPremium1 } from "./variants/footer-content/footer-content-editorial-premium-1";
+import { FOOTER_CONTENT_EDITORIAL_PREMIUM_2_META, FooterContentEditorialPremium2 } from "./variants/footer-content/footer-content-editorial-premium-2";
+
 import type {
   SectionKind,
   SectionRegistry,
@@ -420,6 +446,31 @@ export const SECTION_REGISTRY: SectionRegistry = {
     meta: FOOTER_CONTENT_MODERN_SAAS_MINIMAL_META,
     component: FooterContentModernSaasMinimal,
   },
+  // scaffold-variants batch — entries
+  [HERO_EDITORIAL_PREMIUM_2_META.id]: { meta: HERO_EDITORIAL_PREMIUM_2_META, component: HeroEditorialPremium2 },
+  [FEATURES_EDITORIAL_PREMIUM_2_META.id]: { meta: FEATURES_EDITORIAL_PREMIUM_2_META, component: FeaturesEditorialPremium2 },
+  [TESTIMONIALS_EDITORIAL_PREMIUM_1_META.id]: { meta: TESTIMONIALS_EDITORIAL_PREMIUM_1_META, component: TestimonialsEditorialPremium1 },
+  [TESTIMONIALS_EDITORIAL_PREMIUM_2_META.id]: { meta: TESTIMONIALS_EDITORIAL_PREMIUM_2_META, component: TestimonialsEditorialPremium2 },
+  [FAQ_EDITORIAL_PREMIUM_1_META.id]: { meta: FAQ_EDITORIAL_PREMIUM_1_META, component: FaqEditorialPremium1 },
+  [FAQ_EDITORIAL_PREMIUM_2_META.id]: { meta: FAQ_EDITORIAL_PREMIUM_2_META, component: FaqEditorialPremium2 },
+  [BLOGLIST_EDITORIAL_PREMIUM_2_META.id]: { meta: BLOGLIST_EDITORIAL_PREMIUM_2_META, component: BloglistEditorialPremium2 },
+  [BLOGLIST_EDITORIAL_PREMIUM_3_META.id]: { meta: BLOGLIST_EDITORIAL_PREMIUM_3_META, component: BloglistEditorialPremium3 },
+  [CTA_EDITORIAL_PREMIUM_1_META.id]: { meta: CTA_EDITORIAL_PREMIUM_1_META, component: CtaEditorialPremium1 },
+  [CTA_EDITORIAL_PREMIUM_2_META.id]: { meta: CTA_EDITORIAL_PREMIUM_2_META, component: CtaEditorialPremium2 },
+  [NEWSLETTER_EDITORIAL_PREMIUM_1_META.id]: { meta: NEWSLETTER_EDITORIAL_PREMIUM_1_META, component: NewsletterEditorialPremium1 },
+  [NEWSLETTER_EDITORIAL_PREMIUM_2_META.id]: { meta: NEWSLETTER_EDITORIAL_PREMIUM_2_META, component: NewsletterEditorialPremium2 },
+  [STATS_BAND_EDITORIAL_PREMIUM_1_META.id]: { meta: STATS_BAND_EDITORIAL_PREMIUM_1_META, component: StatsBandEditorialPremium1 },
+  [PROCESS_STEPS_EDITORIAL_PREMIUM_1_META.id]: { meta: PROCESS_STEPS_EDITORIAL_PREMIUM_1_META, component: ProcessStepsEditorialPremium1 },
+  [LOGO_CLOUD_EDITORIAL_PREMIUM_1_META.id]: { meta: LOGO_CLOUD_EDITORIAL_PREMIUM_1_META, component: LogoCloudEditorialPremium1 },
+  [CASE_STUDIES_EDITORIAL_PREMIUM_1_META.id]: { meta: CASE_STUDIES_EDITORIAL_PREMIUM_1_META, component: CaseStudiesEditorialPremium1 },
+  [CASE_STUDIES_EDITORIAL_PREMIUM_2_META.id]: { meta: CASE_STUDIES_EDITORIAL_PREMIUM_2_META, component: CaseStudiesEditorialPremium2 },
+  [PRICING_EDITORIAL_PREMIUM_1_META.id]: { meta: PRICING_EDITORIAL_PREMIUM_1_META, component: PricingEditorialPremium1 },
+  [TEAM_EDITORIAL_PREMIUM_1_META.id]: { meta: TEAM_EDITORIAL_PREMIUM_1_META, component: TeamEditorialPremium1 },
+  [TEAM_EDITORIAL_PREMIUM_2_META.id]: { meta: TEAM_EDITORIAL_PREMIUM_2_META, component: TeamEditorialPremium2 },
+  [CONTACT_EDITORIAL_PREMIUM_1_META.id]: { meta: CONTACT_EDITORIAL_PREMIUM_1_META, component: ContactEditorialPremium1 },
+  [FOOTER_CONTENT_EDITORIAL_PREMIUM_1_META.id]: { meta: FOOTER_CONTENT_EDITORIAL_PREMIUM_1_META, component: FooterContentEditorialPremium1 },
+  [FOOTER_CONTENT_EDITORIAL_PREMIUM_2_META.id]: { meta: FOOTER_CONTENT_EDITORIAL_PREMIUM_2_META, component: FooterContentEditorialPremium2 },
+
 };
 
 /** Convenience: array of all metadata entries. */
