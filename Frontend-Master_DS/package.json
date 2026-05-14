@@ -14,6 +14,7 @@
     "ds:contract": "jest --runInBand --testPathPatterns=ds-contract.gen.test",
     "ds:font-audit": "node scripts/ds-font-audit.mjs",
     "ds:coverage": "node scripts/ds-coverage.mjs",
+    "ds:seo-check": "node scripts/ds-seo-check.mjs",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci",

@@ -4,6 +4,7 @@ export * from "./contentAdapter";
 export { createInMemoryContentAdapter as createInMemoryAdapter } from "./adapters/inMemory";
 export { createMarkdownContentAdapter } from "./adapters/markdown";
 export { createMdxContentAdapter } from "./adapters/mdx";
+export * from "./seo";
 
 export * from "./PublicPresetPage";
 export * from "./PublicSiteHeader";

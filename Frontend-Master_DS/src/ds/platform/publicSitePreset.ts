@@ -5,6 +5,7 @@ import type {
 } from "./siteConfig";
 import type { ArchetypeId } from "../foundation/themes/archetypeRegistry";
 import type { FontPresetId } from "../foundation/typography/fontPresetRegistry";
+import type { SeoModel, SeoOrganization, SeoLocalBusiness } from "./seo/types";
 
 export type PublicSectionHeaderModel = {
   kicker?: string;
@@ -228,6 +229,8 @@ export type PublicPageModel = {
    * the archetype's `defaultFontPresetId`).
    */
   typography?: { fontPresetId?: FontPresetId };
+  /** Per-page SEO override block. Merged over the preset's site-wide `seo`. */
+  seo?: SeoModel;
   sections: PublicSectionModel[];
 };
 
@@ -243,4 +246,10 @@ export type PublicSitePreset = {
   typography?: { fontPresetId?: FontPresetId };
   config: SiteConfig;
   pages: Record<string, PublicPageModel>;
+  /** Site-wide SEO block. Per-page overrides take precedence via `page.seo`. */
+  seo?: SeoModel;
+  /** Organization JSON-LD payload — emitted site-wide when present. */
+  organization?: SeoOrganization;
+  /** Local-business JSON-LD payload — for trade/services sites. */
+  localBusiness?: SeoLocalBusiness;
 };
