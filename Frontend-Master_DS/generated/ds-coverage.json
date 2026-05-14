@@ -1,0 +1,250 @@
+{
+  "generatedFrom": "generated/ds.contract.json",
+  "kinds": [
+    "hero",
+    "features",
+    "testimonials",
+    "faq",
+    "blogList",
+    "cta",
+    "newsletter",
+    "stats-band",
+    "process-steps",
+    "logo-cloud",
+    "case-studies",
+    "pricing",
+    "team",
+    "contact",
+    "footer-content"
+  ],
+  "archetypes": [
+    "editorial-premium",
+    "modern-saas",
+    "bold-consumer",
+    "ai-product",
+    "startup-conversion",
+    "local-business-trust",
+    "dashboard-ops",
+    "portfolio-craft"
+  ],
+  "matrix": {
+    "hero": {
+      "editorial-premium": 2,
+      "modern-saas": 3,
+      "bold-consumer": 3,
+      "ai-product": 3,
+      "startup-conversion": 2,
+      "local-business-trust": 2,
+      "dashboard-ops": 1,
+      "portfolio-craft": 2
+    },
+    "features": {
+      "editorial-premium": 2,
+      "modern-saas": 3,
+      "bold-consumer": 2,
+      "ai-product": 2,
+      "startup-conversion": 2,
+      "local-business-trust": 2,
+      "dashboard-ops": 1,
+      "portfolio-craft": 1
+    },
+    "testimonials": {
+      "editorial-premium": 2,
+      "modern-saas": 2,
+      "bold-consumer": 2,
+      "ai-product": 2,
+      "startup-conversion": 1,
+      "local-business-trust": 1,
+      "dashboard-ops": 0,
+      "portfolio-craft": 1
+    },
+    "faq": {
+      "editorial-premium": 2,
+      "modern-saas": 2,
+      "bold-consumer": 1,
+      "ai-product": 1,
+      "startup-conversion": 1,
+      "local-business-trust": 1,
+      "dashboard-ops": 1,
+      "portfolio-craft": 1
+    },
+    "blogList": {
+      "editorial-premium": 3,
+      "modern-saas": 2,
+      "bold-consumer": 1,
+      "ai-product": 1,
+      "startup-conversion": 1,
+      "local-business-trust": 1,
+      "dashboard-ops": 0,
+      "portfolio-craft": 1
+    },
+    "cta": {
+      "editorial-premium": 2,
+      "modern-saas": 3,
+      "bold-consumer": 2,
+      "ai-product": 2,
+      "startup-conversion": 2,
+      "local-business-trust": 2,
+      "dashboard-ops": 1,
+      "portfolio-craft": 1
+    },
+    "newsletter": {
+      "editorial-premium": 2,
+      "modern-saas": 2,
+      "bold-consumer": 1,
+      "ai-product": 1,
+      "startup-conversion": 2,
+      "local-business-trust": 1,
+      "dashboard-ops": 0,
+      "portfolio-craft": 0
+    },
+    "stats-band": {
+      "editorial-premium": 1,
+      "modern-saas": 2,
+      "bold-consumer": 1,
+      "ai-product": 1,
+      "startup-conversion": 1,
+      "local-business-trust": 1,
+      "dashboard-ops": 1,
+      "portfolio-craft": 0
+    },
+    "process-steps": {
+      "editorial-premium": 1,
+      "modern-saas": 2,
+      "bold-consumer": 1,
+      "ai-product": 1,
+      "startup-conversion": 1,
+      "local-business-trust": 1,
+      "dashboard-ops": 1,
+      "portfolio-craft": 0
+    },
+    "logo-cloud": {
+      "editorial-premium": 1,
+      "modern-saas": 2,
+      "bold-consumer": 1,
+      "ai-product": 1,
+      "startup-conversion": 1,
+      "local-business-trust": 1,
+      "dashboard-ops": 0,
+      "portfolio-craft": 1
+    },
+    "case-studies": {
+      "editorial-premium": 2,
+      "modern-saas": 1,
+      "bold-consumer": 1,
+      "ai-product": 1,
+      "startup-conversion": 0,
+      "local-business-trust": 1,
+      "dashboard-ops": 1,
+      "portfolio-craft": 2
+    },
+    "pricing": {
+      "editorial-premium": 1,
+      "modern-saas": 4,
+      "bold-consumer": 1,
+      "ai-product": 1,
+      "startup-conversion": 1,
+      "local-business-trust": 1,
+      "dashboard-ops": 0,
+      "portfolio-craft": 0
+    },
+    "team": {
+      "editorial-premium": 2,
+      "modern-saas": 2,
+      "bold-consumer": 1,
+      "ai-product": 1,
+      "startup-conversion": 1,
+      "local-business-trust": 1,
+      "dashboard-ops": 1,
+      "portfolio-craft": 2
+    },
+    "contact": {
+      "editorial-premium": 1,
+      "modern-saas": 2,
+      "bold-consumer": 1,
+      "ai-product": 1,
+      "startup-conversion": 1,
+      "local-business-trust": 1,
+      "dashboard-ops": 0,
+      "portfolio-craft": 1
+    },
+    "footer-content": {
+      "editorial-premium": 2,
+      "modern-saas": 2,
+      "bold-consumer": 0,
+      "ai-product": 1,
+      "startup-conversion": 0,
+      "local-business-trust": 0,
+      "dashboard-ops": 0,
+      "portfolio-craft": 1
+    }
+  },
+  "totals": {
+    "variants": 155,
+    "cells": 120,
+    "emptyCells": 15
+  },
+  "gaps": [
+    {
+      "kind": "testimonials",
+      "archetype": "dashboard-ops"
+    },
+    {
+      "kind": "blogList",
+      "archetype": "dashboard-ops"
+    },
+    {
+      "kind": "newsletter",
+      "archetype": "dashboard-ops"
+    },
+    {
+      "kind": "newsletter",
+      "archetype": "portfolio-craft"
+    },
+    {
+      "kind": "stats-band",
+      "archetype": "portfolio-craft"
+    },
+    {
+      "kind": "process-steps",
+      "archetype": "portfolio-craft"
+    },
+    {
+      "kind": "logo-cloud",
+      "archetype": "dashboard-ops"
+    },
+    {
+      "kind": "case-studies",
+      "archetype": "startup-conversion"
+    },
+    {
+      "kind": "pricing",
+      "archetype": "dashboard-ops"
+    },
+    {
+      "kind": "pricing",
+      "archetype": "portfolio-craft"
+    },
+    {
+      "kind": "contact",
+      "archetype": "dashboard-ops"
+    },
+    {
+      "kind": "footer-content",
+      "archetype": "bold-consumer"
+    },
+    {
+      "kind": "footer-content",
+      "archetype": "startup-conversion"
+    },
+    {
+      "kind": "footer-content",
+      "archetype": "local-business-trust"
+    },
+    {
+      "kind": "footer-content",
+      "archetype": "dashboard-ops"
+    }
+  ],
+  "wireframeOffArchetypeReuses": []
+}

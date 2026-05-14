@@ -13,6 +13,7 @@
     "ds:a11y": "jest --runInBand src/ds/components/__tests__/keyboard.a11y.test.tsx src/ds/components/__tests__/keyboard-extended.a11y.test.tsx src/ds/runtime/app/mobile/__tests__/Sheet.test.tsx",
     "ds:contract": "jest --runInBand --testPathPatterns=ds-contract.gen.test",
     "ds:font-audit": "node scripts/ds-font-audit.mjs",
+    "ds:coverage": "node scripts/ds-coverage.mjs",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci",
