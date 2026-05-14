@@ -269,6 +269,25 @@ import { TEAM_AI_PRODUCT_1_META, TeamAiProduct1 } from "./variants/team/team-ai-
 import { CONTACT_AI_PRODUCT_1_META, ContactAiProduct1 } from "./variants/contact/contact-ai-product-1";
 import { FOOTER_CONTENT_AI_PRODUCT_1_META, FooterContentAiProduct1 } from "./variants/footer-content/footer-content-ai-product-1";
 
+
+// scaffold-variants batch — imports
+import { HERO_STARTUP_CONVERSION_1_META, HeroStartupConversion1 } from "./variants/hero/hero-startup-conversion-1";
+import { HERO_STARTUP_CONVERSION_2_META, HeroStartupConversion2 } from "./variants/hero/hero-startup-conversion-2";
+import { FEATURES_STARTUP_CONVERSION_1_META, FeaturesStartupConversion1 } from "./variants/features/features-startup-conversion-1";
+import { FEATURES_STARTUP_CONVERSION_2_META, FeaturesStartupConversion2 } from "./variants/features/features-startup-conversion-2";
+import { TESTIMONIALS_STARTUP_CONVERSION_1_META, TestimonialsStartupConversion1 } from "./variants/testimonials/testimonials-startup-conversion-1";
+import { FAQ_STARTUP_CONVERSION_1_META, FaqStartupConversion1 } from "./variants/faq/faq-startup-conversion-1";
+import { BLOGLIST_STARTUP_CONVERSION_1_META, BloglistStartupConversion1 } from "./variants/blogList/bloglist-startup-conversion-1";
+import { CTA_STARTUP_CONVERSION_1_META, CtaStartupConversion1 } from "./variants/cta/cta-startup-conversion-1";
+import { CTA_STARTUP_CONVERSION_2_META, CtaStartupConversion2 } from "./variants/cta/cta-startup-conversion-2";
+import { NEWSLETTER_STARTUP_CONVERSION_2_META, NewsletterStartupConversion2 } from "./variants/newsletter/newsletter-startup-conversion-2";
+import { STATS_BAND_STARTUP_CONVERSION_1_META, StatsBandStartupConversion1 } from "./variants/stats-band/stats-band-startup-conversion-1";
+import { PROCESS_STEPS_STARTUP_CONVERSION_1_META, ProcessStepsStartupConversion1 } from "./variants/process-steps/process-steps-startup-conversion-1";
+import { LOGO_CLOUD_STARTUP_CONVERSION_1_META, LogoCloudStartupConversion1 } from "./variants/logo-cloud/logo-cloud-startup-conversion-1";
+import { PRICING_STARTUP_CONVERSION_1_META, PricingStartupConversion1 } from "./variants/pricing/pricing-startup-conversion-1";
+import { TEAM_STARTUP_CONVERSION_1_META, TeamStartupConversion1 } from "./variants/team/team-startup-conversion-1";
+import { CONTACT_STARTUP_CONVERSION_1_META, ContactStartupConversion1 } from "./variants/contact/contact-startup-conversion-1";
+
 import type {
   SectionKind,
   SectionRegistry,
@@ -552,6 +571,24 @@ export const SECTION_REGISTRY: SectionRegistry = {
   [TEAM_AI_PRODUCT_1_META.id]: { meta: TEAM_AI_PRODUCT_1_META, component: TeamAiProduct1 },
   [CONTACT_AI_PRODUCT_1_META.id]: { meta: CONTACT_AI_PRODUCT_1_META, component: ContactAiProduct1 },
   [FOOTER_CONTENT_AI_PRODUCT_1_META.id]: { meta: FOOTER_CONTENT_AI_PRODUCT_1_META, component: FooterContentAiProduct1 },
+
+  // scaffold-variants batch — entries
+  [HERO_STARTUP_CONVERSION_1_META.id]: { meta: HERO_STARTUP_CONVERSION_1_META, component: HeroStartupConversion1 },
+  [HERO_STARTUP_CONVERSION_2_META.id]: { meta: HERO_STARTUP_CONVERSION_2_META, component: HeroStartupConversion2 },
+  [FEATURES_STARTUP_CONVERSION_1_META.id]: { meta: FEATURES_STARTUP_CONVERSION_1_META, component: FeaturesStartupConversion1 },
+  [FEATURES_STARTUP_CONVERSION_2_META.id]: { meta: FEATURES_STARTUP_CONVERSION_2_META, component: FeaturesStartupConversion2 },
+  [TESTIMONIALS_STARTUP_CONVERSION_1_META.id]: { meta: TESTIMONIALS_STARTUP_CONVERSION_1_META, component: TestimonialsStartupConversion1 },
+  [FAQ_STARTUP_CONVERSION_1_META.id]: { meta: FAQ_STARTUP_CONVERSION_1_META, component: FaqStartupConversion1 },
+  [BLOGLIST_STARTUP_CONVERSION_1_META.id]: { meta: BLOGLIST_STARTUP_CONVERSION_1_META, component: BloglistStartupConversion1 },
+  [CTA_STARTUP_CONVERSION_1_META.id]: { meta: CTA_STARTUP_CONVERSION_1_META, component: CtaStartupConversion1 },
+  [CTA_STARTUP_CONVERSION_2_META.id]: { meta: CTA_STARTUP_CONVERSION_2_META, component: CtaStartupConversion2 },
+  [NEWSLETTER_STARTUP_CONVERSION_2_META.id]: { meta: NEWSLETTER_STARTUP_CONVERSION_2_META, component: NewsletterStartupConversion2 },
+  [STATS_BAND_STARTUP_CONVERSION_1_META.id]: { meta: STATS_BAND_STARTUP_CONVERSION_1_META, component: StatsBandStartupConversion1 },
+  [PROCESS_STEPS_STARTUP_CONVERSION_1_META.id]: { meta: PROCESS_STEPS_STARTUP_CONVERSION_1_META, component: ProcessStepsStartupConversion1 },
+  [LOGO_CLOUD_STARTUP_CONVERSION_1_META.id]: { meta: LOGO_CLOUD_STARTUP_CONVERSION_1_META, component: LogoCloudStartupConversion1 },
+  [PRICING_STARTUP_CONVERSION_1_META.id]: { meta: PRICING_STARTUP_CONVERSION_1_META, component: PricingStartupConversion1 },
+  [TEAM_STARTUP_CONVERSION_1_META.id]: { meta: TEAM_STARTUP_CONVERSION_1_META, component: TeamStartupConversion1 },
+  [CONTACT_STARTUP_CONVERSION_1_META.id]: { meta: CONTACT_STARTUP_CONVERSION_1_META, component: ContactStartupConversion1 },
 
 };
 
