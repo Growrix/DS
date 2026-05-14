@@ -807,6 +807,1247 @@
     to { opacity: 1; filter: blur(0); }
   }
 
+  /* ============================================================
+     HERO — modern-saas-screenshot-below
+     Centered headline + paired CTAs above a wide screenshot frame
+     ============================================================ */
+  .sv-hero-modern-saas-screenshot-below {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: start;
+    gap: clamp(var(--ds-space-6), 4vh, var(--ds-space-10));
+    padding: clamp(var(--ds-space-10), 10vh, var(--ds-space-16)) clamp(var(--ds-space-4), 6vw, var(--ds-space-16));
+    background-color: var(--ds-color-background);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sv-hero-modern-saas-screenshot-below__mesh {
+    background:
+      radial-gradient(50% 50% at 50% 0%, var(--ds-color-accent-soft-strong) 0%, transparent 70%),
+      radial-gradient(40% 40% at 20% 80%, color-mix(in oklab, var(--ds-color-accent) 10%, transparent) 0%, transparent 70%);
+  }
+
+  .sv-hero-modern-saas-screenshot-below__copy {
+    max-width: 56ch;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-5);
+  }
+
+  .sv-hero-modern-saas-screenshot-below__kicker {
+    font-size: var(--ds-font-size-3);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ds-color-accent, var(--ds-palette-brand-400));
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+
+  .sv-hero-modern-saas-screenshot-below__title {
+    font-size: clamp(2.5rem, 5vw + 1rem, 5rem);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    font-weight: var(--ds-font-weight-bold, 700);
+    margin: 0;
+  }
+
+  .sv-hero-modern-saas-screenshot-below__lede {
+    font-size: var(--ds-font-size-7);
+    line-height: 1.55;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  .sv-hero-modern-saas-screenshot-below__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ds-space-3);
+    justify-content: center;
+    margin-top: var(--ds-space-2);
+  }
+
+  .sv-hero-modern-saas-screenshot-below__trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ds-space-3);
+    justify-content: center;
+    margin-top: var(--ds-space-3);
+  }
+
+  .sv-hero-modern-saas-screenshot-below__chip {
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-foreground-secondary);
+    padding: var(--ds-space-1) var(--ds-space-3);
+    border: 1px solid var(--ds-color-border);
+    border-radius: var(--ds-radius-full);
+    background: color-mix(in oklab, var(--ds-color-surface-raised) 60%, transparent);
+    backdrop-filter: blur(8px);
+  }
+
+  .sv-hero-modern-saas-screenshot-below__frame {
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--ds-radius-xl, 1.5rem);
+    border: 1px solid var(--ds-color-border);
+    overflow: hidden;
+    background:
+      linear-gradient(180deg, var(--ds-color-surface-raised) 0%, var(--ds-color-surface) 100%);
+    box-shadow: var(--ds-shadow-xl);
+    position: relative;
+  }
+
+  .sv-hero-modern-saas-screenshot-below__shot,
+  .sv-hero-modern-saas-screenshot-below__shot-placeholder {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sv-hero-modern-saas-screenshot-below__shot-placeholder {
+    background:
+      radial-gradient(50% 60% at 50% 40%, var(--ds-color-accent-soft) 0%, transparent 70%),
+      linear-gradient(135deg, var(--ds-color-surface-raised) 0%, var(--ds-color-surface) 100%);
+  }
+
+  /* ============================================================
+     HERO — modern-saas-bento-right
+     Left copy + right 2x2 glassmorphic bento grid
+     ============================================================ */
+  .sv-hero-modern-saas-bento-right {
+    min-height: 85svh;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: clamp(var(--ds-space-6), 4vw, var(--ds-space-12));
+    padding: clamp(var(--ds-space-8), 8vh, var(--ds-space-16)) clamp(var(--ds-space-4), 6vw, var(--ds-space-16));
+    background-color: var(--ds-color-background);
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media (max-width: 900px) {
+    .sv-hero-modern-saas-bento-right {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sv-hero-modern-saas-bento-right__mesh {
+    background:
+      radial-gradient(55% 55% at 85% 15%, var(--ds-color-accent-soft-strong) 0%, transparent 70%),
+      radial-gradient(45% 45% at 15% 85%, color-mix(in oklab, var(--ds-color-accent) 12%, transparent) 0%, transparent 70%);
+  }
+
+  .sv-hero-modern-saas-bento-right__copy {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-5);
+    max-width: 56ch;
+  }
+
+  .sv-hero-modern-saas-bento-right__kicker {
+    font-size: var(--ds-font-size-3);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ds-color-accent, var(--ds-palette-brand-400));
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+
+  .sv-hero-modern-saas-bento-right__title {
+    font-size: clamp(2.25rem, 4vw + 1rem, 4.25rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    font-weight: var(--ds-font-weight-bold, 700);
+    margin: 0;
+  }
+
+  .sv-hero-modern-saas-bento-right__lede {
+    font-size: var(--ds-font-size-7);
+    line-height: 1.55;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  .sv-hero-modern-saas-bento-right__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ds-space-3);
+    margin-top: var(--ds-space-3);
+  }
+
+  .sv-hero-modern-saas-bento-right__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: var(--ds-space-4);
+    aspect-ratio: 5 / 4;
+  }
+
+  .sv-hero-modern-saas-bento-right__tile {
+    padding: var(--ds-space-5);
+    border-radius: var(--ds-radius-lg, 1rem);
+    border: 1px solid var(--ds-color-border);
+    background: color-mix(in oklab, var(--ds-color-surface-raised) 70%, transparent);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: var(--ds-space-2);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sv-hero-modern-saas-bento-right__tile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, var(--ds-color-accent-soft-strong), transparent 60%);
+    /* Gradient-border trick: mask shape uses an opaque token; only the alpha channel matters. */
+    mask:
+      linear-gradient(var(--ds-palette-neutral-0) 0 0) content-box,
+      linear-gradient(var(--ds-palette-neutral-0) 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .sv-hero-modern-saas-bento-right__tile-title {
+    font-size: var(--ds-font-size-6);
+    font-weight: var(--ds-font-weight-semibold, 600);
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  .sv-hero-modern-saas-bento-right__tile-body {
+    font-size: var(--ds-font-size-4);
+    color: var(--ds-color-foreground);
+    line-height: 1.5;
+  }
+
+  /* ============================================================
+     FEATURES — modern-saas-3col-icons
+     Clean 3-column icon-led feature grid
+     ============================================================ */
+  .sv-features-modern-saas-3col-icons {
+    padding: clamp(var(--ds-space-12), 10vh, var(--ds-space-20)) clamp(var(--ds-space-4), 6vw, var(--ds-space-16));
+    background-color: var(--ds-color-background);
+  }
+
+  .sv-features-modern-saas-3col-icons__inner {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(var(--ds-space-8), 6vh, var(--ds-space-12));
+  }
+
+  .sv-features-modern-saas-3col-icons__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-4);
+    max-width: 60ch;
+  }
+
+  .sv-features-modern-saas-3col-icons__kicker {
+    font-size: var(--ds-font-size-3);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ds-color-accent, var(--ds-palette-brand-400));
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+
+  .sv-features-modern-saas-3col-icons__title {
+    font-size: clamp(2rem, 3vw + 1rem, 3rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    font-weight: var(--ds-font-weight-bold, 700);
+    margin: 0;
+  }
+
+  .sv-features-modern-saas-3col-icons__lede {
+    font-size: var(--ds-font-size-6);
+    line-height: 1.6;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  .sv-features-modern-saas-3col-icons__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(var(--ds-space-4), 3vw, var(--ds-space-8));
+  }
+
+  @media (max-width: 900px) {
+    .sv-features-modern-saas-3col-icons__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 600px) {
+    .sv-features-modern-saas-3col-icons__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sv-features-modern-saas-3col-icons__item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-3);
+    padding: var(--ds-space-6);
+    border-radius: var(--ds-radius-lg, 1rem);
+    border: 1px solid var(--ds-color-border);
+    background: var(--ds-color-surface);
+  }
+
+  .sv-features-modern-saas-3col-icons__icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: var(--ds-radius-full);
+    background: var(--ds-color-accent-soft, var(--ds-palette-brand-50));
+    color: var(--ds-color-accent, var(--ds-palette-brand-600));
+    display: grid;
+    place-items: center;
+    font-weight: var(--ds-font-weight-bold, 700);
+  }
+
+  .sv-features-modern-saas-3col-icons__item-title {
+    font-size: var(--ds-font-size-7);
+    line-height: 1.3;
+    font-weight: var(--ds-font-weight-semibold, 600);
+    margin: 0;
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  .sv-features-modern-saas-3col-icons__item-body {
+    font-size: var(--ds-font-size-4);
+    line-height: 1.6;
+    color: var(--ds-color-foreground);
+    margin: 0;
+  }
+
+  /* ============================================================
+     FEATURES — modern-saas-tabs
+     Vertical tab list + glassmorphic preview panel
+     ============================================================ */
+  .sv-features-modern-saas-tabs {
+    padding: clamp(var(--ds-space-12), 10vh, var(--ds-space-20)) clamp(var(--ds-space-4), 6vw, var(--ds-space-16));
+    background-color: var(--ds-color-background);
+  }
+
+  .sv-features-modern-saas-tabs__inner {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(var(--ds-space-8), 6vh, var(--ds-space-12));
+  }
+
+  .sv-features-modern-saas-tabs__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-4);
+    max-width: 60ch;
+  }
+
+  .sv-features-modern-saas-tabs__kicker {
+    font-size: var(--ds-font-size-3);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ds-color-accent, var(--ds-palette-brand-400));
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+
+  .sv-features-modern-saas-tabs__title {
+    font-size: clamp(2rem, 3vw + 1rem, 3rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    font-weight: var(--ds-font-weight-bold, 700);
+    margin: 0;
+  }
+
+  .sv-features-modern-saas-tabs__lede {
+    font-size: var(--ds-font-size-6);
+    line-height: 1.6;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  .sv-features-modern-saas-tabs__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr);
+    gap: clamp(var(--ds-space-6), 4vw, var(--ds-space-10));
+    align-items: start;
+  }
+
+  @media (max-width: 900px) {
+    .sv-features-modern-saas-tabs__layout {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sv-features-modern-saas-tabs__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-2);
+  }
+
+  .sv-features-modern-saas-tabs__tab {
+    text-align: left;
+    padding: var(--ds-space-4) var(--ds-space-5);
+    border-radius: var(--ds-radius-md, 0.75rem);
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-1);
+    color: var(--ds-color-foreground);
+    transition: background var(--ds-duration-fastest) var(--ds-ease-out),
+      border-color var(--ds-duration-fastest) var(--ds-ease-out);
+  }
+
+  .sv-features-modern-saas-tabs__tab:hover {
+    background: var(--ds-color-surface-raised);
+  }
+
+  .sv-features-modern-saas-tabs__tab.is-active {
+    background: var(--ds-color-surface-raised);
+    border-color: var(--ds-color-accent, var(--ds-palette-brand-400));
+  }
+
+  .sv-features-modern-saas-tabs__tab-title {
+    font-size: var(--ds-font-size-6);
+    font-weight: var(--ds-font-weight-semibold, 600);
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  .sv-features-modern-saas-tabs__tab-body {
+    font-size: var(--ds-font-size-4);
+    line-height: 1.55;
+    color: var(--ds-color-foreground);
+  }
+
+  .sv-features-modern-saas-tabs__panel {
+    border-radius: var(--ds-radius-xl, 1.5rem);
+    border: 1px solid var(--ds-color-border);
+    background: color-mix(in oklab, var(--ds-color-surface-raised) 70%, transparent);
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    position: relative;
+  }
+
+  .sv-features-modern-saas-tabs__panel-media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sv-features-modern-saas-tabs__panel-placeholder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: var(--ds-space-8);
+    background:
+      radial-gradient(50% 60% at 50% 40%, var(--ds-color-accent-soft) 0%, transparent 70%),
+      linear-gradient(135deg, var(--ds-color-surface-raised) 0%, var(--ds-color-surface) 100%);
+  }
+
+  .sv-features-modern-saas-tabs__panel-placeholder-title {
+    font-size: var(--ds-font-size-9);
+    font-weight: var(--ds-font-weight-semibold, 600);
+    color: var(--ds-color-foreground-secondary);
+    text-align: center;
+  }
+
+  /* ============================================================
+     CTA — modern-saas-card
+     Centered bordered card with mesh backdrop + paired CTAs
+     ============================================================ */
+  .sv-cta-modern-saas-card {
+    padding: clamp(var(--ds-space-10), 8vh, var(--ds-space-20)) clamp(var(--ds-space-4), 6vw, var(--ds-space-16));
+    background-color: var(--ds-color-background);
+    display: grid;
+    place-items: center;
+  }
+
+  .sv-cta-modern-saas-card__card {
+    position: relative;
+    max-width: 64rem;
+    width: 100%;
+    border-radius: var(--ds-radius-xl, 1.5rem);
+    border: 1px solid var(--ds-color-border);
+    background: color-mix(in oklab, var(--ds-color-surface-raised) 80%, transparent);
+    backdrop-filter: blur(16px);
+    padding: clamp(var(--ds-space-8), 6vh, var(--ds-space-14)) clamp(var(--ds-space-6), 5vw, var(--ds-space-12));
+    overflow: hidden;
+  }
+
+  .sv-cta-modern-saas-card__mesh {
+    background:
+      radial-gradient(60% 60% at 20% 20%, var(--ds-color-accent-soft-strong) 0%, transparent 70%),
+      radial-gradient(50% 50% at 80% 80%, color-mix(in oklab, var(--ds-color-accent) 14%, transparent) 0%, transparent 70%);
+  }
+
+  .sv-cta-modern-saas-card__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-4);
+    align-items: center;
+    text-align: center;
+    max-width: 60ch;
+    margin: 0 auto;
+  }
+
+  .sv-cta-modern-saas-card__kicker {
+    font-size: var(--ds-font-size-3);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ds-color-accent, var(--ds-palette-brand-400));
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+
+  .sv-cta-modern-saas-card__title {
+    font-size: clamp(2rem, 3vw + 1rem, 3.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: var(--ds-font-weight-bold, 700);
+    margin: 0;
+  }
+
+  .sv-cta-modern-saas-card__lede {
+    font-size: var(--ds-font-size-6);
+    line-height: 1.55;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  .sv-cta-modern-saas-card__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ds-space-3);
+    justify-content: center;
+    margin-top: var(--ds-space-3);
+  }
+
+  /* ============================================================
+     CTA — modern-saas-banner-strip
+     Full-width inline banner: title left, actions right
+     ============================================================ */
+  .sv-cta-modern-saas-banner-strip {
+    padding: clamp(var(--ds-space-6), 4vh, var(--ds-space-10)) clamp(var(--ds-space-4), 6vw, var(--ds-space-16));
+    background-color: var(--ds-color-background);
+    border-block: 1px solid var(--ds-color-border);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sv-cta-modern-saas-banner-strip__mesh {
+    background:
+      radial-gradient(40% 100% at 0% 50%, var(--ds-color-accent-soft-strong) 0%, transparent 70%);
+  }
+
+  .sv-cta-modern-saas-banner-strip__inner {
+    position: relative;
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(var(--ds-space-4), 3vw, var(--ds-space-8));
+    flex-wrap: wrap;
+  }
+
+  .sv-cta-modern-saas-banner-strip__copy {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-2);
+    max-width: 60ch;
+  }
+
+  .sv-cta-modern-saas-banner-strip__kicker {
+    font-size: var(--ds-font-size-3);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ds-color-accent, var(--ds-palette-brand-400));
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+
+  .sv-cta-modern-saas-banner-strip__title {
+    font-size: clamp(1.5rem, 2vw + 0.5rem, 2.25rem);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    font-weight: var(--ds-font-weight-semibold, 600);
+    margin: 0;
+  }
+
+  .sv-cta-modern-saas-banner-strip__lede {
+    font-size: var(--ds-font-size-5);
+    line-height: 1.55;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  .sv-cta-modern-saas-banner-strip__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ds-space-3);
+  }
+
+  /* ============================================================
+     CTA — modern-saas-split-with-form
+     Left copy column + right inline email capture form
+     ============================================================ */
+  .sv-cta-modern-saas-split-with-form {
+    padding: clamp(var(--ds-space-10), 8vh, var(--ds-space-16)) clamp(var(--ds-space-4), 6vw, var(--ds-space-16));
+    background-color: var(--ds-color-background);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sv-cta-modern-saas-split-with-form__mesh {
+    background:
+      radial-gradient(55% 55% at 80% 20%, var(--ds-color-accent-soft-strong) 0%, transparent 70%),
+      radial-gradient(45% 45% at 20% 80%, color-mix(in oklab, var(--ds-color-accent) 12%, transparent) 0%, transparent 70%);
+  }
+
+  .sv-cta-modern-saas-split-with-form__inner {
+    position: relative;
+    max-width: 80rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: clamp(var(--ds-space-6), 4vw, var(--ds-space-12));
+    align-items: center;
+  }
+
+  @media (max-width: 900px) {
+    .sv-cta-modern-saas-split-with-form__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sv-cta-modern-saas-split-with-form__copy {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-4);
+    max-width: 56ch;
+  }
+
+  .sv-cta-modern-saas-split-with-form__kicker {
+    font-size: var(--ds-font-size-3);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ds-color-accent, var(--ds-palette-brand-400));
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+
+  .sv-cta-modern-saas-split-with-form__title {
+    font-size: clamp(2rem, 3vw + 1rem, 3rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    font-weight: var(--ds-font-weight-bold, 700);
+    margin: 0;
+  }
+
+  .sv-cta-modern-saas-split-with-form__lede {
+    font-size: var(--ds-font-size-6);
+    line-height: 1.55;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  .sv-cta-modern-saas-split-with-form__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-2);
+    padding: var(--ds-space-5);
+    border-radius: var(--ds-radius-lg, 1rem);
+    border: 1px solid var(--ds-color-border);
+    background: color-mix(in oklab, var(--ds-color-surface-raised) 80%, transparent);
+    backdrop-filter: blur(12px);
+    position: relative;
+  }
+
+  .sv-cta-modern-saas-split-with-form__form::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, var(--ds-color-accent-soft-strong), transparent 60%);
+    /* Gradient-border trick: mask shape uses an opaque token; only the alpha channel matters. */
+    mask:
+      linear-gradient(var(--ds-palette-neutral-0) 0 0) content-box,
+      linear-gradient(var(--ds-palette-neutral-0) 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .sv-cta-modern-saas-split-with-form__label {
+    font-size: var(--ds-font-size-3);
+    font-weight: var(--ds-font-weight-medium, 500);
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  .sv-cta-modern-saas-split-with-form__row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--ds-space-2);
+  }
+
+  @media (max-width: 480px) {
+    .sv-cta-modern-saas-split-with-form__row {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sv-cta-modern-saas-split-with-form__note {
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  /* ============================================================
+     PRICING — shared header conventions
+     ============================================================ */
+  .sv-pricing-modern-saas-3-tier-cards,
+  .sv-pricing-modern-saas-toggle-billing,
+  .sv-pricing-modern-saas-comparison-table {
+    padding: clamp(var(--ds-space-12), 10vh, var(--ds-space-20)) clamp(var(--ds-space-4), 6vw, var(--ds-space-16));
+    background-color: var(--ds-color-background);
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__inner,
+  .sv-pricing-modern-saas-toggle-billing__inner,
+  .sv-pricing-modern-saas-comparison-table__inner {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(var(--ds-space-8), 6vh, var(--ds-space-12));
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__header,
+  .sv-pricing-modern-saas-toggle-billing__header,
+  .sv-pricing-modern-saas-comparison-table__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-3);
+    max-width: 60ch;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__kicker,
+  .sv-pricing-modern-saas-toggle-billing__kicker,
+  .sv-pricing-modern-saas-comparison-table__kicker {
+    font-size: var(--ds-font-size-3);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ds-color-accent, var(--ds-palette-brand-400));
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__title,
+  .sv-pricing-modern-saas-toggle-billing__title,
+  .sv-pricing-modern-saas-comparison-table__title {
+    font-size: clamp(2rem, 3vw + 1rem, 3rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    font-weight: var(--ds-font-weight-bold, 700);
+    margin: 0;
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__lede,
+  .sv-pricing-modern-saas-toggle-billing__lede,
+  .sv-pricing-modern-saas-comparison-table__lede {
+    font-size: var(--ds-font-size-6);
+    line-height: 1.6;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  /* ============================================================
+     PRICING — 3-tier-cards specifics
+     ============================================================ */
+  .sv-pricing-modern-saas-3-tier-cards__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(var(--ds-space-4), 3vw, var(--ds-space-6));
+  }
+
+  @media (max-width: 900px) {
+    .sv-pricing-modern-saas-3-tier-cards__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__tier {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-4);
+    padding: var(--ds-space-7) var(--ds-space-6);
+    border-radius: var(--ds-radius-xl, 1.5rem);
+    border: 1px solid var(--ds-color-border);
+    background: var(--ds-color-surface);
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__tier.is-highlight {
+    border-color: var(--ds-color-accent, var(--ds-palette-brand-400));
+    box-shadow: var(--ds-shadow-xl);
+    transform: translateY(-4px);
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__badge {
+    position: absolute;
+    top: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: var(--ds-space-1) var(--ds-space-3);
+    border-radius: var(--ds-radius-full);
+    background: var(--ds-color-accent, var(--ds-palette-brand-500));
+    color: var(--ds-color-accent-foreground, var(--ds-palette-neutral-0));
+    font-size: var(--ds-font-size-3);
+    font-weight: var(--ds-font-weight-semibold, 600);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__name {
+    font-size: var(--ds-font-size-6);
+    font-weight: var(--ds-font-weight-semibold, 600);
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__price {
+    display: flex;
+    align-items: baseline;
+    gap: var(--ds-space-1);
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__price-amount {
+    font-size: clamp(2rem, 3vw + 0.5rem, 2.75rem);
+    line-height: 1;
+    font-weight: var(--ds-font-weight-bold, 700);
+    letter-spacing: -0.02em;
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__price-suffix {
+    font-size: var(--ds-font-size-4);
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__desc {
+    font-size: var(--ds-font-size-4);
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-2);
+    flex: 1;
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__feature {
+    display: flex;
+    gap: var(--ds-space-2);
+    font-size: var(--ds-font-size-4);
+    color: var(--ds-color-foreground);
+    line-height: 1.55;
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__check {
+    color: var(--ds-color-accent, var(--ds-palette-brand-500));
+    font-weight: var(--ds-font-weight-bold, 700);
+    flex-shrink: 0;
+  }
+
+  .sv-pricing-modern-saas-3-tier-cards__footnote {
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-foreground-secondary);
+    text-align: center;
+    margin: 0;
+  }
+
+  /* ============================================================
+     PRICING — toggle-billing specifics
+     ============================================================ */
+  .sv-pricing-modern-saas-toggle-billing__toggle {
+    display: inline-flex;
+    gap: var(--ds-space-1);
+    padding: var(--ds-space-1);
+    border-radius: var(--ds-radius-full);
+    border: 1px solid var(--ds-color-border);
+    background: var(--ds-color-surface);
+    margin: 0 auto;
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__toggle-option {
+    padding: var(--ds-space-2) var(--ds-space-5);
+    border-radius: var(--ds-radius-full);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: var(--ds-font-size-4);
+    font-weight: var(--ds-font-weight-medium, 500);
+    color: var(--ds-color-foreground-secondary);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--ds-space-2);
+    transition: background var(--ds-duration-fastest) var(--ds-ease-out),
+      color var(--ds-duration-fastest) var(--ds-ease-out);
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__toggle-option.is-active {
+    background: var(--ds-color-accent, var(--ds-palette-brand-500));
+    color: var(--ds-color-accent-foreground, var(--ds-palette-neutral-0));
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__toggle-savings {
+    font-size: var(--ds-font-size-2);
+    padding: var(--ds-space-0) var(--ds-space-2);
+    border-radius: var(--ds-radius-full);
+    background: color-mix(in oklab, currentColor 15%, transparent);
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(var(--ds-space-4), 3vw, var(--ds-space-6));
+  }
+
+  @media (max-width: 900px) {
+    .sv-pricing-modern-saas-toggle-billing__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__tier {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-4);
+    padding: var(--ds-space-7) var(--ds-space-6);
+    border-radius: var(--ds-radius-xl, 1.5rem);
+    border: 1px solid var(--ds-color-border);
+    background: var(--ds-color-surface);
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__tier.is-highlight {
+    border-color: var(--ds-color-accent, var(--ds-palette-brand-400));
+    box-shadow: var(--ds-shadow-xl);
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__badge {
+    position: absolute;
+    top: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: var(--ds-space-1) var(--ds-space-3);
+    border-radius: var(--ds-radius-full);
+    background: var(--ds-color-accent, var(--ds-palette-brand-500));
+    color: var(--ds-color-accent-foreground, var(--ds-palette-neutral-0));
+    font-size: var(--ds-font-size-3);
+    font-weight: var(--ds-font-weight-semibold, 600);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__name {
+    font-size: var(--ds-font-size-6);
+    font-weight: var(--ds-font-weight-semibold, 600);
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__price {
+    display: flex;
+    align-items: baseline;
+    gap: var(--ds-space-1);
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__price-amount {
+    font-size: clamp(2rem, 3vw + 0.5rem, 2.75rem);
+    line-height: 1;
+    font-weight: var(--ds-font-weight-bold, 700);
+    letter-spacing: -0.02em;
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__price-suffix {
+    font-size: var(--ds-font-size-4);
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__desc {
+    font-size: var(--ds-font-size-4);
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-2);
+    flex: 1;
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__feature {
+    display: flex;
+    gap: var(--ds-space-2);
+    font-size: var(--ds-font-size-4);
+    color: var(--ds-color-foreground);
+    line-height: 1.55;
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__check {
+    color: var(--ds-color-accent, var(--ds-palette-brand-500));
+    font-weight: var(--ds-font-weight-bold, 700);
+    flex-shrink: 0;
+  }
+
+  .sv-pricing-modern-saas-toggle-billing__footnote {
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-foreground-secondary);
+    text-align: center;
+    margin: 0;
+  }
+
+  /* ============================================================
+     PRICING — comparison-table specifics
+     ============================================================ */
+  .sv-pricing-modern-saas-comparison-table__wrap {
+    overflow-x: auto;
+    border-radius: var(--ds-radius-xl, 1.5rem);
+    border: 1px solid var(--ds-color-border);
+    background: var(--ds-color-surface);
+  }
+
+  .sv-pricing-modern-saas-comparison-table__table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 48rem;
+  }
+
+  .sv-pricing-modern-saas-comparison-table__corner,
+  .sv-pricing-modern-saas-comparison-table__tier {
+    padding: var(--ds-space-5) var(--ds-space-4);
+    text-align: left;
+    border-bottom: 1px solid var(--ds-color-border);
+    background: var(--ds-color-surface-raised);
+  }
+
+  .sv-pricing-modern-saas-comparison-table__tier.is-highlight {
+    background: color-mix(in oklab, var(--ds-color-accent-soft, var(--ds-palette-brand-50)) 60%, var(--ds-color-surface-raised));
+  }
+
+  .sv-pricing-modern-saas-comparison-table__tier-name {
+    font-size: var(--ds-font-size-6);
+    font-weight: var(--ds-font-weight-semibold, 600);
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  .sv-pricing-modern-saas-comparison-table__tier-price {
+    display: flex;
+    align-items: baseline;
+    gap: var(--ds-space-1);
+    margin-top: var(--ds-space-2);
+    font-size: var(--ds-font-size-8);
+    font-weight: var(--ds-font-weight-bold, 700);
+  }
+
+  .sv-pricing-modern-saas-comparison-table__tier-suffix {
+    font-size: var(--ds-font-size-3);
+    font-weight: var(--ds-font-weight-regular, 400);
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  .sv-pricing-modern-saas-comparison-table__tier-desc {
+    margin-top: var(--ds-space-2);
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  .sv-pricing-modern-saas-comparison-table__feature-label {
+    text-align: left;
+    font-weight: var(--ds-font-weight-medium, 500);
+    color: var(--ds-color-foreground);
+    padding: var(--ds-space-3) var(--ds-space-4);
+    border-bottom: 1px solid var(--ds-color-border);
+  }
+
+  .sv-pricing-modern-saas-comparison-table__cell {
+    padding: var(--ds-space-3) var(--ds-space-4);
+    text-align: center;
+    border-bottom: 1px solid var(--ds-color-border);
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  .sv-pricing-modern-saas-comparison-table__cell.is-highlight {
+    background: color-mix(in oklab, var(--ds-color-accent-soft, var(--ds-palette-brand-50)) 30%, transparent);
+  }
+
+  .sv-pricing-modern-saas-comparison-table__cta-spacer {
+    padding: var(--ds-space-4);
+  }
+
+  .sv-pricing-modern-saas-comparison-table__cta-cell {
+    padding: var(--ds-space-4);
+    text-align: center;
+  }
+
+  .sv-pricing-modern-saas-comparison-table__cta-cell.is-highlight {
+    background: color-mix(in oklab, var(--ds-color-accent-soft, var(--ds-palette-brand-50)) 30%, transparent);
+  }
+
+  .sv-pricing-modern-saas-comparison-table__footnote {
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-foreground-secondary);
+    text-align: center;
+    margin: 0;
+  }
+
+  /* ============================================================
+     FAQ — modern-saas-accordion
+     Centered narrow column with disclosure triggers
+     ============================================================ */
+  .sv-faq-modern-saas-accordion {
+    padding: clamp(var(--ds-space-12), 10vh, var(--ds-space-20)) clamp(var(--ds-space-4), 6vw, var(--ds-space-16));
+    background-color: var(--ds-color-background);
+  }
+
+  .sv-faq-modern-saas-accordion__inner {
+    max-width: 56rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(var(--ds-space-8), 6vh, var(--ds-space-12));
+  }
+
+  .sv-faq-modern-saas-accordion__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-3);
+    text-align: center;
+    align-items: center;
+  }
+
+  .sv-faq-modern-saas-accordion__kicker {
+    font-size: var(--ds-font-size-3);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ds-color-accent, var(--ds-palette-brand-400));
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+
+  .sv-faq-modern-saas-accordion__title {
+    font-size: clamp(2rem, 3vw + 1rem, 3rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    font-weight: var(--ds-font-weight-bold, 700);
+    margin: 0;
+  }
+
+  .sv-faq-modern-saas-accordion__lede {
+    font-size: var(--ds-font-size-6);
+    line-height: 1.6;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  .sv-faq-modern-saas-accordion__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-2);
+  }
+
+  .sv-faq-modern-saas-accordion__item {
+    border: 1px solid var(--ds-color-border);
+    border-radius: var(--ds-radius-md, 0.75rem);
+    background: var(--ds-color-surface);
+    overflow: hidden;
+  }
+
+  .sv-faq-modern-saas-accordion__trigger {
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: var(--ds-space-4) var(--ds-space-5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--ds-space-4);
+    font-size: var(--ds-font-size-6);
+    font-weight: var(--ds-font-weight-medium, 500);
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  .sv-faq-modern-saas-accordion__trigger:hover {
+    background: var(--ds-color-surface-raised);
+  }
+
+  .sv-faq-modern-saas-accordion__q {
+    flex: 1;
+  }
+
+  .sv-faq-modern-saas-accordion__caret {
+    font-size: var(--ds-font-size-7);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: grid;
+    place-items: center;
+    color: var(--ds-color-accent, var(--ds-palette-brand-500));
+    transition: transform var(--ds-duration-fastest) var(--ds-ease-out);
+    flex-shrink: 0;
+  }
+
+  .sv-faq-modern-saas-accordion__caret.is-open {
+    transform: rotate(45deg);
+  }
+
+  .sv-faq-modern-saas-accordion__panel {
+    padding: 0 var(--ds-space-5) var(--ds-space-4);
+  }
+
+  .sv-faq-modern-saas-accordion__a {
+    font-size: var(--ds-font-size-5);
+    line-height: 1.65;
+    color: var(--ds-color-foreground);
+    margin: 0;
+  }
+
   /* Reduced motion override */
   @media (prefers-reduced-motion: reduce) {
     .motion-fade-in,

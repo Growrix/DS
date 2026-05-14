@@ -40,7 +40,11 @@ export type SectionKind =
   | "stats-band"
   | "process-steps"
   | "logo-cloud"
-  | "case-studies";
+  | "case-studies"
+  | "pricing"
+  | "team"
+  | "contact"
+  | "footer-content";
 
 /** Density / footprint classification used by AI agents to pick variants for a given page rhythm. */
 export type SectionDensity = "compact" | "comfortable" | "full-bleed" | "extended";

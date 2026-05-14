@@ -22,6 +22,14 @@ import {
   HeroModernSaasSplit,
 } from "./variants/hero/hero-modern-saas-split";
 import {
+  HERO_MODERN_SAAS_SCREENSHOT_BELOW_META,
+  HeroModernSaasScreenshotBelow,
+} from "./variants/hero/hero-modern-saas-screenshot-below";
+import {
+  HERO_MODERN_SAAS_BENTO_RIGHT_META,
+  HeroModernSaasBentoRight,
+} from "./variants/hero/hero-modern-saas-bento-right";
+import {
   HERO_BOLD_CONSUMER_OVERSIZED_META,
   HeroBoldConsumerOversized,
 } from "./variants/hero/hero-bold-consumer-oversized";
@@ -38,6 +46,14 @@ import {
   FEATURES_SPLIT_ALTERNATING_META,
   FeaturesSplitAlternating,
 } from "./variants/features/features-split-alternating";
+import {
+  FEATURES_MODERN_SAAS_3COL_ICONS_META,
+  FeaturesModernSaas3ColIcons,
+} from "./variants/features/features-modern-saas-3col-icons";
+import {
+  FEATURES_MODERN_SAAS_TABS_META,
+  FeaturesModernSaasTabs,
+} from "./variants/features/features-modern-saas-tabs";
 
 import {
   TESTIMONIALS_MARQUEE_META,
@@ -45,6 +61,18 @@ import {
 } from "./variants/testimonials/testimonials-marquee";
 
 import { CTA_FULL_BLEED_META, CtaFullBleed } from "./variants/cta/cta-full-bleed";
+import {
+  CTA_MODERN_SAAS_CARD_META,
+  CtaModernSaasCard,
+} from "./variants/cta/cta-modern-saas-card";
+import {
+  CTA_MODERN_SAAS_BANNER_STRIP_META,
+  CtaModernSaasBannerStrip,
+} from "./variants/cta/cta-modern-saas-banner-strip";
+import {
+  CTA_MODERN_SAAS_SPLIT_WITH_FORM_META,
+  CtaModernSaasSplitWithForm,
+} from "./variants/cta/cta-modern-saas-split-with-form";
 
 import { STATS_BAND_4COL_META, StatsBand4Col } from "./variants/stats-band/stats-band-4col";
 
@@ -59,6 +87,24 @@ import {
   CASE_STUDIES_GRID_META,
   CaseStudiesGrid,
 } from "./variants/case-studies/case-studies-grid";
+
+import {
+  FAQ_MODERN_SAAS_ACCORDION_META,
+  FaqModernSaasAccordion,
+} from "./variants/faq/faq-modern-saas-accordion";
+
+import {
+  PRICING_MODERN_SAAS_3_TIER_CARDS_META,
+  PricingModernSaas3TierCards,
+} from "./variants/pricing/pricing-modern-saas-3-tier-cards";
+import {
+  PRICING_MODERN_SAAS_TOGGLE_BILLING_META,
+  PricingModernSaasToggleBilling,
+} from "./variants/pricing/pricing-modern-saas-toggle-billing";
+import {
+  PRICING_MODERN_SAAS_COMPARISON_TABLE_META,
+  PricingModernSaasComparisonTable,
+} from "./variants/pricing/pricing-modern-saas-comparison-table";
 
 import type {
   SectionKind,
@@ -79,6 +125,14 @@ export const SECTION_REGISTRY: SectionRegistry = {
     meta: HERO_MODERN_SAAS_SPLIT_META,
     component: HeroModernSaasSplit,
   },
+  [HERO_MODERN_SAAS_SCREENSHOT_BELOW_META.id]: {
+    meta: HERO_MODERN_SAAS_SCREENSHOT_BELOW_META,
+    component: HeroModernSaasScreenshotBelow,
+  },
+  [HERO_MODERN_SAAS_BENTO_RIGHT_META.id]: {
+    meta: HERO_MODERN_SAAS_BENTO_RIGHT_META,
+    component: HeroModernSaasBentoRight,
+  },
   [HERO_BOLD_CONSUMER_OVERSIZED_META.id]: {
     meta: HERO_BOLD_CONSUMER_OVERSIZED_META,
     component: HeroBoldConsumerOversized,
@@ -97,6 +151,14 @@ export const SECTION_REGISTRY: SectionRegistry = {
     meta: FEATURES_SPLIT_ALTERNATING_META,
     component: FeaturesSplitAlternating,
   },
+  [FEATURES_MODERN_SAAS_3COL_ICONS_META.id]: {
+    meta: FEATURES_MODERN_SAAS_3COL_ICONS_META,
+    component: FeaturesModernSaas3ColIcons,
+  },
+  [FEATURES_MODERN_SAAS_TABS_META.id]: {
+    meta: FEATURES_MODERN_SAAS_TABS_META,
+    component: FeaturesModernSaasTabs,
+  },
 
   // testimonials variants
   [TESTIMONIALS_MARQUEE_META.id]: {
@@ -108,6 +170,18 @@ export const SECTION_REGISTRY: SectionRegistry = {
   [CTA_FULL_BLEED_META.id]: {
     meta: CTA_FULL_BLEED_META,
     component: CtaFullBleed,
+  },
+  [CTA_MODERN_SAAS_CARD_META.id]: {
+    meta: CTA_MODERN_SAAS_CARD_META,
+    component: CtaModernSaasCard,
+  },
+  [CTA_MODERN_SAAS_BANNER_STRIP_META.id]: {
+    meta: CTA_MODERN_SAAS_BANNER_STRIP_META,
+    component: CtaModernSaasBannerStrip,
+  },
+  [CTA_MODERN_SAAS_SPLIT_WITH_FORM_META.id]: {
+    meta: CTA_MODERN_SAAS_SPLIT_WITH_FORM_META,
+    component: CtaModernSaasSplitWithForm,
   },
 
   // stats-band variants
@@ -132,6 +206,26 @@ export const SECTION_REGISTRY: SectionRegistry = {
   [CASE_STUDIES_GRID_META.id]: {
     meta: CASE_STUDIES_GRID_META,
     component: CaseStudiesGrid,
+  },
+
+  // faq variants
+  [FAQ_MODERN_SAAS_ACCORDION_META.id]: {
+    meta: FAQ_MODERN_SAAS_ACCORDION_META,
+    component: FaqModernSaasAccordion,
+  },
+
+  // pricing variants
+  [PRICING_MODERN_SAAS_3_TIER_CARDS_META.id]: {
+    meta: PRICING_MODERN_SAAS_3_TIER_CARDS_META,
+    component: PricingModernSaas3TierCards,
+  },
+  [PRICING_MODERN_SAAS_TOGGLE_BILLING_META.id]: {
+    meta: PRICING_MODERN_SAAS_TOGGLE_BILLING_META,
+    component: PricingModernSaasToggleBilling,
+  },
+  [PRICING_MODERN_SAAS_COMPARISON_TABLE_META.id]: {
+    meta: PRICING_MODERN_SAAS_COMPARISON_TABLE_META,
+    component: PricingModernSaasComparisonTable,
   },
 };
 

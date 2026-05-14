@@ -1,12 +1,40 @@
 {
   "version": "1.0",
   "counts": {
-    "variants": 12,
+    "variants": 23,
     "archetypes": 8,
     "motionPresets": 8,
     "themes": 2,
-    "presets": 3
+    "presets": 2,
+    "wireframes": 2
   },
+  "sectionKinds": [
+    "hero",
+    "features",
+    "testimonials",
+    "faq",
+    "blogList",
+    "cta",
+    "newsletter",
+    "stats-band",
+    "process-steps",
+    "logo-cloud",
+    "case-studies",
+    "pricing",
+    "team",
+    "contact",
+    "footer-content"
+  ],
+  "wireframePurposes": [
+    "landing",
+    "pricing",
+    "about",
+    "contact",
+    "blog-index",
+    "case-study-index",
+    "auth",
+    "404"
+  ],
   "themes": [
     {
       "name": "dark",
@@ -45,7 +73,21 @@
         "fade-in"
       ],
       "variantIdPrefixes": [
-        "hero-editorial-",
+        "hero-editorial-premium-",
+        "features-editorial-premium-",
+        "testimonials-editorial-premium-",
+        "faq-editorial-premium-",
+        "bloglist-editorial-premium-",
+        "cta-editorial-premium-",
+        "newsletter-editorial-premium-",
+        "stats-band-editorial-premium-",
+        "process-steps-editorial-premium-",
+        "logo-cloud-editorial-premium-",
+        "case-studies-editorial-premium-",
+        "pricing-editorial-premium-",
+        "team-editorial-premium-",
+        "contact-editorial-premium-",
+        "footer-content-editorial-premium-",
         "features-split-",
         "case-studies-magazine-",
         "testimonials-quote-large-"
@@ -77,9 +119,25 @@
       ],
       "variantIdPrefixes": [
         "hero-modern-saas-",
+        "features-modern-saas-",
+        "testimonials-modern-saas-",
+        "faq-modern-saas-",
+        "bloglist-modern-saas-",
+        "cta-modern-saas-",
+        "newsletter-modern-saas-",
+        "stats-band-modern-saas-",
+        "process-steps-modern-saas-",
+        "logo-cloud-modern-saas-",
+        "case-studies-modern-saas-",
+        "pricing-modern-saas-",
+        "team-modern-saas-",
+        "contact-modern-saas-",
+        "footer-content-modern-saas-",
         "features-bento-",
         "pricing-table-",
-        "testimonials-marquee-"
+        "testimonials-marquee",
+        "stats-band-4col",
+        "logo-cloud-grid"
       ]
     },
     {
@@ -108,8 +166,22 @@
       ],
       "variantIdPrefixes": [
         "hero-bold-consumer-",
+        "features-bold-consumer-",
+        "testimonials-bold-consumer-",
+        "faq-bold-consumer-",
+        "bloglist-bold-consumer-",
+        "cta-bold-consumer-",
+        "newsletter-bold-consumer-",
+        "stats-band-bold-consumer-",
+        "process-steps-bold-consumer-",
+        "logo-cloud-bold-consumer-",
+        "case-studies-bold-consumer-",
+        "pricing-bold-consumer-",
+        "team-bold-consumer-",
+        "contact-bold-consumer-",
+        "footer-content-bold-consumer-",
         "features-bento-",
-        "cta-full-bleed-"
+        "cta-full-bleed"
       ]
     },
     {
@@ -138,6 +210,20 @@
       ],
       "variantIdPrefixes": [
         "hero-ai-product-",
+        "features-ai-product-",
+        "testimonials-ai-product-",
+        "faq-ai-product-",
+        "bloglist-ai-product-",
+        "cta-ai-product-",
+        "newsletter-ai-product-",
+        "stats-band-ai-product-",
+        "process-steps-ai-product-",
+        "logo-cloud-ai-product-",
+        "case-studies-ai-product-",
+        "pricing-ai-product-",
+        "team-ai-product-",
+        "contact-ai-product-",
+        "footer-content-ai-product-",
         "features-bento-",
         "stats-band-"
       ]
@@ -414,6 +500,53 @@
       "isDefault": false
     },
     {
+      "id": "hero-modern-saas-screenshot-below",
+      "kind": "hero",
+      "archetype": "modern-saas",
+      "label": "Hero — Modern SaaS Screenshot Below",
+      "description": "Centered headline + lede + paired CTAs above a wide product screenshot frame. Subtle glassmorphism on the frame edge. Stagger reveal on copy, rise-soft on screenshot.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "stagger-text-60",
+        "rise-soft",
+        "magnetic-hover"
+      ],
+      "effects": {
+        "glassmorphism": true,
+        "scrollDrivenScale": true
+      },
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "hero-modern-saas-bento-right",
+      "kind": "hero",
+      "archetype": "modern-saas",
+      "label": "Hero — Modern SaaS Bento Right",
+      "description": "Left copy column + right 2x2 bento grid of feature tiles. Glassmorphic tiles over gradient mesh. Stagger text + animated border on tiles.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "stagger-text-60",
+        "rise-soft",
+        "magnetic-hover"
+      ],
+      "effects": {
+        "gradientMesh": true,
+        "glassmorphism": true,
+        "animatedBorder": true
+      },
+      "density": "extended",
+      "complexity": "rich",
+      "isDefault": false
+    },
+    {
       "id": "hero-bold-consumer-oversized",
       "kind": "hero",
       "archetype": "bold-consumer",
@@ -502,6 +635,51 @@
       "isDefault": false
     },
     {
+      "id": "features-modern-saas-3col-icons",
+      "kind": "features",
+      "archetype": "modern-saas",
+      "label": "Features — Modern SaaS 3-Column Icon Grid",
+      "description": "Three-column icon-led feature grid. Each card has a circular accent icon plate, a title, a 60ch description, and an optional link slot. Stagger reveal on enter.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "stagger-text-60",
+        "rise-soft"
+      ],
+      "effects": {
+        "gradientMesh": false,
+        "glassmorphism": false
+      },
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "features-modern-saas-tabs",
+      "kind": "features",
+      "archetype": "modern-saas",
+      "label": "Features — Modern SaaS Tabs",
+      "description": "Vertical tab navigation on left; selected feature panel renders on right with title, description, and media slot. Arrow Up/Down keyboard nav. Reveal-glass on panel switch.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "reveal-glass",
+        "rise-soft",
+        "magnetic-hover"
+      ],
+      "effects": {
+        "glassmorphism": true,
+        "animatedBorder": true
+      },
+      "density": "extended",
+      "complexity": "rich",
+      "isDefault": false
+    },
+    {
       "id": "testimonials-marquee",
       "kind": "testimonials",
       "archetype": "modern-saas",
@@ -537,6 +715,71 @@
         "fullBleedPhotograph": false
       },
       "density": "full-bleed",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "cta-modern-saas-card",
+      "kind": "cta",
+      "archetype": "modern-saas",
+      "label": "CTA — Modern SaaS Card",
+      "description": "Centered bordered card with gradient mesh backdrop, title + lede + paired CTAs. Glassmorphic edges, magnetic-hover on primary action.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "magnetic-hover"
+      ],
+      "effects": {
+        "gradientMesh": true,
+        "glassmorphism": true
+      },
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "cta-modern-saas-banner-strip",
+      "kind": "cta",
+      "archetype": "modern-saas",
+      "label": "CTA — Modern SaaS Banner Strip",
+      "description": "Full-width inline banner with title left, paired actions right. Subtle gradient mesh background; rise-soft on enter.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "magnetic-hover"
+      ],
+      "effects": {
+        "gradientMesh": true
+      },
+      "density": "compact",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "cta-modern-saas-split-with-form",
+      "kind": "cta",
+      "archetype": "modern-saas",
+      "label": "CTA — Modern SaaS Split With Form",
+      "description": "Left: title + lede + trust note. Right: inline email capture (email input + primary CTA). Gradient mesh band, animated border on form.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "magnetic-hover"
+      ],
+      "effects": {
+        "gradientMesh": true,
+        "animatedBorder": true
+      },
+      "density": "comfortable",
       "complexity": "standard",
       "isDefault": false
     },
@@ -614,6 +857,171 @@
       "density": "extended",
       "complexity": "standard",
       "isDefault": true
+    },
+    {
+      "id": "faq-modern-saas-accordion",
+      "kind": "faq",
+      "archetype": "modern-saas",
+      "label": "FAQ — Modern SaaS Accordion",
+      "description": "Centered narrow column. Each Q renders as an accordion trigger (button with disclosure indicator). ArrowDown/ArrowUp/Home/End keyboard nav. Single-open behaviour. Reveal-glass on expand.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "reveal-glass"
+      ],
+      "effects": {
+        "glassmorphism": false
+      },
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "pricing-modern-saas-3-tier-cards",
+      "kind": "pricing",
+      "archetype": "modern-saas",
+      "label": "Pricing — Modern SaaS 3-Tier Cards",
+      "description": "Three side-by-side pricing cards. Middle tier highlighted with accent border and badge. Each card lists name, price, features (checkmark bullets), and CTA. Rise-soft on enter.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "magnetic-hover"
+      ],
+      "effects": {
+        "gradientMesh": true,
+        "animatedBorder": true
+      },
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "pricing-modern-saas-toggle-billing",
+      "kind": "pricing",
+      "archetype": "modern-saas",
+      "label": "Pricing — Modern SaaS Toggle Billing",
+      "description": "Three-tier pricing cards with monthly/yearly billing toggle above. Toggle swaps price text in place. Yearly cadence renders savings hint. Magnetic-hover on highlighted tier CTA.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "magnetic-hover"
+      ],
+      "effects": {
+        "gradientMesh": true
+      },
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "pricing-modern-saas-comparison-table",
+      "kind": "pricing",
+      "archetype": "modern-saas",
+      "label": "Pricing — Modern SaaS Comparison Table",
+      "description": "Side-by-side feature comparison table. Tier names + prices in sticky header row, feature rows below show check/dash per tier. Highlighted column for emphasised tier. CTAs in footer row.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {
+        "gradientMesh": false,
+        "glassmorphism": false
+      },
+      "density": "extended",
+      "complexity": "rich",
+      "isDefault": false
+    }
+  ],
+  "wireframes": [
+    {
+      "id": "page-modern-saas-landing",
+      "archetype": "modern-saas",
+      "purpose": "landing",
+      "shell": "public",
+      "label": "Page — Modern SaaS Landing",
+      "description": "Hero (split) → logo cloud → features (bento) → stats band → testimonials marquee → pricing 3-tier cards → FAQ accordion → CTA split-with-form. Standard comfortable density.",
+      "density": "comfortable",
+      "complexity": "standard",
+      "sections": [
+        {
+          "kind": "hero",
+          "variantId": "hero-modern-saas-split"
+        },
+        {
+          "kind": "logo-cloud",
+          "variantId": "logo-cloud-grid"
+        },
+        {
+          "kind": "features",
+          "variantId": "features-bento-asymmetric"
+        },
+        {
+          "kind": "stats-band",
+          "variantId": "stats-band-4col"
+        },
+        {
+          "kind": "testimonials",
+          "variantId": "testimonials-marquee"
+        },
+        {
+          "kind": "pricing",
+          "variantId": "pricing-modern-saas-3-tier-cards"
+        },
+        {
+          "kind": "faq",
+          "variantId": "faq-modern-saas-accordion"
+        },
+        {
+          "kind": "cta",
+          "variantId": "cta-modern-saas-split-with-form"
+        }
+      ],
+      "isDefault": true
+    },
+    {
+      "id": "page-modern-saas-pricing",
+      "archetype": "modern-saas",
+      "purpose": "pricing",
+      "shell": "public",
+      "label": "Page — Modern SaaS Pricing",
+      "description": "CTA banner strip (page header) → pricing toggle-billing → pricing comparison table → FAQ accordion → CTA card. Standard comfortable density.",
+      "density": "comfortable",
+      "complexity": "standard",
+      "sections": [
+        {
+          "kind": "cta",
+          "variantId": "cta-modern-saas-banner-strip"
+        },
+        {
+          "kind": "pricing",
+          "variantId": "pricing-modern-saas-toggle-billing"
+        },
+        {
+          "kind": "pricing",
+          "variantId": "pricing-modern-saas-comparison-table"
+        },
+        {
+          "kind": "faq",
+          "variantId": "faq-modern-saas-accordion"
+        },
+        {
+          "kind": "cta",
+          "variantId": "cta-modern-saas-card"
+        }
+      ],
+      "isDefault": true
     }
   ],
   "sitePresets": [
@@ -646,33 +1054,108 @@
       "pageSectionCounts": {
         "home": 7
       }
-    },
-    {
-      "id": "sunpath-solar",
-      "label": "SunPath Solar",
-      "archetype": "local-business-trust",
-      "pageIds": [
-        "home",
-        "residential",
-        "commercial",
-        "howItWorks",
-        "projects",
-        "about",
-        "contact"
-      ],
-      "pageSectionCounts": {
-        "home": 7,
-        "residential": 6,
-        "commercial": 6,
-        "howItWorks": 4,
-        "projects": 4,
-        "about": 5,
-        "contact": 3
-      }
     }
   ],
+  "safety": {
+    "version": "1.0",
+    "topLevelRule": "This design system is the FACTORY, not the deliverable. Per-client sites are exported. Agents may ADD project content via presets; they MUST NOT EDIT the DS core. Violating this contract breaks every site that consumes the DS.",
+    "discoveryFiles": {
+      "humanContract": "AI-AGENT-CONTRACT.md",
+      "machineContract": "generated/ds.contract.json",
+      "registry": "src/ds/composition/sections/_registry.ts",
+      "schema": "src/ds/composition/sections/_schema.ts",
+      "presetTypes": "src/ds/platform/publicSitePreset.ts"
+    },
+    "lockedGlobs": [
+      "src/ds/foundation/**",
+      "src/ds/primitives/**",
+      "src/ds/components/**",
+      "src/ds/composition/sections/_schema.ts",
+      "src/ds/composition/sections/_helpers.ts",
+      "src/ds/composition/patterns/**",
+      "src/ds/composition/templates/**",
+      "src/ds/composition/blocks/**",
+      "src/ds/layouts/**",
+      "src/ds/platform/PublicPresetPage.tsx",
+      "src/ds/platform/PublicSiteShell.tsx",
+      "src/ds/platform/PublicSiteHeader.tsx",
+      "src/ds/platform/PublicSiteFooter.tsx",
+      "src/ds/platform/SupportDock.tsx",
+      "src/ds/platform/publicSitePreset.ts",
+      "src/ds/platform/siteConfig.ts",
+      "src/ds/runtime/**",
+      "src/ds/visuals/**",
+      "src/ds/widgets/**",
+      "src/ds/styles/**",
+      "src/ds/preview/**",
+      "src/ds/icons.ts",
+      "src/ds/patterns/**",
+      "src/ds/utils/**",
+      "src/ds/index.ts",
+      "src/ds/__codegen__/**",
+      "DOC/**",
+      "AI-AGENT-CONTRACT.md",
+      ".ai-scope.json",
+      "package.json",
+      "package-lock.json",
+      "tsconfig.json",
+      "next.config.ts",
+      "next-env.d.ts",
+      "eslint.config.mjs",
+      "jest.config.js",
+      "jest.setup.ts",
+      "scripts/**"
+    ],
+    "extensibleGlobs": [
+      "src/ds/composition/sections/variants/**/*.tsx",
+      "src/ds/composition/templates/wireframes/page-*.ts",
+      "src/site/presets/*.ts"
+    ],
+    "projectContentGlobs": [
+      "src/app/**",
+      "src/features/**",
+      "src/flows/**"
+    ],
+    "forbiddenActions": [
+      "Modifying any file matching fileScopes.locked.globs",
+      "Adding new top-level dependencies without explicit human approval",
+      "Removing or renaming registered variants (variantIds are a public contract)",
+      "Removing or renaming registered wireframes (wireframe ids are a public contract)",
+      "Introducing raw hex / rgb / px / ms values outside ds.tokens.css (caught by ds:audit)",
+      "Editing the SECTION_REGISTRY map for any reason other than adding a single new entry",
+      "Editing the WIREFRAME_REGISTRY map for any reason other than adding a single new entry",
+      "Introducing motion not declared as a motion preset",
+      "Declaring a variant effect outside the variant's archetype permission window (caught by ds:contract permission scan)",
+      "Cross-archetype mixing inside a wireframe (every section.variantId MUST share the wireframe's archetype; caught by ds:contract validation)",
+      "Inventing variant ids or wireframe ids at runtime (consumers MUST select from the live registry)",
+      "Editing files inside DOC/ (the design-system handbook is human-curated)"
+    ],
+    "allowedActions": [
+      "Reading any file in the repo for context",
+      "Adding new variant files under src/ds/composition/sections/variants/<kind>/",
+      "Adding new wireframe files under src/ds/composition/templates/wireframes/page-*.ts",
+      "Adding new preset files under src/site/presets/",
+      "Editing src/app/** route content + per-project pages (including preview routes under src/app/preview/**)",
+      "Editing per-project flows under src/flows/**",
+      "Running npm run ds:contract, ds:audit, ds:a11y, verify"
+    ],
+    "verificationGate": {
+      "command": "npm run verify",
+      "chain": [
+        "typecheck",
+        "lint",
+        "test",
+        "build",
+        "ds:audit",
+        "ds:a11y",
+        "ds:contract"
+      ],
+      "rule": "An agent MUST run `npm run verify` before claiming an extension is complete. Any non-zero exit fails the extension."
+    }
+  },
   "validation": {
     "permissionViolations": [],
+    "wireframeViolations": [],
     "ok": true
   }
 }

@@ -1,4 +1,8 @@
-import type { SiteConfig } from "./siteConfig";
+import type {
+  SiteConfig,
+  SiteFooterAttribution,
+  SiteFooterColumn,
+} from "./siteConfig";
 import type { ArchetypeId } from "../foundation/themes/archetypeRegistry";
 
 export type PublicSectionHeaderModel = {
@@ -116,6 +120,100 @@ export type PublicSectionModel =
         media?: PublicMediaModel;
         tags?: string[];
       }>;
+    }
+  | {
+      id: string;
+      kind: "pricing";
+      variant?: string;
+      header?: PublicSectionHeaderModel;
+      /** Optional billing-cadence toggle. Variants that don't render a toggle ignore this. */
+      billingToggle?: { monthlyLabel: string; yearlyLabel: string; defaultCadence?: "monthly" | "yearly" };
+      tiers: Array<{
+        id: string;
+        name: string;
+        price: { monthly: string; yearly?: string; suffix?: string };
+        description?: string;
+        features: string[];
+        cta: PublicActionModel;
+        /** Optional badge text (e.g. "Most popular"). */
+        badge?: string;
+        /** Variants render this tier with emphasis (border, scale, accent). */
+        highlight?: boolean;
+      }>;
+      /** Optional inline disclaimer below tiers. */
+      footnote?: string;
+    }
+  | {
+      id: string;
+      kind: "team";
+      variant?: string;
+      header?: PublicSectionHeaderModel;
+      members: Array<{
+        id: string;
+        name: string;
+        role: string;
+        bio?: string;
+        avatar?: PublicMediaModel;
+        socials?: Array<{ id: string; label: string; href: string; icon?: string }>;
+      }>;
+    }
+  | {
+      id: string;
+      kind: "contact";
+      variant?: string;
+      header?: PublicSectionHeaderModel;
+      /** Direct contact channels. Variants may render as cards, list, or sidebar. */
+      channels?: Array<{
+        id: string;
+        kind: "email" | "phone" | "address" | "whatsapp" | "hours";
+        label: string;
+        value: string;
+        href?: string;
+        icon?: string;
+      }>;
+      /** Optional inline contact form. Variants without form render channels only. */
+      form?: {
+        fields: Array<{
+          id: string;
+          label: string;
+          type: "text" | "email" | "tel" | "textarea" | "select";
+          required?: boolean;
+          placeholder?: string;
+          options?: Array<{ value: string; label: string }>;
+        }>;
+        submitLabel: string;
+        consentNote?: string;
+      };
+      /** Optional map embed. Variants without map ignore this. */
+      map?: {
+        embedUrl?: string;
+        lat?: number;
+        lng?: number;
+        zoom?: number;
+        alt?: string;
+      };
+    }
+  | {
+      id: string;
+      kind: "footer-content";
+      variant?: string;
+      /** Brand block — overrides siteConfig.brand when present. */
+      brand?: { name: string; tagline?: string; logo?: PublicMediaModel };
+      columns?: SiteFooterColumn[];
+      newsletter?: {
+        title: string;
+        description?: string;
+        placeholder: string;
+        submitLabel: string;
+        consentNote?: string;
+      };
+      socials?: Array<{ id: string; label: string; href: string; icon?: string }>;
+      appLinks?: {
+        appStore?: { href: string; alt: string };
+        playStore?: { href: string; alt: string };
+      };
+      legalLinks?: Array<{ id: string; label: string; href: string }>;
+      attribution?: SiteFooterAttribution;
     };
 
 export type PublicPageModel = {

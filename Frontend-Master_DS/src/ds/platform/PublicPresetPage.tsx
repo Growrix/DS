@@ -154,6 +154,10 @@ function renderSection(section: PublicSectionModel): React.ReactNode {
     case "process-steps":
     case "logo-cloud":
     case "case-studies":
+    case "pricing":
+    case "team":
+    case "contact":
+    case "footer-content":
       // If no registry variant matched and no default exists, render a labelled empty
       // surface so the preset author notices missing wiring rather than a silent gap.
       return (

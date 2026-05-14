@@ -64,6 +64,7 @@
       "description": "Agents MAY ADD NEW FILES that follow the documented convention. Agents MUST NOT EDIT existing files in these paths — only create new ones with non-colliding names.",
       "globs": [
         "src/ds/composition/sections/variants/**/*.tsx",
+        "src/ds/composition/templates/wireframes/page-*.ts",
         "src/site/presets/*.ts"
       ],
       "additionRules": [
@@ -73,6 +74,16 @@
           "metaConformsTo": "SectionVariantMeta in src/ds/composition/sections/_schema.ts",
           "registerIn": "src/ds/composition/sections/_registry.ts",
           "registerAction": "Add one import line + one entry to SECTION_REGISTRY (this is the ONLY allowed edit to a locked file when adding a variant)",
+          "clientDirective": "Add the literal first line `\"use client\";` ONLY when the variant uses React hooks (useState/useEffect/useRef/useMemo) or event handlers (onClick/onSubmit/onChange). Variants without these MUST remain server components (no directive).",
+          "thenRun": "npm run ds:contract"
+        },
+        {
+          "path": "src/ds/composition/templates/wireframes/page-<archetype>-<purpose>.ts",
+          "exports": ["<NAME_UPPERCASE>_META", "get<NamePascal>DemoPage"],
+          "metaConformsTo": "WireframeMeta in src/ds/composition/templates/wireframes/_schema.ts",
+          "registerIn": "src/ds/composition/templates/wireframes/_registry.ts",
+          "registerAction": "Add one import line + one entry to WIREFRAME_REGISTRY and one entry to WIREFRAME_DEMO_FACTORIES",
+          "validation": "Every section.variantId referenced MUST exist in SECTION_REGISTRY AND share the wireframe's archetype. The contract emitter fails the build on cross-archetype mixing.",
           "thenRun": "npm run ds:contract"
         },
         {
@@ -112,17 +123,22 @@
     "Modifying any file matching fileScopes.locked.globs",
     "Adding new top-level dependencies without explicit human approval",
     "Removing or renaming registered variants (variantIds are a public contract)",
+    "Removing or renaming registered wireframes (wireframe ids are a public contract)",
     "Introducing raw hex / rgb / px / ms values outside ds.tokens.css (caught by ds:audit)",
     "Editing the SECTION_REGISTRY map for any reason other than adding a single new entry",
+    "Editing the WIREFRAME_REGISTRY map for any reason other than adding a single new entry",
     "Introducing motion not declared as a motion preset",
     "Declaring a variant effect outside the variant's archetype permission window (caught by ds:contract permission scan)",
+    "Cross-archetype mixing inside a wireframe (every section.variantId MUST share the wireframe's archetype; caught by ds:contract validation)",
+    "Inventing variant ids or wireframe ids at runtime (consumers MUST select from the live registry)",
     "Editing files inside DOC/ (the design-system handbook is human-curated)"
   ],
   "allowedActions": [
     "Reading any file in the repo for context",
     "Adding new variant files under src/ds/composition/sections/variants/<kind>/",
+    "Adding new wireframe files under src/ds/composition/templates/wireframes/page-*.ts",
     "Adding new preset files under src/site/presets/",
-    "Editing src/app/** route content + per-project pages",
+    "Editing src/app/** route content + per-project pages (including preview routes under src/app/preview/**)",
     "Editing per-project flows under src/flows/**",
     "Running npm run ds:contract, ds:audit, ds:a11y, verify"
   ],

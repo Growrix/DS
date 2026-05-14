@@ -8,3 +8,23 @@ export * from "./sections";
 // the namespace barrel.
 export { SectionPattern, type SectionPatternProps } from "./patterns/SectionPattern";
 export { PageTemplate, type PageTemplateProps } from "./templates/PageTemplate";
+
+// Wireframe layer — registered page recipes for AI-driven retrieval.
+export {
+  WIREFRAME_REGISTRY,
+  WIREFRAME_META_LIST,
+  getWireframe,
+  getDefaultWireframe,
+  listWireframes,
+  getWireframeDemoPage,
+  validateWireframes,
+  type WireframeViolation,
+} from "./templates/wireframes/_registry";
+export type {
+  WireframeMeta,
+  WireframePurpose,
+  WireframeShell,
+  WireframeSectionSpec,
+  WireframeRegistry,
+  WireframeFilter,
+} from "./templates/wireframes/_schema";

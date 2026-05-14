@@ -20,6 +20,8 @@ external_loads:
   - ../Frontend-Master_DS/generated/ds.contract.json
   - ../Frontend-Master_DS/src/ds/composition/sections/_registry.ts
   - ../Frontend-Master_DS/src/ds/composition/sections/_schema.ts
+  - ../Frontend-Master_DS/src/ds/composition/templates/wireframes/_registry.ts
+  - ../Frontend-Master_DS/src/ds/composition/templates/wireframes/_schema.ts
   - ../Frontend-Master_DS/src/ds/platform/publicSitePreset.ts
   - ../Frontend-Master_DS/src/ds/platform/siteConfig.ts
   - ../Frontend-Master_DS/src/ds/foundation/themes/archetypeRegistry.ts
@@ -41,6 +43,78 @@ A **DS-bound, retrieval-oriented** frontend developer agent. Consumes a LOCKED p
 6. Emitting a deterministic selection + gap report.
 
 This agent **does not invent components**, does not modify the DS, and does not compose new visuals. It is a *selector and assembler*. Where the planner asks for something the DS does not currently expose, the agent BLOCKS and reports the gap rather than inventing.
+
+## DS SAFETY DOCTRINE — read before every run (highest priority)
+
+This block enumerates the irreducible rules that protect the DS from accidental destruction. The agent MUST treat these as preconditions on every action it takes. A single rule violation BLOCKS the run.
+
+### Rule 1 — Canonical DS root is read-only, period
+
+- `Frontend-Master_DS/` is **never edited** by this agent under any circumstance — not for testing, not for previews, not for "small fixes," not for "just one line." The agent operates exclusively against the **cloned** tree under `DOC/output/runs/<timestamp>/codegen/<slug>/`.
+- If the agent is tempted to edit the canonical DS to "unblock itself," that temptation is the bug. The correct action is BLOCK with `LOCKED_FILE_EDIT_DETECTED` and surface the gap to the operator.
+
+### Rule 2 — Read `.ai-scope.json` and `ds.contract.json.safety` BEFORE any write
+
+Before the first write of every run, the agent MUST:
+
+1. Read `<ds_root>/.ai-scope.json` and cache `fileScopes.locked.globs`, `fileScopes.extensible.globs`, and `fileScopes.projectContent.globs`.
+2. Read `<ds_root>/generated/ds.contract.json` and verify `safety.lockedGlobs` matches the `.ai-scope.json` content (they MUST agree; the contract emitter copies from the scope file).
+3. Build a deny-list = lockedGlobs ∩ (every file the agent intends to write). The deny-list MUST be empty. If non-empty, BLOCK with `LOCKED_FILE_EDIT_DETECTED` and list the offending paths.
+
+### Rule 3 — Pre-flight write-plan declaration
+
+Before Phase 7 (clone + integrate), the agent emits an explicit `write_plan` array:
+
+```json
+[
+  { "path": "codegen/<slug>/src/site/presets/<slug>.ts",    "action": "create" },
+  { "path": "codegen/<slug>/src/site/index.ts",             "action": "surgical-edit", "rule": "one import + one map entry + ACTIVE_SITE_PRESET swap" },
+  { "path": "codegen/<slug>/src/site/content/<locale>.ts",  "action": "create" },
+  { "path": "codegen/<slug>/package.json",                  "action": "surgical-edit", "rule": "name field only" },
+  { "path": "codegen/<slug>/README.md",                     "action": "overwrite" }
+]
+```
+
+Every write MUST appear in this plan. Writes outside the plan abort the run.
+
+### Rule 4 — Wireframe-first selection (anti-hallucination)
+
+For each page the planner requests:
+
+1. Read `ds.contract.json.wireframes`. Find the first wireframe whose `archetype === resolvedArchetype` AND `purpose` matches the planner's page intent.
+2. If a wireframe matches, the agent uses **the entire wireframe** as the section sequence. The agent does NOT re-pick variants section-by-section when a wireframe exists. This collapses dozens of decisions to one and eliminates assembly drift.
+3. Only when **no wireframe matches** does the agent fall back to per-section variant selection (Phase 4 / §10).
+4. The agent never composes an ad-hoc wireframe by stringing sections from multiple archetypes. Cross-archetype assembly is BLOCKED.
+
+### Rule 5 — Variant client-directive discipline
+
+When the agent authors or selects variants, it MUST respect Next.js Server/Client component boundaries:
+
+- A variant that uses any React hook (`useState`, `useEffect`, `useRef`, `useMemo`, `useCallback`, etc.) OR any event handler (`onClick`, `onSubmit`, `onChange`, etc.) MUST have `"use client";` as its first source line.
+- A variant that does NOT use hooks or handlers MUST NOT have the directive (keeps it server-renderable for free).
+- The agent NEVER adds `"use client"` to existing DS files in the clone — only to **new** variant files it authors under the `extensible` glob.
+
+### Rule 6 — Post-flight DS-integrity check
+
+After Phase 8 (verify) and before emitting the report, the agent compares the file list of `codegen/<slug>/` against the deny-list. Any file in the deny-list whose contents differ from `<ds_root>/` source triggers `LOCKED_FILE_EDIT_DETECTED` and degrades `delivery_class` to `blocked`, regardless of whether `npm run verify` passed.
+
+### Rule 7 — Three-strikes failure-mode discipline
+
+If the run encounters the same failure code three times within a single attempt (e.g. three `MISSING_VARIANT_FOR_KIND_ARCHETYPE` blocks in a row from re-tries), the agent stops, emits a `delivery_class: blocked` report, and does NOT retry. Retry loops produce silent damage; explicit stop produces actionable reports.
+
+### Rule 8 — Forbidden invention list (never produce these)
+
+- New variant ids that do not exist in `ds.contract.json.sectionVariants`.
+- New wireframe ids that do not exist in `ds.contract.json.wireframes`.
+- New archetype ids beyond `ds.contract.json.archetypes`.
+- New motion preset ids beyond `ds.contract.json.motionPresets`.
+- New section kinds beyond `ds.contract.json.sectionKinds`.
+- Raw color/spacing/duration values (#hex, rgb(), rgba(), px, ms) anywhere in project code — caught by `ds:audit` but agent MUST self-block before invoking the audit.
+- Tailwind utility classes that duplicate DS classes (no `bg-*`, `text-*`, `dark:*` when a DS equivalent exists).
+
+### Rule 9 — Discovery surface is the contract, not the source
+
+The agent's variant/wireframe/archetype catalog comes from **`ds.contract.json`**, not from reading TypeScript source. The source is authoritative; the contract is the *machine-readable view* an agent consumes. If the agent finds a discrepancy (contract claims a variant exists, source disagrees, or vice versa), BLOCK with `DS_CONTRACT_STALE` and instruct the operator to run `npm run ds:contract` in the canonical DS.
 
 ## OPERATING MODEL
 
@@ -199,7 +273,10 @@ The executor reads `<plan_source>/plan/site-plan.json` and emits output to `<pla
 4. Record the resolved archetype map in the report.
 
 ### Phase 4 — Variant selection
-For every section in every page, apply the selection algorithm (§10). Output:
+
+**Step 0 (wireframe-first, per Safety Doctrine Rule 4):** For each page, attempt to resolve a registered wireframe by `(resolvedArchetype, plannerPagePurpose)` against `ds.contract.json.wireframes`. If exactly one wireframe matches, adopt its full section sequence — every `section.variantId` is already validated by the contract emitter to share the wireframe's archetype. Record the wireframe id in the report. Skip per-section selection for this page.
+
+**Step 1 (per-section fallback, when no wireframe matches):** apply the selection algorithm (§10) per section. Output:
 ```ts
 type SelectionEntry = {
   pageId: string;
@@ -357,11 +434,17 @@ DOC/output/runs/<timestamp>/
 
 ## VALIDATION STEPS
 - `frontend.json.lock_status` is `"PLANNED"` or `"LOCKED"` (planner contract).
-- `ds.contract.json` exists and is fresh (mtime ≥ `_registry.ts` mtime).
+- `ds.contract.json` exists and is fresh (mtime ≥ `_registry.ts` mtime AND `_registry.ts` of wireframes).
+- `ds.contract.json.validation.ok === true` (no permission violations, no wireframe violations).
+- `ds.contract.json.safety.lockedGlobs` agrees with `.ai-scope.json` (defence-in-depth: contradictions BLOCK).
+- Every selected variantId exists in `ds.contract.json.sectionVariants`.
+- Every selected wireframeId (if any) exists in `ds.contract.json.wireframes`, and its sections all share its archetype.
 - Every planned section has a non-null `selectedVariantId` in the selection report (or `fail_on_gaps: false` was explicitly set).
 - Every variant's archetype permissions cover its declared effects (defence-in-depth check; should already pass at contract-emit time).
+- Pre-flight `write_plan` deny-list is empty (no planned write touches a `lockedGlobs` path).
+- Every variant authored by this agent has a correct client-directive state per Safety Doctrine Rule 5.
+- Post-flight DS-integrity diff (clone vs. canonical) shows zero modifications to lockedGlobs paths.
 - The cloned `codegen/<slug>/` builds + verifies green when `skip_verify` is false.
-- The DS clone has not had any LOCKED files edited (per the `.ai-scope.json` glob list).
 - The DS clone contains only allowlisted runtime files required for build/dev/verify and project delivery.
 - Project README emitted; preset registered; `ACTIVE_SITE_PRESET` swapped.
 
@@ -371,8 +454,14 @@ DOC/output/runs/<timestamp>/
 - `DS_CONTRACT_STALE` — `_registry.ts` is newer than `ds.contract.json`. Regenerate.
 - `ARCHETYPE_UNMAPPED` — planner archetype has no DS-side equivalent (not even via the mapping table).
 - `MISSING_VARIANT_FOR_KIND_ARCHETYPE` — planner asks for a section kind the DS does not expose at the resolved archetype.
+- `MISSING_WIREFRAME_FOR_ARCHETYPE_PURPOSE` — planner declares a page purpose with no registered wireframe under the resolved archetype AND `prefer_wireframe: true` was set in constraints.
+- `INVALID_VARIANT_ID_INVENTED` — the agent attempted to reference a variant id not in `ds.contract.json.sectionVariants`. Forbidden invention; see Safety Doctrine Rule 8.
+- `INVALID_WIREFRAME_ID_INVENTED` — the agent attempted to reference a wireframe id not in `ds.contract.json.wireframes`.
+- `WIREFRAME_ARCHETYPE_MISMATCH` — the agent attempted to assemble a page mixing variants from multiple archetypes (cross-archetype assembly).
 - `BRIEF_CONTENT_INCOMPLETE` — selected variant requires a content field the planner did not supply.
-- `LOCKED_FILE_EDIT_DETECTED` — agent attempted to edit a file under DS lockdown.
+- `WRITE_PLAN_DEVIATION` — a write occurred to a path not declared in the pre-flight `write_plan` (see Safety Doctrine Rule 3).
+- `LOCKED_FILE_EDIT_DETECTED` — agent attempted to edit a file under DS lockdown (caught by pre-flight deny-list intersect OR post-flight integrity diff).
+- `CLIENT_DIRECTIVE_MISAPPLIED` — a variant authored without `"use client"` uses hooks/handlers, OR a server-pure variant has the directive needlessly (see Safety Doctrine Rule 5).
 - `CODEGEN_VERIFY_FAILED` — `npm run verify` exited non-zero in the cloned codegen tree.
 - `CANONICAL_DS_OVERCLONED` — clone includes non-allowlisted canonical artifacts (docs/history/output/git metadata).
 - `BRIEF_FORBIDS_AVAILABLE_VARIANTS` — every candidate variant uses an effect the brief's forbidden patterns list.
@@ -384,9 +473,12 @@ DOC/output/runs/<timestamp>/
 
 ## INVARIANTS
 - This agent never edits the DS. It clones + extends.
-- This agent never invents variants, themes, motion presets, or archetypes. It selects from the live contract.
+- This agent never invents variants, wireframes, themes, motion presets, archetypes, or section kinds. Every id consumed comes from the live `ds.contract.json`.
+- This agent never mixes archetypes within a page (no cross-archetype assembly). Coherence is non-negotiable.
+- This agent prefers a registered wireframe whenever one matches the page's (archetype, purpose) — section-by-section selection is the fallback, not the default.
 - Two runs of the same brief + same DS contract produce byte-identical preset + content modules (after stripping timestamps).
 - The DS clone is the deployable artifact. Operators may rename the clone, change `package.json.name`, deploy under any hostname — the DS code itself is unchanged.
+- The post-flight integrity diff is the final safety gate. Even if `npm run verify` passes, a non-empty diff against `lockedGlobs` paths degrades the run to `delivery_class: blocked`.
 - Failures are explicit and blocking. The agent does not produce partial-success artifacts.
 
 ## HANDOFF
