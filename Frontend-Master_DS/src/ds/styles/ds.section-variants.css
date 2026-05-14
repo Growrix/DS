@@ -2048,6 +2048,752 @@
     margin: 0;
   }
 
+  /* ============================================================
+     Phase 1 Batch 1 — modern-saas sparse-kind lifters (append-only)
+     ============================================================ */
+
+  /* testimonials-modern-saas-cards-grid */
+  .sv-testimonials-modern-saas-cards-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--ds-space-5);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .sv-testimonials-modern-saas-cards-grid__card {
+    background: var(--ds-color-surface);
+    border: 1px solid var(--ds-color-border);
+    border-radius: var(--ds-radius-lg, 1rem);
+    padding: var(--ds-space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-4);
+  }
+  .sv-testimonials-modern-saas-cards-grid__quote {
+    font-size: var(--ds-font-size-6);
+    line-height: 1.55;
+    color: var(--ds-color-foreground);
+    margin: 0;
+  }
+  .sv-testimonials-modern-saas-cards-grid__byline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-1);
+  }
+  .sv-testimonials-modern-saas-cards-grid__name {
+    font-weight: var(--ds-font-weight-medium, 500);
+    color: var(--ds-color-foreground);
+    font-size: var(--ds-font-size-5);
+  }
+  .sv-testimonials-modern-saas-cards-grid__meta {
+    color: var(--ds-color-foreground-secondary);
+    font-size: var(--ds-font-size-4);
+  }
+
+  /* faq-modern-saas-two-column */
+  .sv-faq-modern-saas-two-column {
+    background: var(--ds-color-background);
+  }
+  .sv-faq-modern-saas-two-column__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-7);
+  }
+  .sv-faq-modern-saas-two-column__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-3);
+    max-width: 60ch;
+  }
+  .sv-faq-modern-saas-two-column__kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-accent, var(--ds-palette-brand-500));
+  }
+  .sv-faq-modern-saas-two-column__title {
+    font-size: var(--ds-font-size-9);
+    line-height: 1.2;
+    font-weight: var(--ds-font-weight-semibold, 600);
+    color: var(--ds-color-foreground);
+    margin: 0;
+  }
+  .sv-faq-modern-saas-two-column__lede {
+    font-size: var(--ds-font-size-6);
+    line-height: 1.55;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+  .sv-faq-modern-saas-two-column__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--ds-space-5);
+  }
+  @media (max-width: 720px) {
+    .sv-faq-modern-saas-two-column__grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+  .sv-faq-modern-saas-two-column__col {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-2);
+  }
+  .sv-faq-modern-saas-two-column__item {
+    border: 1px solid var(--ds-color-border);
+    border-radius: var(--ds-radius-md, 0.75rem);
+    background: var(--ds-color-surface);
+    overflow: hidden;
+  }
+  .sv-faq-modern-saas-two-column__trigger {
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: var(--ds-space-4) var(--ds-space-5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--ds-space-4);
+    font-size: var(--ds-font-size-5);
+    font-weight: var(--ds-font-weight-medium, 500);
+    color: var(--ds-color-foreground);
+  }
+  .sv-faq-modern-saas-two-column__trigger:hover {
+    background: var(--ds-color-surface-raised);
+  }
+  .sv-faq-modern-saas-two-column__q {
+    flex: 1;
+  }
+  .sv-faq-modern-saas-two-column__caret {
+    font-size: var(--ds-font-size-7);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: grid;
+    place-items: center;
+    color: var(--ds-color-accent, var(--ds-palette-brand-500));
+    transition: transform var(--ds-duration-fastest) var(--ds-ease-out);
+    flex-shrink: 0;
+  }
+  .sv-faq-modern-saas-two-column__caret.is-open {
+    transform: rotate(45deg);
+  }
+  .sv-faq-modern-saas-two-column__panel {
+    padding: 0 var(--ds-space-5) var(--ds-space-4);
+  }
+  .sv-faq-modern-saas-two-column__a {
+    font-size: var(--ds-font-size-4);
+    line-height: 1.65;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  /* bloglist-modern-saas-cards-grid */
+  .sv-bloglist-modern-saas-cards-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--ds-space-5);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .sv-bloglist-modern-saas-cards-grid__card {
+    background: var(--ds-color-surface);
+    border: 1px solid var(--ds-color-border);
+    border-radius: var(--ds-radius-lg, 1rem);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .sv-bloglist-modern-saas-cards-grid__thumb {
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(
+      135deg,
+      var(--ds-color-surface-raised),
+      var(--ds-color-surface)
+    );
+  }
+  .sv-bloglist-modern-saas-cards-grid__link {
+    padding: var(--ds-space-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-3);
+    color: inherit;
+    text-decoration: none;
+  }
+  .sv-bloglist-modern-saas-cards-grid__title {
+    font-size: var(--ds-font-size-6);
+    line-height: 1.3;
+    color: var(--ds-color-foreground);
+    margin: 0;
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+  .sv-bloglist-modern-saas-cards-grid__excerpt {
+    font-size: var(--ds-font-size-4);
+    line-height: 1.55;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+    max-width: 60ch;
+  }
+  .sv-bloglist-modern-saas-cards-grid__cta {
+    color: var(--ds-color-accent, var(--ds-palette-brand-500));
+    font-size: var(--ds-font-size-4);
+    font-weight: var(--ds-font-weight-medium, 500);
+  }
+
+  /* newsletter-modern-saas-centered-card */
+  .sv-newsletter-modern-saas-centered-card {
+    background: var(--ds-color-background);
+  }
+  .sv-newsletter-modern-saas-centered-card__card {
+    background: var(--ds-color-surface-raised);
+    border: 1px solid var(--ds-color-border);
+    border-radius: var(--ds-radius-xl, 1.5rem);
+    padding: var(--ds-space-8) var(--ds-space-7);
+    max-width: 56ch;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-4);
+    text-align: center;
+    box-shadow: var(--ds-shadow-lg);
+  }
+  .sv-newsletter-modern-saas-centered-card__kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-accent, var(--ds-palette-brand-500));
+  }
+  .sv-newsletter-modern-saas-centered-card__title {
+    font-size: var(--ds-font-size-8);
+    line-height: 1.2;
+    font-weight: var(--ds-font-weight-semibold, 600);
+    color: var(--ds-color-foreground);
+    margin: 0;
+  }
+  .sv-newsletter-modern-saas-centered-card__lede {
+    font-size: var(--ds-font-size-5);
+    line-height: 1.55;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+  .sv-newsletter-modern-saas-centered-card__form {
+    display: flex;
+    flex-direction: row;
+    gap: var(--ds-space-3);
+    align-items: flex-end;
+    justify-content: center;
+  }
+  @media (max-width: 560px) {
+    .sv-newsletter-modern-saas-centered-card__form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  .sv-newsletter-modern-saas-centered-card__field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-1);
+    text-align: left;
+    flex: 1;
+    min-width: 0;
+  }
+  .sv-newsletter-modern-saas-centered-card__label {
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-foreground-secondary);
+  }
+  .sv-newsletter-modern-saas-centered-card__input {
+    background: var(--ds-color-surface);
+    border: 1px solid var(--ds-color-border);
+    border-radius: var(--ds-radius-md, 0.75rem);
+    padding: var(--ds-space-3) var(--ds-space-4);
+    color: var(--ds-color-foreground);
+    font-size: var(--ds-font-size-5);
+    width: 100%;
+  }
+  .sv-newsletter-modern-saas-centered-card__input:focus-visible {
+    outline: 2px solid var(--ds-color-accent, var(--ds-palette-brand-500));
+    outline-offset: 2px;
+  }
+
+  /* stats-band-modern-saas-2x2-grid */
+  .sv-stats-band-modern-saas-2x2-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--ds-space-6);
+  }
+  @media (max-width: 560px) {
+    .sv-stats-band-modern-saas-2x2-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+  .sv-stats-band-modern-saas-2x2-grid__cell {
+    border-left: 2px solid var(--ds-color-border);
+    padding: var(--ds-space-3) var(--ds-space-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-2);
+  }
+  .sv-stats-band-modern-saas-2x2-grid__value {
+    font-size: var(--ds-font-size-10);
+    line-height: 1;
+    font-weight: var(--ds-font-weight-bold, 700);
+    color: var(--ds-color-foreground);
+    letter-spacing: -0.02em;
+  }
+  .sv-stats-band-modern-saas-2x2-grid__label {
+    font-size: var(--ds-font-size-5);
+    color: var(--ds-color-foreground);
+    font-weight: var(--ds-font-weight-medium, 500);
+  }
+  .sv-stats-band-modern-saas-2x2-grid__sublabel {
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  /* process-steps-modern-saas-horizontal */
+  .sv-process-steps-modern-saas-horizontal {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--ds-space-6);
+    position: relative;
+  }
+  .sv-process-steps-modern-saas-horizontal__step {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-3);
+    padding-top: var(--ds-space-2);
+    position: relative;
+  }
+  .sv-process-steps-modern-saas-horizontal__step::before {
+    content: "";
+    position: absolute;
+    top: calc(1.5rem - 1px);
+    left: 3rem;
+    right: 0;
+    height: 1px;
+    background: var(--ds-color-border);
+    z-index: 0;
+  }
+  .sv-process-steps-modern-saas-horizontal__step:last-child::before {
+    display: none;
+  }
+  .sv-process-steps-modern-saas-horizontal__numeral {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999px;
+    background: var(--ds-color-surface-raised);
+    border: 1px solid var(--ds-color-border);
+    display: grid;
+    place-items: center;
+    font-size: var(--ds-font-size-5);
+    font-weight: var(--ds-font-weight-semibold, 600);
+    color: var(--ds-color-accent, var(--ds-palette-brand-500));
+    position: relative;
+    z-index: 1;
+  }
+  .sv-process-steps-modern-saas-horizontal__title {
+    font-size: var(--ds-font-size-6);
+    line-height: 1.3;
+    color: var(--ds-color-foreground);
+    margin: 0;
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+  .sv-process-steps-modern-saas-horizontal__body {
+    font-size: var(--ds-font-size-4);
+    line-height: 1.55;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+    max-width: 60ch;
+  }
+
+  /* logo-cloud-modern-saas-marquee */
+  .sv-logo-cloud-modern-saas-marquee {
+    overflow: hidden;
+    width: 100%;
+    mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+  }
+  .sv-logo-cloud-modern-saas-marquee__track {
+    display: flex;
+    gap: var(--ds-space-7);
+    width: max-content;
+    animation: sv-logo-cloud-modern-saas-marquee-scroll 40s linear infinite;
+  }
+  .sv-logo-cloud-modern-saas-marquee:hover .sv-logo-cloud-modern-saas-marquee__track {
+    animation-play-state: paused;
+  }
+  .sv-logo-cloud-modern-saas-marquee__item {
+    color: var(--ds-color-foreground-secondary);
+    font-size: var(--ds-font-size-6);
+    font-weight: var(--ds-font-weight-medium, 500);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    flex-shrink: 0;
+    opacity: 0.7;
+  }
+  @keyframes sv-logo-cloud-modern-saas-marquee-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* case-studies-modern-saas-featured */
+  .sv-case-studies-modern-saas-featured {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-6);
+  }
+  .sv-case-studies-modern-saas-featured__hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: var(--ds-space-6);
+    background: var(--ds-color-surface);
+    border: 1px solid var(--ds-color-border);
+    border-radius: var(--ds-radius-xl, 1.5rem);
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+  }
+  @media (max-width: 720px) {
+    .sv-case-studies-modern-saas-featured__hero {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+  .sv-case-studies-modern-saas-featured__hero-media {
+    aspect-ratio: 4 / 3;
+    background: linear-gradient(
+      135deg,
+      var(--ds-color-surface-raised),
+      var(--ds-color-surface)
+    );
+  }
+  .sv-case-studies-modern-saas-featured__hero-body {
+    padding: var(--ds-space-7);
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-3);
+    justify-content: center;
+  }
+  .sv-case-studies-modern-saas-featured__tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ds-space-2);
+  }
+  .sv-case-studies-modern-saas-featured__tag {
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-foreground-secondary);
+    background: var(--ds-color-surface-raised);
+    border-radius: var(--ds-radius-sm, 0.375rem);
+    padding: var(--ds-space-1) var(--ds-space-3);
+  }
+  .sv-case-studies-modern-saas-featured__hero-title {
+    font-size: var(--ds-font-size-8);
+    line-height: 1.2;
+    color: var(--ds-color-foreground);
+    margin: 0;
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+  .sv-case-studies-modern-saas-featured__hero-excerpt {
+    font-size: var(--ds-font-size-5);
+    line-height: 1.55;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+    max-width: 60ch;
+  }
+  .sv-case-studies-modern-saas-featured__hero-cta {
+    color: var(--ds-color-accent, var(--ds-palette-brand-500));
+    font-size: var(--ds-font-size-5);
+    font-weight: var(--ds-font-weight-medium, 500);
+  }
+  .sv-case-studies-modern-saas-featured__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--ds-space-5);
+  }
+  .sv-case-studies-modern-saas-featured__card {
+    background: var(--ds-color-surface);
+    border: 1px solid var(--ds-color-border);
+    border-radius: var(--ds-radius-lg, 1rem);
+    overflow: hidden;
+  }
+  .sv-case-studies-modern-saas-featured__card-link {
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;
+  }
+  .sv-case-studies-modern-saas-featured__card-media {
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(
+      135deg,
+      var(--ds-color-surface-raised),
+      var(--ds-color-surface)
+    );
+  }
+  .sv-case-studies-modern-saas-featured__card-title {
+    margin: 0;
+    padding: var(--ds-space-4) var(--ds-space-5) 0;
+    font-size: var(--ds-font-size-5);
+    line-height: 1.3;
+    color: var(--ds-color-foreground);
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+  .sv-case-studies-modern-saas-featured__card-excerpt {
+    margin: 0;
+    padding: var(--ds-space-2) var(--ds-space-5) var(--ds-space-5);
+    font-size: var(--ds-font-size-3);
+    line-height: 1.55;
+    color: var(--ds-color-foreground-secondary);
+  }
+
+  /* team-modern-saas-grid */
+  .sv-team-modern-saas-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--ds-space-6);
+  }
+  .sv-team-modern-saas-grid__card {
+    background: var(--ds-color-surface);
+    border: 1px solid var(--ds-color-border);
+    border-radius: var(--ds-radius-lg, 1rem);
+    padding: var(--ds-space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-3);
+    align-items: flex-start;
+  }
+  .sv-team-modern-saas-grid__avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 999px;
+    background: var(--ds-color-surface-raised);
+    border: 1px solid var(--ds-color-border);
+    display: grid;
+    place-items: center;
+    font-size: var(--ds-font-size-7);
+    font-weight: var(--ds-font-weight-semibold, 600);
+    color: var(--ds-color-foreground-secondary);
+  }
+  .sv-team-modern-saas-grid__name {
+    font-size: var(--ds-font-size-6);
+    line-height: 1.2;
+    color: var(--ds-color-foreground);
+    margin: 0;
+    font-weight: var(--ds-font-weight-semibold, 600);
+  }
+  .sv-team-modern-saas-grid__role {
+    font-size: var(--ds-font-size-4);
+    color: var(--ds-color-accent, var(--ds-palette-brand-500));
+    font-weight: var(--ds-font-weight-medium, 500);
+  }
+  .sv-team-modern-saas-grid__bio {
+    font-size: var(--ds-font-size-4);
+    line-height: 1.55;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+    max-width: 60ch;
+  }
+  .sv-team-modern-saas-grid__socials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ds-space-3);
+  }
+  .sv-team-modern-saas-grid__social {
+    color: var(--ds-color-foreground-secondary);
+    font-size: var(--ds-font-size-3);
+    text-decoration: none;
+  }
+  .sv-team-modern-saas-grid__social:hover {
+    color: var(--ds-color-accent, var(--ds-palette-brand-500));
+  }
+
+  /* contact-modern-saas-form-info */
+  .sv-contact-modern-saas-form-info {
+    background: var(--ds-color-background);
+  }
+  .sv-contact-modern-saas-form-info__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-7);
+  }
+  .sv-contact-modern-saas-form-info__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-3);
+    max-width: 60ch;
+  }
+  .sv-contact-modern-saas-form-info__kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-accent, var(--ds-palette-brand-500));
+  }
+  .sv-contact-modern-saas-form-info__title {
+    font-size: var(--ds-font-size-9);
+    line-height: 1.2;
+    font-weight: var(--ds-font-weight-semibold, 600);
+    color: var(--ds-color-foreground);
+    margin: 0;
+  }
+  .sv-contact-modern-saas-form-info__lede {
+    font-size: var(--ds-font-size-6);
+    line-height: 1.55;
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+  .sv-contact-modern-saas-form-info__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+    gap: var(--ds-space-7);
+  }
+  @media (max-width: 720px) {
+    .sv-contact-modern-saas-form-info__grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+  .sv-contact-modern-saas-form-info__channels {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-4);
+  }
+  .sv-contact-modern-saas-form-info__channel {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-1);
+  }
+  .sv-contact-modern-saas-form-info__channel-label {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-foreground-secondary);
+  }
+  .sv-contact-modern-saas-form-info__channel-value {
+    color: var(--ds-color-foreground);
+    font-size: var(--ds-font-size-5);
+    text-decoration: none;
+  }
+  .sv-contact-modern-saas-form-info__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-4);
+    background: var(--ds-color-surface);
+    border: 1px solid var(--ds-color-border);
+    border-radius: var(--ds-radius-lg, 1rem);
+    padding: var(--ds-space-6);
+  }
+  .sv-contact-modern-saas-form-info__field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-1);
+  }
+  .sv-contact-modern-saas-form-info__label {
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-foreground-secondary);
+  }
+  .sv-contact-modern-saas-form-info__input,
+  .sv-contact-modern-saas-form-info__textarea {
+    background: var(--ds-color-background);
+    border: 1px solid var(--ds-color-border);
+    border-radius: var(--ds-radius-md, 0.75rem);
+    padding: var(--ds-space-3) var(--ds-space-4);
+    color: var(--ds-color-foreground);
+    font: inherit;
+    font-size: var(--ds-font-size-5);
+    width: 100%;
+    resize: vertical;
+  }
+  .sv-contact-modern-saas-form-info__input:focus-visible,
+  .sv-contact-modern-saas-form-info__textarea:focus-visible {
+    outline: 2px solid var(--ds-color-accent, var(--ds-palette-brand-500));
+    outline-offset: 2px;
+  }
+  .sv-contact-modern-saas-form-info__consent {
+    font-size: var(--ds-font-size-3);
+    color: var(--ds-color-foreground-secondary);
+    margin: 0;
+  }
+
+  /* footer-content-modern-saas-minimal */
+  .sv-footer-content-modern-saas-minimal {
+    background: var(--ds-color-background);
+    border-top: 1px solid var(--ds-color-border);
+  }
+  .sv-footer-content-modern-saas-minimal__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--ds-space-5);
+    padding: var(--ds-space-6) var(--ds-space-6);
+    flex-wrap: wrap;
+  }
+  @media (max-width: 720px) {
+    .sv-footer-content-modern-saas-minimal__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .sv-footer-content-modern-saas-minimal__brand {
+    font-size: var(--ds-font-size-5);
+    font-weight: var(--ds-font-weight-semibold, 600);
+    color: var(--ds-color-foreground);
+  }
+  .sv-footer-content-modern-saas-minimal__legal {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ds-space-5);
+  }
+  .sv-footer-content-modern-saas-minimal__legal-link {
+    color: var(--ds-color-foreground-secondary);
+    font-size: var(--ds-font-size-3);
+    text-decoration: none;
+  }
+  .sv-footer-content-modern-saas-minimal__legal-link:hover {
+    color: var(--ds-color-foreground);
+  }
+  .sv-footer-content-modern-saas-minimal__attribution {
+    color: var(--ds-color-foreground-secondary);
+    font-size: var(--ds-font-size-3);
+  }
+  .sv-footer-content-modern-saas-minimal__attribution a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   /* Reduced motion override */
   @media (prefers-reduced-motion: reduce) {
     .motion-fade-in,
@@ -2055,7 +2801,8 @@
     .motion-stagger-text-60 > *,
     .motion-idle-pulse-once,
     .motion-reveal-glass,
-    .sv-testimonials-marquee__track {
+    .sv-testimonials-marquee__track,
+    .sv-logo-cloud-modern-saas-marquee__track {
       animation: none !important;
       transition: none !important;
       transform: none !important;

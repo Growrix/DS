@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "counts": {
-    "variants": 28,
+    "variants": 39,
     "archetypes": 8,
     "motionPresets": 8,
     "themes": 2,
@@ -699,6 +699,25 @@
       "isDefault": true
     },
     {
+      "id": "bloglist-modern-saas-cards-grid",
+      "kind": "blogList",
+      "archetype": "modern-saas",
+      "label": "Blog List — Modern SaaS Cards Grid",
+      "description": "Three-column post grid; each card has a placeholder thumbnail band, title (max 3 lines), 60ch excerpt, and a 'Read more' link. Stagger reveal on enter.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
       "id": "testimonials-marquee",
       "kind": "testimonials",
       "archetype": "modern-saas",
@@ -713,6 +732,25 @@
       ],
       "effects": {},
       "density": "extended",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "testimonials-modern-saas-cards-grid",
+      "kind": "testimonials",
+      "archetype": "modern-saas",
+      "label": "Testimonials — Modern SaaS Cards Grid",
+      "description": "Three-column card grid with one quote per card; avatar + name + meta footer; soft-elevation card surface; staggered rise-soft reveal on enter.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "comfortable",
       "complexity": "standard",
       "isDefault": false
     },
@@ -821,6 +859,25 @@
       "isDefault": true
     },
     {
+      "id": "stats-band-modern-saas-2x2-grid",
+      "kind": "stats-band",
+      "archetype": "modern-saas",
+      "label": "Stats Band — Modern SaaS 2×2 Grid",
+      "description": "Four stats arranged in a 2×2 grid with large numeral on top, label below, optional sublabel; divider lines between cells; balanced for tablet breakpoint.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
       "id": "process-steps-vertical",
       "kind": "process-steps",
       "archetype": "local-business-trust",
@@ -839,6 +896,25 @@
       "isDefault": true
     },
     {
+      "id": "process-steps-modern-saas-horizontal",
+      "kind": "process-steps",
+      "archetype": "modern-saas",
+      "label": "Process Steps — Modern SaaS Horizontal",
+      "description": "Horizontal numbered steps. Each step has a circular numeral plate, title and 60ch description. Steps connected by a soft horizontal rule. Wraps to vertical below 720 px.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
       "id": "logo-cloud-grid",
       "kind": "logo-cloud",
       "archetype": "modern-saas",
@@ -855,6 +931,24 @@
       "density": "compact",
       "complexity": "minimal",
       "isDefault": true
+    },
+    {
+      "id": "logo-cloud-modern-saas-marquee",
+      "kind": "logo-cloud",
+      "archetype": "modern-saas",
+      "label": "Logo Cloud — Modern SaaS Marquee",
+      "description": "Single-row horizontal marquee of logo labels. Track is duplicated for seamless loop. Mono tone in steady state. Pauses on hover. Suppressed under prefers-reduced-motion.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "compact",
+      "complexity": "minimal",
+      "isDefault": false
     },
     {
       "id": "case-studies-grid",
@@ -878,6 +972,25 @@
       "isDefault": true
     },
     {
+      "id": "case-studies-modern-saas-featured",
+      "kind": "case-studies",
+      "archetype": "modern-saas",
+      "label": "Case Studies — Modern SaaS Featured",
+      "description": "Featured hero case (first item) spans full width with media + excerpt + tag chips; remaining items render as a 3-column compact grid below.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "rich",
+      "isDefault": false
+    },
+    {
       "id": "faq-modern-saas-accordion",
       "kind": "faq",
       "archetype": "modern-saas",
@@ -899,6 +1012,25 @@
       "isDefault": false
     },
     {
+      "id": "faq-modern-saas-two-column",
+      "kind": "faq",
+      "archetype": "modern-saas",
+      "label": "FAQ — Modern SaaS Two-Column",
+      "description": "Two-column accordion. Even-index items flow into the left column, odd into the right. Independent disclosure per column. ArrowDown/ArrowUp keyboard nav within a column.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "reveal-glass"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
       "id": "newsletter-startup-conversion-inline",
       "kind": "newsletter",
       "archetype": "startup-conversion",
@@ -915,6 +1047,24 @@
       "density": "compact",
       "complexity": "minimal",
       "isDefault": true
+    },
+    {
+      "id": "newsletter-modern-saas-centered-card",
+      "kind": "newsletter",
+      "archetype": "modern-saas",
+      "label": "Newsletter — Modern SaaS Centered Card",
+      "description": "Elevated centered card with kicker, headline, lede, inline email field, and submit button. Card surface uses raised elevation token; email field has visible focus ring.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
     },
     {
       "id": "pricing-modern-saas-3-tier-cards",
@@ -999,6 +1149,25 @@
       "isDefault": true
     },
     {
+      "id": "team-modern-saas-grid",
+      "kind": "team",
+      "archetype": "modern-saas",
+      "label": "Team — Modern SaaS Grid",
+      "description": "Three-column member grid; each member has circular avatar plate, name, role, optional bio (60ch), inline social links. Stagger reveal on enter.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
       "id": "contact-local-business-trust-split",
       "kind": "contact",
       "archetype": "local-business-trust",
@@ -1017,6 +1186,24 @@
       "isDefault": true
     },
     {
+      "id": "contact-modern-saas-form-info",
+      "kind": "contact",
+      "archetype": "modern-saas",
+      "label": "Contact — Modern SaaS Form + Info",
+      "description": "Two-column split; left column lists contact channels; right column hosts inline form (text, email, textarea); consent note rendered below submit.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
       "id": "footer-content-modern-saas-columns",
       "kind": "footer-content",
       "archetype": "modern-saas",
@@ -1033,6 +1220,22 @@
       "density": "comfortable",
       "complexity": "standard",
       "isDefault": true
+    },
+    {
+      "id": "footer-content-modern-saas-minimal",
+      "kind": "footer-content",
+      "archetype": "modern-saas",
+      "label": "Footer — Modern SaaS Minimal Strip",
+      "description": "Single-row minimal footer; brand wordmark left, inline legal links centre, attribution right; collapses to centred stack below 720 px.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [],
+      "effects": {},
+      "density": "compact",
+      "complexity": "minimal",
+      "isDefault": false
     }
   ],
   "wireframes": [

@@ -129,6 +129,52 @@ import {
   FooterContentModernSaasColumns,
 } from "./variants/footer-content/footer-content-modern-saas-columns";
 
+// Phase 1 Batch 1 — modern-saas sparse-kind lifters
+import {
+  TESTIMONIALS_MODERN_SAAS_CARDS_GRID_META,
+  TestimonialsModernSaasCardsGrid,
+} from "./variants/testimonials/testimonials-modern-saas-cards-grid";
+import {
+  FAQ_MODERN_SAAS_TWO_COLUMN_META,
+  FaqModernSaasTwoColumn,
+} from "./variants/faq/faq-modern-saas-two-column";
+import {
+  BLOGLIST_MODERN_SAAS_CARDS_GRID_META,
+  BlogListModernSaasCardsGrid,
+} from "./variants/blogList/bloglist-modern-saas-cards-grid";
+import {
+  NEWSLETTER_MODERN_SAAS_CENTERED_CARD_META,
+  NewsletterModernSaasCenteredCard,
+} from "./variants/newsletter/newsletter-modern-saas-centered-card";
+import {
+  STATS_BAND_MODERN_SAAS_2X2_GRID_META,
+  StatsBandModernSaas2x2Grid,
+} from "./variants/stats-band/stats-band-modern-saas-2x2-grid";
+import {
+  PROCESS_STEPS_MODERN_SAAS_HORIZONTAL_META,
+  ProcessStepsModernSaasHorizontal,
+} from "./variants/process-steps/process-steps-modern-saas-horizontal";
+import {
+  LOGO_CLOUD_MODERN_SAAS_MARQUEE_META,
+  LogoCloudModernSaasMarquee,
+} from "./variants/logo-cloud/logo-cloud-modern-saas-marquee";
+import {
+  CASE_STUDIES_MODERN_SAAS_FEATURED_META,
+  CaseStudiesModernSaasFeatured,
+} from "./variants/case-studies/case-studies-modern-saas-featured";
+import {
+  TEAM_MODERN_SAAS_GRID_META,
+  TeamModernSaasGrid,
+} from "./variants/team/team-modern-saas-grid";
+import {
+  CONTACT_MODERN_SAAS_FORM_INFO_META,
+  ContactModernSaasFormInfo,
+} from "./variants/contact/contact-modern-saas-form-info";
+import {
+  FOOTER_CONTENT_MODERN_SAAS_MINIMAL_META,
+  FooterContentModernSaasMinimal,
+} from "./variants/footer-content/footer-content-modern-saas-minimal";
+
 import type {
   SectionKind,
   SectionRegistry,
@@ -188,11 +234,19 @@ export const SECTION_REGISTRY: SectionRegistry = {
     meta: BLOGLIST_EDITORIAL_PREMIUM_STACK_META,
     component: BlogListEditorialPremiumStack,
   },
+  [BLOGLIST_MODERN_SAAS_CARDS_GRID_META.id]: {
+    meta: BLOGLIST_MODERN_SAAS_CARDS_GRID_META,
+    component: BlogListModernSaasCardsGrid,
+  },
 
   // testimonials variants
   [TESTIMONIALS_MARQUEE_META.id]: {
     meta: TESTIMONIALS_MARQUEE_META,
     component: TestimonialsMarquee,
+  },
+  [TESTIMONIALS_MODERN_SAAS_CARDS_GRID_META.id]: {
+    meta: TESTIMONIALS_MODERN_SAAS_CARDS_GRID_META,
+    component: TestimonialsModernSaasCardsGrid,
   },
 
   // cta variants
@@ -218,11 +272,19 @@ export const SECTION_REGISTRY: SectionRegistry = {
     meta: STATS_BAND_4COL_META,
     component: StatsBand4Col,
   },
+  [STATS_BAND_MODERN_SAAS_2X2_GRID_META.id]: {
+    meta: STATS_BAND_MODERN_SAAS_2X2_GRID_META,
+    component: StatsBandModernSaas2x2Grid,
+  },
 
   // process-steps variants
   [PROCESS_STEPS_VERTICAL_META.id]: {
     meta: PROCESS_STEPS_VERTICAL_META,
     component: ProcessStepsVertical,
+  },
+  [PROCESS_STEPS_MODERN_SAAS_HORIZONTAL_META.id]: {
+    meta: PROCESS_STEPS_MODERN_SAAS_HORIZONTAL_META,
+    component: ProcessStepsModernSaasHorizontal,
   },
 
   // logo-cloud variants
@@ -230,11 +292,19 @@ export const SECTION_REGISTRY: SectionRegistry = {
     meta: LOGO_CLOUD_GRID_META,
     component: LogoCloudGrid,
   },
+  [LOGO_CLOUD_MODERN_SAAS_MARQUEE_META.id]: {
+    meta: LOGO_CLOUD_MODERN_SAAS_MARQUEE_META,
+    component: LogoCloudModernSaasMarquee,
+  },
 
   // case-studies variants
   [CASE_STUDIES_GRID_META.id]: {
     meta: CASE_STUDIES_GRID_META,
     component: CaseStudiesGrid,
+  },
+  [CASE_STUDIES_MODERN_SAAS_FEATURED_META.id]: {
+    meta: CASE_STUDIES_MODERN_SAAS_FEATURED_META,
+    component: CaseStudiesModernSaasFeatured,
   },
 
   // faq variants
@@ -242,11 +312,19 @@ export const SECTION_REGISTRY: SectionRegistry = {
     meta: FAQ_MODERN_SAAS_ACCORDION_META,
     component: FaqModernSaasAccordion,
   },
+  [FAQ_MODERN_SAAS_TWO_COLUMN_META.id]: {
+    meta: FAQ_MODERN_SAAS_TWO_COLUMN_META,
+    component: FaqModernSaasTwoColumn,
+  },
 
   // newsletter variants
   [NEWSLETTER_STARTUP_CONVERSION_INLINE_META.id]: {
     meta: NEWSLETTER_STARTUP_CONVERSION_INLINE_META,
     component: NewsletterStartupConversionInline,
+  },
+  [NEWSLETTER_MODERN_SAAS_CENTERED_CARD_META.id]: {
+    meta: NEWSLETTER_MODERN_SAAS_CENTERED_CARD_META,
+    component: NewsletterModernSaasCenteredCard,
   },
 
   // pricing variants
@@ -268,17 +346,29 @@ export const SECTION_REGISTRY: SectionRegistry = {
     meta: TEAM_DASHBOARD_OPS_DIRECTORY_META,
     component: TeamDashboardOpsDirectory,
   },
+  [TEAM_MODERN_SAAS_GRID_META.id]: {
+    meta: TEAM_MODERN_SAAS_GRID_META,
+    component: TeamModernSaasGrid,
+  },
 
   // contact variants
   [CONTACT_LOCAL_BUSINESS_TRUST_SPLIT_META.id]: {
     meta: CONTACT_LOCAL_BUSINESS_TRUST_SPLIT_META,
     component: ContactLocalBusinessTrustSplit,
   },
+  [CONTACT_MODERN_SAAS_FORM_INFO_META.id]: {
+    meta: CONTACT_MODERN_SAAS_FORM_INFO_META,
+    component: ContactModernSaasFormInfo,
+  },
 
   // footer-content variants
   [FOOTER_CONTENT_MODERN_SAAS_COLUMNS_META.id]: {
     meta: FOOTER_CONTENT_MODERN_SAAS_COLUMNS_META,
     component: FooterContentModernSaasColumns,
+  },
+  [FOOTER_CONTENT_MODERN_SAAS_MINIMAL_META.id]: {
+    meta: FOOTER_CONTENT_MODERN_SAAS_MINIMAL_META,
+    component: FooterContentModernSaasMinimal,
   },
 };
 
