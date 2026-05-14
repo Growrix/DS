@@ -1,0 +1,134 @@
+{
+  "source": "Frontend-Master_DS/generated/ds.contract.json",
+  "date": "2026-05-14",
+  "canonical_edits_made": false,
+  "summary": {
+    "variants": 23,
+    "archetypes": 8,
+    "motionPresets": 8,
+    "themes": 2,
+    "sitePresets": 2,
+    "wireframes": 2,
+    "declaredSectionKinds": 15,
+    "declaredWireframePurposes": 8,
+    "missingArchetypeKindPairs": 105,
+    "missingWireframePairs": 62
+  },
+  "legacySiteCleanup": {
+    "removeOrReplace": [
+      "src/app/(marketing)/layout.tsx",
+      "src/app/(marketing)/page.tsx",
+      "src/app/(marketing)/[...slug]/page.tsx",
+      "src/app/preview/**",
+      "src/app/route-map.ts",
+      "src/site/presets/solarInstallation.ts",
+      "src/site/presets/modernSaasStartup.ts"
+    ],
+    "replaceWithFactorySurface": [
+      "src/site/index.ts",
+      "src/site/README.md"
+    ],
+    "keep": [
+      "src/app/layout.tsx",
+      "src/app/globals.css",
+      "src/ds/**",
+      "src/features/** as empty extension boundary",
+      "src/flows/** as empty extension boundary"
+    ]
+  },
+  "sectionKindCoverage": {
+    "hero": 6,
+    "features": 4,
+    "testimonials": 1,
+    "faq": 1,
+    "blogList": 0,
+    "cta": 4,
+    "newsletter": 0,
+    "stats-band": 1,
+    "process-steps": 1,
+    "logo-cloud": 1,
+    "case-studies": 1,
+    "pricing": 3,
+    "team": 0,
+    "contact": 0,
+    "footer-content": 0
+  },
+  "zeroVariantKinds": [
+    "blogList",
+    "newsletter",
+    "team",
+    "contact",
+    "footer-content"
+  ],
+  "sparseKinds": [
+    { "kind": "testimonials", "count": 1 },
+    { "kind": "faq", "count": 1 },
+    { "kind": "stats-band", "count": 1 },
+    { "kind": "process-steps", "count": 1 },
+    { "kind": "logo-cloud", "count": 1 },
+    { "kind": "case-studies", "count": 1 }
+  ],
+  "missingDefaults": [
+    "hero",
+    "features",
+    "testimonials",
+    "faq",
+    "blogList",
+    "cta",
+    "newsletter",
+    "pricing",
+    "team",
+    "contact",
+    "footer-content"
+  ],
+  "archetypeVariantCoverage": {
+    "editorial-premium": 2,
+    "modern-saas": 16,
+    "bold-consumer": 2,
+    "ai-product": 1,
+    "startup-conversion": 0,
+    "local-business-trust": 1,
+    "dashboard-ops": 0,
+    "portfolio-craft": 1
+  },
+  "zeroVariantArchetypes": [
+    "startup-conversion",
+    "dashboard-ops"
+  ],
+  "wireframeCoverage": {
+    "editorial-premium": [],
+    "modern-saas": [
+      "page-modern-saas-landing",
+      "page-modern-saas-pricing"
+    ],
+    "bold-consumer": [],
+    "ai-product": [],
+    "startup-conversion": [],
+    "local-business-trust": [],
+    "dashboard-ops": [],
+    "portfolio-craft": []
+  },
+  "priorityMissingWireframes": [
+    "page-editorial-premium-landing",
+    "page-bold-consumer-landing",
+    "page-ai-product-landing",
+    "page-startup-conversion-landing",
+    "page-local-business-trust-landing",
+    "page-dashboard-ops-landing",
+    "page-portfolio-craft-landing",
+    "page-modern-saas-about",
+    "page-modern-saas-contact",
+    "page-modern-saas-blog-index",
+    "page-modern-saas-case-study-index",
+    "page-modern-saas-auth",
+    "page-modern-saas-404"
+  ],
+  "recommendedPhases": [
+    "clean-canonical-factory-root",
+    "registry-defaults-and-zero-kind-variants",
+    "site-complete-baseline-per-archetype",
+    "specialized-section-depth",
+    "wireframe-library",
+    "clone-preview-after-ds-update"
+  ]
+}
