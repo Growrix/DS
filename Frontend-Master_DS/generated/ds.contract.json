@@ -1,11 +1,11 @@
 {
   "version": "1.0",
   "counts": {
-    "variants": 155,
+    "variants": 159,
     "archetypes": 8,
     "motionPresets": 8,
     "themes": 2,
-    "presets": 2,
+    "presets": 3,
     "wireframes": 24,
     "fontPresets": 8
   },
@@ -2959,6 +2959,28 @@
       "isDefault": false
     },
     {
+      "id": "hero-local-business-trust-premium-split",
+      "kind": "hero",
+      "archetype": "local-business-trust",
+      "label": "Hero - Local Business Trust Premium Split",
+      "description": "Trust-first split hero with photographic service media, dual CTAs, and a chip-based credibility grid.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {
+        "fullBleedPhotograph": true,
+        "scrollDrivenScale": true
+      },
+      "density": "comfortable",
+      "complexity": "rich",
+      "isDefault": false
+    },
+    {
       "id": "features-local-business-trust-1",
       "kind": "features",
       "archetype": "local-business-trust",
@@ -2993,6 +3015,25 @@
       "effects": {},
       "density": "comfortable",
       "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "features-local-business-trust-media-cards",
+      "kind": "features",
+      "archetype": "local-business-trust",
+      "label": "Features - Local Business Trust Media Cards",
+      "description": "Image-backed service cards for premium local-business landing pages with commercial, trust-oriented copy.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "rich",
       "isDefault": false
     },
     {
@@ -3164,6 +3205,25 @@
       "isDefault": false
     },
     {
+      "id": "case-studies-local-business-trust-gallery",
+      "kind": "case-studies",
+      "archetype": "local-business-trust",
+      "label": "Case Studies - Local Business Trust Gallery",
+      "description": "Photo-forward project gallery with outcome tags and trust-oriented summaries for local-business proof sections.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "rich",
+      "isDefault": false
+    },
+    {
       "id": "pricing-local-business-trust-1",
       "kind": "pricing",
       "archetype": "local-business-trust",
@@ -3179,6 +3239,25 @@
       "effects": {},
       "density": "comfortable",
       "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "pricing-local-business-trust-plan-cards",
+      "kind": "pricing",
+      "archetype": "local-business-trust",
+      "label": "Pricing - Local Business Trust Plan Cards",
+      "description": "Three-plan pricing block for service businesses with a billing cadence toggle, highlight tier, and trust-led inclusions.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "rich",
       "isDefault": false
     },
     {
@@ -4420,6 +4499,25 @@
     }
   ],
   "sitePresets": [
+    {
+      "id": "premium-home-services",
+      "label": "Premium Home Services",
+      "archetype": "local-business-trust",
+      "pageIds": [
+        "home",
+        "services",
+        "projects",
+        "blog",
+        "contact"
+      ],
+      "pageSectionCounts": {
+        "home": 10,
+        "services": 6,
+        "projects": 5,
+        "blog": 4,
+        "contact": 5
+      }
+    },
     {
       "id": "solar-installation",
       "label": "Solar Installation Service",
