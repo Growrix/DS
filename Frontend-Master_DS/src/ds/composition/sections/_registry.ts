@@ -175,6 +175,32 @@ import {
   FooterContentModernSaasMinimal,
 } from "./variants/footer-content/footer-content-modern-saas-minimal";
 
+// Phase 1 Batch 2 — modern-saas remainder (per-cell targets)
+import {
+  BLOGLIST_MODERN_SAAS_FEATURED_MOSAIC_META,
+  BlogListModernSaasFeaturedMosaic,
+} from "./variants/blogList/bloglist-modern-saas-featured-mosaic";
+import {
+  NEWSLETTER_MODERN_SAAS_SPLIT_ILLUSTRATION_META,
+  NewsletterModernSaasSplitIllustration,
+} from "./variants/newsletter/newsletter-modern-saas-split-illustration";
+import {
+  PROCESS_STEPS_MODERN_SAAS_VERTICAL_STEPPER_META,
+  ProcessStepsModernSaasVerticalStepper,
+} from "./variants/process-steps/process-steps-modern-saas-vertical-stepper";
+import {
+  PRICING_MODERN_SAAS_SINGLE_TIER_CTA_META,
+  PricingModernSaasSingleTierCta,
+} from "./variants/pricing/pricing-modern-saas-single-tier-cta";
+import {
+  TEAM_MODERN_SAAS_LEADERSHIP_ROW_META,
+  TeamModernSaasLeadershipRow,
+} from "./variants/team/team-modern-saas-leadership-row";
+import {
+  CONTACT_MODERN_SAAS_CENTERED_FORM_META,
+  ContactModernSaasCenteredForm,
+} from "./variants/contact/contact-modern-saas-centered-form";
+
 import type {
   SectionKind,
   SectionRegistry,
@@ -238,6 +264,10 @@ export const SECTION_REGISTRY: SectionRegistry = {
     meta: BLOGLIST_MODERN_SAAS_CARDS_GRID_META,
     component: BlogListModernSaasCardsGrid,
   },
+  [BLOGLIST_MODERN_SAAS_FEATURED_MOSAIC_META.id]: {
+    meta: BLOGLIST_MODERN_SAAS_FEATURED_MOSAIC_META,
+    component: BlogListModernSaasFeaturedMosaic,
+  },
 
   // testimonials variants
   [TESTIMONIALS_MARQUEE_META.id]: {
@@ -286,6 +316,10 @@ export const SECTION_REGISTRY: SectionRegistry = {
     meta: PROCESS_STEPS_MODERN_SAAS_HORIZONTAL_META,
     component: ProcessStepsModernSaasHorizontal,
   },
+  [PROCESS_STEPS_MODERN_SAAS_VERTICAL_STEPPER_META.id]: {
+    meta: PROCESS_STEPS_MODERN_SAAS_VERTICAL_STEPPER_META,
+    component: ProcessStepsModernSaasVerticalStepper,
+  },
 
   // logo-cloud variants
   [LOGO_CLOUD_GRID_META.id]: {
@@ -326,6 +360,10 @@ export const SECTION_REGISTRY: SectionRegistry = {
     meta: NEWSLETTER_MODERN_SAAS_CENTERED_CARD_META,
     component: NewsletterModernSaasCenteredCard,
   },
+  [NEWSLETTER_MODERN_SAAS_SPLIT_ILLUSTRATION_META.id]: {
+    meta: NEWSLETTER_MODERN_SAAS_SPLIT_ILLUSTRATION_META,
+    component: NewsletterModernSaasSplitIllustration,
+  },
 
   // pricing variants
   [PRICING_MODERN_SAAS_3_TIER_CARDS_META.id]: {
@@ -340,6 +378,10 @@ export const SECTION_REGISTRY: SectionRegistry = {
     meta: PRICING_MODERN_SAAS_COMPARISON_TABLE_META,
     component: PricingModernSaasComparisonTable,
   },
+  [PRICING_MODERN_SAAS_SINGLE_TIER_CTA_META.id]: {
+    meta: PRICING_MODERN_SAAS_SINGLE_TIER_CTA_META,
+    component: PricingModernSaasSingleTierCta,
+  },
 
   // team variants
   [TEAM_DASHBOARD_OPS_DIRECTORY_META.id]: {
@@ -350,6 +392,10 @@ export const SECTION_REGISTRY: SectionRegistry = {
     meta: TEAM_MODERN_SAAS_GRID_META,
     component: TeamModernSaasGrid,
   },
+  [TEAM_MODERN_SAAS_LEADERSHIP_ROW_META.id]: {
+    meta: TEAM_MODERN_SAAS_LEADERSHIP_ROW_META,
+    component: TeamModernSaasLeadershipRow,
+  },
 
   // contact variants
   [CONTACT_LOCAL_BUSINESS_TRUST_SPLIT_META.id]: {
@@ -359,6 +405,10 @@ export const SECTION_REGISTRY: SectionRegistry = {
   [CONTACT_MODERN_SAAS_FORM_INFO_META.id]: {
     meta: CONTACT_MODERN_SAAS_FORM_INFO_META,
     component: ContactModernSaasFormInfo,
+  },
+  [CONTACT_MODERN_SAAS_CENTERED_FORM_META.id]: {
+    meta: CONTACT_MODERN_SAAS_CENTERED_FORM_META,
+    component: ContactModernSaasCenteredForm,
   },
 
   // footer-content variants

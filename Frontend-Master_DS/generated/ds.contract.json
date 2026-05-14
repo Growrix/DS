@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "counts": {
-    "variants": 39,
+    "variants": 45,
     "archetypes": 8,
     "motionPresets": 8,
     "themes": 2,
@@ -718,6 +718,25 @@
       "isDefault": false
     },
     {
+      "id": "bloglist-modern-saas-featured-mosaic",
+      "kind": "blogList",
+      "archetype": "modern-saas",
+      "label": "Blog List — Modern SaaS Featured Mosaic",
+      "description": "First post rendered as featured hero card (2-col grid: thumb + body); remaining posts in 3-col card grid below. Collapses to single column under 720 px.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
       "id": "testimonials-marquee",
       "kind": "testimonials",
       "archetype": "modern-saas",
@@ -915,6 +934,25 @@
       "isDefault": false
     },
     {
+      "id": "process-steps-modern-saas-vertical-stepper",
+      "kind": "process-steps",
+      "archetype": "modern-saas",
+      "label": "Process Steps — Modern SaaS Vertical Stepper",
+      "description": "Vertical numbered stepper with a continuous connector rule. Each step shows numeral plate, title and 60ch description. Stagger reveal on enter.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
       "id": "logo-cloud-grid",
       "kind": "logo-cloud",
       "archetype": "modern-saas",
@@ -1067,6 +1105,27 @@
       "isDefault": false
     },
     {
+      "id": "newsletter-modern-saas-split-illustration",
+      "kind": "newsletter",
+      "archetype": "modern-saas",
+      "label": "Newsletter — Modern SaaS Split Illustration",
+      "description": "Two-column layout: gradient-mesh illustration panel left, signup form right. Form is single email field + button. Collapses to stacked layout under 720 px.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "reveal-glass"
+      ],
+      "effects": {
+        "gradientMesh": true
+      },
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
       "id": "pricing-modern-saas-3-tier-cards",
       "kind": "pricing",
       "archetype": "modern-saas",
@@ -1131,6 +1190,27 @@
       "isDefault": false
     },
     {
+      "id": "pricing-modern-saas-single-tier-cta",
+      "kind": "pricing",
+      "archetype": "modern-saas",
+      "label": "Pricing — Modern SaaS Single Tier CTA",
+      "description": "Single emphasised pricing tier, max-width 56ch centred card. Renders tier name, price block, feature list, and CTA. Suitable for freemium-emphasised or contact-sales offerings.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "reveal-glass"
+      ],
+      "effects": {
+        "glassmorphism": true
+      },
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
       "id": "team-dashboard-ops-directory",
       "kind": "team",
       "archetype": "dashboard-ops",
@@ -1154,6 +1234,25 @@
       "archetype": "modern-saas",
       "label": "Team — Modern SaaS Grid",
       "description": "Three-column member grid; each member has circular avatar plate, name, role, optional bio (60ch), inline social links. Stagger reveal on enter.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "team-modern-saas-leadership-row",
+      "kind": "team",
+      "archetype": "modern-saas",
+      "label": "Team — Modern SaaS Leadership Row",
+      "description": "First member rendered as featured leadership card (larger avatar, longer bio); remaining members rendered in 4-col auto-fit grid below. Collapses to single column under 720 px.",
       "supportsThemes": [
         "dark",
         "light"
@@ -1197,6 +1296,25 @@
       ],
       "motionPresets": [
         "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "contact-modern-saas-centered-form",
+      "kind": "contact",
+      "archetype": "modern-saas",
+      "label": "Contact — Modern SaaS Centered Form",
+      "description": "Single centred form (max-width 56ch). Contact channels rendered as inline row below the form. Suitable for product enquiries with minimal channel surface.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "stagger-text-60"
       ],
       "effects": {},
       "density": "comfortable",
