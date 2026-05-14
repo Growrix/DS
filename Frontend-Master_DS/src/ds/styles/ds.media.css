@@ -43,4 +43,39 @@
     height: 100%;
     object-fit: cover;
   }
+
+  .ds-skeleton {
+    width: 100%;
+    background-color: var(--ds-color-surface-sunken);
+    border-radius: var(--ds-radius-md);
+    position: relative;
+    overflow: hidden;
+  }
+  .ds-skeleton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--ds-color-surface-raised),
+      transparent
+    );
+    transform: translateX(-100%);
+    animation: ds-skeleton-shimmer var(--ds-duration-slow) ease-in-out infinite;
+  }
+  @keyframes ds-skeleton-shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ds-skeleton::after {
+      animation: none;
+    }
+  }
+
+  .ds-empty-state-icon {
+    color: var(--ds-color-foreground-muted);
+  }
 }
