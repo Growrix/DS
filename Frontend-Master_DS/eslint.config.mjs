@@ -13,6 +13,11 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
     "DOC/**",
+    // Phase 12I: visual regression specs use opt-in @playwright/test which
+    // is not a default project dependency. Skip lint to avoid import-resolver
+    // failures when Playwright isn't installed locally.
+    "tests/visual/**",
+    "playwright.config.ts",
   ]),
 
   {
