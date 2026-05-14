@@ -56,6 +56,11 @@ import {
 } from "./variants/features/features-modern-saas-tabs";
 
 import {
+  BLOGLIST_EDITORIAL_PREMIUM_STACK_META,
+  BlogListEditorialPremiumStack,
+} from "./variants/blogList/bloglist-editorial-premium-stack";
+
+import {
   TESTIMONIALS_MARQUEE_META,
   TestimonialsMarquee,
 } from "./variants/testimonials/testimonials-marquee";
@@ -94,6 +99,11 @@ import {
 } from "./variants/faq/faq-modern-saas-accordion";
 
 import {
+  NEWSLETTER_STARTUP_CONVERSION_INLINE_META,
+  NewsletterStartupConversionInline,
+} from "./variants/newsletter/newsletter-startup-conversion-inline";
+
+import {
   PRICING_MODERN_SAAS_3_TIER_CARDS_META,
   PricingModernSaas3TierCards,
 } from "./variants/pricing/pricing-modern-saas-3-tier-cards";
@@ -105,6 +115,19 @@ import {
   PRICING_MODERN_SAAS_COMPARISON_TABLE_META,
   PricingModernSaasComparisonTable,
 } from "./variants/pricing/pricing-modern-saas-comparison-table";
+
+import {
+  TEAM_DASHBOARD_OPS_DIRECTORY_META,
+  TeamDashboardOpsDirectory,
+} from "./variants/team/team-dashboard-ops-directory";
+import {
+  CONTACT_LOCAL_BUSINESS_TRUST_SPLIT_META,
+  ContactLocalBusinessTrustSplit,
+} from "./variants/contact/contact-local-business-trust-split";
+import {
+  FOOTER_CONTENT_MODERN_SAAS_COLUMNS_META,
+  FooterContentModernSaasColumns,
+} from "./variants/footer-content/footer-content-modern-saas-columns";
 
 import type {
   SectionKind,
@@ -158,6 +181,12 @@ export const SECTION_REGISTRY: SectionRegistry = {
   [FEATURES_MODERN_SAAS_TABS_META.id]: {
     meta: FEATURES_MODERN_SAAS_TABS_META,
     component: FeaturesModernSaasTabs,
+  },
+
+  // blogList variants
+  [BLOGLIST_EDITORIAL_PREMIUM_STACK_META.id]: {
+    meta: BLOGLIST_EDITORIAL_PREMIUM_STACK_META,
+    component: BlogListEditorialPremiumStack,
   },
 
   // testimonials variants
@@ -214,6 +243,12 @@ export const SECTION_REGISTRY: SectionRegistry = {
     component: FaqModernSaasAccordion,
   },
 
+  // newsletter variants
+  [NEWSLETTER_STARTUP_CONVERSION_INLINE_META.id]: {
+    meta: NEWSLETTER_STARTUP_CONVERSION_INLINE_META,
+    component: NewsletterStartupConversionInline,
+  },
+
   // pricing variants
   [PRICING_MODERN_SAAS_3_TIER_CARDS_META.id]: {
     meta: PRICING_MODERN_SAAS_3_TIER_CARDS_META,
@@ -226,6 +261,24 @@ export const SECTION_REGISTRY: SectionRegistry = {
   [PRICING_MODERN_SAAS_COMPARISON_TABLE_META.id]: {
     meta: PRICING_MODERN_SAAS_COMPARISON_TABLE_META,
     component: PricingModernSaasComparisonTable,
+  },
+
+  // team variants
+  [TEAM_DASHBOARD_OPS_DIRECTORY_META.id]: {
+    meta: TEAM_DASHBOARD_OPS_DIRECTORY_META,
+    component: TeamDashboardOpsDirectory,
+  },
+
+  // contact variants
+  [CONTACT_LOCAL_BUSINESS_TRUST_SPLIT_META.id]: {
+    meta: CONTACT_LOCAL_BUSINESS_TRUST_SPLIT_META,
+    component: ContactLocalBusinessTrustSplit,
+  },
+
+  // footer-content variants
+  [FOOTER_CONTENT_MODERN_SAAS_COLUMNS_META.id]: {
+    meta: FOOTER_CONTENT_MODERN_SAAS_COLUMNS_META,
+    component: FooterContentModernSaasColumns,
   },
 };
 

@@ -29,6 +29,18 @@ import {
   PAGE_MODERN_SAAS_PRICING_META,
   getModernSaasPricingDemoPage,
 } from "./page-modern-saas-pricing";
+import {
+  PAGE_MODERN_SAAS_404_META,
+  getModernSaas404DemoPage,
+} from "./page-modern-saas-404";
+import {
+  PAGE_LOCAL_BUSINESS_TRUST_CONTACT_META,
+  getLocalBusinessTrustContactDemoPage,
+} from "./page-local-business-trust-contact";
+import {
+  PAGE_EDITORIAL_PREMIUM_BLOG_INDEX_META,
+  getEditorialPremiumBlogIndexDemoPage,
+} from "./page-editorial-premium-blog-index";
 
 import type {
   WireframeFilter,
@@ -43,12 +55,18 @@ import type { PublicPageModel } from "../../../platform/publicSitePreset";
 export const WIREFRAME_REGISTRY: WireframeRegistry = {
   [PAGE_MODERN_SAAS_LANDING_META.id]: PAGE_MODERN_SAAS_LANDING_META,
   [PAGE_MODERN_SAAS_PRICING_META.id]: PAGE_MODERN_SAAS_PRICING_META,
+  [PAGE_MODERN_SAAS_404_META.id]: PAGE_MODERN_SAAS_404_META,
+  [PAGE_LOCAL_BUSINESS_TRUST_CONTACT_META.id]: PAGE_LOCAL_BUSINESS_TRUST_CONTACT_META,
+  [PAGE_EDITORIAL_PREMIUM_BLOG_INDEX_META.id]: PAGE_EDITORIAL_PREMIUM_BLOG_INDEX_META,
 };
 
 /** Demo content factories keyed by wireframe id. */
 export const WIREFRAME_DEMO_FACTORIES: Record<string, () => PublicPageModel> = {
   [PAGE_MODERN_SAAS_LANDING_META.id]: getModernSaasLandingDemoPage,
   [PAGE_MODERN_SAAS_PRICING_META.id]: getModernSaasPricingDemoPage,
+  [PAGE_MODERN_SAAS_404_META.id]: getModernSaas404DemoPage,
+  [PAGE_LOCAL_BUSINESS_TRUST_CONTACT_META.id]: getLocalBusinessTrustContactDemoPage,
+  [PAGE_EDITORIAL_PREMIUM_BLOG_INDEX_META.id]: getEditorialPremiumBlogIndexDemoPage,
 };
 
 export const WIREFRAME_META_LIST: WireframeMeta[] = Object.values(WIREFRAME_REGISTRY);

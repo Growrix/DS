@@ -1,12 +1,12 @@
 {
   "version": "1.0",
   "counts": {
-    "variants": 23,
+    "variants": 28,
     "archetypes": 8,
     "motionPresets": 8,
     "themes": 2,
     "presets": 2,
-    "wireframes": 2
+    "wireframes": 5
   },
   "sectionKinds": [
     "hero",
@@ -680,6 +680,25 @@
       "isDefault": false
     },
     {
+      "id": "bloglist-editorial-premium-stack",
+      "kind": "blogList",
+      "archetype": "editorial-premium",
+      "label": "Blog List - Editorial Premium Stack",
+      "description": "Centered section header above a three-column editorial card stack for article discovery and archive pages.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "extended",
+      "complexity": "standard",
+      "isDefault": true
+    },
+    {
       "id": "testimonials-marquee",
       "kind": "testimonials",
       "archetype": "modern-saas",
@@ -880,6 +899,24 @@
       "isDefault": false
     },
     {
+      "id": "newsletter-startup-conversion-inline",
+      "kind": "newsletter",
+      "archetype": "startup-conversion",
+      "label": "Newsletter - Startup Conversion Inline",
+      "description": "Compact opt-in block with centered header and inline subscription form for conversion-focused follow-up.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "compact",
+      "complexity": "minimal",
+      "isDefault": true
+    },
+    {
       "id": "pricing-modern-saas-3-tier-cards",
       "kind": "pricing",
       "archetype": "modern-saas",
@@ -942,6 +979,60 @@
       "density": "extended",
       "complexity": "rich",
       "isDefault": false
+    },
+    {
+      "id": "team-dashboard-ops-directory",
+      "kind": "team",
+      "archetype": "dashboard-ops",
+      "label": "Team - Dashboard Ops Directory",
+      "description": "Dense operator directory with avatar, role, bio, and utility links in a structured card grid.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": true
+    },
+    {
+      "id": "contact-local-business-trust-split",
+      "kind": "contact",
+      "archetype": "local-business-trust",
+      "label": "Contact - Local Business Trust Split",
+      "description": "Two-column contact surface pairing trust-first contact channels with a structured inquiry form.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": true
+    },
+    {
+      "id": "footer-content-modern-saas-columns",
+      "kind": "footer-content",
+      "archetype": "modern-saas",
+      "label": "Footer Content - Modern SaaS Columns",
+      "description": "Token-driven footer with brand block, support links, optional newsletter signup, and legal attribution.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": true
     }
   ],
   "wireframes": [
@@ -1019,6 +1110,73 @@
         {
           "kind": "cta",
           "variantId": "cta-modern-saas-card"
+        }
+      ],
+      "isDefault": true
+    },
+    {
+      "id": "page-modern-saas-404",
+      "archetype": "modern-saas",
+      "purpose": "404",
+      "shell": "public",
+      "label": "Page - Modern SaaS 404",
+      "description": "Hero split with recovery actions, supporting CTA card, and structured footer content for not-found routes.",
+      "density": "comfortable",
+      "complexity": "standard",
+      "sections": [
+        {
+          "kind": "hero",
+          "variantId": "hero-modern-saas-split"
+        },
+        {
+          "kind": "cta",
+          "variantId": "cta-modern-saas-card"
+        },
+        {
+          "kind": "footer-content",
+          "variantId": "footer-content-modern-saas-columns"
+        }
+      ],
+      "isDefault": true
+    },
+    {
+      "id": "page-local-business-trust-contact",
+      "archetype": "local-business-trust",
+      "purpose": "contact",
+      "shell": "public",
+      "label": "Page - Local Business Trust Contact",
+      "description": "Process reassurance followed by a contact split layout for service businesses that need trust and fast response signals.",
+      "density": "comfortable",
+      "complexity": "standard",
+      "sections": [
+        {
+          "kind": "process-steps",
+          "variantId": "process-steps-vertical"
+        },
+        {
+          "kind": "contact",
+          "variantId": "contact-local-business-trust-split"
+        }
+      ],
+      "isDefault": true
+    },
+    {
+      "id": "page-editorial-premium-blog-index",
+      "archetype": "editorial-premium",
+      "purpose": "blog-index",
+      "shell": "public",
+      "label": "Page - Editorial Premium Blog Index",
+      "description": "Photographic editorial hero followed by an article discovery grid for long-form publishing surfaces.",
+      "density": "extended",
+      "complexity": "standard",
+      "sections": [
+        {
+          "kind": "hero",
+          "variantId": "hero-editorial-premium-1"
+        },
+        {
+          "kind": "blogList",
+          "variantId": "bloglist-editorial-premium-stack"
         }
       ],
       "isDefault": true
