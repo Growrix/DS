@@ -12,10 +12,22 @@ import { Text } from "../primitives/Text";
 import { getDefaultVariantForKind, getSectionVariant } from "../composition/sections/_registry";
 
 import type { PublicPageModel, PublicSectionHeaderModel, PublicSectionModel } from "./publicSitePreset";
+import type { ContentAdapter, ContentResolutionContext } from "./contentAdapter";
+import { createInMemoryContentAdapter } from "./contentAdapter";
 
 export type PublicPresetPageProps = {
   page: PublicPageModel;
+  /**
+   * Optional content adapter. Defaults to the in-memory pass-through
+   * adapter, which renders section content exactly as declared on the
+   * preset (today's behaviour).
+   */
+  adapter?: ContentAdapter;
+  /** Active locale id, threaded into the adapter's resolution context. */
+  locale?: string;
 };
+
+const DEFAULT_ADAPTER = createInMemoryContentAdapter();
 
 function toHeaderProps(header?: PublicSectionHeaderModel) {
   if (!header) return undefined;
@@ -181,6 +193,15 @@ function renderSection(section: PublicSectionModel): React.ReactNode {
   }
 }
 
-export function PublicPresetPage({ page }: PublicPresetPageProps) {
-  return <>{page.sections.map(renderSection)}</>;
+export function PublicPresetPage({ page, adapter, locale }: PublicPresetPageProps) {
+  const activeAdapter: ContentAdapter = adapter ?? DEFAULT_ADAPTER;
+  const ctx: ContentResolutionContext = { route: page.id, locale };
+  const resolvedPage = activeAdapter.resolvePage ? activeAdapter.resolvePage(page, ctx) : page;
+  return (
+    <>
+      {resolvedPage.sections.map((section) =>
+        renderSection(activeAdapter.resolveSection(section, ctx)),
+      )}
+    </>
+  );
 }
