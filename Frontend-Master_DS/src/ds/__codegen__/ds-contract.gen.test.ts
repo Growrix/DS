@@ -24,6 +24,7 @@ import path from "node:path";
 import { ARCHETYPES } from "@/ds/foundation/themes/archetypeRegistry";
 import { MOTION_PRESETS, type MotionPreset } from "@/ds/foundation/motion/presets";
 import { THEMES } from "@/ds/foundation/themes/registry";
+import { FONT_PRESETS, ALL_NEXT_FONT_VARS } from "@/ds/foundation/typography/fontPresetRegistry";
 import { SECTION_VARIANT_META_LIST } from "@/ds/composition/sections/_registry";
 import {
   WIREFRAME_META_LIST,
@@ -92,6 +93,16 @@ describe("ds.contract codegen", () => {
       permissions: a.permissions,
       motionTemperament: a.motionTemperament,
       variantIdPrefixes: a.variantIdPrefixes,
+      defaultFontPresetId: a.defaultFontPresetId,
+    }));
+
+    const fontPresets = Object.values(FONT_PRESETS).map((f) => ({
+      id: f.id,
+      label: f.label,
+      intent: f.intent,
+      families: f.families,
+      displayWeight: f.displayWeight,
+      nextFontVars: f.nextFontVars,
     }));
 
     const motionPresets = (Object.values(MOTION_PRESETS) as MotionPreset[]).map((p) => ({
@@ -208,12 +219,15 @@ describe("ds.contract codegen", () => {
         themes: themes.length,
         presets: presets.length,
         wireframes: wireframes.length,
+        fontPresets: fontPresets.length,
       },
       sectionKinds: SECTION_KINDS,
       wireframePurposes: WIREFRAME_PURPOSES,
       themes,
       archetypes,
       motionPresets,
+      fontPresets,
+      allNextFontVars: ALL_NEXT_FONT_VARS,
       sectionVariants: variants,
       wireframes,
       sitePresets: presets,

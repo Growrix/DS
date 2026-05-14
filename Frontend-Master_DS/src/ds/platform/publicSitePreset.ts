@@ -4,6 +4,7 @@ import type {
   SiteFooterColumn,
 } from "./siteConfig";
 import type { ArchetypeId } from "../foundation/themes/archetypeRegistry";
+import type { FontPresetId } from "../foundation/typography/fontPresetRegistry";
 
 export type PublicSectionHeaderModel = {
   kicker?: string;
@@ -221,6 +222,12 @@ export type PublicPageModel = {
   title: string;
   /** Optional archetype hint. Drives default variant resolution when section.variant is absent. */
   archetype?: ArchetypeId;
+  /**
+   * Optional per-page typography override. When omitted, the page inherits
+   * the preset-level `typography.fontPresetId` (which itself falls back to
+   * the archetype's `defaultFontPresetId`).
+   */
+  typography?: { fontPresetId?: FontPresetId };
   sections: PublicSectionModel[];
 };
 
@@ -229,6 +236,11 @@ export type PublicSitePreset = {
   label: string;
   /** Site-wide archetype. Pages may override per-page. */
   archetype?: ArchetypeId;
+  /**
+   * Site-wide typography override. When omitted, the resolved archetype's
+   * `defaultFontPresetId` is used. Individual pages may override.
+   */
+  typography?: { fontPresetId?: FontPresetId };
   config: SiteConfig;
   pages: Record<string, PublicPageModel>;
 };

@@ -25,6 +25,7 @@
    ========================================================================== */
 
 import type { MotionPresetId } from "../motion/presets";
+import type { FontPresetId } from "../typography/fontPresetRegistry";
 
 export type ArchetypeId =
   | "editorial-premium"
@@ -70,6 +71,12 @@ export type ArchetypeDefinition = {
   motionTemperament: MotionPresetId[];
   /** Whitelisted variant ID prefix(es). E.g. "hero-editorial-premium-" allows any matching variant. */
   variantIdPrefixes: string[];
+  /**
+   * Default font preset this archetype reaches for. Presets MAY override
+   * via `PublicSitePreset.typography.fontPresetId`. Resolved at shell-mount
+   * time as `data-font-preset` on the public shell root.
+   */
+  defaultFontPresetId: FontPresetId;
 };
 
 const DEFAULT_DENY: ArchetypePermissions = {
@@ -120,6 +127,7 @@ export const ARCHETYPES: Record<ArchetypeId, ArchetypeDefinition> = {
       "case-studies-magazine-",
       "testimonials-quote-large-",
     ],
+    defaultFontPresetId: "editorial-classic",
   },
 
   "modern-saas": {
@@ -160,6 +168,7 @@ export const ARCHETYPES: Record<ArchetypeId, ArchetypeDefinition> = {
       "stats-band-4col",
       "logo-cloud-grid",
     ],
+    defaultFontPresetId: "saas-modern",
   },
 
   "bold-consumer": {
@@ -199,6 +208,7 @@ export const ARCHETYPES: Record<ArchetypeId, ArchetypeDefinition> = {
       "features-bento-",
       "cta-full-bleed",
     ],
+    defaultFontPresetId: "consumer-bold",
   },
 
   "ai-product": {
@@ -237,6 +247,7 @@ export const ARCHETYPES: Record<ArchetypeId, ArchetypeDefinition> = {
       "features-bento-",
       "stats-band-",
     ],
+    defaultFontPresetId: "ai-technical",
   },
 
   "startup-conversion": {
@@ -253,6 +264,7 @@ export const ARCHETYPES: Record<ArchetypeId, ArchetypeDefinition> = {
     },
     motionTemperament: ["rise-soft", "idle-pulse-once", "magnetic-hover"],
     variantIdPrefixes: ["hero-startup-", "pricing-table-", "cta-card-", "cta-full-bleed-"],
+    defaultFontPresetId: "saas-modern",
   },
 
   "local-business-trust": {
@@ -269,6 +281,7 @@ export const ARCHETYPES: Record<ArchetypeId, ArchetypeDefinition> = {
     },
     motionTemperament: ["rise-soft", "fade-in"],
     variantIdPrefixes: ["hero-local-", "features-split-", "testimonials-grid-", "stats-band-"],
+    defaultFontPresetId: "trust-warm",
   },
 
   "dashboard-ops": {
@@ -283,6 +296,7 @@ export const ARCHETYPES: Record<ArchetypeId, ArchetypeDefinition> = {
     },
     motionTemperament: ["fade-in", "magnetic-hover"],
     variantIdPrefixes: ["features-bento-", "stats-band-"],
+    defaultFontPresetId: "ops-compact",
   },
 
   "portfolio-craft": {
@@ -300,6 +314,7 @@ export const ARCHETYPES: Record<ArchetypeId, ArchetypeDefinition> = {
     },
     motionTemperament: ["rise-soft", "fade-in", "scroll-scale-1.04"],
     variantIdPrefixes: ["hero-portfolio-", "case-studies-magazine-", "case-studies-grid-"],
+    defaultFontPresetId: "editorial-modern",
   },
 };
 

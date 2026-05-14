@@ -189,3 +189,16 @@ export function isFontPresetId(value: string | null | undefined): value is FontP
 export const ALL_NEXT_FONT_VARS: readonly string[] = Array.from(
   new Set(FONT_PRESET_IDS.flatMap((id) => FONT_PRESETS[id].nextFontVars)),
 ).sort();
+
+/**
+ * Resolve which font preset should be active for a given (preset, page) pair.
+ * Priority: page.typography → preset.typography → archetype.defaultFontPresetId.
+ * Returns `undefined` when nothing can be resolved (no archetype + no overrides).
+ */
+export function resolveFontPresetId(input: {
+  pageOverride?: FontPresetId;
+  presetOverride?: FontPresetId;
+  archetypeDefault?: FontPresetId;
+}): FontPresetId | undefined {
+  return input.pageOverride ?? input.presetOverride ?? input.archetypeDefault;
+}

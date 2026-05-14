@@ -3,6 +3,7 @@ export * as motion from "./motion";
 export * as semantics from "./semantics";
 export * as tokens from "./tokens";
 export * from "./themes";
+export * from "./typography";
 
 // Direct re-exports of the motion preset registry so consumers can pick
 // presets by id without resorting to the `motion.MOTION_PRESETS` namespace.

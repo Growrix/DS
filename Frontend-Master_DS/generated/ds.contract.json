@@ -6,7 +6,8 @@
     "motionPresets": 8,
     "themes": 2,
     "presets": 2,
-    "wireframes": 24
+    "wireframes": 24,
+    "fontPresets": 8
   },
   "sectionKinds": [
     "hero",
@@ -91,7 +92,8 @@
         "features-split-",
         "case-studies-magazine-",
         "testimonials-quote-large-"
-      ]
+      ],
+      "defaultFontPresetId": "editorial-classic"
     },
     {
       "id": "modern-saas",
@@ -138,7 +140,8 @@
         "testimonials-marquee",
         "stats-band-4col",
         "logo-cloud-grid"
-      ]
+      ],
+      "defaultFontPresetId": "saas-modern"
     },
     {
       "id": "bold-consumer",
@@ -182,7 +185,8 @@
         "footer-content-bold-consumer-",
         "features-bento-",
         "cta-full-bleed"
-      ]
+      ],
+      "defaultFontPresetId": "consumer-bold"
     },
     {
       "id": "ai-product",
@@ -226,7 +230,8 @@
         "footer-content-ai-product-",
         "features-bento-",
         "stats-band-"
-      ]
+      ],
+      "defaultFontPresetId": "ai-technical"
     },
     {
       "id": "startup-conversion",
@@ -256,7 +261,8 @@
         "pricing-table-",
         "cta-card-",
         "cta-full-bleed-"
-      ]
+      ],
+      "defaultFontPresetId": "saas-modern"
     },
     {
       "id": "local-business-trust",
@@ -285,7 +291,8 @@
         "features-split-",
         "testimonials-grid-",
         "stats-band-"
-      ]
+      ],
+      "defaultFontPresetId": "trust-warm"
     },
     {
       "id": "dashboard-ops",
@@ -312,7 +319,8 @@
       "variantIdPrefixes": [
         "features-bento-",
         "stats-band-"
-      ]
+      ],
+      "defaultFontPresetId": "ops-compact"
     },
     {
       "id": "portfolio-craft",
@@ -341,7 +349,8 @@
         "hero-portfolio-",
         "case-studies-magazine-",
         "case-studies-grid-"
-      ]
+      ],
+      "defaultFontPresetId": "editorial-modern"
     }
   ],
   "motionPresets": [
@@ -449,6 +458,156 @@
       "reducedMotionFallback": "no-motion",
       "className": "motion-magnetic-hover"
     }
+  ],
+  "fontPresets": [
+    {
+      "id": "editorial-classic",
+      "label": "Editorial Classic",
+      "intent": "Long-form magazine: humanist sans body, transitional serif display, italic serif pull-quote.",
+      "families": {
+        "sans": "Inter",
+        "display": "Playfair Display",
+        "quote": "Source Serif 4",
+        "mono": "JetBrains Mono"
+      },
+      "displayWeight": 400,
+      "nextFontVars": [
+        "--font-inter",
+        "--font-playfair",
+        "--font-source-serif",
+        "--font-jetbrains-mono"
+      ]
+    },
+    {
+      "id": "editorial-modern",
+      "label": "Editorial Modern",
+      "intent": "Contemporary editorial: geometric sans body, variable serif display, italic display pull-quote.",
+      "families": {
+        "sans": "Manrope",
+        "display": "Fraunces",
+        "quote": "Fraunces",
+        "mono": "JetBrains Mono"
+      },
+      "displayWeight": 500,
+      "nextFontVars": [
+        "--font-manrope",
+        "--font-fraunces",
+        "--font-jetbrains-mono"
+      ]
+    },
+    {
+      "id": "saas-modern",
+      "label": "SaaS Modern",
+      "intent": "Product marketing default: single neutral sans across body + display, monospace for codeblocks.",
+      "families": {
+        "sans": "Inter",
+        "display": "Inter",
+        "quote": "Source Serif 4",
+        "mono": "JetBrains Mono"
+      },
+      "displayWeight": 700,
+      "nextFontVars": [
+        "--font-inter",
+        "--font-source-serif",
+        "--font-jetbrains-mono"
+      ]
+    },
+    {
+      "id": "saas-precision",
+      "label": "SaaS Precision",
+      "intent": "Higher-end SaaS: tight geometric sans, restrained display weight, premium feel.",
+      "families": {
+        "sans": "Manrope",
+        "display": "Manrope",
+        "quote": "Source Serif 4",
+        "mono": "JetBrains Mono"
+      },
+      "displayWeight": 600,
+      "nextFontVars": [
+        "--font-manrope",
+        "--font-source-serif",
+        "--font-jetbrains-mono"
+      ]
+    },
+    {
+      "id": "consumer-bold",
+      "label": "Consumer Bold",
+      "intent": "DTC / lifestyle: friendly sans body, heavyweight geometric display, dramatic serif pull-quote.",
+      "families": {
+        "sans": "Inter",
+        "display": "Montserrat",
+        "quote": "Playfair Display",
+        "mono": "Fira Code"
+      },
+      "displayWeight": 900,
+      "nextFontVars": [
+        "--font-inter",
+        "--font-display",
+        "--font-playfair",
+        "--font-fira-code"
+      ]
+    },
+    {
+      "id": "ai-technical",
+      "label": "AI Technical",
+      "intent": "AI / ML product: single technical sans across all roles, monospaced numerics.",
+      "families": {
+        "sans": "Sora",
+        "display": "Sora",
+        "quote": "Sora",
+        "mono": "JetBrains Mono"
+      },
+      "displayWeight": 700,
+      "nextFontVars": [
+        "--font-sora",
+        "--font-jetbrains-mono"
+      ]
+    },
+    {
+      "id": "trust-warm",
+      "label": "Trust Warm",
+      "intent": "Local business / services: warm humanist sans, friendly serif display, photographic pairing.",
+      "families": {
+        "sans": "Inter",
+        "display": "Source Serif 4",
+        "quote": "Source Serif 4",
+        "mono": "Fira Code"
+      },
+      "displayWeight": 600,
+      "nextFontVars": [
+        "--font-inter",
+        "--font-source-serif",
+        "--font-fira-code"
+      ]
+    },
+    {
+      "id": "ops-compact",
+      "label": "Ops Compact",
+      "intent": "Internal tools / dashboards: dense neutral sans, monospace bias on numerics, no decoration.",
+      "families": {
+        "sans": "Inter",
+        "display": "Inter",
+        "quote": "Source Serif 4",
+        "mono": "JetBrains Mono"
+      },
+      "displayWeight": 600,
+      "nextFontVars": [
+        "--font-inter",
+        "--font-source-serif",
+        "--font-jetbrains-mono"
+      ]
+    }
+  ],
+  "allNextFontVars": [
+    "--font-display",
+    "--font-fira-code",
+    "--font-fraunces",
+    "--font-inter",
+    "--font-jetbrains-mono",
+    "--font-manrope",
+    "--font-playfair",
+    "--font-sora",
+    "--font-source-serif"
   ],
   "sectionVariants": [
     {

@@ -4,6 +4,7 @@ import { BottomNavItem } from "../components/BottomNav";
 import { Icon } from "../components/Icon";
 import { PublicShell } from "../layouts/PublicShell";
 import { MobileBottomNavPreset } from "../runtime/app/mobile/BottomNavPreset";
+import type { FontPresetId } from "../foundation/typography/fontPresetRegistry";
 
 import type { SiteConfig } from "./siteConfig";
 import { PublicSiteHeader } from "./PublicSiteHeader";
@@ -12,10 +13,12 @@ import { SupportDock } from "./SupportDock";
 
 export type PublicSiteShellProps = {
   config: SiteConfig;
+  /** Resolved font preset id — mounted as `data-font-preset` on the shell root. */
+  fontPresetId?: FontPresetId;
   children: React.ReactNode;
 };
 
-export function PublicSiteShell({ config, children }: PublicSiteShellProps) {
+export function PublicSiteShell({ config, fontPresetId, children }: PublicSiteShellProps) {
   const header = (
     <PublicSiteHeader brand={config.brand} navItems={config.nav.primary} socials={config.socials} />
   );
@@ -41,7 +44,7 @@ export function PublicSiteShell({ config, children }: PublicSiteShellProps) {
   const floating = config.support ? <SupportDock support={config.support} /> : undefined;
 
   return (
-    <PublicShell header={header} footer={footer} bottomNav={bottomNav} floating={floating}>
+    <PublicShell header={header} footer={footer} bottomNav={bottomNav} floating={floating} fontPresetId={fontPresetId}>
       {children}
     </PublicShell>
   );
