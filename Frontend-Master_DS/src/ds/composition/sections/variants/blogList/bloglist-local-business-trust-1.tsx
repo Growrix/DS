@@ -1,0 +1,46 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import * as React from "react";
+
+import type { PublicSectionModel } from "@/ds/platform/publicSitePreset";
+import type { SectionVariantMeta } from "@/ds/composition/sections/_schema";
+
+type Model = Extract<PublicSectionModel, { kind: "blogList" }>;
+
+export const BLOGLIST_LOCAL_BUSINESS_TRUST_1_META: SectionVariantMeta = {
+  id: "bloglist-local-business-trust-1",
+  kind: "blogList",
+  archetype: "local-business-trust",
+  label: "Blog List — Local Indexed List",
+  description: "Indexed list view of blog entries with two-digit numerals, title and date; fade-in entry; single column.",
+  supportsThemes: ["dark", "light"],
+  motionPresets: ["rise-soft","fade-in"],
+  effects: {},
+  density: "comfortable",
+  complexity: "standard",
+};
+
+export function BloglistLocalBusinessTrust1(props: Model) {
+  const { header, posts } = props as any;
+  return (
+    <section className="sv-section-root sv-bloglist-local-business-trust-1" data-variant="bloglist-local-business-trust-1">
+      <div className="sv-bloglist-local-business-trust-1__inner">
+        {header ? (
+          <div className="sv-bloglist-local-business-trust-1__header">
+            {header.kicker ? <div className="sv-bloglist-local-business-trust-1__kicker">{header.kicker}</div> : null}
+            {header.title ? <h2 className="sv-bloglist-local-business-trust-1__title">{header.title}</h2> : null}
+          </div>
+        ) : null}
+        <ol className="sv-bloglist-local-business-trust-1__list">
+          {posts.map((p: any) => (
+            <li key={p.id} className="sv-bloglist-local-business-trust-1__row">
+              <a className="sv-bloglist-local-business-trust-1__link" href={p.href}>
+                <h3 className="sv-bloglist-local-business-trust-1__post-title">{p.title}</h3>
+                {p.excerpt ? <p className="sv-bloglist-local-business-trust-1__excerpt">{p.excerpt}</p> : null}
+              </a>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  );
+}

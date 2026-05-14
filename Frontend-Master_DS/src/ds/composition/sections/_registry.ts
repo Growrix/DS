@@ -288,6 +288,24 @@ import { PRICING_STARTUP_CONVERSION_1_META, PricingStartupConversion1 } from "./
 import { TEAM_STARTUP_CONVERSION_1_META, TeamStartupConversion1 } from "./variants/team/team-startup-conversion-1";
 import { CONTACT_STARTUP_CONVERSION_1_META, ContactStartupConversion1 } from "./variants/contact/contact-startup-conversion-1";
 
+
+// scaffold-variants batch — imports
+import { HERO_LOCAL_BUSINESS_TRUST_1_META, HeroLocalBusinessTrust1 } from "./variants/hero/hero-local-business-trust-1";
+import { HERO_LOCAL_BUSINESS_TRUST_2_META, HeroLocalBusinessTrust2 } from "./variants/hero/hero-local-business-trust-2";
+import { FEATURES_LOCAL_BUSINESS_TRUST_1_META, FeaturesLocalBusinessTrust1 } from "./variants/features/features-local-business-trust-1";
+import { FEATURES_LOCAL_BUSINESS_TRUST_2_META, FeaturesLocalBusinessTrust2 } from "./variants/features/features-local-business-trust-2";
+import { TESTIMONIALS_LOCAL_BUSINESS_TRUST_1_META, TestimonialsLocalBusinessTrust1 } from "./variants/testimonials/testimonials-local-business-trust-1";
+import { FAQ_LOCAL_BUSINESS_TRUST_1_META, FaqLocalBusinessTrust1 } from "./variants/faq/faq-local-business-trust-1";
+import { BLOGLIST_LOCAL_BUSINESS_TRUST_1_META, BloglistLocalBusinessTrust1 } from "./variants/blogList/bloglist-local-business-trust-1";
+import { CTA_LOCAL_BUSINESS_TRUST_1_META, CtaLocalBusinessTrust1 } from "./variants/cta/cta-local-business-trust-1";
+import { CTA_LOCAL_BUSINESS_TRUST_2_META, CtaLocalBusinessTrust2 } from "./variants/cta/cta-local-business-trust-2";
+import { NEWSLETTER_LOCAL_BUSINESS_TRUST_1_META, NewsletterLocalBusinessTrust1 } from "./variants/newsletter/newsletter-local-business-trust-1";
+import { STATS_BAND_LOCAL_BUSINESS_TRUST_1_META, StatsBandLocalBusinessTrust1 } from "./variants/stats-band/stats-band-local-business-trust-1";
+import { LOGO_CLOUD_LOCAL_BUSINESS_TRUST_1_META, LogoCloudLocalBusinessTrust1 } from "./variants/logo-cloud/logo-cloud-local-business-trust-1";
+import { CASE_STUDIES_LOCAL_BUSINESS_TRUST_1_META, CaseStudiesLocalBusinessTrust1 } from "./variants/case-studies/case-studies-local-business-trust-1";
+import { PRICING_LOCAL_BUSINESS_TRUST_1_META, PricingLocalBusinessTrust1 } from "./variants/pricing/pricing-local-business-trust-1";
+import { TEAM_LOCAL_BUSINESS_TRUST_1_META, TeamLocalBusinessTrust1 } from "./variants/team/team-local-business-trust-1";
+
 import type {
   SectionKind,
   SectionRegistry,
@@ -589,6 +607,23 @@ export const SECTION_REGISTRY: SectionRegistry = {
   [PRICING_STARTUP_CONVERSION_1_META.id]: { meta: PRICING_STARTUP_CONVERSION_1_META, component: PricingStartupConversion1 },
   [TEAM_STARTUP_CONVERSION_1_META.id]: { meta: TEAM_STARTUP_CONVERSION_1_META, component: TeamStartupConversion1 },
   [CONTACT_STARTUP_CONVERSION_1_META.id]: { meta: CONTACT_STARTUP_CONVERSION_1_META, component: ContactStartupConversion1 },
+
+  // scaffold-variants batch — entries
+  [HERO_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: HERO_LOCAL_BUSINESS_TRUST_1_META, component: HeroLocalBusinessTrust1 },
+  [HERO_LOCAL_BUSINESS_TRUST_2_META.id]: { meta: HERO_LOCAL_BUSINESS_TRUST_2_META, component: HeroLocalBusinessTrust2 },
+  [FEATURES_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: FEATURES_LOCAL_BUSINESS_TRUST_1_META, component: FeaturesLocalBusinessTrust1 },
+  [FEATURES_LOCAL_BUSINESS_TRUST_2_META.id]: { meta: FEATURES_LOCAL_BUSINESS_TRUST_2_META, component: FeaturesLocalBusinessTrust2 },
+  [TESTIMONIALS_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: TESTIMONIALS_LOCAL_BUSINESS_TRUST_1_META, component: TestimonialsLocalBusinessTrust1 },
+  [FAQ_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: FAQ_LOCAL_BUSINESS_TRUST_1_META, component: FaqLocalBusinessTrust1 },
+  [BLOGLIST_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: BLOGLIST_LOCAL_BUSINESS_TRUST_1_META, component: BloglistLocalBusinessTrust1 },
+  [CTA_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: CTA_LOCAL_BUSINESS_TRUST_1_META, component: CtaLocalBusinessTrust1 },
+  [CTA_LOCAL_BUSINESS_TRUST_2_META.id]: { meta: CTA_LOCAL_BUSINESS_TRUST_2_META, component: CtaLocalBusinessTrust2 },
+  [NEWSLETTER_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: NEWSLETTER_LOCAL_BUSINESS_TRUST_1_META, component: NewsletterLocalBusinessTrust1 },
+  [STATS_BAND_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: STATS_BAND_LOCAL_BUSINESS_TRUST_1_META, component: StatsBandLocalBusinessTrust1 },
+  [LOGO_CLOUD_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: LOGO_CLOUD_LOCAL_BUSINESS_TRUST_1_META, component: LogoCloudLocalBusinessTrust1 },
+  [CASE_STUDIES_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: CASE_STUDIES_LOCAL_BUSINESS_TRUST_1_META, component: CaseStudiesLocalBusinessTrust1 },
+  [PRICING_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: PRICING_LOCAL_BUSINESS_TRUST_1_META, component: PricingLocalBusinessTrust1 },
+  [TEAM_LOCAL_BUSINESS_TRUST_1_META.id]: { meta: TEAM_LOCAL_BUSINESS_TRUST_1_META, component: TeamLocalBusinessTrust1 },
 
 };
 

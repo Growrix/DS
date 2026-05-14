@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "counts": {
-    "variants": 120,
+    "variants": 135,
     "archetypes": 8,
     "motionPresets": 8,
     "themes": 2,
@@ -2756,6 +2756,289 @@
       "effects": {},
       "density": "comfortable",
       "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "hero-local-business-trust-1",
+      "kind": "hero",
+      "archetype": "local-business-trust",
+      "label": "Hero — Local Centred Trust",
+      "description": "Centred trust hero with bold name, service line, and primary CTA + phone CTA; rise-soft entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "hero-local-business-trust-2",
+      "kind": "hero",
+      "archetype": "local-business-trust",
+      "label": "Hero — Local Full-Bleed Storefront",
+      "description": "Full-bleed storefront photograph with scrim and overlay headline; primary CTA in accent; scroll-scale 1.04 on media.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {
+        "fullBleedPhotograph": true,
+        "scrollDrivenScale": true
+      },
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "features-local-business-trust-1",
+      "kind": "features",
+      "archetype": "local-business-trust",
+      "label": "Features — Local 3-Col Services",
+      "description": "Three-column services grid with accent icons, names and short lines; fade-in across cards; raised surface.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "features-local-business-trust-2",
+      "kind": "features",
+      "archetype": "local-business-trust",
+      "label": "Features — Local Numbered Process",
+      "description": "Numbered services stack with two-digit numerals in accent; single column max 72rem; rise-soft entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "testimonials-local-business-trust-1",
+      "kind": "testimonials",
+      "archetype": "local-business-trust",
+      "label": "Testimonials — Local 3-Col Cards",
+      "description": "Three-column customer testimonial cards with accent quote glyph; fade-in across cards; raised surface.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "faq-local-business-trust-1",
+      "kind": "faq",
+      "archetype": "local-business-trust",
+      "label": "FAQ — Local Accordion",
+      "description": "Native details/summary accordion with accent caret; fade-in per row; foreground-secondary answers.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "bloglist-local-business-trust-1",
+      "kind": "blogList",
+      "archetype": "local-business-trust",
+      "label": "Blog List — Local Indexed List",
+      "description": "Indexed list view of blog entries with two-digit numerals, title and date; fade-in entry; single column.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "cta-local-business-trust-1",
+      "kind": "cta",
+      "archetype": "local-business-trust",
+      "label": "CTA — Local Centred Card",
+      "description": "Centred CTA card on raised surface with headline, sub-line and primary action; rise-soft entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "cta-local-business-trust-2",
+      "kind": "cta",
+      "archetype": "local-business-trust",
+      "label": "CTA — Local Phone Banner",
+      "description": "Full-width banner CTA on accent background with phone-call primary action; rise-soft entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "newsletter-local-business-trust-1",
+      "kind": "newsletter",
+      "archetype": "local-business-trust",
+      "label": "Newsletter — Local Inline Form",
+      "description": "Inline newsletter form (email + submit) with headline above; posts to /subscribe; fade-in entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "stats-band-local-business-trust-1",
+      "kind": "stats-band",
+      "archetype": "local-business-trust",
+      "label": "Stats Band — Local 4-Col Trust",
+      "description": "Four-column stats band with accent numerals showing years/projects/customers/rating; fade-in across cells.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "logo-cloud-local-business-trust-1",
+      "kind": "logo-cloud",
+      "archetype": "local-business-trust",
+      "label": "Logo Cloud — Local Auto-Fit Grid",
+      "description": "Auto-fit logo grid at 9rem min cell on raised surface; foreground-muted opacity; fade-in entry.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "case-studies-local-business-trust-1",
+      "kind": "case-studies",
+      "archetype": "local-business-trust",
+      "label": "Case Studies — Local 2-Col Grid",
+      "description": "Two-column case study cards with photo, client name and outcome line; fade-in across cards.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
+      "isDefault": false
+    },
+    {
+      "id": "pricing-local-business-trust-1",
+      "kind": "pricing",
+      "archetype": "local-business-trust",
+      "label": "Pricing — Local Single Tier",
+      "description": "Single pricing/quote card with accent price, inclusion list and primary CTA; centered on raised surface.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "minimal",
+      "isDefault": false
+    },
+    {
+      "id": "team-local-business-trust-1",
+      "kind": "team",
+      "archetype": "local-business-trust",
+      "label": "Team — Local 4-Col Grid",
+      "description": "Four-column staff grid with circular avatars, names and role lines; fade-in across cells.",
+      "supportsThemes": [
+        "dark",
+        "light"
+      ],
+      "motionPresets": [
+        "rise-soft",
+        "fade-in"
+      ],
+      "effects": {},
+      "density": "comfortable",
+      "complexity": "standard",
       "isDefault": false
     }
   ],
