@@ -5,6 +5,10 @@ export { createInMemoryContentAdapter as createInMemoryAdapter } from "./adapter
 export { createMarkdownContentAdapter } from "./adapters/markdown";
 export { createMdxContentAdapter } from "./adapters/mdx";
 export * from "./seo";
+export * from "./formAdapter";
+export { createInMemoryLogAdapter } from "./adapters/forms/inMemoryLog";
+export { createMailtoAdapter } from "./adapters/forms/mailto";
+export { createGenericPostAdapter } from "./adapters/forms/genericPost";
 
 export * from "./PublicPresetPage";
 export * from "./PublicSiteHeader";
