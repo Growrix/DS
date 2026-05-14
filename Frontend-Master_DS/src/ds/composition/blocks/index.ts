@@ -3,3 +3,4 @@
 
 export * from "./MarketingBlocks";
 export * from "./PublicBlocks";
+export * from "./auth";
