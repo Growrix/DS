@@ -1,0 +1,361 @@
+[
+  {
+    "id": "page-modern-saas-contact",
+    "archetype": "modern-saas",
+    "purpose": "contact",
+    "shell": "public",
+    "label": "Page — Modern SaaS Contact",
+    "description": "Hero centred title → contact form-info split → FAQ accordion → CTA banner strip. Standard density.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-modern-saas-split" },
+      { "id": "contact", "kind": "contact", "variantId": "contact-modern-saas-form-info" },
+      { "id": "faq", "kind": "faq", "variantId": "faq-modern-saas-accordion" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-modern-saas-banner-strip" }
+    ]
+  },
+  {
+    "id": "page-editorial-premium-landing",
+    "archetype": "editorial-premium",
+    "purpose": "landing",
+    "shell": "public",
+    "label": "Page — Editorial Premium Landing",
+    "description": "Hero centred display → split alternating features → editorial large quote → blog stack → CTA card → editorial columns footer.",
+    "density": "extended",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-editorial-premium-2" },
+      { "id": "features", "kind": "features", "variantId": "features-split-alternating" },
+      { "id": "testimonials", "kind": "testimonials", "variantId": "testimonials-editorial-premium-1" },
+      { "id": "blog", "kind": "blogList", "variantId": "bloglist-editorial-premium-stack" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-editorial-premium-1" },
+      { "id": "footer", "kind": "footer-content", "variantId": "footer-content-editorial-premium-1" }
+    ]
+  },
+  {
+    "id": "page-editorial-premium-about",
+    "archetype": "editorial-premium",
+    "purpose": "about",
+    "shell": "public",
+    "label": "Page — Editorial Premium About",
+    "description": "Hero centred display → editorial numbered stack → team grid 4-col → editorial large quote → contact channels → minimal footer.",
+    "density": "extended",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-editorial-premium-1" },
+      { "id": "story", "kind": "features", "variantId": "features-editorial-premium-2" },
+      { "id": "team", "kind": "team", "variantId": "team-editorial-premium-1" },
+      { "id": "quote", "kind": "testimonials", "variantId": "testimonials-editorial-premium-1" },
+      { "id": "contact", "kind": "contact", "variantId": "contact-editorial-premium-1" },
+      { "id": "footer", "kind": "footer-content", "variantId": "footer-content-editorial-premium-2" }
+    ]
+  },
+  {
+    "id": "page-editorial-premium-pricing",
+    "archetype": "editorial-premium",
+    "purpose": "pricing",
+    "shell": "public",
+    "label": "Page — Editorial Premium Pricing",
+    "description": "Hero centred display → single-tier pricing → editorial 2-col FAQ → editorial centred CTA card → minimal footer.",
+    "density": "extended",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-editorial-premium-2" },
+      { "id": "pricing", "kind": "pricing", "variantId": "pricing-editorial-premium-1" },
+      { "id": "faq", "kind": "faq", "variantId": "faq-editorial-premium-2" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-editorial-premium-2" },
+      { "id": "footer", "kind": "footer-content", "variantId": "footer-content-editorial-premium-2" }
+    ]
+  },
+  {
+    "id": "page-bold-consumer-landing",
+    "archetype": "bold-consumer",
+    "purpose": "landing",
+    "shell": "public",
+    "label": "Page — Bold Consumer Landing",
+    "description": "Hero oversized → logos auto-fit → bold 3-col features → bold stats band → bold 3-col testimonials → bold pricing → bold accordion FAQ → full-bleed CTA.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-bold-consumer-oversized" },
+      { "id": "logos", "kind": "logo-cloud", "variantId": "logo-cloud-bold-consumer-1" },
+      { "id": "features", "kind": "features", "variantId": "features-bold-consumer-1" },
+      { "id": "stats", "kind": "stats-band", "variantId": "stats-band-bold-consumer-1" },
+      { "id": "testimonials", "kind": "testimonials", "variantId": "testimonials-bold-consumer-2" },
+      { "id": "pricing", "kind": "pricing", "variantId": "pricing-bold-consumer-1" },
+      { "id": "faq", "kind": "faq", "variantId": "faq-bold-consumer-1" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-full-bleed" }
+    ]
+  },
+  {
+    "id": "page-bold-consumer-pricing",
+    "archetype": "bold-consumer",
+    "purpose": "pricing",
+    "shell": "public",
+    "label": "Page — Bold Consumer Pricing",
+    "description": "Hero split spotlight → bold single-tier pricing → bold accordion FAQ → bold large quote → bold banner CTA.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-bold-consumer-2" },
+      { "id": "pricing", "kind": "pricing", "variantId": "pricing-bold-consumer-1" },
+      { "id": "faq", "kind": "faq", "variantId": "faq-bold-consumer-1" },
+      { "id": "quote", "kind": "testimonials", "variantId": "testimonials-bold-consumer-1" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-bold-consumer-2" }
+    ]
+  },
+  {
+    "id": "page-bold-consumer-contact",
+    "archetype": "bold-consumer",
+    "purpose": "contact",
+    "shell": "public",
+    "label": "Page — Bold Consumer Contact",
+    "description": "Hero full-bleed photograph → bold channel cards → bold accordion FAQ → bold banner CTA.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-bold-consumer-3" },
+      { "id": "contact", "kind": "contact", "variantId": "contact-bold-consumer-1" },
+      { "id": "faq", "kind": "faq", "variantId": "faq-bold-consumer-1" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-bold-consumer-2" }
+    ]
+  },
+  {
+    "id": "page-ai-product-landing",
+    "archetype": "ai-product",
+    "purpose": "landing",
+    "shell": "public",
+    "label": "Page — AI Product Landing",
+    "description": "Hero streaming → AI 3-col features → AI 4-col stats band → AI 3-col testimonials → AI single-tier pricing → AI accordion FAQ → AI banner CTA → AI columns footer.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-ai-product-streaming" },
+      { "id": "features", "kind": "features", "variantId": "features-ai-product-1" },
+      { "id": "stats", "kind": "stats-band", "variantId": "stats-band-ai-product-1" },
+      { "id": "testimonials", "kind": "testimonials", "variantId": "testimonials-ai-product-2" },
+      { "id": "pricing", "kind": "pricing", "variantId": "pricing-ai-product-1" },
+      { "id": "faq", "kind": "faq", "variantId": "faq-ai-product-1" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-ai-product-2" },
+      { "id": "footer", "kind": "footer-content", "variantId": "footer-content-ai-product-1" }
+    ]
+  },
+  {
+    "id": "page-ai-product-pricing",
+    "archetype": "ai-product",
+    "purpose": "pricing",
+    "shell": "public",
+    "label": "Page — AI Product Pricing",
+    "description": "Hero centred reveal → AI single-tier pricing → AI accordion FAQ → AI centred CTA card → AI columns footer.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-ai-product-2" },
+      { "id": "pricing", "kind": "pricing", "variantId": "pricing-ai-product-1" },
+      { "id": "faq", "kind": "faq", "variantId": "faq-ai-product-1" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-ai-product-1" },
+      { "id": "footer", "kind": "footer-content", "variantId": "footer-content-ai-product-1" }
+    ]
+  },
+  {
+    "id": "page-ai-product-about",
+    "archetype": "ai-product",
+    "purpose": "about",
+    "shell": "public",
+    "label": "Page — AI Product About",
+    "description": "Hero split with media → AI numbered feature stack → AI 4-col team → AI large quote → AI channel cards → AI columns footer.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-ai-product-3" },
+      { "id": "story", "kind": "features", "variantId": "features-ai-product-2" },
+      { "id": "team", "kind": "team", "variantId": "team-ai-product-1" },
+      { "id": "quote", "kind": "testimonials", "variantId": "testimonials-ai-product-1" },
+      { "id": "contact", "kind": "contact", "variantId": "contact-ai-product-1" },
+      { "id": "footer", "kind": "footer-content", "variantId": "footer-content-ai-product-1" }
+    ]
+  },
+  {
+    "id": "page-startup-conversion-landing",
+    "archetype": "startup-conversion",
+    "purpose": "landing",
+    "shell": "public",
+    "label": "Page — Startup Conversion Landing",
+    "description": "Hero centred conversion → startup logos → startup 3-col features → startup stats → startup 3-col testimonials → startup pricing → startup accordion FAQ → startup banner CTA.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-startup-conversion-1" },
+      { "id": "logos", "kind": "logo-cloud", "variantId": "logo-cloud-startup-conversion-1" },
+      { "id": "features", "kind": "features", "variantId": "features-startup-conversion-1" },
+      { "id": "stats", "kind": "stats-band", "variantId": "stats-band-startup-conversion-1" },
+      { "id": "testimonials", "kind": "testimonials", "variantId": "testimonials-startup-conversion-1" },
+      { "id": "pricing", "kind": "pricing", "variantId": "pricing-startup-conversion-1" },
+      { "id": "faq", "kind": "faq", "variantId": "faq-startup-conversion-1" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-startup-conversion-2" }
+    ]
+  },
+  {
+    "id": "page-startup-conversion-pricing",
+    "archetype": "startup-conversion",
+    "purpose": "pricing",
+    "shell": "public",
+    "label": "Page — Startup Conversion Pricing",
+    "description": "Hero split with media → startup single-tier pricing → startup accordion FAQ → startup centred card CTA.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-startup-conversion-2" },
+      { "id": "pricing", "kind": "pricing", "variantId": "pricing-startup-conversion-1" },
+      { "id": "faq", "kind": "faq", "variantId": "faq-startup-conversion-1" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-startup-conversion-1" }
+    ]
+  },
+  {
+    "id": "page-startup-conversion-auth",
+    "archetype": "startup-conversion",
+    "purpose": "auth",
+    "shell": "centered",
+    "label": "Page — Startup Conversion Sign Up",
+    "description": "Hero centred conversion → inline newsletter form → startup 3-col features → startup banner CTA.",
+    "density": "comfortable",
+    "complexity": "minimal",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-startup-conversion-1" },
+      { "id": "signup", "kind": "newsletter", "variantId": "newsletter-startup-conversion-inline" },
+      { "id": "features", "kind": "features", "variantId": "features-startup-conversion-1" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-startup-conversion-2" }
+    ]
+  },
+  {
+    "id": "page-local-business-trust-landing",
+    "archetype": "local-business-trust",
+    "purpose": "landing",
+    "shell": "public",
+    "label": "Page — Local Business Trust Landing",
+    "description": "Hero full-bleed storefront → 3-col services features → vertical process steps → 4-col trust stats → 3-col testimonials → local channel split contact → phone banner CTA.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-local-business-trust-2" },
+      { "id": "services", "kind": "features", "variantId": "features-local-business-trust-1" },
+      { "id": "process", "kind": "process-steps", "variantId": "process-steps-vertical" },
+      { "id": "stats", "kind": "stats-band", "variantId": "stats-band-local-business-trust-1" },
+      { "id": "testimonials", "kind": "testimonials", "variantId": "testimonials-local-business-trust-1" },
+      { "id": "contact", "kind": "contact", "variantId": "contact-local-business-trust-split" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-local-business-trust-2" }
+    ]
+  },
+  {
+    "id": "page-local-business-trust-about",
+    "archetype": "local-business-trust",
+    "purpose": "about",
+    "shell": "public",
+    "label": "Page — Local Business Trust About",
+    "description": "Hero centred trust → numbered local process → 4-col staff team → 3-col testimonials → split contact → centred card CTA.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-local-business-trust-1" },
+      { "id": "story", "kind": "features", "variantId": "features-local-business-trust-2" },
+      { "id": "team", "kind": "team", "variantId": "team-local-business-trust-1" },
+      { "id": "testimonials", "kind": "testimonials", "variantId": "testimonials-local-business-trust-1" },
+      { "id": "contact", "kind": "contact", "variantId": "contact-local-business-trust-split" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-local-business-trust-1" }
+    ]
+  },
+  {
+    "id": "page-dashboard-ops-landing",
+    "archetype": "dashboard-ops",
+    "purpose": "landing",
+    "shell": "public",
+    "label": "Page — Dashboard Ops Landing",
+    "description": "Ops centred hero → ops 3-col capabilities → ops 4-col KPI stats → ops vertical process → ops 2-col FAQ → ops banner CTA.",
+    "density": "compact",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-dashboard-ops-1" },
+      { "id": "features", "kind": "features", "variantId": "features-dashboard-ops-1" },
+      { "id": "stats", "kind": "stats-band", "variantId": "stats-band-dashboard-ops-1" },
+      { "id": "process", "kind": "process-steps", "variantId": "process-steps-dashboard-ops-1" },
+      { "id": "faq", "kind": "faq", "variantId": "faq-dashboard-ops-1" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-dashboard-ops-1" }
+    ]
+  },
+  {
+    "id": "page-dashboard-ops-about",
+    "archetype": "dashboard-ops",
+    "purpose": "about",
+    "shell": "public",
+    "label": "Page — Dashboard Ops About",
+    "description": "Ops centred hero → ops 3-col capabilities → ops directory team → ops 3-col case studies → ops 2-col FAQ → ops banner CTA.",
+    "density": "compact",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-dashboard-ops-1" },
+      { "id": "features", "kind": "features", "variantId": "features-dashboard-ops-1" },
+      { "id": "team", "kind": "team", "variantId": "team-dashboard-ops-directory" },
+      { "id": "cases", "kind": "case-studies", "variantId": "case-studies-dashboard-ops-1" },
+      { "id": "faq", "kind": "faq", "variantId": "faq-dashboard-ops-1" },
+      { "id": "cta", "kind": "cta", "variantId": "cta-dashboard-ops-1" }
+    ]
+  },
+  {
+    "id": "page-portfolio-craft-landing",
+    "archetype": "portfolio-craft",
+    "purpose": "landing",
+    "shell": "public",
+    "label": "Page — Portfolio Craft Landing",
+    "description": "Hero full-bleed showcase → portfolio capabilities → 2-col case studies grid → portfolio large quote → 2-col studio team → portfolio channel cards → portfolio minimal footer.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-portfolio-craft-2" },
+      { "id": "features", "kind": "features", "variantId": "features-portfolio-craft-1" },
+      { "id": "cases", "kind": "case-studies", "variantId": "case-studies-portfolio-craft-2" },
+      { "id": "quote", "kind": "testimonials", "variantId": "testimonials-portfolio-craft-1" },
+      { "id": "team", "kind": "team", "variantId": "team-portfolio-craft-1" },
+      { "id": "contact", "kind": "contact", "variantId": "contact-portfolio-craft-1" },
+      { "id": "footer", "kind": "footer-content", "variantId": "footer-content-portfolio-craft-1" }
+    ]
+  },
+  {
+    "id": "page-portfolio-craft-about",
+    "archetype": "portfolio-craft",
+    "purpose": "about",
+    "shell": "public",
+    "label": "Page — Portfolio Craft About",
+    "description": "Hero centred identity → portfolio capabilities → 4-col studio team → portfolio large quote → portfolio indexed journal list → portfolio channel cards → portfolio minimal footer.",
+    "density": "comfortable",
+    "complexity": "standard",
+    "isDefault": true,
+    "sections": [
+      { "id": "hero", "kind": "hero", "variantId": "hero-portfolio-craft-1" },
+      { "id": "features", "kind": "features", "variantId": "features-portfolio-craft-1" },
+      { "id": "team", "kind": "team", "variantId": "team-portfolio-craft-2" },
+      { "id": "quote", "kind": "testimonials", "variantId": "testimonials-portfolio-craft-1" },
+      { "id": "journal", "kind": "blogList", "variantId": "bloglist-portfolio-craft-1" },
+      { "id": "contact", "kind": "contact", "variantId": "contact-portfolio-craft-1" },
+      { "id": "footer", "kind": "footer-content", "variantId": "footer-content-portfolio-craft-1" }
+    ]
+  }
+]

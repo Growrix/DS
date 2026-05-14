@@ -42,6 +42,27 @@ import {
   getEditorialPremiumBlogIndexDemoPage,
 } from "./page-editorial-premium-blog-index";
 
+// scaffold-wireframes batch — imports
+import { PAGE_PORTFOLIO_CRAFT_ABOUT_META, getPagePortfolioCraftAboutDemoPage } from "./page-portfolio-craft-about";
+import { PAGE_PORTFOLIO_CRAFT_LANDING_META, getPagePortfolioCraftLandingDemoPage } from "./page-portfolio-craft-landing";
+import { PAGE_DASHBOARD_OPS_ABOUT_META, getPageDashboardOpsAboutDemoPage } from "./page-dashboard-ops-about";
+import { PAGE_DASHBOARD_OPS_LANDING_META, getPageDashboardOpsLandingDemoPage } from "./page-dashboard-ops-landing";
+import { PAGE_LOCAL_BUSINESS_TRUST_ABOUT_META, getPageLocalBusinessTrustAboutDemoPage } from "./page-local-business-trust-about";
+import { PAGE_LOCAL_BUSINESS_TRUST_LANDING_META, getPageLocalBusinessTrustLandingDemoPage } from "./page-local-business-trust-landing";
+import { PAGE_STARTUP_CONVERSION_AUTH_META, getPageStartupConversionAuthDemoPage } from "./page-startup-conversion-auth";
+import { PAGE_STARTUP_CONVERSION_PRICING_META, getPageStartupConversionPricingDemoPage } from "./page-startup-conversion-pricing";
+import { PAGE_STARTUP_CONVERSION_LANDING_META, getPageStartupConversionLandingDemoPage } from "./page-startup-conversion-landing";
+import { PAGE_AI_PRODUCT_ABOUT_META, getPageAiProductAboutDemoPage } from "./page-ai-product-about";
+import { PAGE_AI_PRODUCT_PRICING_META, getPageAiProductPricingDemoPage } from "./page-ai-product-pricing";
+import { PAGE_AI_PRODUCT_LANDING_META, getPageAiProductLandingDemoPage } from "./page-ai-product-landing";
+import { PAGE_BOLD_CONSUMER_CONTACT_META, getPageBoldConsumerContactDemoPage } from "./page-bold-consumer-contact";
+import { PAGE_BOLD_CONSUMER_PRICING_META, getPageBoldConsumerPricingDemoPage } from "./page-bold-consumer-pricing";
+import { PAGE_BOLD_CONSUMER_LANDING_META, getPageBoldConsumerLandingDemoPage } from "./page-bold-consumer-landing";
+import { PAGE_EDITORIAL_PREMIUM_PRICING_META, getPageEditorialPremiumPricingDemoPage } from "./page-editorial-premium-pricing";
+import { PAGE_EDITORIAL_PREMIUM_ABOUT_META, getPageEditorialPremiumAboutDemoPage } from "./page-editorial-premium-about";
+import { PAGE_EDITORIAL_PREMIUM_LANDING_META, getPageEditorialPremiumLandingDemoPage } from "./page-editorial-premium-landing";
+import { PAGE_MODERN_SAAS_CONTACT_META, getPageModernSaasContactDemoPage } from "./page-modern-saas-contact";
+
 import type {
   WireframeFilter,
   WireframeMeta,
@@ -58,6 +79,26 @@ export const WIREFRAME_REGISTRY: WireframeRegistry = {
   [PAGE_MODERN_SAAS_404_META.id]: PAGE_MODERN_SAAS_404_META,
   [PAGE_LOCAL_BUSINESS_TRUST_CONTACT_META.id]: PAGE_LOCAL_BUSINESS_TRUST_CONTACT_META,
   [PAGE_EDITORIAL_PREMIUM_BLOG_INDEX_META.id]: PAGE_EDITORIAL_PREMIUM_BLOG_INDEX_META,
+  // scaffold-wireframes batch — META entries
+  [PAGE_PORTFOLIO_CRAFT_ABOUT_META.id]: PAGE_PORTFOLIO_CRAFT_ABOUT_META,
+  [PAGE_PORTFOLIO_CRAFT_LANDING_META.id]: PAGE_PORTFOLIO_CRAFT_LANDING_META,
+  [PAGE_DASHBOARD_OPS_ABOUT_META.id]: PAGE_DASHBOARD_OPS_ABOUT_META,
+  [PAGE_DASHBOARD_OPS_LANDING_META.id]: PAGE_DASHBOARD_OPS_LANDING_META,
+  [PAGE_LOCAL_BUSINESS_TRUST_ABOUT_META.id]: PAGE_LOCAL_BUSINESS_TRUST_ABOUT_META,
+  [PAGE_LOCAL_BUSINESS_TRUST_LANDING_META.id]: PAGE_LOCAL_BUSINESS_TRUST_LANDING_META,
+  [PAGE_STARTUP_CONVERSION_AUTH_META.id]: PAGE_STARTUP_CONVERSION_AUTH_META,
+  [PAGE_STARTUP_CONVERSION_PRICING_META.id]: PAGE_STARTUP_CONVERSION_PRICING_META,
+  [PAGE_STARTUP_CONVERSION_LANDING_META.id]: PAGE_STARTUP_CONVERSION_LANDING_META,
+  [PAGE_AI_PRODUCT_ABOUT_META.id]: PAGE_AI_PRODUCT_ABOUT_META,
+  [PAGE_AI_PRODUCT_PRICING_META.id]: PAGE_AI_PRODUCT_PRICING_META,
+  [PAGE_AI_PRODUCT_LANDING_META.id]: PAGE_AI_PRODUCT_LANDING_META,
+  [PAGE_BOLD_CONSUMER_CONTACT_META.id]: PAGE_BOLD_CONSUMER_CONTACT_META,
+  [PAGE_BOLD_CONSUMER_PRICING_META.id]: PAGE_BOLD_CONSUMER_PRICING_META,
+  [PAGE_BOLD_CONSUMER_LANDING_META.id]: PAGE_BOLD_CONSUMER_LANDING_META,
+  [PAGE_EDITORIAL_PREMIUM_PRICING_META.id]: PAGE_EDITORIAL_PREMIUM_PRICING_META,
+  [PAGE_EDITORIAL_PREMIUM_ABOUT_META.id]: PAGE_EDITORIAL_PREMIUM_ABOUT_META,
+  [PAGE_EDITORIAL_PREMIUM_LANDING_META.id]: PAGE_EDITORIAL_PREMIUM_LANDING_META,
+  [PAGE_MODERN_SAAS_CONTACT_META.id]: PAGE_MODERN_SAAS_CONTACT_META,
 };
 
 /** Demo content factories keyed by wireframe id. */
@@ -67,6 +108,26 @@ export const WIREFRAME_DEMO_FACTORIES: Record<string, () => PublicPageModel> = {
   [PAGE_MODERN_SAAS_404_META.id]: getModernSaas404DemoPage,
   [PAGE_LOCAL_BUSINESS_TRUST_CONTACT_META.id]: getLocalBusinessTrustContactDemoPage,
   [PAGE_EDITORIAL_PREMIUM_BLOG_INDEX_META.id]: getEditorialPremiumBlogIndexDemoPage,
+  // scaffold-wireframes batch — factory entries
+  [PAGE_PORTFOLIO_CRAFT_ABOUT_META.id]: getPagePortfolioCraftAboutDemoPage,
+  [PAGE_PORTFOLIO_CRAFT_LANDING_META.id]: getPagePortfolioCraftLandingDemoPage,
+  [PAGE_DASHBOARD_OPS_ABOUT_META.id]: getPageDashboardOpsAboutDemoPage,
+  [PAGE_DASHBOARD_OPS_LANDING_META.id]: getPageDashboardOpsLandingDemoPage,
+  [PAGE_LOCAL_BUSINESS_TRUST_ABOUT_META.id]: getPageLocalBusinessTrustAboutDemoPage,
+  [PAGE_LOCAL_BUSINESS_TRUST_LANDING_META.id]: getPageLocalBusinessTrustLandingDemoPage,
+  [PAGE_STARTUP_CONVERSION_AUTH_META.id]: getPageStartupConversionAuthDemoPage,
+  [PAGE_STARTUP_CONVERSION_PRICING_META.id]: getPageStartupConversionPricingDemoPage,
+  [PAGE_STARTUP_CONVERSION_LANDING_META.id]: getPageStartupConversionLandingDemoPage,
+  [PAGE_AI_PRODUCT_ABOUT_META.id]: getPageAiProductAboutDemoPage,
+  [PAGE_AI_PRODUCT_PRICING_META.id]: getPageAiProductPricingDemoPage,
+  [PAGE_AI_PRODUCT_LANDING_META.id]: getPageAiProductLandingDemoPage,
+  [PAGE_BOLD_CONSUMER_CONTACT_META.id]: getPageBoldConsumerContactDemoPage,
+  [PAGE_BOLD_CONSUMER_PRICING_META.id]: getPageBoldConsumerPricingDemoPage,
+  [PAGE_BOLD_CONSUMER_LANDING_META.id]: getPageBoldConsumerLandingDemoPage,
+  [PAGE_EDITORIAL_PREMIUM_PRICING_META.id]: getPageEditorialPremiumPricingDemoPage,
+  [PAGE_EDITORIAL_PREMIUM_ABOUT_META.id]: getPageEditorialPremiumAboutDemoPage,
+  [PAGE_EDITORIAL_PREMIUM_LANDING_META.id]: getPageEditorialPremiumLandingDemoPage,
+  [PAGE_MODERN_SAAS_CONTACT_META.id]: getPageModernSaasContactDemoPage,
 };
 
 export const WIREFRAME_META_LIST: WireframeMeta[] = Object.values(WIREFRAME_REGISTRY);
