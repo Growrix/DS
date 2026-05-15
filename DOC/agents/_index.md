@@ -8,7 +8,7 @@ Update this file whenever an agent is added, removed, renamed, or its `runs_befo
 
 ## Workflow shape (5 named entry points)
 
-The OS still exposes 5 default user-facing agents. Two experimental mirrored adjuncts, `frontend_factory_planner` and `frontend_factory_developer`, exist for factory-native frontend planning and execution without changing the default workflow below.
+The OS still exposes 5 default user-facing agents. Those remain the stable general-purpose workflow.
 
 The OS exposes **5 user-facing agents**, mirrored at `.github/agents/` for VS Code Copilot. Two for planning, two for execution, one out-of-band meta-agent.
 
@@ -26,7 +26,11 @@ system_architect               ← Out-of-band: AUDIT, DESIGN, FIX, SMOKE, DETER
 
 Two prompts in planning. Two prompts in execution. One meta-agent.
 
-`frontend_factory_planner` and `frontend_factory_developer` are intentionally outside the default path above. They are opt-in, experimental, and exist to benchmark a scoped factory planning/execution model while `frontend_planner` and `frontend_developer` remain the production defaults.
+A separate adjunct lane now exists for screenshot-driven template work:
+
+`foundation_planner` -> `foundation_developer` -> `Claude_Frontend_Agent`
+
+This lane is complementary to the stable five-agent workflow. It exists to support Foundation Core plus screenshot-first template output without changing the DS lane or the default DOC workflow.
 
 ---
 
@@ -43,6 +47,16 @@ Two prompts in planning. Two prompts in execution. One meta-agent.
 
 ---
 
+## Foundation + screenshot-template adjuncts (separate lane for new template work)
+
+| Agent | Version | Phase | Inputs | Outputs |
+|---|---|---|---|---|
+| `foundation_planner` | 1 | Planning (runtime foundation) | request + constraints | `foundation.json` + `mission-scope.md` + `ownership-matrix.md` + `backend-modules.json` + `integrations-baseline.json` + `devops-standards.json` + `portability-standards.json` + `frontend-attach-contract.json` + `implementation-phases.md` under `DOC/output/runs/<timestamp>/planning/foundation-core/` |
+| `foundation_developer` | 1 | Execution (runtime foundation) | Foundation Core planning bundle | `Foundation-Core/` standalone runtime + `RUN.md` + `ENV.example` + `dev-server-checklist.md` + `export-manifest.md` + `.audit/foundation-self-audit.md` |
+| `Claude_Frontend_Agent` | 1 | Execution (screenshot-driven templates) | screenshot/reference pack + optional `frontend-attach-contract.json` | standalone template under `Templates/<category>/<template-slug>/` + `template.manifest.json` + `reference-inventory.md` + `copyright-compliance.md` + `.audit/frontend-self-audit.md` |
+
+---
+
 ## DS-Planning-Engine adjuncts (DS-native planning + execution path)
 
 The DS-Planning-Engine system provides a fully DS-aware planning + execution path that replaces the DOC planner → DS executor handoff for all DS-bound projects.
@@ -52,7 +66,9 @@ The DS-Planning-Engine system provides a fully DS-aware planning + execution pat
 | `DS_site_planner` | 1 | Planning (DS-native) | client brief (free-text or structured) | `site-plan.json` + `pages/<route>.plan.md` × N + `content-library.json` + `ds-gap-report.md` + `plan.lock.json` + `README.md` under `DS-Planning-Engine/output/runs/<ts>-<slug>/plan/` |
 | `DS_Frontend_developer` | 1 | Execution (frontend, DS-bound — selector + assembler) | `DS-Planning-Engine/output/runs/<run-id>/plan/site-plan.json` (preferred) OR stable DOC frontend planning bundle (`planning/frontend`) + Frontend-Master_DS root | cloned + customised DS at `<plan_source>/codegen/<project-slug>/` + portable preset (`<slug>.preset.ts`) + verify log + selection / gap report. **Never edits the DS.** Selects variants from `ds.contract.json`. |
 
-## Experimental mirrored adjuncts (DOC-system factory experiments — not part of the default workflows)
+## Experimental mirrored adjuncts (DOC-system factory experiments — legacy in this workspace)
+
+These factory experiments assume an external `ai-product-factory/` runtime contract. They remain documented here for historical continuity, but they are not the recommended path for new screenshot-template work in this workspace. Use the Foundation Core + `Claude_Frontend_Agent` lane above instead.
 
 | Agent | Version | Phase | Inputs | Outputs |
 |---|---|---|---|---|
@@ -124,7 +140,7 @@ If any row is missing or its producer doesn't exist, audit Section D.4 fails.
 
 ## Mirror discipline
 
-Seven files live at both `DOC/agents/<name>.agent.md` and `.github/agents/<name>.agent.md`:
+Ten agent definitions are mirrored between `DOC/agents/` and `.github/agents/`. For `Claude_Frontend_Agent`, the GitHub mirror filename is `.github/agents/Claude_Frontend_Agent.md`.
 
 - `frontend_planner`
 - `frontend_factory_planner`
@@ -134,6 +150,9 @@ Seven files live at both `DOC/agents/<name>.agent.md` and `.github/agents/<name>
 - `frontend_factory_hybrid_developer`
 - `backend_developer`
 - `system_architect`
+- `foundation_planner`
+- `foundation_developer`
+- `Claude_Frontend_Agent`
 
 When `DOC/agents/<name>.agent.md` is updated, the mirror at `.github/agents/<name>.agent.md` MUST be updated to byte-identical content. The audit detects mirror drift in Section A.4.
 

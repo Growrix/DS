@@ -1,6 +1,6 @@
 # Agent Entry Points (Copilot / VS Code)
 
-This folder is the **public agent surface** for VS Code Copilot and any AI session opening the repo. Pick one of the 5 default named agents below per phase. Two experimental adjunct agents are listed separately.
+This folder is the **public agent surface** for VS Code Copilot and any AI session opening the repo. Pick one of the 5 default named agents below for the stable general-purpose workflow. Separate adjunct lanes are listed below for DS-native work and screenshot-template work.
 
 The canonical agent files live at `DOC/agents/<name>.agent.md`. Files here are byte-identical mirrors maintained by `system_architect DOCUMENT` mode.
 
@@ -42,7 +42,11 @@ The canonical agent files live at `DOC/agents/<name>.agent.md`. Files here are b
 
 **Two prompts for the planning phase. Two prompts for the execution phase. One meta-agent that audits the lot.**
 
-The default workflow above remains the stable system. `frontend_factory_planner` and `frontend_factory_developer` are mirrored here as experimental factory-native planning and execution surfaces and do not replace `frontend_planner` or `frontend_developer`.
+The default workflow above remains the stable system. A separate Foundation Core + screenshot-template adjunct lane now exists for new screenshot-based template work:
+
+`foundation_planner` -> `foundation_developer` -> `Claude_Frontend_Agent`
+
+This lane is complementary. It does not replace `frontend_planner`, `frontend_developer`, or the DS lane.
 
 ---
 
@@ -82,6 +86,30 @@ The default workflow above remains the stable system. `frontend_factory_planner`
 ---
 
 ## Experimental mirrored agents
+
+## Foundation + screenshot-template adjuncts
+
+### `foundation_planner`
+**Use when:** defining the reusable backend-first runtime that screenshot-driven templates will attach to.
+**Role:** plans `Foundation-Core/` as a standalone runtime system. Owns backend modules, content contracts, auth/session, integrations baseline, devops standards, portability rules, and `frontend-attach-contract.json`.
+**Output root:** `DOC/output/runs/<timestamp>/planning/foundation-core/`
+**Important:** this lane stays frontend-agnostic and does not plan a public design system.
+
+### `foundation_developer`
+**Use when:** the Foundation Core planning bundle is locked.
+**Role:** materializes `Foundation-Core/` as a standalone runtime with auth, content, forms, media, jobs, preview/admin surfaces, portability docs, and runtime validation.
+**Output root:** `Foundation-Core/`
+**Important:** this agent does not build template-specific public pages.
+
+### `Claude_Frontend_Agent`
+**Use when:** building a new public-facing template from screenshots and references.
+**Role:** screenshot-first template executor. Recreates the reference UI with minimal planning, saves each result under `Templates/<category>/<template-slug>/`, and optionally attaches to Foundation Core through `frontend-attach-contract.json`.
+**Output root:** `Templates/<category>/<template-slug>/`
+**Important:** screenshots are the source of truth for visible UI. This agent does not use `Frontend-Master_DS/` as a runtime dependency.
+
+## Experimental mirrored agents
+
+These factory experiments assume an external `ai-product-factory/` runtime contract. They remain available for historical benchmarking, but they are not the recommended path for new screenshot-template work in this workspace.
 
 ### `frontend_factory_planner`
 **Use when:** you want a factory-native planning bundle without altering the current production DOC planning path.
