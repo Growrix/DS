@@ -1,0 +1,49 @@
+{
+  "contract_version": 1,
+  "runtime_root": "Foundation-Core",
+  "template_modes": ["foundation_attached", "standalone_template"],
+  "auth": {
+    "enabled": true,
+    "session_endpoint": "/api/auth/session",
+    "fallback_routes": ["/sign-in", "/sign-up"]
+  },
+  "content": {
+    "enabled": true,
+    "page_endpoint": "/api/content/pages/:slug",
+    "collections_endpoint": "/api/content/collections/:collection",
+    "site_config_endpoint": "/api/content/site-config",
+    "preview_endpoint": "/api/preview/enable"
+  },
+  "forms": {
+    "enabled": true,
+    "submit_endpoint": "/api/forms/:formId/submit",
+    "anti_spam": ["rate-limit", "honeypot"]
+  },
+  "media": {
+    "enabled": true,
+    "upload_endpoint": "/api/media/upload",
+    "asset_dto": "normalized"
+  },
+  "preview": {
+    "enabled": true,
+    "draft_mode": true,
+    "tokenized": true
+  },
+  "revalidation": {
+    "enabled": true,
+    "event_name": "content.published"
+  },
+  "feature_flags": {
+    "billing": false,
+    "analytics": false,
+    "search": false
+  },
+  "env": {
+    "public": ["NEXT_PUBLIC_SITE_URL"],
+    "server": ["DATABASE_URL", "AUTH_SECRET", "PREVIEW_TOKEN"]
+  },
+  "fallback_mode": {
+    "mock_adapters": true,
+    "fixtures_required": true
+  }
+}
