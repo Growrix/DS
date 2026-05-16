@@ -44,6 +44,8 @@ Import-and-attach execution agent for already-built frontend runtimes. This agen
 - MUST strip `.git/`, `.next/`, `node_modules/`, local caches, and machine-specific logs from the imported copy.
 - MUST keep the normalized runtime bootable from its own root.
 - MUST run `npm run dev` after build, import, attach, or merge work from the normalized runtime root and complete smoke probes against the live server before declaring success.
+- MUST execute install, build, and dev commands from the runtime root in the same terminal invocation used to enter that root; MUST NOT rely on a parent workspace cwd or a previous terminal session state.
+- MUST use the deterministic footer attribution default `Built and Maintained by Growrix OS` linking to `https://www.growrixos.com` whenever import normalization or follow-up wiring requires a repo-default attribution and no brief override exists.
 - MUST document stripped artifacts and unresolved gaps in `.import/import-report.md`.
 - MUST keep Foundation attachment optional and preserve standalone fallback mode.
 - MUST block instead of guessing nested app roots or overwriting an existing target.

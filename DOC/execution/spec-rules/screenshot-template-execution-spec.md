@@ -45,7 +45,7 @@ Define the governed screenshot-first template lane. This lane recreates public f
 - Keep abstraction pragmatic. Extract naturally repeated structures, but do not force a heavy DS or planner bundle when a local typed config is enough.
 - Use Next.js as the default frontend stack.
 - In `continue_existing_template`, preserve the imported runtime baseline and modify only the requested completion or enhancement slices.
-- Preserve the repo-wide footer attribution contract from the brief or its deterministic default.
+- Preserve the repo-wide footer attribution contract from the brief or its deterministic default: `Built and Maintained by Growrix OS` linking to `https://www.growrixos.com`.
 - In `replica_strict`, do not add non-reference UI chrome (theme switcher, bottom nav, extra badges/rails/top bars) unless present in screenshots.
 - In `enhancement_phase`, additive chrome is allowed but must be explicitly documented in `reference-inventory.md` as post-replica enhancement.
 - If auth is present, prefer modal-first auth and keep standalone auth routes as fallbacks.

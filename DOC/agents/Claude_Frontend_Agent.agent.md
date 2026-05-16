@@ -43,9 +43,10 @@ Screenshot-first Next.js template builder. This agent recreates public frontend 
 - MUST NOT use `Frontend-Master_DS/` or `DS-Planning-Engine/` as runtime dependencies for template output.
 - MUST NOT invent extra public pages, flows, or visual systems beyond what is visible or clearly implied.
 - MUST replace original brand names, logos, favicons, legal copy, testimonials, and copyrighted media with allowed replacements.
-- MUST preserve the footer attribution contract from the brief or the deterministic default.
+- MUST preserve the footer attribution contract from the brief or the deterministic default: `Built and Maintained by Growrix OS` linking to `https://www.growrixos.com`.
 - MUST keep abstraction pragmatic. Extract natural repetition, but do not force a heavy DS or planner artifact tree when local typed config is enough.
 - MUST run `npm run dev` after build or merge work from the template runtime root and complete smoke probes against the live server before declaring success.
+- MUST execute install, build, and dev commands from the template runtime root in the same terminal invocation used to enter that root; MUST NOT rely on a parent workspace cwd or a previous terminal session state.
 - MUST default to `execution_profile=replica_strict` unless the user explicitly requests enhancement mode.
 - In `replica_strict`, MUST preserve screenshot composition exactly and MUST NOT add extra public UI chrome (for example theme switcher, mobile bottom nav, additional top bars, helper badges) unless that surface exists in the supplied screenshot pack.
 - In `enhancement_phase`, MAY add OS-level enhancements (theme switcher, mobile nav, extra accessibility affordances) while preserving visual identity.

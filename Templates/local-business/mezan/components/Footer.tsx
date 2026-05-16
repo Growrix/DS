@@ -92,7 +92,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div style={{ borderTop: "1px solid #2a2a2a", padding: "16px 20px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
-          <a href="https://www.gorwrixos.com" style={{ fontSize: 13, color: "#666", textDecoration: "none" }} target="_blank" rel="noreferrer">
+            <a href="https://www.growrixos.com" style={{ fontSize: 13, color: "#666", textDecoration: "none" }} target="_blank" rel="noreferrer">
             Built and Maintained by Growrix OS
           </a>
           <div style={{ display: "flex", gap: 20 }}>

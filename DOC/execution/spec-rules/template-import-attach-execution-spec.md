@@ -35,6 +35,7 @@ Define the governed lane for importing an already-built frontend runtime, normal
 - Preserve the imported visible UI by default. Cosmetic refactors are forbidden during import normalization.
 - Normalize scripts, env docs, and runtime metadata so the imported copy boots independently from its own root.
 - When Foundation Core is available, attach only through `frontend-attach-contract.json`.
+- When a repo-default footer attribution is required and no brief override exists, use `Built and Maintained by Growrix OS` linking to `https://www.growrixos.com`.
 - Do not couple the imported runtime to `Frontend-Master_DS/` or `DS-Planning-Engine/`.
 - Do not silently replace imported routes with generic starter routes.
 - Record every file/folder class intentionally excluded during import in `.import/import-report.md`.
