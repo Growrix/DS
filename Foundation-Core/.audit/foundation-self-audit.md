@@ -6,6 +6,8 @@
 - `test`: passed
 - `build`: passed
 - `smoke:runtime`: passed
+- `smoke:attached`: passed
+- `verify:factory`: passed
 
 ## Runtime evidence
 - Foundation dashboard route exists at `/`
@@ -17,9 +19,10 @@
 - Preview route exists at `/api/preview/enable`
 - Integration route coverage exists at `tests/integration/api-routes.integration.test.ts`
 - Managed live smoke harness exists at `scripts/runtime-smoke.mjs`
+- Attached template smoke harness exists at `scripts/attached-template-smoke.mjs`
 
 ## Notes
 - Optional adapters remain safe fallbacks until env values are supplied.
 - Export portability docs are present: `RUN.md`, `ENV.example`, `dev-server-checklist.md`, `export-manifest.md`.
 - `npm run verify` now includes route integration coverage and a managed live runtime smoke pass.
-- Attached-mode smoke with a real template root and `FOUNDATION_BASE_URL` is still the next release-readiness gap.
+- `npm run verify:factory` now proves attached-mode smoke against the validation template root with `FOUNDATION_BASE_URL` wired.

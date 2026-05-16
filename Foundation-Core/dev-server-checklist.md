@@ -32,6 +32,7 @@
 - Check `/api/auth/session`.
 - Check `/api/content/pages/home`.
 - Run `npm run smoke:runtime` after `npm run build` for the managed end-to-end probe set.
+- Run `npm run smoke:attached` after the template root has passed its own build to prove attached mode with `FOUNDATION_BASE_URL` wired.
 
 ## 8. Export portability
 - After copying the project to a new root, repeat this checklist unchanged.

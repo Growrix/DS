@@ -13,6 +13,8 @@
     "test": "vitest run --coverage",
     "test:watch": "vitest",
     "smoke:runtime": "node ./scripts/runtime-smoke.mjs",
+    "smoke:attached": "node ./scripts/attached-template-smoke.mjs",
+    "verify:factory": "npm run verify && npm run smoke:attached",
     "verify": "npm run lint && npm run typecheck && npm run test && npm run build && npm run smoke:runtime"
   },
   "dependencies": {

@@ -12,7 +12,9 @@
 - `npm run test:integration`
 - `npm run build`
 - `npm run smoke:runtime`
+- `npm run smoke:attached`
 - `npm run verify`
+- `npm run verify:factory`
 
 ## Primary local checks
 - Open `/` for the runtime dashboard.
@@ -24,6 +26,8 @@
 - `npm run test` now covers both unit and route-level integration tests.
 - `npm run smoke:runtime` boots a managed production server from `Foundation-Core/` and probes `/`, `/api/health`, `/api/auth/session`, `/api/content/pages/home`, `/api/content/site-config`, `/api/forms/contact/submit`, `/api/media/upload`, and `/api/preview/enable`.
 - `npm run verify` now includes the live runtime smoke step after build.
+- `npm run smoke:attached` boots `Foundation-Core/` and the default attached template root together, injects `FOUNDATION_BASE_URL`, and requires `/api/template-attach-status` to report `attached`.
+- `npm run verify:factory` is the paired Foundation + template E2E gate for the current factory lane.
 
 ## Delivery note
 - This runtime is API-ready out of the box. Add real adapter secrets in `.env.local` to switch from safe fallbacks to configured integrations.
