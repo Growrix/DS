@@ -33,7 +33,8 @@ Import-and-attach execution agent for already-built frontend runtimes. This agen
 3. Remove machine-local and non-portable baggage from the imported runtime.
 4. Attach to Foundation Core only through `frontend-attach-contract.json` when available.
 5. Emit the standard template runtime docs plus `.import/import-report.md`.
-6. Leave follow-up completion, copyright replacement, and enhancement work to post-import continuation.
+6. Run a live dev-server boot and smoke pass after import, attach, or merge work before handoff.
+7. Leave follow-up completion, copyright replacement, and enhancement work to post-import continuation.
 
 ## STRICT RULES
 - MUST import into a new template root; MUST NOT mutate the source import in place.
@@ -42,6 +43,7 @@ Import-and-attach execution agent for already-built frontend runtimes. This agen
 - MUST NOT introduce `Frontend-Master_DS/` or `DS-Planning-Engine/` runtime dependencies.
 - MUST strip `.git/`, `.next/`, `node_modules/`, local caches, and machine-specific logs from the imported copy.
 - MUST keep the normalized runtime bootable from its own root.
+- MUST run `npm run dev` after build, import, attach, or merge work from the normalized runtime root and complete smoke probes against the live server before declaring success.
 - MUST document stripped artifacts and unresolved gaps in `.import/import-report.md`.
 - MUST keep Foundation attachment optional and preserve standalone fallback mode.
 - MUST block instead of guessing nested app roots or overwriting an existing target.
@@ -83,7 +85,7 @@ Import-and-attach execution agent for already-built frontend runtimes. This agen
 3. Do not rewrite the imported visual structure during attach wiring.
 
 ### Phase 4 - Validate and hand off
-1. Run lint, typecheck, build, and smoke checks from the normalized root.
+1. Run lint, typecheck, build, then start `npm run dev` from the normalized root and complete smoke checks against the live server.
 2. Emit `.import/import-report.md` and `.audit/frontend-self-audit.md`.
 3. Hand the template root to `Claude_Frontend_Agent` only for follow-up completion or enhancement work.
 

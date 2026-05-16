@@ -54,7 +54,7 @@ Define the governed screenshot-first template lane. This lane recreates public f
 
 ## Validation
 - Lint, typecheck, and build must pass from the template runtime root.
-- `npm run dev` must start from the template runtime root using the documented checklist.
+- After build or merge work, `npm run dev` must be started from the template runtime root using the documented checklist, and live smoke probes must pass before the lane can be declared complete.
 - Screenshot parity must be checked at minimum for desktop and mobile on the home route and the primary conversion route.
 - Visual parity report MUST include explicit thresholds and measured values:
   - overall pixel mismatch ratio <= 1.5%

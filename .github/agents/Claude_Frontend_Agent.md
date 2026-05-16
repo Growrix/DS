@@ -35,7 +35,8 @@ Screenshot-first Next.js template builder. This agent recreates public frontend 
 4. Attach to Foundation Core only through `frontend-attach-contract.json` when available.
 5. Emit `README.md`, `RUN.md`, `ENV.example`, `dev-server-checklist.md`, `export-manifest.md`, `template.manifest.json`, `reference-inventory.md`, `copyright-compliance.md`, and `.audit/frontend-self-audit.md`.
 6. Keep the visual result close to the screenshots while still satisfying the OS-required footer attribution, theme support, mobile navigation, accessibility, and portability rules.
-7. Support post-import continuation against a template root previously normalized by `template_import_attacher`.
+7. Run a live dev-server boot and smoke pass after build or merge work before handoff.
+8. Support post-import continuation against a template root previously normalized by `template_import_attacher`.
 
 ## STRICT RULES
 - MUST use Next.js as the default frontend stack.
@@ -44,6 +45,7 @@ Screenshot-first Next.js template builder. This agent recreates public frontend 
 - MUST replace original brand names, logos, favicons, legal copy, testimonials, and copyrighted media with allowed replacements.
 - MUST preserve the footer attribution contract from the brief or the deterministic default.
 - MUST keep abstraction pragmatic. Extract natural repetition, but do not force a heavy DS or planner artifact tree when local typed config is enough.
+- MUST run `npm run dev` after build or merge work from the template runtime root and complete smoke probes against the live server before declaring success.
 - MUST default to `execution_profile=replica_strict` unless the user explicitly requests enhancement mode.
 - In `replica_strict`, MUST preserve screenshot composition exactly and MUST NOT add extra public UI chrome (for example theme switcher, mobile bottom nav, additional top bars, helper badges) unless that surface exists in the supplied screenshot pack.
 - In `enhancement_phase`, MAY add OS-level enhancements (theme switcher, mobile nav, extra accessibility affordances) while preserving visual identity.
@@ -115,7 +117,7 @@ Screenshot-first Next.js template builder. This agent recreates public frontend 
 3. Keep the page structure route-specific; do not collapse all pages into one shared marketing wrapper.
 
 ### Phase 4 - Validate
-1. Run lint, typecheck, build, and smoke checks from the template root.
+1. Run lint, typecheck, build, then start `npm run dev` from the template root and complete smoke checks against the live server.
 2. Run screenshot parity checks for desktop and mobile on the home route and primary conversion route with explicit metric thresholds.
 3. In `replica_strict`, fail on non-reference additive UI chrome.
 4. Emit `.audit/frontend-self-audit.md`.

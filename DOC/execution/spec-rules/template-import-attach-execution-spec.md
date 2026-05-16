@@ -45,7 +45,7 @@ Define the governed lane for importing an already-built frontend runtime, normal
 
 ## Validation
 - The normalized template must pass lint, typecheck, and build from its own runtime root.
-- `npm run dev` must start from the normalized runtime root using the documented checklist.
+- After import, attach, or merge work, `npm run dev` must be started from the normalized runtime root using the documented checklist, and live smoke probes must pass before the lane can be declared complete.
 - If Foundation attachment is enabled, attached mode must be documented and mock fallback must remain runnable.
 - The import report must record source root, target root, stripped artifacts, attach mode, and any unresolved gaps.
 
