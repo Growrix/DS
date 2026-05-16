@@ -1,0 +1,27 @@
+{
+  "name": "solar-electrical-au",
+  "version": "0.1.0",
+  "category": "local-business",
+  "slug": "solar-electrical-au",
+  "description": "Imported and normalized Solar Electrical AU local business template",
+  "stack": "nextjs",
+  "nextjs_version": "14.1.0",
+  "react_version": "18.2.0",
+  "tailwind_version": "3",
+  "typescript": true,
+  "app_router": true,
+  "foundation_attached": true,
+  "attach_mode": "foundation_attached_or_mock_fallback",
+  "foundation_contract": "../../../Foundation-Core/docs/contracts/frontend-attach-contract.json",
+  "required_env": ["FOUNDATION_BASE_URL"],
+  "operation_mode": "import_attach",
+  "import_source": "Claude Frontend/solar-electrical-au",
+  "dev_port": 3001,
+  "pages": [
+    "/",
+    "/about",
+    "/projects",
+    "/contact",
+    "/api/template-attach-status"
+  ]
+}
