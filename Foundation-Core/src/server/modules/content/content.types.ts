@@ -18,3 +18,22 @@ export type CollectionRecord = {
   title: string;
   summary: string;
 };
+
+export type SiteConfigDto = {
+  brand: {
+    name: string;
+    supportEmail: string;
+  };
+  navigation: Array<{
+    label: string;
+    href: string;
+  }>;
+  footer: {
+    attribution: {
+      enabled: boolean;
+      text: string;
+      linkText: string;
+      url: string;
+    };
+  };
+};

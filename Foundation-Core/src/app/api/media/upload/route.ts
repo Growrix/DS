@@ -15,7 +15,7 @@ export async function POST(request: Request) {
 
   try {
     const payload = uploadSchema.parse(await request.json());
-    const result = createUploadIntent(payload.filename, payload.contentType);
+    const result = await createUploadIntent(payload.filename, payload.contentType);
 
     return NextResponse.json(success(requestId, result), { status: result.enabled ? 200 : 503 });
   } catch (error) {

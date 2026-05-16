@@ -168,6 +168,21 @@ async function runSmoke(baseUrl) {
       },
     },
     {
+      name: "content revalidation API fallback",
+      method: "POST",
+      path: "/api/content/revalidate",
+      body: {
+        event: "content.published",
+        slug: "home",
+      },
+      assert: async (response) => {
+        const body = await readJson(response);
+        if (response.status !== 503 || body?.ok !== false || body?.error?.code !== "REVALIDATION_NOT_CONFIGURED") {
+          throw new Error(`Expected revalidation endpoint to require webhook configuration, received ${response.status}.`);
+        }
+      },
+    },
+    {
       name: "preview API fallback",
       method: "POST",
       path: "/api/preview/enable",

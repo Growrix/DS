@@ -81,8 +81,10 @@ export default function Home() {
           </div>
           <dl className="grid gap-3 text-sm">
             <StatusRow label="Auth contract" value={summary.adapters.auth ? "configured" : "anonymous fallback"} />
+            <StatusRow label="Content provider" value={summary.adapters.content ? "sanity configured" : "fixture fallback"} />
             <StatusRow label="Storage" value={summary.adapters.storage ? "configured" : "disabled until env"} />
             <StatusRow label="Email" value={summary.adapters.email ? "configured" : "disabled until env"} />
+            <StatusRow label="Ops alerts" value={summary.adapters.lark ? "lark configured" : "disabled until env"} />
             <StatusRow label="Preview" value={summary.adapters.preview ? "token ready" : "preview token missing"} />
           </dl>
         </div>

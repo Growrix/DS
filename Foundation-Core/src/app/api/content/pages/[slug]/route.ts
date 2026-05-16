@@ -10,14 +10,29 @@ export async function GET(
 ) {
   const requestId = createRequestId();
   const { slug } = await context.params;
-  const page = getPageBySlug(slug);
 
-  if (!page) {
+  try {
+    const page = await getPageBySlug(slug);
+
+    if (!page) {
+      return NextResponse.json(
+        failure(requestId, "PAGE_NOT_FOUND", `No page exists for slug '${slug}'.`),
+        { status: 404 },
+      );
+    }
+
+    return NextResponse.json(success(requestId, page));
+  } catch (error) {
     return NextResponse.json(
-      failure(requestId, "PAGE_NOT_FOUND", `No page exists for slug '${slug}'.`),
-      { status: 404 },
+      failure(
+        requestId,
+        "CONTENT_PROVIDER_ERROR",
+        "Content provider request failed.",
+        {
+          message: error instanceof Error ? error.message : String(error),
+        },
+      ),
+      { status: 500 },
     );
   }
-
-  return NextResponse.json(success(requestId, page));
 }

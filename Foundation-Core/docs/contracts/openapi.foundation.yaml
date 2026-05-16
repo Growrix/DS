@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: Reusable backend-first runtime API for screenshot-driven frontend templates.
 servers:
-  - url: http://localhost:3000
+  - url: https://foundation-core.example.com
 paths:
   /api/health:
     get:
@@ -32,6 +32,20 @@ paths:
           description: Page DTO
         '404':
           description: Page not found
+        '500':
+          description: Content provider error
+  /api/content/revalidate:
+    post:
+      summary: Validate and process a content revalidation webhook
+      responses:
+        '202':
+          description: Revalidation accepted
+        '400':
+          description: Invalid payload
+        '401':
+          description: Invalid webhook signature
+        '503':
+          description: Revalidation secret missing
   /api/forms/{formId}/submit:
     post:
       summary: Submit a validated lead form
@@ -46,6 +60,8 @@ paths:
           description: Lead accepted
         '400':
           description: Invalid payload
+        '429':
+          description: Rate limit exceeded
         '422':
           description: Spam or rejected form
   /api/media/upload:

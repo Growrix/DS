@@ -12,7 +12,7 @@
 2. Run `npm install`.
 3. Copy `ENV.example` to `.env.local` and fill in secrets.
 4. Run `npm run dev`.
-5. Probe `/`, `/api/health`, and `/api/content/pages/home`.
+5. Probe `/`, `/api/health`, `/api/content/pages/home`, and `/api/content/revalidate`.
 6. Run `npm run build && npm run smoke:runtime`.
 7. Run `npm run smoke:attached` after the target template root is built and available.
 
@@ -23,3 +23,4 @@
 - The managed runtime smoke harness passes.
 - The attached template smoke harness passes.
 - No repo-relative imports are required.
+- Production adapter readiness is reflected accurately by `/api/health`.

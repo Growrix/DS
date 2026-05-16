@@ -4,11 +4,12 @@ Foundation Core is the reusable backend-first runtime for screenshot-driven fron
 
 ## What it owns
 - Auth/session fallback routes and normalized session API.
-- Content DTO endpoints and site config surface.
-- Lead form intake with anti-spam checks.
-- Media upload intent contract.
+- Content DTO endpoints, site config, and signed revalidation webhook surface.
+- Lead form intake with honeypot + rate-limit checks.
+- Media upload signed-intent contract for S3-compatible storage.
 - Preview enablement contract.
 - Health and adapter readiness visibility.
+- Operational notifications for critical runtime events.
 
 ## What it does not own
 - Client-facing screenshot replication.
@@ -31,6 +32,11 @@ Foundation Core is the reusable backend-first runtime for screenshot-driven fron
 - Run `npm run verify` from `Foundation-Core/`.
 - `npm run verify` includes lint, typecheck, unit + integration tests, build, and a managed live runtime smoke pass.
 - Run `npm run verify:factory` from `Foundation-Core/` for the paired Foundation + attached-template E2E proof.
+
+## Adapter modes
+- Default local mode uses safe fallbacks (`CONTENT_SOURCE=fixtures`, optional adapters disabled).
+- Production mode is considered ready only when health readiness reports all required adapters configured.
+- To enable provider-backed runtime behavior, configure Sanity, Postgres, Resend, Lark, and S3-compatible env values from `ENV.example`.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 

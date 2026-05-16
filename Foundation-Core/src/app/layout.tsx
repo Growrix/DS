@@ -12,8 +12,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+function resolveMetadataBase() {
+  const fallback = "https://foundation-core.example.com";
+
+  try {
+    return new URL(process.env.NEXT_PUBLIC_SITE_URL ?? fallback);
+  } catch {
+    return new URL(fallback);
+  }
+}
+
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: resolveMetadataBase(),
   title: "Foundation Core",
   description: "Reusable backend-first runtime for screenshot-driven frontend templates.",
 };

@@ -21,18 +21,34 @@ import { GET as getHealth } from "@/app/api/health/route";
 import { POST as createUploadRoute } from "@/app/api/media/upload/route";
 import { POST as enablePreviewRoute } from "@/app/api/preview/enable/route";
 import { resetRuntimeEnvForTests } from "@/server/config/env";
+import { createSessionToken } from "@/server/modules/auth/session-token";
+import { resetRateLimitStateForTests } from "@/server/modules/forms/form.service";
 
 const managedKeys = [
   "NEXT_PUBLIC_SITE_URL",
   "AUTH_SECRET",
+  "SESSION_COOKIE_NAME",
   "PREVIEW_TOKEN",
   "DATABASE_URL",
+  "CONTENT_SOURCE",
+  "SANITY_PROJECT_ID",
+  "SANITY_DATASET",
+  "SANITY_API_VERSION",
+  "SANITY_API_TOKEN",
+  "SANITY_WEBHOOK_SECRET",
   "RESEND_API_KEY",
   "EMAIL_FROM",
+  "LEADS_INBOX_EMAIL",
+  "LARK_WEBHOOK_URL",
   "S3_BUCKET",
   "S3_REGION",
   "S3_ACCESS_KEY_ID",
   "S3_SECRET_ACCESS_KEY",
+  "S3_ENDPOINT",
+  "S3_PUBLIC_BASE_URL",
+  "S3_PRESIGN_EXPIRES_SECONDS",
+  "RATE_LIMIT_WINDOW_SECONDS",
+  "RATE_LIMIT_MAX_REQUESTS",
   "ANALYTICS_WRITE_KEY",
   "BILLING_PROVIDER_SECRET",
 ] as const;
@@ -59,6 +75,7 @@ describe("Foundation Core API route integration", () => {
     }
 
     resetRuntimeEnvForTests();
+    resetRateLimitStateForTests();
     enableDraftMode.mockReset();
     draftModeMock.mockClear();
   });
@@ -76,11 +93,39 @@ describe("Foundation Core API route integration", () => {
     process.env.AUTH_SECRET = "1234567890abcdef";
     resetRuntimeEnvForTests();
 
-    const response = await getSession();
+    const response = await getSession(new Request("http://localhost/api/auth/session"));
     const body = await parseJson<{ mode: string }>(response);
 
     expect(response.status).toBe(200);
     expect(body.data?.mode).toBe("configured");
+  });
+
+  it("returns authenticated sessions when a valid signed cookie is supplied", async () => {
+    process.env.AUTH_SECRET = "1234567890abcdef";
+    resetRuntimeEnvForTests();
+
+    const token = createSessionToken(
+      {
+        sub: "user-123",
+        email: "owner@example.com",
+        roles: ["admin"],
+        exp: Math.floor(Date.now() / 1000) + 300,
+      },
+      process.env.AUTH_SECRET,
+    );
+
+    const response = await getSession(
+      new Request("http://localhost/api/auth/session", {
+        headers: {
+          cookie: `foundation_session=${encodeURIComponent(token)}`,
+        },
+      }),
+    );
+    const body = await parseJson<{ authenticated: boolean; user: { email: string } }>(response);
+
+    expect(response.status).toBe(200);
+    expect(body.data?.authenticated).toBe(true);
+    expect(body.data?.user?.email).toBe("owner@example.com");
   });
 
   it("returns a known page and a 404 for missing content", async () => {

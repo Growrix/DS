@@ -3,7 +3,20 @@ import { ZodError } from "zod";
 
 import { failure, success } from "@/server/http/envelope";
 import { createRequestId } from "@/server/http/request-id";
-import { parseSubmissionPayload, submitForm } from "@/server/modules/forms/form.service";
+import { parseSubmissionPayload, processLeadSubmission } from "@/server/modules/forms/form.service";
+
+function getClientIp(request: Request) {
+  const forwardedFor = request.headers.get("x-forwarded-for");
+
+  if (forwardedFor) {
+    const firstAddress = forwardedFor.split(",")[0]?.trim();
+    if (firstAddress) {
+      return firstAddress;
+    }
+  }
+
+  return request.headers.get("x-real-ip");
+}
 
 export async function POST(
   request: Request,
@@ -14,12 +27,31 @@ export async function POST(
 
   try {
     const payload = parseSubmissionPayload(await request.json());
-    const result = submitForm(formId, payload);
+    const result = await processLeadSubmission(formId, payload, {
+      requestId,
+      ipAddress: getClientIp(request),
+      userAgent: request.headers.get("user-agent"),
+    });
 
     if (!result.accepted) {
+      const status =
+        result.code === "FORM_NOT_FOUND"
+          ? 404
+          : result.code === "RATE_LIMITED"
+            ? 429
+            : 422;
+
       return NextResponse.json(
         failure(requestId, result.code, result.message),
-        { status: result.code === "FORM_NOT_FOUND" ? 404 : 422 },
+        {
+          status,
+          headers:
+            result.code === "RATE_LIMITED" && result.retryAfterSeconds
+              ? {
+                  "Retry-After": String(result.retryAfterSeconds),
+                }
+              : undefined,
+        },
       );
     }
 

@@ -8,6 +8,7 @@
     "/api/health",
     "/api/auth/session",
     "/api/content/pages/home",
+    "/api/content/revalidate",
     "/api/forms/contact/submit",
     "/api/media/upload",
     "/api/preview/enable"

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { success } from "@/server/http/envelope";
+import { failure, success } from "@/server/http/envelope";
 import { createRequestId } from "@/server/http/request-id";
 import { getCollection } from "@/server/modules/content/content.service";
 
@@ -10,5 +10,15 @@ export async function GET(
 ) {
   const requestId = createRequestId();
   const { collection } = await context.params;
-  return NextResponse.json(success(requestId, getCollection(collection)));
+
+  try {
+    return NextResponse.json(success(requestId, await getCollection(collection)));
+  } catch (error) {
+    return NextResponse.json(
+      failure(requestId, "CONTENT_PROVIDER_ERROR", "Content provider request failed.", {
+        message: error instanceof Error ? error.message : String(error),
+      }),
+      { status: 500 },
+    );
+  }
 }
