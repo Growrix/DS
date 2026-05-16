@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Youtube, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin, Share2, MessageCircle, Play, Camera, AtSign } from "lucide-react";
 
 const quickLinks = [
   { label: "Construction Management", href: "/services" },
@@ -15,6 +15,14 @@ const ourServices = [
   { label: "Management Certification", href: "/services" },
   { label: "Preconstruction Services", href: "/services" },
   { label: "Sustainable Design", href: "/services" },
+];
+
+const socialLinks = [
+  { label: "Share", icon: Share2 },
+  { label: "Chat", icon: MessageCircle },
+  { label: "Media", icon: Play },
+  { label: "Gallery", icon: Camera },
+  { label: "Contact", icon: AtSign },
 ];
 
 export default function Footer() {
@@ -51,10 +59,11 @@ export default function Footer() {
             </div>
             {/* Social Icons */}
             <div className="flex items-center gap-3">
-              {[Facebook, Twitter, Linkedin, Youtube, Instagram].map((Icon, i) => (
+              {socialLinks.map(({ label, icon: Icon }, i) => (
                 <a
                   key={i}
                   href="#"
+                  aria-label={label}
                   className="w-8 h-8 border border-gray-600 flex items-center justify-center text-gray-400 hover:bg-brand-orange hover:border-brand-orange hover:text-white transition-all duration-200"
                 >
                   <Icon size={14} />

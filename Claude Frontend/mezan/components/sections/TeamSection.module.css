@@ -1,0 +1,69 @@
+/* CTA Banner */
+.ctaBanner { background: var(--dark); padding: 28px 0; }
+.ctaInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.ctaLeft { display: flex; align-items: center; gap: 24px; }
+.houseImg { flex-shrink: 0; }
+.ctaTitle {
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 800;
+  color: var(--white);
+  font-family: var(--font-heading);
+}
+.ctaSubtitle { font-size: 13px; color: rgba(255,255,255,0.5); margin-top: 4px; }
+.ctaBtns { display: flex; gap: 12px; flex-shrink: 0; flex-wrap: wrap; }
+.ctaOutline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.3);
+  padding: 11px 22px;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all var(--transition);
+  display: inline-flex;
+  align-items: center;
+}
+.ctaOutline:hover { border-color: var(--white); }
+/* Team */
+.section { background: var(--yellow); padding: 70px 0 80px; }
+.header { text-align: center; margin-bottom: 48px; }
+.title { font-size: clamp(28px, 3vw, 38px); font-weight: 800; color: var(--dark); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition);
+}
+.card:hover { box-shadow: 0 16px 40px rgba(0,0,0,0.12); transform: translateY(-4px); }
+.imgWrap { aspect-ratio: 3/4; overflow: hidden; background: #F0EDE8; }
+.img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.5s; }
+.card:hover .img { transform: scale(1.05); }
+.info { display: flex; align-items: center; justify-content: space-between; padding: 16px 16px 4px; }
+.name { font-size: 15px; font-weight: 700; color: var(--text-dark); }
+.arrow {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--gray-mid);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-dark);
+  font-size: 12px;
+  transition: all var(--transition);
+}
+.card:hover .arrow { background: var(--dark); color: var(--white); }
+.role { padding: 0 16px 16px; font-size: 12px; color: var(--text-light); }
+
+@media (max-width: 900px) {
+  .ctaInner { flex-direction: column; align-items: flex-start; }
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) { .grid { grid-template-columns: 1fr; } }

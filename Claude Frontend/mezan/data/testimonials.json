@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "rating": 5,
+    "text": "Donec Volutpat Ligula Nec Ipsum Ultrices Fringilla. Quisque Vitae Est Turpis. Nulla Sodales Convallis Mi, Quis Semper Ante Lacinia Sit Amet. Maecenas Porta Velit A Justo Commodo Mattis At Et Magna. Cras Auctor Felis Erat, Sit Amet Imperdiet Metus Lacinia In.",
+    "name": "Consolata Daria",
+    "role": "ENTREPRENEUR",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80"
+  },
+  {
+    "id": 2,
+    "rating": 5,
+    "text": "Sem viverra aliquet eget sit amet tellus cras. Scelerisque felis imperdiet proin fermentum leo vel arc. Tortor at auctor urna nunc id. Sit amet facilisis magna etiam odio mollis.",
+    "name": "Marcus Rivera",
+    "role": "BUSINESS OWNER",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80"
+  },
+  {
+    "id": 3,
+    "rating": 5,
+    "text": "Exceptional service from start to finish. The team arrived on time, completed the work professionally, and left everything spotless. Highly recommend Mezan for all home services.",
+    "name": "Sarah Thompson",
+    "role": "HOMEOWNER",
+    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80"
+  }
+]

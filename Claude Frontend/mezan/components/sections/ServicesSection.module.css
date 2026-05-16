@@ -1,0 +1,87 @@
+.section {
+  background: var(--white);
+  overflow: visible;
+}
+.topHalf {
+  background: var(--yellow);
+  padding: 70px 0 130px;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.headerLeft {}
+.title {
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1.15;
+}
+.headerRight { display: flex; gap: 16px; align-items: flex-start; padding-top: 20px; }
+.descBorder { width: 3px; background: rgba(0,0,0,0.2); border-radius: 2px; min-height: 80px; flex-shrink: 0; }
+.desc { font-size: 14px; color: rgba(26,26,26,0.65); line-height: 1.75; }
+/* Cards */
+.cardsWrap { margin-top: -90px; padding-bottom: 70px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all var(--transition);
+}
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+}
+.cardImage {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.card:hover .cardImage img { transform: scale(1.07); }
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.15), transparent);
+}
+.cardBody { padding: 20px 20px 22px; }
+.cardTop { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.cardTitle { font-size: 16px; font-weight: 700; color: var(--text-dark); }
+.arrowLink {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: var(--gray-mid);
+  color: var(--text-dark);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px;
+  transition: all var(--transition);
+  flex-shrink: 0;
+}
+.card:hover .arrowLink { background: var(--yellow); }
+.cardDivider {
+  height: 1px;
+  background: var(--gray-mid);
+  margin-bottom: 12px;
+}
+.cardDesc { font-size: 13px; color: var(--text-body); line-height: 1.65; }
+/* CTAs */
+.ctas { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+@media (max-width: 900px) {
+  .header { grid-template-columns: 1fr; gap: 24px; }
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,30 @@
+{
+  "name": "mezan",
+  "version": "0.1.0",
+  "category": "local-business",
+  "slug": "mezan",
+  "description": "Imported and normalized Mezan local business template",
+  "stack": "nextjs",
+  "nextjs_version": "16.2.6",
+  "react_version": "19.2.4",
+  "tailwind_version": "4",
+  "typescript": true,
+  "app_router": true,
+  "foundation_attached": true,
+  "attach_mode": "foundation_attached_or_mock_fallback",
+  "foundation_contract": "../../../Foundation-Core/docs/contracts/frontend-attach-contract.json",
+  "required_env": ["FOUNDATION_BASE_URL"],
+  "operation_mode": "import_attach",
+  "import_source": "Claude Frontend/mezan-nextjs/mezan",
+  "dev_port": 3001,
+  "pages": [
+    "/",
+    "/about",
+    "/services",
+    "/shop",
+    "/shop/[slug]",
+    "/blog",
+    "/blog/[slug]",
+    "/contact"
+  ]
+}

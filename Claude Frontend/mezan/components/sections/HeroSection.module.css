@@ -1,0 +1,119 @@
+.hero {
+  position: relative;
+  height: 580px;
+  overflow: hidden;
+  background: var(--dark);
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  display: flex;
+  align-items: center;
+}
+.slide.active { opacity: 1; }
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(26,26,26,0.85) 40%, rgba(26,26,26,0.3) 100%);
+}
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  animation: slideInHero 0.7s ease forwards;
+}
+@keyframes slideInHero {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.badge {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--dark);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  margin-bottom: 18px;
+}
+.title {
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.12;
+  margin-bottom: 18px;
+}
+.subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+.ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+.ctaOutline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.5);
+  padding: 11px 26px;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all var(--transition);
+  display: inline-flex;
+  align-items: center;
+}
+.ctaOutline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); color: var(--white); }
+/* Dots */
+.dots {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  transition: all var(--transition);
+}
+.dot.dotActive {
+  background: var(--yellow);
+  width: 24px;
+  border-radius: 4px;
+}
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px; height: 44px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+  transition: all var(--transition);
+  backdrop-filter: blur(4px);
+}
+.arrow:hover { background: var(--yellow); border-color: var(--yellow); color: var(--dark); }
+.arrowLeft { left: 24px; }
+.arrowRight { right: 24px; }
+@media (max-width: 768px) {
+  .hero { height: 480px; }
+  .arrow { display: none; }
+}

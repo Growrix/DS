@@ -46,6 +46,10 @@ The default workflow above remains the stable system. A separate Foundation Core
 
 `foundation_planner` -> `foundation_developer` -> `Claude_Frontend_Agent`
 
+For imported externally built frontends that already have the visible UI done, use the import lane instead of rebuilding from screenshots:
+
+`foundation_planner` -> `foundation_developer` -> `template_import_attacher` -> `Claude_Frontend_Agent`
+
 This lane is complementary. It does not replace `frontend_planner`, `frontend_developer`, or the DS lane.
 
 ---
@@ -103,9 +107,15 @@ This lane is complementary. It does not replace `frontend_planner`, `frontend_de
 
 ### `Claude_Frontend_Agent`
 **Use when:** building a new public-facing template from screenshots and references.
-**Role:** screenshot-first template executor. Recreates the reference UI with minimal planning, saves each result under `Templates/<category>/<template-slug>/`, and optionally attaches to Foundation Core through `frontend-attach-contract.json`.
+**Role:** screenshot-first template executor. Recreates the reference UI with minimal planning, saves each result under `Templates/<category>/<template-slug>/`, and optionally attaches to Foundation Core through `frontend-attach-contract.json`. It also supports post-import continuation against a template root normalized by `template_import_attacher`.
 **Output root:** `Templates/<category>/<template-slug>/`
 **Important:** screenshots are the source of truth for visible UI. This agent does not use `Frontend-Master_DS/` as a runtime dependency.
+
+### `template_import_attacher`
+**Use when:** you already have an imported frontend runtime, such as a Claude-built Next.js app, and want to normalize it into the template library before doing completion work.
+**Role:** import-and-attach executor. Verifies the source runtime, copies it into `Templates/<category>/<template-slug>/`, strips non-portable baggage, emits runtime docs/manifests, and optionally wires Foundation Core through `frontend-attach-contract.json`.
+**Output root:** `Templates/<category>/<template-slug>/`
+**Important:** this agent preserves the imported visible UI baseline. Completion and enhancement work happen afterward.
 
 ## Experimental mirrored agents
 

@@ -1,0 +1,23 @@
+.hero {
+  position: relative;
+  height: 240px;
+  background: var(--dark);
+  display: flex;
+  align-items: flex-end;
+}
+.heroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+.heroOverlay { position: absolute; inset: 0; background: rgba(26,26,26,0.7); }
+.heroContent { position: relative; z-index: 2; padding-bottom: 36px; }
+.heroTitle { font-size: 40px; font-weight: 800; color: var(--white); margin-bottom: 8px; }
+.breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(255,255,255,0.6); }
+.breadcrumb a { color: rgba(255,255,255,0.6); transition: color var(--transition); }
+.breadcrumb a:hover { color: var(--yellow); }
+.breadcrumb span { color: rgba(255,255,255,0.4); }
+.breadcrumbActive { color: var(--yellow); font-weight: 500; }

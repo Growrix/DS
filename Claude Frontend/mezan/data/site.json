@@ -1,0 +1,168 @@
+{
+  "company": {
+    "name": "Mezan",
+    "tagline": "Professional Home & Business Services",
+    "address": "No: 58 A, East Madison Street, Baltimore, MD, USA 4508",
+    "addressShort": "376 Branson Oval Suite 200, South Lon, Mexico",
+    "phone": "+000 123 456 789",
+    "phoneBooking": "000 123 456 789",
+    "email": "info@example.com",
+    "emailHeader": "mezan@example.com"
+  },
+  "social": [
+    { "name": "Facebook", "icon": "fa-facebook-f", "url": "#" },
+    { "name": "Pinterest", "icon": "fa-pinterest-p", "url": "#" },
+    { "name": "YouTube", "icon": "fa-youtube", "url": "#" },
+    { "name": "Twitter", "icon": "fa-x-twitter", "url": "#" }
+  ],
+  "navigation": [
+    { "label": "Home", "href": "/", "hasDropdown": true },
+    { "label": "About Us", "href": "/about", "hasDropdown": false },
+    { "label": "Shop", "href": "/shop", "hasDropdown": true },
+    { "label": "Mezan Blogs", "href": "/blog", "hasDropdown": true },
+    { "label": "Pages", "href": "#", "hasDropdown": true },
+    { "label": "Contact", "href": "/contact", "hasDropdown": false }
+  ],
+  "heroSlides": [
+    {
+      "id": 1,
+      "badge": "TRUSTED HOME SERVICE",
+      "title": "Reliable Repairs For Every Room",
+      "subtitle": "Certified technicians for plumbing, electrical, and carpentry with same-day support.",
+      "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1800&q=80",
+      "cta1": { "label": "Book A Service", "href": "/contact" },
+      "cta2": { "label": "View Services", "href": "/services" }
+    },
+    {
+      "id": 2,
+      "badge": "FAST RESPONSE",
+      "title": "Emergency Help When You Need It Most",
+      "subtitle": "24/7 dispatch and transparent pricing for urgent home and business service calls.",
+      "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1800&q=80",
+      "cta1": { "label": "Get A Quote", "href": "/contact" },
+      "cta2": { "label": "Our Pricing", "href": "/pricing" }
+    },
+    {
+      "id": 3,
+      "badge": "QUALITY GUARANTEED",
+      "title": "Skilled Teams. Lasting Results.",
+      "subtitle": "From installation to maintenance, we deliver dependable workmanship backed by warranty.",
+      "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1800&q=80",
+      "cta1": { "label": "Schedule Today", "href": "/contact" },
+      "cta2": { "label": "Learn More", "href": "/about" }
+    }
+  ],
+  "about": {
+    "badge": "24/7 HASSLE-FREE",
+    "title": "Home And Businesses Installation Services",
+    "description": "Imperdiet massa tincidunt nunc pulvinar sapien. Sit amet facilisis magna etiam odio mollis mollis. Integer lacus ligula, imperdiet vel massa in, maximus suscipit turpis. Mauris ac risus sed quam semper auctor. Nam tempus volutpat ipsum, non viverra",
+    "stats": [
+      { "number": "560+", "label": "Projects Done" },
+      { "number": "180+", "label": "Technicians" }
+    ],
+    "features": [
+      {
+        "icon": "consultation",
+        "title": "Earliest Consultation",
+        "description": "Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Aenean vel elit scelerisque mauris pellentesque consectetur adipiscing elitpulvinar."
+      },
+      {
+        "icon": "solution",
+        "title": "Customized Solution",
+        "description": "Augue interdum velit euismod in pellentesque massa placerat duis ultricies. Purus gravida quis blandit turpis. Dolor sit amet consectetur adipiscing elit."
+      },
+      {
+        "icon": "pricing",
+        "title": "Affordable Pricing",
+        "description": "Quis vel eros donec ac odio tempor. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. Suspendisse interdum consectetur."
+      },
+      {
+        "icon": "service",
+        "title": "All-In-One Service",
+        "description": "Pellentesque id nibh tortor id. Quis vel eros donec ac odio tempor orci. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam."
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=500&q=80",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80",
+      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&q=80"
+    ]
+  },
+  "whyBest": {
+    "badge": "PEOPLE TRUST",
+    "title": "Why We Are Best",
+    "description": "Curabitur vitae nunc sed velit dignissim sodales ut eu. Leo vel orci porta non.",
+    "features": [
+      {
+        "icon": "handshake",
+        "title": "Licensed Technicians",
+        "description": "Mauris augue neque gravida in fermentum et sollicitudin."
+      },
+      {
+        "icon": "thumbsup",
+        "title": "Top Rated Service",
+        "description": "Scelerisque felis imperdiet proin fermentum vel orci aliquam."
+      },
+      {
+        "icon": "clock",
+        "title": "Timely Services",
+        "description": "Erat nam at lectus urna duis convallis convallis tellus id aliquet."
+      }
+    ]
+  },
+  "darkSection": {
+    "badge": "FRIENDLY SERVICES",
+    "title": "Safe And Secure Plumbing, Electrical And Carpenter Work",
+    "reviewText": "Egestas erat imperdiet sed euismod nisl porta lorem mollis. Nunc scelerisque viverra mauris in aliquam. Morbi non arcu risus quis. Libero enim sed faucibus turpis in eu mi. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh.",
+    "reviewCount": "4.k Reviews",
+    "stats": [
+      { "number": "980+", "label": "Successful Services" },
+      { "number": "900+", "label": "Satisfied Clients" },
+      { "number": "450+", "label": "Professionals" },
+      { "number": "220+", "label": "Global Stores" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80",
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80",
+      "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=600&q=80"
+    ]
+  },
+  "ctaBanner": {
+    "title": "Need To Schedule Your First Service.",
+    "subtitle": "Aliquam nulla facilisi cras fermentum odio eu Cras fermentum odio eu feugiat pretium.",
+    "cta1": { "label": "Get A Quote", "href": "/contact" },
+    "cta2": { "label": "Book Your Services", "href": "/contact" }
+  },
+  "brands": ["RED", "TIDAL", "INNOVATE", "TRAP MUSIC", "BIGTECH"],
+  "pricingNote": "Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Sit amet facilisis magna etiam odio mollis mollis. Integer lacus ligula, imperdiet vel massa in, maximus suscipit turpis. Mauris ac risus sed quam semper auctor. Standard Processing fees apply, non viverra Cras quis lacus vestibulum, finibus tellus at, vehicula purus. Nam tempor nunc ut ex varius Contact Us info@example.com.",
+  "footer": {
+    "description": "Duis ultricies libero sit amet aliquam fermentum. Nunc tincidunt mollis dui in tempor. Maecenas ut leo vitae purus condimentum dignissim.",
+    "informationLinks": [
+      { "label": "Request Service", "href": "/contact" },
+      { "label": "Commercial Plumbing", "href": "/services" },
+      { "label": "Our Work", "href": "/#portfolio" },
+      { "label": "What We Do", "href": "/services" },
+      { "label": "Our Process", "href": "/about" },
+      { "label": "Reviews", "href": "/#testimonials" }
+    ],
+    "supportLinks": [
+      { "label": "About", "href": "/about" },
+      { "label": "Careers", "href": "#" },
+      { "label": "Newsletter", "href": "#" },
+      { "label": "Privacy Policy", "href": "#" },
+      { "label": "Terms Of Use", "href": "#" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "followLinks": [
+      { "label": "YT", "href": "#" },
+      { "label": "FB", "href": "#" },
+      { "label": "TW", "href": "#" }
+    ],
+    "newsletterNote": "We don't spam. Unsubscription any time.",
+    "copyright": "WedesignTech All rights reserved.",
+    "legalLinks": [
+      { "label": "Privacy Policy", "href": "#" },
+      { "label": "Terms & Condition", "href": "#" }
+    ]
+  }
+}

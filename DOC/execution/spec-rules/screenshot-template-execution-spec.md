@@ -21,6 +21,7 @@ Define the governed screenshot-first template lane. This lane recreates public f
 - Brand replacement contract.
 - Footer attribution contract.
 - Execution profile (`replica_strict | enhancement_phase`).
+- Operation mode (`new_template | continue_existing_template`).
 - Optional `frontend-attach-contract.json` from Foundation Core.
 
 ## Required Output Root
@@ -43,6 +44,7 @@ Define the governed screenshot-first template lane. This lane recreates public f
 - Do not copy copyrighted assets. Replace brand assets, photos, testimonials, and legal copy with allowed replacements.
 - Keep abstraction pragmatic. Extract naturally repeated structures, but do not force a heavy DS or planner bundle when a local typed config is enough.
 - Use Next.js as the default frontend stack.
+- In `continue_existing_template`, preserve the imported runtime baseline and modify only the requested completion or enhancement slices.
 - Preserve the repo-wide footer attribution contract from the brief or its deterministic default.
 - In `replica_strict`, do not add non-reference UI chrome (theme switcher, bottom nav, extra badges/rails/top bars) unless present in screenshots.
 - In `enhancement_phase`, additive chrome is allowed but must be explicitly documented in `reference-inventory.md` as post-replica enhancement.

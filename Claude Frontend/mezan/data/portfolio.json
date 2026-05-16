@@ -1,0 +1,8 @@
+[
+  { "id": 1, "title": "AC Repair", "category": "HVAC", "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" },
+  { "id": 2, "title": "Garage Flooring", "category": "Flooring", "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" },
+  { "id": 3, "title": "Window Install", "category": "Carpentry", "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80" },
+  { "id": 4, "title": "Pest Control", "category": "Pest", "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" },
+  { "id": 5, "title": "Bathroom Tile", "category": "Renovation", "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" },
+  { "id": 6, "title": "Cabinet Making", "category": "Carpentry", "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&q=80" }
+]

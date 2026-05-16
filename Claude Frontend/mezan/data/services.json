@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "slug": "sanitary-plumbing",
+    "title": "Sanitary Plumbing",
+    "description": "Risus feugiat in ante metus dictum at. Dignissim convallis aenean et tortor at quisque mauris.",
+    "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80"
+  },
+  {
+    "id": 2,
+    "slug": "air-condition-installation",
+    "title": "Air Condition Installation",
+    "description": "Vel pharetra vel turpis nunc eget lorem. Tortor vitae purus faucibus ornare suspendisse sed.",
+    "image": "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=600&q=80"
+  },
+  {
+    "id": 3,
+    "slug": "cabinet-making",
+    "title": "Cabinet Making",
+    "description": "Fermentum dui faucibus in ornare quam viverra orci. Metus aliquam eleifend mi.",
+    "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&q=80"
+  },
+  {
+    "id": 4,
+    "slug": "window-carpentry",
+    "title": "Window Carpentry",
+    "description": "Turpis nunc eget lorem dolor sed viverra ipsum. Pharetra sit amet aliquam id diam neque.",
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80"
+  },
+  {
+    "id": 5,
+    "slug": "electrical-work",
+    "title": "Electrical Work",
+    "description": "Expert electrical installation, repair and maintenance for residential and commercial properties.",
+    "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80"
+  },
+  {
+    "id": 6,
+    "slug": "pest-control",
+    "title": "Pest Control",
+    "description": "Professional pest extermination and prevention services for homes and businesses.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+  }
+]

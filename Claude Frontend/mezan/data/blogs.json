@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "slug": "troubleshooting-common-plumbing-issues",
+    "date": "MARCH 28, 2024",
+    "title": "Tips To Troubleshooting Common Plumbing Issues",
+    "excerpt": "Phasellus faucibus scelerisque eleifend donec pretium vulputate. Ac orci phasellus egestas tellus. Vehicula ipsum a arcu cursus...",
+    "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80"
+  },
+  {
+    "id": 2,
+    "slug": "when-to-diy-and-when-to-call-a-pro",
+    "date": "MARCH 28, 2024",
+    "title": "Knowing When to DIY and When to Call a Pro",
+    "excerpt": "Arcu risus quis varius quam. Tristique sollicitudin nibh sit amet commodo. Eget gravida cum sociis natoque penatibus...",
+    "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80"
+  },
+  {
+    "id": 3,
+    "slug": "behind-the-scenes-unsung-heroes-of-home-maintenance",
+    "date": "MARCH 28, 2024",
+    "title": "Behind the Scenes: The Unsung Heroes of Home Maintenance",
+    "excerpt": "Et netus et malesuada fames ac turpis. Maecenas accumsan lacus vel facilisis volutpat. Cursus eget nunc scelerisque...",
+    "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&q=80"
+  }
+]

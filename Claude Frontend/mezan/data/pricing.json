@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "Repairing Plan",
+    "monthlyPrice": 25,
+    "yearlyPrice": 240,
+    "popular": false,
+    "features": [
+      { "text": "Condimentum mattis pellentesque", "included": true },
+      { "text": "Donec massa sapien faucibus", "included": true },
+      { "text": "Phasellus egestas tellus rutrum", "included": true },
+      { "text": "Non enim praesent elementum", "included": true },
+      { "text": "At natus at malesuada fames", "included": false },
+      { "text": "Leo in vitae turpis massa", "included": false }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Emergency Plan",
+    "monthlyPrice": 50,
+    "yearlyPrice": 480,
+    "popular": true,
+    "features": [
+      { "text": "Rhoncus aenean vel elit mauris", "included": true },
+      { "text": "Tincidunt nunc pulvinar sapien", "included": true },
+      { "text": "Quam quisque id diam vel", "included": true },
+      { "text": "Pellentesque massa placerat", "included": true }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Replacement Plan",
+    "monthlyPrice": 75,
+    "yearlyPrice": 720,
+    "popular": false,
+    "features": [
+      { "text": "Mollis nunc sed id semper risus", "included": true },
+      { "text": "Morbi tristique senectus et", "included": true },
+      { "text": "Turpis massa tincidunt dui", "included": true },
+      { "text": "Nunc pulvinar sapien et", "included": true }
+    ]
+  }
+]

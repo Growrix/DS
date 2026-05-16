@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Facebook, Twitter, Linkedin } from "lucide-react";
+import { Share2, MessageCircle, AtSign } from "lucide-react";
 
 interface TeamMemberProps {
   name: string;
@@ -9,6 +9,8 @@ interface TeamMemberProps {
 }
 
 export default function TeamMember({ name, role, title, imageUrl }: TeamMemberProps) {
+  const socialIcons = [Share2, MessageCircle, AtSign];
+
   return (
     <div className="team-card group relative overflow-hidden">
       {/* Image */}
@@ -21,7 +23,7 @@ export default function TeamMember({ name, role, title, imageUrl }: TeamMemberPr
         />
         {/* Social Overlay */}
         <div className="team-social absolute bottom-0 left-0 right-0 flex justify-center gap-2 pb-4">
-          {[Facebook, Twitter, Linkedin].map((Icon, i) => (
+          {socialIcons.map((Icon, i) => (
             <a
               key={i}
               href="#"

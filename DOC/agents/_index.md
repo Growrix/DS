@@ -53,7 +53,8 @@ This lane is complementary to the stable five-agent workflow. It exists to suppo
 |---|---|---|---|---|
 | `foundation_planner` | 1 | Planning (runtime foundation) | request + constraints | `foundation.json` + `mission-scope.md` + `ownership-matrix.md` + `backend-modules.json` + `integrations-baseline.json` + `devops-standards.json` + `portability-standards.json` + `frontend-attach-contract.json` + `implementation-phases.md` under `DOC/output/runs/<timestamp>/planning/foundation-core/` |
 | `foundation_developer` | 1 | Execution (runtime foundation) | Foundation Core planning bundle | `Foundation-Core/` standalone runtime + `RUN.md` + `ENV.example` + `dev-server-checklist.md` + `export-manifest.md` + `.audit/foundation-self-audit.md` |
-| `Claude_Frontend_Agent` | 1 | Execution (screenshot-driven templates) | screenshot/reference pack + optional `frontend-attach-contract.json` | standalone template under `Templates/<category>/<template-slug>/` + `template.manifest.json` + `reference-inventory.md` + `copyright-compliance.md` + `.audit/frontend-self-audit.md` |
+| `template_import_attacher` | 1 | Execution (import + attach templates) | imported Next.js runtime + optional `frontend-attach-contract.json` | normalized template under `Templates/<category>/<template-slug>/` + `.import/import-report.md` + `template.manifest.json` + `.audit/frontend-self-audit.md` |
+| `Claude_Frontend_Agent` | 1 | Execution (screenshot-driven templates / post-import continuation) | screenshot/reference pack or existing normalized template root + optional `frontend-attach-contract.json` | standalone or continued template under `Templates/<category>/<template-slug>/` + `template.manifest.json` + `reference-inventory.md` + `copyright-compliance.md` + `.audit/frontend-self-audit.md` |
 
 ---
 

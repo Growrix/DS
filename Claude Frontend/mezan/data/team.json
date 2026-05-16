@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Manlio Adalberto",
+    "role": "Cement Mason",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Ambrogio Enea",
+    "role": "Journeyman Plumber",
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Raffaele Giraldo",
+    "role": "Master Plumber",
+    "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Susana Marco",
+    "role": "Electrical Engineer",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80"
+  }
+]

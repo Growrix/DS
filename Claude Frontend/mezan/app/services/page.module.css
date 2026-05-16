@@ -1,0 +1,28 @@
+.hero { position: relative; height: 240px; background: var(--dark); display: flex; align-items: flex-end; }
+.heroBg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.heroOverlay { position: absolute; inset: 0; background: rgba(26,26,26,0.7); }
+.heroContent { position: relative; z-index: 2; padding-bottom: 36px; }
+.heroTitle { font-size: 40px; font-weight: 800; color: var(--white); margin-bottom: 8px; }
+.breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(255,255,255,0.6); }
+.breadcrumb a:hover { color: var(--yellow); }
+.breadcrumb span { color: rgba(255,255,255,0.4); }
+.breadcrumbActive { color: var(--yellow); font-weight: 500; }
+.section { padding: 80px 0; }
+.header { text-align: center; margin-bottom: 50px; }
+.title { font-size: clamp(26px, 3vw, 36px); font-weight: 800; color: var(--text-dark); }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.card { border-radius: var(--radius-lg); overflow: hidden; background: var(--white); box-shadow: var(--shadow); transition: all var(--transition); }
+.card:hover { box-shadow: var(--shadow-lg); transform: translateY(-6px); }
+.imgWrap { position: relative; height: 220px; overflow: hidden; }
+.imgWrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+.card:hover .imgWrap img { transform: scale(1.06); }
+.imgOverlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.12), transparent); }
+.body { padding: 22px; }
+.top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.cardTitle { font-size: 17px; font-weight: 700; color: var(--text-dark); }
+.arrow { width: 34px; height: 34px; border-radius: 50%; background: var(--gray-mid); color: var(--text-dark); display: flex; align-items: center; justify-content: center; font-size: 13px; transition: all var(--transition); }
+.card:hover .arrow { background: var(--yellow); }
+.divider { height: 1px; background: var(--gray-mid); margin-bottom: 12px; }
+.desc { font-size: 13px; color: var(--text-body); line-height: 1.65; }
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }

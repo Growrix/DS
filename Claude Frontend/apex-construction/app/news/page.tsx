@@ -17,7 +17,7 @@ const allPosts = [
     excerpt: "At the thought leadership conference, construction leaders discussed the future of sustainable building practices and material innovation.",
   },
   {
-    imageUrl: "https://images.unsplash.com/photo-1590644365607-62e62c5f1e93?w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
     date: "January 10, 2025",
     category: "Law",
     title: "Top Saas Construction Law On The Construction",

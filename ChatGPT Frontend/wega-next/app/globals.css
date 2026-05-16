@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111}
+.section{padding:80px 0}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.hero-overlay{background:linear-gradient(to right, rgba(0,0,0,.88), rgba(0,0,0,.55))}

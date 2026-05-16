@@ -30,7 +30,7 @@ const projects = [
   {
     title: "Metro Rail Station",
     category: "Public Infrastructure",
-    imageUrl: "https://images.unsplash.com/photo-1590644365607-62e62c5f1e93?w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
     year: "2023",
   },
   {

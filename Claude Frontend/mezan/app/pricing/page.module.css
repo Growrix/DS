@@ -1,0 +1,4 @@
+.hero { background: var(--gray-light); padding: 60px 0 20px; text-align: center; }
+.heroContent {}
+.heroTitle { font-size: clamp(30px, 4vw, 48px); font-weight: 800; color: var(--text-dark); margin-bottom: 12px; }
+.heroDesc { font-size: 16px; color: var(--text-body); }

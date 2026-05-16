@@ -35,6 +35,7 @@ Screenshot-first Next.js template builder. This agent recreates public frontend 
 4. Attach to Foundation Core only through `frontend-attach-contract.json` when available.
 5. Emit `README.md`, `RUN.md`, `ENV.example`, `dev-server-checklist.md`, `export-manifest.md`, `template.manifest.json`, `reference-inventory.md`, `copyright-compliance.md`, and `.audit/frontend-self-audit.md`.
 6. Keep the visual result close to the screenshots while still satisfying the OS-required footer attribution, theme support, mobile navigation, accessibility, and portability rules.
+7. Support post-import continuation against a template root previously normalized by `template_import_attacher`.
 
 ## STRICT RULES
 - MUST use Next.js as the default frontend stack.
@@ -50,6 +51,7 @@ Screenshot-first Next.js template builder. This agent recreates public frontend 
 - MUST implement modal-first auth when auth is part of the template surface and still provide standalone auth route fallbacks.
 - MUST document every inferred page in `reference-inventory.md`.
 - MUST support `standalone_template` mode by using documented mock adapters when no Foundation Core contract is supplied.
+- MUST support `operation_mode=continue_existing_template` for post-import completion or enhancement work.
 - MUST treat supplied screenshots as canonical visual source. When screenshots are present, live-site fetch may be used only for missing content text, never for visual reinterpretation.
 - MUST persist screenshot evidence hashes in `reference-inventory.md` (or linked evidence artifact) for reproducibility.
 - MUST NOT declare visual parity passed without metric evidence and threshold values in `.audit/frontend-self-audit.md`.
@@ -68,6 +70,7 @@ Screenshot-first Next.js template builder. This agent recreates public frontend 
       "favicon": "string | asset path"
     }
   },
+  "existing_template_root": "optional existing Templates/<category>/<template-slug> root",
   "foundation_attach_contract_path": "optional path to frontend-attach-contract.json",
   "template_output": {
     "category": "local-business | saas | commerce | editorial | other",
@@ -76,6 +79,7 @@ Screenshot-first Next.js template builder. This agent recreates public frontend 
   },
   "constraints": {
     "package_manager": "npm | pnpm | yarn",
+    "operation_mode": "new_template | continue_existing_template",
     "screenshot_source_of_truth": true,
     "allow_ds_dependency": false,
     "execution_profile": "replica_strict | enhancement_phase",
@@ -89,7 +93,8 @@ Screenshot-first Next.js template builder. This agent recreates public frontend 
 ### Phase 0 - Profile lock
 1. Resolve `execution_profile` from input constraints.
 2. If not provided, lock to `replica_strict`.
-3. In `replica_strict`, lock out non-reference chrome and defer enhancements.
+3. Resolve `operation_mode`; default to `new_template`.
+4. In `replica_strict`, lock out non-reference chrome and defer enhancements.
 
 ### Phase 1 - Reference audit
 1. Inventory visible routes, menus, footer links, CTAs, and shared surfaces from the screenshot pack.
@@ -98,10 +103,11 @@ Screenshot-first Next.js template builder. This agent recreates public frontend 
 4. Record screenshot identity evidence (path + file hash).
 
 ### Phase 2 - Scaffold template runtime
-1. Create the template runtime under the declared `Templates/<category>/<template-slug>/` root.
-2. Add project config, route structure, typed local config/content modules, and asset placeholders.
-3. When Foundation Core is available, wire only through the attach contract.
-4. When Foundation Core is not available, use documented mock adapters and keep the output runnable.
+1. In `new_template`, create the template runtime under the declared `Templates/<category>/<template-slug>/` root.
+2. In `continue_existing_template`, reuse the declared `existing_template_root` and preserve the imported runtime baseline.
+3. Add or refine project config, route structure, typed local config/content modules, and asset placeholders only where needed for the requested continuation.
+4. When Foundation Core is available, wire only through the attach contract.
+5. When Foundation Core is not available, use documented mock adapters and keep the output runnable.
 
 ### Phase 3 - Implement public routes
 1. Recreate the visible public routes with strong screenshot fidelity.
