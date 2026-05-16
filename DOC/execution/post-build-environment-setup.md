@@ -18,15 +18,18 @@ Define the deterministic environment bootstrap that must run after code generati
 3. Generate `ENV.example` from `plan.env_vars` if missing.
 4. Create `.env.local` from `ENV.example` if missing (local placeholders only).
 5. Validate env shape with runtime schema before server boot.
-6. Install dependencies non-interactively.
-    - On Windows, prefer a clean install with lock-safe behavior:
-       1) stop active `node`/`npm` processes,
-       2) remove `node_modules` and lockfile,
-       3) run install from runtime root.
-    - If install fails with executable spawn/EPERM/UNKNOWN for native binaries (for example esbuild/swc/sharp), classify as lock/execution issue and run recovery once:
+6. Install dependencies non-interactively using cache-first deterministic policy.
+    - Compute install fingerprint from:
+       1) package manager + version,
+       2) lockfile hash,
+       3) Node major/minor version,
+       4) platform + architecture.
+    - If `node_modules` exists and fingerprint matches the last successful setup, run lockfile verification and skip reinstall.
+    - If fingerprint mismatches, verification fails, or cache marker is missing, run fresh install from runtime root.
+    - On Windows, run clean reinstall fallback only when install fails with executable spawn/EPERM/UNKNOWN for native binaries (for example esbuild/swc/sharp):
        1) stop active `node`/`npm` processes,
        2) clear runtime root `node_modules` and lockfile,
-       3) retry install,
+       3) retry install once,
        4) if still failing, emit blocker with exact package and syscall.
 7. Run database client generation and local migrations when configured.
 8. Execute quality checks in order:
@@ -36,6 +39,7 @@ Define the deterministic environment bootstrap that must run after code generati
 9. Start local dev server using `npm run dev` from the runtime root.
 10. Run smoke probes for `/`, auth entry route, and `/api/health`.
 11. Emit `environment_setup_report.json` with pass/fail per step and blocker details.
+   - Report MUST include dependency setup mode: `cache_hit_skip | verified_install | clean_reinstall_fallback`.
 
 ## FAILURE HANDLING
 - Missing required env vars: `ENV_SETUP_BLOCKED_MISSING_REQUIRED_ENV`

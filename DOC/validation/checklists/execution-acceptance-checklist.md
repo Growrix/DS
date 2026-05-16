@@ -57,12 +57,20 @@ Hard acceptance gate between codegen and final success status. If any check fail
 - [ ] Visual QA confirms no critical contrast or overflow regressions on key routes.
 - [ ] Visual QA evidence is emitted under `reports/visual-qa/`.
 
+## SCREENSHOT TEMPLATE PARITY GATE
+- [ ] `execution_profile` is explicitly recorded as `replica_strict` or `enhancement_phase` for screenshot-driven templates.
+- [ ] In `replica_strict`, emitted public UI does not add non-reference chrome (theme toggles, bottom nav bars, extra helper rails, extra top bars) unless present in screenshot source.
+- [ ] Screenshot source evidence includes file paths and hashes for every canonical screenshot.
+- [ ] Visual parity evidence includes numeric thresholds and measured deltas (pixel mismatch, geometry mismatch, dominant-region color tolerance).
+- [ ] Footer attribution implementation exactly matches brief/planner contract (`text`, `link_text`, `url`, `placement`, target behavior) with no hardcoded vendor fallback when brief data exists.
+
 ## TESTING + RUNTIME
 - [ ] Test scripts are real (no placeholder echo/no-op scripts).
 - [ ] Declared critical paths have executable tests (unit/integration/e2e as applicable).
 - [ ] Build passes.
 - [ ] npm run dev starts from project root.
 - [ ] Smoke probes pass for /, primary conversion route, and /api/health.
+- [ ] Dependency setup uses cache-first deterministic policy and records whether install ran, was skipped by verified cache hit, or fell back to clean reinstall.
 
 ## DS EXECUTION ISOLATION GATE
 - [ ] Canonical DS runtime paths remain generic (no project-specific route/page/preset wiring under `Frontend-Master_DS/src/app/**` and `Frontend-Master_DS/src/site/**`).

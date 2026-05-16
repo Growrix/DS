@@ -49,6 +49,7 @@ Owns post-planning execution. Consumes LOCKED planning artifacts and orchestrate
 - MUST fail execution if required visual QA evidence is missing or fails.
 - MUST determine and persist the runtime app root before install/dev checks (for example `web/` in split-root repos).
 - MUST run install/dev/smoke commands from the runtime app root, not from a parent shim root.
+- MUST apply cache-first deterministic dependency setup before reinstalling; clean reinstall is fallback-only with explicit evidence.
 - For DS-bound runs, MUST resolve runtime app root to the run-scoped clone under `DOC/output/runs/<timestamp>/codegen/<project-slug>/`, not `Frontend-Master_DS/`.
 - MUST treat canonical DS (`Frontend-Master_DS/`) as read-only and generic during project execution.
 - MUST fail execution with `CANONICAL_DS_MUTATED` if project-specific runtime changes are detected under canonical DS paths.
@@ -126,6 +127,7 @@ Owns post-planning execution. Consumes LOCKED planning artifacts and orchestrate
 - Confirm the generated frontend was derived from the full frontend planning bundle, not just `plan.json` summaries.
 - Confirm `npm run dev` exits without error after codegen.
 - Confirm tests are non-placeholder and cover declared critical paths (unit/integration/e2e as applicable).
+- Confirm environment setup report includes dependency setup mode (`cache_hit_skip | verified_install | clean_reinstall_fallback`) and rationale.
 - Confirm screenshot-based visual QA passes for required routes and viewports by running `npm run test:e2e`.
 - Confirm visual QA evidence exists at `DOC/output/runs/<timestamp>/reports/visual-qa/summary.json` and `DOC/output/runs/<timestamp>/reports/visual-qa/<route>/<viewport>.png`.
 - Confirm visual QA includes both light and dark theme captures for required routes.

@@ -30,6 +30,7 @@ A generic, reusable execution agent for active projects. This agent converts app
 - Treat failed validation as blocking until fixed.
 - Treat visual regressions (contrast, broken media, alignment drift) as blocking failures for UI work.
 - Treat runtime-root ambiguity as blocking until resolved (install/dev must run from actual app root such as `web/`).
+- Use cache-first deterministic dependency setup before reinstalling; run clean reinstall fallback only when verification or install fails.
 - Treat missing or summary-only frontend handoff as blocking when `planning/frontend/frontend-execution-contract.json` should exist.
 - Always apply deterministic dev-server preflight before startup attempts.
 - For DS-bound runs, treat canonical DS roots (for example `Frontend-Master_DS/`) as read-only and generic.
@@ -73,7 +74,7 @@ Required knowledge references:
 ## DEV SERVER SOP (MANDATORY)
 Before running dev server commands:
 1. Determine runtime app root and run commands there.
-2. Verify dependencies are installed.
+2. Verify dependencies using cache-first policy (fingerprint + lockfile verification). Reinstall only on mismatch/failure.
 3. Verify env files (`ENV.example` and `.env.local` shape) are valid.
 4. Check/clear conflicting processes and port usage.
 5. If on Windows and native binary install fails (esbuild/swc/sharp): stop node processes, remove lockfile + node_modules, reinstall once, then classify blocker with exact error if still failing.
