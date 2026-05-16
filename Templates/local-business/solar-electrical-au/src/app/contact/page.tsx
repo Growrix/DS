@@ -1,10 +1,14 @@
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ContactSection } from '@/components/sections/ContactSection';
-export default function ContactPage() {
+import { getResolvedSiteShell } from '@/lib/foundation-runtime';
+
+export default async function ContactPage() {
+  const { companyInfo, navigation, footerAttribution } = await getResolvedSiteShell();
+
   return (
     <div className='min-h-screen bg-white'>
-      <Header />
+      <Header companyInfo={companyInfo} navigation={navigation} />
       <main>
         <section className='bg-gradient-to-br from-primary-50 to-white py-16'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
@@ -12,9 +16,9 @@ export default function ContactPage() {
             <p className='text-xl text-gray-500'>Get your free quote or ask us anything.</p>
           </div>
         </section>
-        <ContactSection />
+        <ContactSection companyInfo={companyInfo} />
       </main>
-      <Footer />
+      <Footer companyInfo={companyInfo} footerAttribution={footerAttribution} />
     </div>
   );
 }

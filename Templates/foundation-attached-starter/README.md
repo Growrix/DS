@@ -1,6 +1,10 @@
 # Foundation Attached Starter
 
-This is the minimal executable template example for the new screenshot-template lane.
+This is the historical minimal executable template example for the screenshot-template lane.
+
+## Status note
+- This starter proves the attach boundary, but it does not represent the full merge standard now required by the `template_import_attacher` agent.
+- The current import standard requires template-local facades for content, forms, media, session, and fallback behavior, plus real UI wiring for eligible imported surfaces.
 
 ## Purpose
 - prove the Foundation Core attach boundary

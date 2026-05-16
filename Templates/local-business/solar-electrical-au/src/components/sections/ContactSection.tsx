@@ -1,11 +1,76 @@
 'use client';
 import { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
-import { companyInfo } from '@/lib/data/company';
+import type { ApiEnvelope, ProcessSubmissionResult } from '@/lib/foundation-contract';
 import { services } from '@/lib/data/services';
-export function ContactSection() {
+import type { CompanyInfo } from '@/types/service';
+
+type ContactSectionProps = {
+  companyInfo: CompanyInfo;
+};
+
+export function ContactSection({ companyInfo }: ContactSectionProps) {
   var [submitted, setSubmitted] = useState(false);
-  function handleSubmit(e: React.FormEvent) { e.preventDefault(); setSubmitted(true); }
+  var [isSubmitting, setIsSubmitting] = useState(false);
+  var [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setErrorMessage(null);
+
+    var formData = new FormData(e.currentTarget);
+    var firstName = String(formData.get('firstName') || '').trim();
+    var lastName = String(formData.get('lastName') || '').trim();
+    var email = String(formData.get('email') || '').trim();
+    var phone = String(formData.get('phone') || '').trim();
+    var suburb = String(formData.get('suburb') || '').trim();
+    var service = String(formData.get('service') || '').trim();
+    var message = String(formData.get('message') || '').trim();
+    var website = String(formData.get('website') || '').trim();
+    var name = [firstName, lastName].filter(Boolean).join(' ').trim();
+    var requestMessage = [
+      message || 'Quote request received from imported template.',
+      suburb ? `Suburb/Postcode: ${suburb}` : null,
+      service ? `Requested service: ${service}` : null,
+    ].filter(Boolean).join('\n');
+
+    try {
+      var response = await fetch('/api/template/forms/quote/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          message: requestMessage,
+          website,
+        }),
+      });
+
+      var payload = await response.json() as ApiEnvelope<ProcessSubmissionResult>;
+
+      if (!response.ok || !payload.ok) {
+        setErrorMessage(payload.ok ? 'Unable to submit your request right now.' : payload.error.message);
+        return;
+      }
+
+      if (!payload.data.accepted) {
+        setErrorMessage(payload.data.message);
+        return;
+      }
+
+      e.currentTarget.reset();
+      setSubmitted(true);
+    } catch {
+      setErrorMessage('Unable to submit your request right now. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
   return (
     <section id='contact' className='py-20 bg-white'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -51,18 +116,20 @@ export function ContactSection() {
                 <h3 className='text-2xl font-bold text-gray-900 mb-6'>Request a Free Quote</h3>
                 <form onSubmit={handleSubmit} className='space-y-4'>
                   <div className='grid sm:grid-cols-2 gap-4'>
-                    <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>First Name *</label><input required type='text' placeholder='John' className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm' /></div>
-                    <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>Last Name *</label><input required type='text' placeholder='Smith' className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm' /></div>
+                    <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>First Name *</label><input required name='firstName' type='text' placeholder='John' className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm' /></div>
+                    <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>Last Name *</label><input required name='lastName' type='text' placeholder='Smith' className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm' /></div>
                   </div>
                   <div className='grid sm:grid-cols-2 gap-4'>
-                    <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>Phone *</label><input required type='tel' placeholder='0400 000 000' className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm' /></div>
-                    <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>Email *</label><input required type='email' placeholder='john@example.com' className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm' /></div>
+                    <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>Phone *</label><input required name='phone' type='tel' placeholder='0400 000 000' className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm' /></div>
+                    <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>Email *</label><input required name='email' type='email' placeholder='john@example.com' className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm' /></div>
                   </div>
-                  <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>Suburb & Postcode *</label><input required type='text' placeholder='Brisbane 4000' className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm' /></div>
-                  <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>Service *</label><select required className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm'><option value=''>Select a service...</option>{services.map(function(s){ return <option key={s.id} value={s.slug}>{s.title}</option>; })}</select></div>
-                  <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>Message</label><textarea rows={3} placeholder='Tell us about your project...' className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm resize-none' /></div>
-                  <button type='submit' className='w-full bg-primary-500 text-white px-8 py-4 rounded-xl hover:bg-primary-600 transition-colors font-semibold text-base shadow-lg flex items-center justify-center gap-2'>
-                    <Send className='w-5 h-5' /> Send Quote Request
+                  <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>Suburb & Postcode *</label><input required name='suburb' type='text' placeholder='Brisbane 4000' className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm' /></div>
+                  <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>Service *</label><select required name='service' className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm'><option value=''>Select a service...</option>{services.map(function(s){ return <option key={s.id} value={s.title}>{s.title}</option>; })}</select></div>
+                  <div><label className='block text-sm font-semibold text-gray-700 mb-1.5'>Message</label><textarea name='message' rows={3} placeholder='Tell us about your project...' className='w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 outline-none bg-white text-sm resize-none' /></div>
+                  <div className='hidden'><label>Website<input name='website' type='text' tabIndex={-1} autoComplete='off' /></label></div>
+                  {errorMessage ? <p className='rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700'>{errorMessage}</p> : null}
+                  <button disabled={isSubmitting} type='submit' className='w-full bg-primary-500 text-white px-8 py-4 rounded-xl hover:bg-primary-600 transition-colors font-semibold text-base shadow-lg flex items-center justify-center gap-2 disabled:cursor-not-allowed disabled:opacity-70'>
+                    <Send className='w-5 h-5' /> {isSubmitting ? 'Submitting...' : 'Send Quote Request'}
                   </button>
                   <p className='text-center text-xs text-gray-400'>Free assessment &nbsp;|&nbsp; No obligation &nbsp;|&nbsp; Response within 24 hours</p>
                 </form>

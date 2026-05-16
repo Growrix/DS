@@ -9,13 +9,15 @@
 - lint: passed (`npm run lint`)
 - typecheck: passed (`npm run typecheck`)
 - build: passed (`npm run build`)
-- smoke: passed (`npm run dev` launched from `Templates/local-business/solar-electrical-au/`; `/`, `/about`, `/projects`, `/contact`, and `/api/template-attach-status` all responded on `http://localhost:3002`)
+- smoke: passed (`npm run dev` launched from `Templates/local-business/solar-electrical-au/`; `/`, `/about`, `/projects`, `/contact`, and `/api/template-attach-status` responded from the normalized runtime root)
+- attached-smoke: passed (`FOUNDATION_BASE_URL=http://127.0.0.1:3310`; template-local attach, content, and form facades responded against live Foundation Core)
+- fallback-smoke: passed (standalone template mode returned `mock-fallback` status and accepted fallback form submissions)
 
 ## Import Integrity
 - visible baseline preserved from imported runtime
 - non-portable source baggage removed
-- Foundation attach route added without redesigning public UI
+- Foundation merge facades added without redesigning public UI
 - runtime root remains independently bootable
 
 ## Status
-pass with follow-up content/legal link completion still optional
+pass with remaining optional work limited to deeper content mapping, legal-link replacement, and future upload/auth UI consumers

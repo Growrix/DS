@@ -1,5 +1,6 @@
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { getResolvedSiteShell } from '@/lib/foundation-runtime';
 const projects = [
   { id:'1', title:'6.6kW Residential Solar + Battery', location:'Brisbane, QLD', type:'Residential', size:'6.6kW', panels:20, saving:'$2,200/yr', date:'Feb 2024', desc:'Complete solar and Powerwall installation for a family home in suburban Brisbane.' },
   { id:'2', title:'50kW Commercial Rooftop Solar', location:'Gold Coast, QLD', type:'Commercial', size:'50kW', panels:120, saving:'$18,000/yr', date:'Jan 2024', desc:'Large-scale commercial installation for a Gold Coast warehouse.' },
@@ -8,10 +9,12 @@ const projects = [
   { id:'5', title:'100kW Industrial Solar', location:'Toowoomba, QLD', type:'Industrial', size:'100kW', panels:240, saving:'$42,000/yr', date:'Nov 2023', desc:'Massive industrial installation cutting energy bills by 60%.' },
   { id:'6', title:'8kW Solar + Tesla Powerwall 2', location:'Redcliffe, QLD', type:'Residential', size:'8kW', panels:20, saving:'$3,200/yr', date:'Mar 2024', desc:'Premium residential install with full backup power capability.' }
 ];
-export default function ProjectsPage() {
+export default async function ProjectsPage() {
+  const { companyInfo, navigation, footerAttribution } = await getResolvedSiteShell();
+
   return (
     <div className='min-h-screen bg-white'>
-      <Header />
+      <Header companyInfo={companyInfo} navigation={navigation} />
       <main>
         <section className='bg-gradient-to-br from-primary-50 to-white py-16'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
@@ -48,7 +51,7 @@ export default function ProjectsPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer companyInfo={companyInfo} footerAttribution={footerAttribution} />
     </div>
   );
 }

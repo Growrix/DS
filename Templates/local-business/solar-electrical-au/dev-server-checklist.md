@@ -22,3 +22,6 @@
 - `/projects`
 - `/contact`
 - `/api/template-attach-status`
+- `/api/template/session`
+- `/api/template/content/site-config`
+- `POST /api/template/forms/quote/submit`

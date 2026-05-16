@@ -7,10 +7,14 @@ import { WhyUsSection } from '@/components/sections/WhyUsSection';
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
 import { FAQSection } from '@/components/sections/FAQSection';
 import { ContactSection } from '@/components/sections/ContactSection';
-export default function HomePage() {
+import { getResolvedSiteShell } from '@/lib/foundation-runtime';
+
+export default async function HomePage() {
+  const { companyInfo, navigation, footerAttribution } = await getResolvedSiteShell();
+
   return (
     <div className='min-h-screen bg-white'>
-      <Header />
+      <Header companyInfo={companyInfo} navigation={navigation} />
       <main>
         <HeroSection />
         <StatsSection />
@@ -18,9 +22,9 @@ export default function HomePage() {
         <WhyUsSection />
         <TestimonialsSection />
         <FAQSection />
-        <ContactSection />
+        <ContactSection companyInfo={companyInfo} />
       </main>
-      <Footer />
+      <Footer companyInfo={companyInfo} footerAttribution={footerAttribution} />
     </div>
   );
 }

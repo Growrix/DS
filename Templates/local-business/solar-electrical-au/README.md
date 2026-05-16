@@ -13,11 +13,14 @@
 - `template.manifest.json`
 - `.import/import-report.md`
 - `.audit/frontend-self-audit.md`
+- `src/lib/foundation-runtime.ts`
 - `src/app/api/template-attach-status/route.ts`
-- `src/lib/foundation-attach.ts`
+- `src/app/api/template/**`
 
 ## Current state
 - visible UI baseline preserved from the imported runtime
 - required footer attribution normalized to Growrix OS
+- Foundation merge facades now exist for session, content, forms, and media through `/api/template/**`
+- Global shell content and contact form are wired to the Foundation merge layer while standalone fallback remains runnable
 - Foundation attachment remains optional through `FOUNDATION_BASE_URL`
 - follow-up content and legal-link completion remains a continuation step

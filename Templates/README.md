@@ -11,4 +11,5 @@ All screenshot-driven template outputs live in this directory.
 - Runtime dependency on `Frontend-Master_DS/` is forbidden for this lane.
 
 ## Current starter
-- `Templates/foundation-attached-starter/` is the executable reference starter for the new attach-contract lane.
+- `Templates/foundation-attached-starter/` is the historical minimal starter for the attach-contract lane.
+- Full import-attach work now requires template-local facades and actual frontend/backend merge wiring as defined by the template import attacher agent and execution specs.

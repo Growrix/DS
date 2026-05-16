@@ -1,7 +1,7 @@
 # Template Import Attach Execution Spec
 
 ## Purpose
-Define the governed lane for importing an already-built frontend runtime, normalizing it into the `Templates/` library, and attaching it to Foundation Core through the existing attach contract without rebuilding the visible UI from scratch.
+Define the governed lane for importing an already-built frontend runtime, normalizing it into the `Templates/` library, and fully merging it with Foundation Core through the existing attach contract without rebuilding the visible UI from scratch.
 
 ## Source Of Truth
 - The imported frontend runtime is the source of truth for the visible implementation baseline.
@@ -35,6 +35,9 @@ Define the governed lane for importing an already-built frontend runtime, normal
 - Preserve the imported visible UI by default. Cosmetic refactors are forbidden during import normalization.
 - Normalize scripts, env docs, and runtime metadata so the imported copy boots independently from its own root.
 - When Foundation Core is available, attach only through `frontend-attach-contract.json`.
+- Generate same-origin template-local facades for enabled auth, content, forms, media, preview, and health modules.
+- Wire existing imported frontend surfaces to those facades when corresponding UI already exists, especially navigation/site-config, forms, uploads, and session-aware routes.
+- Keep fallback behavior defined for every generated facade so standalone mode remains executable.
 - When a repo-default footer attribution is required and no brief override exists, use `Built and Maintained by Growrix OS` linking to `https://www.growrixos.com`.
 - Do not couple the imported runtime to `Frontend-Master_DS/` or `DS-Planning-Engine/`.
 - Do not silently replace imported routes with generic starter routes.
@@ -47,7 +50,8 @@ Define the governed lane for importing an already-built frontend runtime, normal
 ## Validation
 - The normalized template must pass lint, typecheck, and build from its own runtime root.
 - After import, attach, or merge work, `npm run dev` must be started from the normalized runtime root using the documented checklist, and live smoke probes must pass before the lane can be declared complete.
-- If Foundation attachment is enabled, attached mode must be documented and mock fallback must remain runnable.
+- If Foundation attachment is enabled, attached mode must be proven live and mock fallback must remain runnable.
+- Validation must include at least one real wired backend surface when that surface exists in the imported UI, not only an attach-status route.
 - The import report must record source root, target root, stripped artifacts, attach mode, and any unresolved gaps.
 
 ## Failure Modes

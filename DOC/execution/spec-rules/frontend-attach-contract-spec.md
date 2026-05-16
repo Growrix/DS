@@ -45,6 +45,7 @@ The attach contract MUST be emitted as `frontend-attach-contract.json` and cover
 ## Rules
 - Templates consume normalized contracts only, never vendor SDK internals.
 - Public templates must not require server-only env vars in client code.
+- Imported templates must expose same-origin template-local facades for enabled contract modules before client-side UI consumes them.
 - `standalone_template` mode must remain executable without Foundation Core by using documented mock adapters.
 - Error responses must use a standard envelope and code taxonomy.
 - Contract additions require a version bump when they are breaking.
@@ -52,6 +53,7 @@ The attach contract MUST be emitted as `frontend-attach-contract.json` and cover
 ## Validation
 - Every downstream template agent must be able to implement against this contract without scanning Foundation Core internals.
 - Every required section must be present even when a module is disabled; disabled modules declare `enabled: false` and fallback behavior.
+- A completed import-attach run must prove both attached mode and fallback mode through template-local facades, not just through a direct health handshake.
 
 ## Failure Modes
 - `ATTACH_CONTRACT_SECTION_MISSING`

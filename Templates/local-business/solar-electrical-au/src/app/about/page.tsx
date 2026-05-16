@@ -1,6 +1,7 @@
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { companyInfo } from '@/lib/data/company';
+import { getResolvedSiteShell } from '@/lib/foundation-runtime';
 import { Shield, Award, Users, Leaf } from 'lucide-react';
 const values = [
   { icon:Award, title:'Quality First', desc:'We only use the highest quality Tier 1 solar panels and components from reputable manufacturers.' },
@@ -14,10 +15,12 @@ const team = [
   { name:'James Kowalski', role:'Lead Electrician', exp:'18+ years' },
   { name:'Emma Williams', role:'Customer Relations', exp:'10+ years' }
 ];
-export default function AboutPage() {
+export default async function AboutPage() {
+  const { companyInfo: resolvedCompanyInfo, navigation, footerAttribution } = await getResolvedSiteShell();
+
   return (
     <div className='min-h-screen bg-white'>
-      <Header />
+      <Header companyInfo={resolvedCompanyInfo} navigation={navigation} />
       <main>
         <section className='bg-gradient-to-br from-primary-50 to-white py-20'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
@@ -78,7 +81,7 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer companyInfo={resolvedCompanyInfo} footerAttribution={footerAttribution} />
     </div>
   );
 }

@@ -22,6 +22,10 @@
     "/about",
     "/projects",
     "/contact",
-    "/api/template-attach-status"
+    "/api/template-attach-status",
+    "/api/template/session",
+    "/api/template/content/site-config",
+    "/api/template/forms/[formId]/submit",
+    "/api/template/media/upload"
   ]
 }

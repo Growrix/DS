@@ -18,3 +18,5 @@
 
 ## Attach check
 - Open `/api/template-attach-status` and confirm the route reports either `attached` or `mock-fallback`.
+- Open `/api/template/session` and `/api/template/content/site-config` to verify the local facades.
+- Submit a POST request to `/api/template/forms/quote/submit` to verify the template-local form bridge.
