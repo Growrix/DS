@@ -1,0 +1,42 @@
+.breadcrumb {
+  background: #f8f8f8;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #666;
+}
+
+.crumbWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.crumbWrap i {
+  font-size: 9px;
+  color: #bbb;
+}
+
+.link {
+  color: #666;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #e8192c;
+}
+
+.current {
+  color: #e8192c;
+  font-weight: 600;
+}

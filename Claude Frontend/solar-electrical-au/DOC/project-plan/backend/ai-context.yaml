@@ -1,0 +1,19 @@
+version: 1
+folder: DOC/project-plan/backend
+purpose: Define the backend workflow boundaries for inquiries, uploads, notifications, and publish operations.
+primary_docs:
+	- DOC/project-plan/backend/README.md
+	- DOC/project-plan/backend/backend-plan.md
+required_inputs:
+	- DOC/project-plan/shared-contracts/system-blueprint.md
+	- DOC/project-plan/cms-content-operations/cms-content-operations-plan.md
+	- DOC/project-plan/frontend/frontend-plan.md
+guide_sources:
+	- DOC/framework/guide/backend/backend-architecture.md
+	- DOC/framework/guide/backend/queue-payments-and-integrations.md
+	- DOC/framework/guide/backend/file-delivery-and-storage.md
+	- DOC/framework/guide/backend/backend-observability-and-reliability.md
+invariants:
+	- Form submissions are server-authoritative.
+	- Public attachments remain private unless explicitly published through CMS.
+	- Notification failure cannot corrupt the underlying inquiry record.

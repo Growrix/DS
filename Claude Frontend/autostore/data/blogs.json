@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "MOVING FROM TICKET SYSTEM TO FORUM",
+    "date": "07-10-2019",
+    "category": "News",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.",
+    "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&q=80",
+    "slug": "moving-from-ticket-system-to-forum"
+  },
+  {
+    "id": 2,
+    "title": "8 IDEAS TO GET YOUR SITE READY",
+    "date": "07-10-2019",
+    "category": "Tips",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.",
+    "image": "https://images.unsplash.com/photo-1504222490345-c075b7b543b9?w=400&q=80",
+    "slug": "8-ideas-to-get-your-site-ready"
+  },
+  {
+    "id": 3,
+    "title": "CUSTOMER SUPPORT NOTICE FOR HOLIDAY",
+    "date": "07-10-2019",
+    "category": "Support",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.",
+    "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&q=80",
+    "slug": "customer-support-notice-for-holiday"
+  }
+]

@@ -1,0 +1,131 @@
+.topbar {
+  background: #222;
+  color: #ccc;
+  font-size: 12px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ccc;
+  font-size: 12px;
+}
+
+.left i {
+  color: #e8192c;
+  font-size: 11px;
+}
+
+.left strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.authLink {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ccc;
+  font-size: 12px;
+  padding: 0 12px;
+  transition: color 0.2s;
+}
+
+.authLink:hover {
+  color: #fff;
+}
+
+.authLink i {
+  font-size: 10px;
+  color: #e8192c;
+}
+
+.divider {
+  width: 1px;
+  height: 14px;
+  background: #444;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #ccc;
+  font-size: 12px;
+  padding: 0 12px;
+  height: 36px;
+  cursor: pointer;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  font-family: inherit;
+}
+
+.dropBtn:hover {
+  color: #fff;
+}
+
+.dropMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  min-width: 160px;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dropdown:hover .dropMenu {
+  display: block;
+}
+
+.dropMenu button {
+  display: block;
+  width: 100%;
+  padding: 8px 14px;
+  text-align: left;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.dropMenu button:hover {
+  background: #f5f5f5;
+  color: #e8192c;
+}
+
+@media (max-width: 768px) {
+  .left {
+    display: none;
+  }
+}

@@ -1,0 +1,60 @@
+version: 1
+project:
+  name: Commodity Trading Company Website
+  planning_mode: fresh
+  status: frontend-implementation-in-progress
+  canonical_human_index: DOC/project-plan/README.md
+  canonical_ai_entrypoint: DOC/project-plan/ai-context.yaml
+  active_e2e_artifact: DOC/project-plan/commodity-trading-website-e2e-plan.md
+  source_master_plan: DOC/master-plan/plan.md
+
+read_order:
+  - DOC/project-plan/ai-context.yaml
+  - DOC/project-plan/README.md
+  - DOC/project-plan/commodity-trading-website-e2e-plan.md
+  - DOC/project-plan/shared-contracts/ai-context.yaml
+  - DOC/project-plan/frontend/ai-context.yaml
+  - DOC/project-plan/backend/ai-context.yaml
+  - DOC/project-plan/api-and-data/ai-context.yaml
+  - DOC/project-plan/admin-dashboard/ai-context.yaml
+  - DOC/project-plan/cms-content-operations/ai-context.yaml
+  - DOC/project-plan/supabase/ai-context.yaml
+  - DOC/project-plan/security/ai-context.yaml
+  - DOC/project-plan/devops/ai-context.yaml
+  - DOC/project-plan/analytics/ai-context.yaml
+  - DOC/project-plan/search/ai-context.yaml
+  - DOC/project-plan/integrations/ai-context.yaml
+  - DOC/project-plan/qa/ai-context.yaml
+  - DOC/project-plan/tasks/ai-context.yaml
+
+folder_ownership:
+  shared-contracts: cross-role system blueprint and invariants
+  frontend: public site information architecture, templates, UX, and design system use
+  backend: inquiry workflows, integrations, storage, and domain services
+  api-and-data: API contracts, schemas, event model, and persistence boundaries
+  admin-dashboard: internal operator surface decisions and deferred custom admin strategy
+  cms-content-operations: editorial model, publishing flow, preview, and governance
+  supabase: database, auth, storage, and migration ownership
+  security: auth, privacy, abuse protection, auditability, and compliance controls
+  devops: environments, CI/CD, observability, release, and rollback strategy
+  analytics: event taxonomy, KPI instrumentation, and reporting governance
+  search: search surface, indexing, and discovery strategy
+  integrations: provider ownership, failure handling, and operational runbooks
+  qa: validation strategy and release gates
+  tasks: execution sequencing and phase tracker
+
+stack_decisions:
+  frontend: Next.js + React + TypeScript
+  cms: Sanity Studio
+  database: Supabase Postgres
+  query_layer: Supabase client with SQL migrations; Prisma intentionally excluded for the current phase
+  email: Resend
+  analytics: PostHog or Plausible, to be finalized before implementation
+  error_monitoring: Sentry
+
+invariants:
+  - DOC/master-plan/plan.md remains the source brief; DOC/project-plan/ is the implementation-ready planning layer.
+  - No implementation work should start from framework prompts once project-plan docs exist.
+  - Public content lives in Sanity; operational lead data lives in Supabase.
+  - The canonical footer string must remain consistent across all public pages: Copyright {year} [Company Legal Name]. All rights reserved.
+  - No bespoke customer portal, supplier portal, or trading dashboard is in phase 1 unless the project-plan docs are updated first.

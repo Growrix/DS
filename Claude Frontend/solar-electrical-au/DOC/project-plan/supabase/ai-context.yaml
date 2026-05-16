@@ -1,0 +1,18 @@
+version: 1
+folder: DOC/project-plan/supabase
+purpose: Define Supabase ownership for Postgres, Storage, internal auth posture, migrations, and backups.
+primary_docs:
+  - DOC/project-plan/supabase/README.md
+  - DOC/project-plan/supabase/supabase-plan.md
+required_inputs:
+  - DOC/project-plan/api-and-data/api-data-plan.md
+  - DOC/project-plan/security/security-plan.md
+guide_sources:
+  - DOC/framework/guide/data/data-model.md
+  - DOC/framework/guide/backend/auth-authorization-and-rls.md
+  - DOC/framework/guide/backend/file-delivery-and-storage.md
+  - DOC/framework/guide/operations/security-and-operations.md
+invariants:
+  - Supabase is the authoritative operational data store.
+  - Private attachments stay private by default.
+  - Schema changes require migrations and rollback thinking.

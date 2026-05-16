@@ -1,0 +1,16 @@
+{
+  "title": "SELECT YOUR VEHICLE",
+  "subtitle": "OVER 120,000 AUTOMOTIVE AND TRUCK PARTS",
+  "makes": ["Select Make", "Acura", "Alfa Romeo", "Audi", "BMW", "Buick", "Cadillac", "Chevrolet", "Chrysler", "Dodge", "Ferrari", "Ford", "GMC", "Honda", "Hyundai", "Infiniti", "Jeep", "Kia", "Lamborghini", "Land Rover", "Lexus", "Lincoln", "Mazda", "Mercedes-Benz", "Mini", "Mitsubishi", "Nissan", "Porsche", "Ram", "Subaru", "Tesla", "Toyota", "Volkswagen", "Volvo"],
+  "models": {
+    "Select Make": ["Select Model"],
+    "BMW": ["Select Model", "1 Series", "2 Series", "3 Series", "4 Series", "5 Series", "7 Series", "X1", "X3", "X5", "X7", "M3", "M5"],
+    "Mercedes-Benz": ["Select Model", "A-Class", "C-Class", "E-Class", "S-Class", "GLA", "GLC", "GLE", "GLS", "AMG GT"],
+    "Toyota": ["Select Model", "Camry", "Corolla", "RAV4", "Highlander", "Tacoma", "Tundra", "4Runner", "Prius", "Sequoia"],
+    "Honda": ["Select Model", "Civic", "Accord", "CR-V", "Pilot", "Odyssey", "Ridgeline", "Fit", "HR-V"],
+    "Ford": ["Select Model", "F-150", "Mustang", "Explorer", "Escape", "Edge", "Expedition", "Ranger", "Bronco"],
+    "Chevrolet": ["Select Model", "Silverado", "Equinox", "Traverse", "Tahoe", "Suburban", "Colorado", "Corvette", "Camaro"],
+    "GMC": ["Select Model", "Sierra", "Terrain", "Acadia", "Yukon", "Canyon"]
+  },
+  "years": ["Select Year", "2026", "2025", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010"]
+}

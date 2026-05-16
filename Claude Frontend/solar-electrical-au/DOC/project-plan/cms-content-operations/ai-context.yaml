@@ -1,0 +1,17 @@
+version: 1
+folder: DOC/project-plan/cms-content-operations
+purpose: Define content modeling, editorial workflow, preview, publish, and media governance.
+primary_docs:
+  - DOC/project-plan/cms-content-operations/README.md
+  - DOC/project-plan/cms-content-operations/cms-content-operations-plan.md
+required_inputs:
+  - DOC/project-plan/shared-contracts/system-blueprint.md
+  - DOC/project-plan/commodity-trading-website-e2e-plan.md
+guide_sources:
+  - DOC/framework/guide/product/product-requirements.md
+  - DOC/framework/guide/frontend/frontend-architecture.md
+  - DOC/framework/guide/process/deployment-and-environments.md
+invariants:
+  - All public content must be attributable to a CMS document type or a code-owned invariant.
+  - Editors draft; approvers publish.
+  - Publish operations must trigger controlled revalidation.

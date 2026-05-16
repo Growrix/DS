@@ -1,0 +1,16 @@
+version: 1
+folder: DOC/project-plan/search
+purpose: Define search, indexing, and discovery behavior for products, insights, markets, and FAQs.
+primary_docs:
+  - DOC/project-plan/search/README.md
+  - DOC/project-plan/search/search-plan.md
+required_inputs:
+  - DOC/project-plan/frontend/frontend-plan.md
+  - DOC/project-plan/cms-content-operations/cms-content-operations-plan.md
+guide_sources:
+  - DOC/framework/guide/frontend/frontend-performance-and-analytics.md
+  - DOC/framework/guide/api/api-design.md
+invariants:
+  - Search must reinforce public discovery without generating thin duplicate SEO pages.
+  - Product taxonomy remains the organizing principle for indexing.
+  - Search failures must degrade gracefully without breaking core navigation.

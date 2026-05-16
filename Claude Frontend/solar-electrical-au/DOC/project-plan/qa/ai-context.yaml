@@ -1,0 +1,20 @@
+version: 1
+folder: DOC/project-plan/qa
+purpose: Define test layers, launch blockers, regression requirements, and post-deploy checks.
+primary_docs:
+  - DOC/project-plan/qa/README.md
+  - DOC/project-plan/qa/qa-plan.md
+required_inputs:
+  - DOC/project-plan/frontend/frontend-plan.md
+  - DOC/project-plan/backend/backend-plan.md
+  - DOC/project-plan/api-and-data/api-data-plan.md
+  - DOC/project-plan/security/security-plan.md
+  - DOC/project-plan/devops/devops-plan.md
+guide_sources:
+  - DOC/framework/guide/quality/testing-strategy.md
+  - DOC/framework/guide/quality/qa-and-release-gates.md
+  - DOC/framework/guide/frontend/frontend-performance-and-analytics.md
+invariants:
+  - No release is ready without passing form, publish, and security-critical checks.
+  - Regression evidence is required for route, schema, and workflow changes.
+  - Accessibility and performance are release gates, not optional extras.

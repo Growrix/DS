@@ -1,0 +1,16 @@
+version: 1
+folder: DOC/project-plan/analytics
+purpose: Define KPI tracking, event taxonomy, dashboards, and privacy-safe analytics rules.
+primary_docs:
+  - DOC/project-plan/analytics/README.md
+  - DOC/project-plan/analytics/analytics-plan.md
+required_inputs:
+  - DOC/project-plan/frontend/frontend-plan.md
+  - DOC/project-plan/commodity-trading-website-e2e-plan.md
+guide_sources:
+  - DOC/framework/guide/frontend/frontend-performance-and-analytics.md
+  - DOC/framework/guide/process/privacy-retention-and-compliance.md
+invariants:
+  - Only business-significant events are tracked.
+  - Sensitive form contents never enter analytics payloads.
+  - Event names remain consistent across environments.

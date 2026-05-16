@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Ferrari", "slug": "ferrari", "logo": "/brands/ferrari.svg" },
+  { "id": 2, "name": "Xusle", "slug": "xusle", "logo": "/brands/xusle.svg" },
+  { "id": 3, "name": "Logo Brand", "slug": "logo-brand", "logo": "/brands/logo-brand.svg" },
+  { "id": 4, "name": "Letchdev", "slug": "letchdev", "logo": "/brands/letchdev.svg" },
+  { "id": 5, "name": "Lentbey", "slug": "lentbey", "logo": "/brands/lentbey.svg" }
+]

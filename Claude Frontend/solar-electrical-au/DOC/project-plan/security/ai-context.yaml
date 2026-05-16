@@ -1,0 +1,19 @@
+version: 1
+folder: DOC/project-plan/security
+purpose: Lock access control, privacy, abuse protection, auditability, and incident expectations.
+primary_docs:
+  - DOC/project-plan/security/README.md
+  - DOC/project-plan/security/security-plan.md
+required_inputs:
+  - DOC/project-plan/shared-contracts/system-blueprint.md
+  - DOC/project-plan/api-and-data/api-data-plan.md
+  - DOC/project-plan/supabase/supabase-plan.md
+guide_sources:
+  - DOC/framework/guide/backend/auth-authorization-and-rls.md
+  - DOC/framework/guide/operations/security-and-operations.md
+  - DOC/framework/guide/operations/platform-governance-and-controls.md
+  - DOC/framework/guide/process/privacy-retention-and-compliance.md
+invariants:
+  - Public users never gain direct access to operational records or private attachments.
+  - Rate limiting and upload validation are mandatory on public write flows.
+  - Auditability is required for every privileged action.

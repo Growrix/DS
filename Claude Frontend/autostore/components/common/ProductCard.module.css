@@ -1,0 +1,194 @@
+.card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #eee;
+  transition: box-shadow 0.25s, transform 0.25s;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Badges */
+.discountBadge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #e8192c;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 2px;
+  z-index: 3;
+  letter-spacing: 0.3px;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 2px;
+  z-index: 3;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+
+.badgeHot {
+  background: #ff6b00;
+}
+
+.badgeNew {
+  background: #333;
+}
+
+/* Image */
+.imageWrap {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #f8f8f8;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  transition: bottom 0.25s ease;
+}
+
+.card:hover .overlay {
+  bottom: 0;
+}
+
+.overlayBtn {
+  width: 34px;
+  height: 34px;
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #555;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.overlayBtn:hover {
+  background: #e8192c;
+  border-color: #e8192c;
+  color: #fff;
+}
+
+.overlayBtn.wishlisted {
+  background: #e8192c;
+  border-color: #e8192c;
+  color: #fff;
+}
+
+/* Info */
+.info {
+  padding: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.name {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 6px;
+  line-height: 1.4;
+  transition: color 0.2s;
+}
+
+.name:hover {
+  color: #e8192c;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.reviews {
+  font-size: 11px;
+  color: #999;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #e8192c;
+}
+
+.originalPrice {
+  font-size: 13px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* Add to Cart */
+.addToCart {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  border: none;
+  height: 34px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 2px;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+.addToCart:hover {
+  background: #e8192c;
+}
+
+.addToCart.added {
+  background: #28a745;
+}

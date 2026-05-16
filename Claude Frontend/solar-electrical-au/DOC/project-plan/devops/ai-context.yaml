@@ -1,0 +1,19 @@
+version: 1
+folder: DOC/project-plan/devops
+purpose: Define deployment, monitoring, rollback, and recovery controls.
+primary_docs:
+  - DOC/project-plan/devops/README.md
+  - DOC/project-plan/devops/devops-plan.md
+required_inputs:
+  - DOC/project-plan/backend/backend-plan.md
+  - DOC/project-plan/security/security-plan.md
+  - DOC/project-plan/integrations/integrations-plan.md
+guide_sources:
+  - DOC/framework/guide/process/deployment-and-environments.md
+  - DOC/framework/guide/backend/backend-observability-and-reliability.md
+  - DOC/framework/guide/operations/security-and-operations.md
+  - DOC/framework/guide/quality/qa-and-release-gates.md
+invariants:
+  - Staging must validate all critical public-write and publish flows before production release.
+  - Rollback and provider kill switches must exist for critical integrations.
+  - Observability must be present before launch, not after incidents.

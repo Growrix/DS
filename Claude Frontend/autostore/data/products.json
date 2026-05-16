@@ -1,0 +1,481 @@
+{
+  "bestSellers": {
+    "tabs": ["WHEELS & TIRES", "OILS & FLUIDS", "CAR LIGHTS", "SMART DEVICES", "HEADLIGHTS"],
+    "products": {
+      "WHEELS & TIRES": [
+        {
+          "id": 1,
+          "name": "20X9 WHEELS FIT GMC CHEVY",
+          "price": 100,
+          "originalPrice": 135,
+          "discount": 20,
+          "rating": 5,
+          "reviews": 12,
+          "badge": "HOT",
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80",
+          "category": "wheels-tires"
+        },
+        {
+          "id": 2,
+          "name": "22.5 HOLE ALUMINUM WHEEL",
+          "price": 40,
+          "originalPrice": 55,
+          "discount": 20,
+          "rating": 5,
+          "reviews": 8,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?w=300&q=80",
+          "category": "wheels-tires"
+        },
+        {
+          "id": 3,
+          "name": "BF GOODRICH ALL-TERRAIN K0",
+          "price": 60,
+          "originalPrice": 75,
+          "discount": 20,
+          "rating": 4,
+          "reviews": 15,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=300&q=80",
+          "category": "wheels-tires"
+        },
+        {
+          "id": 4,
+          "name": "CARLISLE HD FIELD TRAX ATV TIRE",
+          "price": 190,
+          "originalPrice": 270,
+          "discount": 10,
+          "rating": 5,
+          "reviews": 6,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=300&q=80",
+          "category": "wheels-tires"
+        },
+        {
+          "id": 5,
+          "name": "CHEVY SILVERADO TAHOE GMC",
+          "price": 40,
+          "originalPrice": 39,
+          "discount": 20,
+          "rating": 4,
+          "reviews": 9,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80",
+          "category": "wheels-tires"
+        },
+        {
+          "id": 6,
+          "name": "COMP ALLOYS SERIES D5 WHEEL",
+          "price": 100,
+          "originalPrice": 144,
+          "discount": 20,
+          "rating": 5,
+          "reviews": 11,
+          "badge": "NEW",
+          "image": "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?w=300&q=80",
+          "category": "wheels-tires"
+        },
+        {
+          "id": 7,
+          "name": "HANKOOK DYNAPRO OFF-ROAD",
+          "price": 68,
+          "originalPrice": 119,
+          "discount": 30,
+          "rating": 4,
+          "reviews": 7,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=300&q=80",
+          "category": "wheels-tires"
+        },
+        {
+          "id": 8,
+          "name": "HANKOOK DYNAPRO AT-M RF10",
+          "price": 30,
+          "originalPrice": 34,
+          "discount": 10,
+          "rating": 4,
+          "reviews": 5,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=300&q=80",
+          "category": "wheels-tires"
+        }
+      ],
+      "OILS & FLUIDS": [
+        {
+          "id": 9,
+          "name": "CASTROL EDGE FULL SYNTHETIC",
+          "price": 35,
+          "originalPrice": 45,
+          "discount": 22,
+          "rating": 5,
+          "reviews": 20,
+          "badge": "HOT",
+          "image": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=300&q=80",
+          "category": "oils-fluids"
+        },
+        {
+          "id": 10,
+          "name": "MOBIL 1 5W-30 FULL SYNTHETIC",
+          "price": 28,
+          "originalPrice": 35,
+          "discount": 20,
+          "rating": 5,
+          "reviews": 14,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=300&q=80",
+          "category": "oils-fluids"
+        },
+        {
+          "id": 11,
+          "name": "VALVOLINE ADVANCED FULL SYNTHETIC",
+          "price": 22,
+          "originalPrice": 30,
+          "discount": 27,
+          "rating": 4,
+          "reviews": 9,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=300&q=80",
+          "category": "oils-fluids"
+        },
+        {
+          "id": 12,
+          "name": "ROYAL PURPLE SYNTHETIC OIL",
+          "price": 42,
+          "originalPrice": 55,
+          "discount": 24,
+          "rating": 5,
+          "reviews": 18,
+          "badge": "NEW",
+          "image": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=300&q=80",
+          "category": "oils-fluids"
+        },
+        {
+          "id": 13,
+          "name": "PENNZOIL PLATINUM EURO L 5W-40",
+          "price": 38,
+          "originalPrice": 50,
+          "discount": 24,
+          "rating": 4,
+          "reviews": 11,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=300&q=80",
+          "category": "oils-fluids"
+        },
+        {
+          "id": 14,
+          "name": "MOTORCRAFT SYNTHETIC BLEND",
+          "price": 19,
+          "originalPrice": 25,
+          "discount": 24,
+          "rating": 4,
+          "reviews": 7,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=300&q=80",
+          "category": "oils-fluids"
+        },
+        {
+          "id": 15,
+          "name": "AMSOIL SIGNATURE SERIES 0W-20",
+          "price": 55,
+          "originalPrice": 70,
+          "discount": 21,
+          "rating": 5,
+          "reviews": 22,
+          "badge": "HOT",
+          "image": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=300&q=80",
+          "category": "oils-fluids"
+        },
+        {
+          "id": 16,
+          "name": "LIQUI MOLY LEICHTLAUF HIGH TECH",
+          "price": 48,
+          "originalPrice": 60,
+          "discount": 20,
+          "rating": 5,
+          "reviews": 16,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=300&q=80",
+          "category": "oils-fluids"
+        }
+      ],
+      "CAR LIGHTS": [
+        {
+          "id": 17,
+          "name": "LED HEADLIGHT CONVERSION KIT",
+          "price": 85,
+          "originalPrice": 110,
+          "discount": 23,
+          "rating": 5,
+          "reviews": 30,
+          "badge": "HOT",
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80",
+          "category": "lights-lighting"
+        },
+        {
+          "id": 18,
+          "name": "XENON HID HEADLIGHT KIT",
+          "price": 60,
+          "originalPrice": 80,
+          "discount": 25,
+          "rating": 4,
+          "reviews": 12,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80",
+          "category": "lights-lighting"
+        },
+        {
+          "id": 19,
+          "name": "TAIL LIGHT ASSEMBLY SET",
+          "price": 120,
+          "originalPrice": 160,
+          "discount": 25,
+          "rating": 4,
+          "reviews": 8,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80",
+          "category": "lights-lighting"
+        },
+        {
+          "id": 20,
+          "name": "FOG LIGHT KIT WITH SWITCH",
+          "price": 45,
+          "originalPrice": 60,
+          "discount": 25,
+          "rating": 4,
+          "reviews": 15,
+          "badge": "NEW",
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80",
+          "category": "lights-lighting"
+        },
+        {
+          "id": 21,
+          "name": "UNDERGLOW LED STRIP LIGHTS",
+          "price": 30,
+          "originalPrice": 40,
+          "discount": 25,
+          "rating": 5,
+          "reviews": 25,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80",
+          "category": "lights-lighting"
+        },
+        {
+          "id": 22,
+          "name": "INTERIOR LED DOME LIGHT KIT",
+          "price": 15,
+          "originalPrice": 20,
+          "discount": 25,
+          "rating": 4,
+          "reviews": 19,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80",
+          "category": "lights-lighting"
+        },
+        {
+          "id": 23,
+          "name": "LED LIGHT BAR OFF-ROAD",
+          "price": 95,
+          "originalPrice": 130,
+          "discount": 27,
+          "rating": 5,
+          "reviews": 14,
+          "badge": "HOT",
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80",
+          "category": "lights-lighting"
+        },
+        {
+          "id": 24,
+          "name": "DRL DAYTIME RUNNING LIGHTS",
+          "price": 50,
+          "originalPrice": 70,
+          "discount": 29,
+          "rating": 4,
+          "reviews": 10,
+          "badge": null,
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80",
+          "category": "lights-lighting"
+        }
+      ],
+      "SMART DEVICES": [],
+      "HEADLIGHTS": []
+    }
+  },
+  "newArrivals": [
+    {
+      "id": 101,
+      "name": "CAR PRECEDENT LED HEADLIGHT",
+      "price": 86,
+      "originalPrice": null,
+      "rating": 4,
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&q=80"
+    },
+    {
+      "id": 102,
+      "name": "CAR EASY INSTALLATION FORLAND",
+      "price": 125,
+      "originalPrice": null,
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?w=200&q=80"
+    },
+    {
+      "id": 103,
+      "name": "EVOLUTION BRAKE KIT WITH DRILLED",
+      "price": 80,
+      "originalPrice": null,
+      "rating": 4,
+      "image": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=200&q=80"
+    },
+    {
+      "id": 104,
+      "name": "DISCOUNT STARTER AND ALTERNATOR",
+      "price": 98,
+      "originalPrice": null,
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1504222490345-c075b7b543b9?w=200&q=80"
+    }
+  ],
+  "bestSellersSimple": [
+    {
+      "id": 201,
+      "name": "AG30LE3 335 PROFESSIONAL",
+      "price": 85,
+      "originalPrice": null,
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=200&q=80"
+    },
+    {
+      "id": 202,
+      "name": "ROAD WARRIOR HUB PILOT",
+      "price": 190,
+      "originalPrice": null,
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=200&q=80"
+    },
+    {
+      "id": 203,
+      "name": "CAR EASY INSTALLATION FORLAND",
+      "price": 125,
+      "originalPrice": null,
+      "rating": 4,
+      "image": "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?w=200&q=80"
+    },
+    {
+      "id": 204,
+      "name": "HANKOOK DYNAPRO OFF-ROAD",
+      "price": 68,
+      "originalPrice": null,
+      "rating": 4,
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&q=80"
+    }
+  ],
+  "saleOff": [
+    {
+      "id": 301,
+      "name": "2019 WHEELS FIT GMC CHEVY",
+      "price": 90,
+      "originalPrice": 135,
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&q=80"
+    },
+    {
+      "id": 302,
+      "name": "22.5 HOLE ALUMINUM WHEEL",
+      "price": 40,
+      "originalPrice": 55,
+      "rating": 4,
+      "image": "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?w=200&q=80"
+    },
+    {
+      "id": 303,
+      "name": "BF GOODRICH ALL-TERRAIN K0",
+      "price": 60,
+      "originalPrice": 75,
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=200&q=80"
+    },
+    {
+      "id": 304,
+      "name": "CARLISLE HD FIELD TRAX ATV TIRE",
+      "price": 190,
+      "originalPrice": 270,
+      "rating": 4,
+      "image": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=200&q=80"
+    }
+  ],
+  "promoBanners": [
+    {
+      "id": 1,
+      "title": "MERCEDES BENZ AUTO PARTS",
+      "subtitle": "Special Offers",
+      "cta": "SHOP NOW",
+      "color": "#1a1a1a",
+      "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=400&q=80"
+    },
+    {
+      "id": 2,
+      "title": "AT THE LOWEST OF PRICES",
+      "subtitle": "SPECIAL OFFERS",
+      "cta": "SHOP NOW",
+      "color": "#111",
+      "image": "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=400&q=80"
+    },
+    {
+      "id": 3,
+      "title": "FERRARI BRAND AUTO PARTS",
+      "subtitle": "Sale up to 70% Off",
+      "cta": "SHOP NOW",
+      "color": "#cc0000",
+      "image": "https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=400&q=80"
+    }
+  ],
+  "dailyDeals": {
+    "tabs": ["Baby Car Seats", "Car & Motorbike Care", "Car & Vehicle Electronics"],
+    "endDate": "2026-06-30T23:59:59",
+    "products": {
+      "Baby Car Seats": [
+        {
+          "id": 401,
+          "name": "20X9 WHEELS FIT GMC CHEVY",
+          "price": 100,
+          "originalPrice": 120,
+          "discount": 17,
+          "rating": 5,
+          "reviews": 10,
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80"
+        },
+        {
+          "id": 402,
+          "name": "22.5 HOLE ALUMINUM WHEEL",
+          "price": 40,
+          "originalPrice": 65,
+          "discount": 38,
+          "rating": 5,
+          "reviews": 8,
+          "image": "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?w=300&q=80"
+        },
+        {
+          "id": 403,
+          "name": "BF GOODRICH ALL-TERRAIN K0",
+          "price": 60,
+          "originalPrice": 75,
+          "discount": 20,
+          "rating": 5,
+          "reviews": 15,
+          "image": "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=300&q=80"
+        },
+        {
+          "id": 404,
+          "name": "CARLISLE HD FIELD TRAX ATV TIRE",
+          "price": 190,
+          "originalPrice": 210,
+          "discount": 10,
+          "rating": 5,
+          "reviews": 6,
+          "image": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=300&q=80"
+        }
+      ],
+      "Car & Motorbike Care": [],
+      "Car & Vehicle Electronics": []
+    }
+  }
+}

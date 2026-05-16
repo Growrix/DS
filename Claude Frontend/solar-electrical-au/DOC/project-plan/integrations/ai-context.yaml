@@ -1,0 +1,18 @@
+version: 1
+folder: DOC/project-plan/integrations
+purpose: Define external provider ownership and operational behavior.
+primary_docs:
+  - DOC/project-plan/integrations/README.md
+  - DOC/project-plan/integrations/integrations-plan.md
+required_inputs:
+  - DOC/project-plan/backend/backend-plan.md
+  - DOC/project-plan/devops/devops-plan.md
+  - DOC/project-plan/security/security-plan.md
+guide_sources:
+  - DOC/framework/guide/backend/queue-payments-and-integrations.md
+  - DOC/framework/guide/operations/platform-governance-and-controls.md
+  - DOC/framework/guide/backend/backend-observability-and-reliability.md
+invariants:
+  - Provider callbacks and retries must be idempotent where applicable.
+  - Every integration needs an owner, environment scope, and failure path.
+  - No integration should be relied on without a fallback or manual recovery path.

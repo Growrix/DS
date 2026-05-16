@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --yellow: #f5b800;
+  --yellow-dark: #e0a800;
+  --yellow-light: #fff8e1;
+  --dark: #1a1a1a;
+  --dark-2: #111111;
+  --gray: #6b7280;
+  --gray-light: #f5f5f5;
+  --border: #e5e7eb;
+  --text: #333333;
+  --text-light: #666666;
+  --white: #ffffff;
+  --footer-bg: #1a1a1a;
+  --topbar-bg: #111111;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Open Sans", "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Raleway","Montserrat","Segoe UI",sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track { animation: marquee 25s linear infinite; display: flex; white-space: nowrap; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeInUp 0.5s ease forwards; }

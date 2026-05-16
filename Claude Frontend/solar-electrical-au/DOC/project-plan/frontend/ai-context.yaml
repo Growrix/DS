@@ -1,0 +1,28 @@
+version: 1
+folder: DOC/project-plan/frontend
+purpose: Define public site templates, page-by-page section plans, and design-system-governed frontend behavior.
+primary_docs:
+	- DOC/project-plan/frontend/README.md
+	- DOC/project-plan/frontend/frontend-plan.md
+	- DOC/project-plan/frontend/page-index.md
+required_outputs:
+	- DOC/project-plan/frontend/frontend-plan.md
+	- DOC/project-plan/frontend/page-index.md
+	- DOC/project-plan/frontend/page-*.md
+page_file_naming:
+	pattern: DOC/project-plan/frontend/page-<route-or-template>.md
+	rule: Use one page file for each core route and each reusable dynamic page template in scope.
+required_inputs:
+	- DOC/project-plan/ai-context.yaml
+	- DOC/project-plan/shared-contracts/system-blueprint.md
+	- DOC/project-plan/cms-content-operations/cms-content-operations-plan.md
+guide_sources:
+	- DOC/framework/guide/frontend/frontend-architecture.md
+	- DOC/framework/guide/frontend/frontend-rules-and-design-system.md
+	- DOC/framework/guide/frontend/frontend-performance-and-analytics.md
+	- DOC/framework/roles/frontend-ui-ux-generator.md
+invariants:
+	- The frontend cannot invent server-authoritative states or private workflows.
+	- All public forms map to documented inquiry endpoints.
+	- Public routes remain anonymous in phase 1.
+	- Frontend planning is incomplete if page-level scope is summarized only in frontend-plan.md.

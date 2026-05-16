@@ -1,0 +1,67 @@
+{
+  "name": "AutoStore",
+  "tagline": "The Best Automotive Shop",
+  "hotline": "888-943-446-000",
+  "email": "autostore@magentech.com",
+  "address": "5611 Wellington Road, Suite 115, Gainesville, VA 20155",
+  "phone": "888 9344 6000 - 888 1234 6789",
+  "hours": "7 Days a week from 10:00 am to 6:00 pm",
+  "heroSlides": [
+    {
+      "id": 1,
+      "title": "Welcome to AutoStore",
+      "subtitle": "THE BEST AUTOMOTIVE SHOP",
+      "description": "Discover the widest collection of automotive and truck parts",
+      "cta": "EXPLORE NOW",
+      "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1400&q=80"
+    },
+    {
+      "id": 2,
+      "title": "Premium Auto Parts",
+      "subtitle": "QUALITY YOU CAN TRUST",
+      "description": "Over 120,000 automotive and truck parts in stock",
+      "cta": "SHOP NOW",
+      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1400&q=80"
+    },
+    {
+      "id": 3,
+      "title": "Special Deals",
+      "subtitle": "SAVE UP TO 70% OFF",
+      "description": "Limited time offers on top automotive brands",
+      "cta": "VIEW DEALS",
+      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1400&q=80"
+    }
+  ],
+  "storeLocations": [
+    "Los Angeles - USA",
+    "New York - USA",
+    "California - USA",
+    "Bangkok - Thailand",
+    "Paris - France",
+    "London - England"
+  ],
+  "customerService": [
+    "Customer Service",
+    "Shipping & Returns",
+    "Track Your Order",
+    "Help Center",
+    "Store Location",
+    "Customer Feedback"
+  ],
+  "information": [
+    "Caps & Hats",
+    "Hoodies & Sweatshirts",
+    "Jacket & Coats",
+    "Jumpers & Cardigans",
+    "Shoes, Boots & Trainers",
+    "Underwear & Socks"
+  ],
+  "social": [
+    { "name": "Facebook", "icon": "fb", "url": "#" },
+    { "name": "Twitter", "icon": "tw", "url": "#" },
+    { "name": "Google+", "icon": "gp", "url": "#" },
+    { "name": "LinkedIn", "icon": "in", "url": "#" },
+    { "name": "Pinterest", "icon": "pi", "url": "#" },
+    { "name": "YouTube", "icon": "yt", "url": "#" }
+  ]
+}

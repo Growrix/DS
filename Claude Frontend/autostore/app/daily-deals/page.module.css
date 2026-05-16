@@ -1,0 +1,321 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background: #f8f8f8;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.breadcrumb .container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #666;
+}
+
+.breadcrumb i {
+  font-size: 10px;
+  color: #aaa;
+}
+
+.current {
+  color: #e8192c;
+  font-weight: 600;
+}
+
+/* Section */
+.section {
+  padding: 40px 0 60px;
+}
+
+.pageTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 0;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  width: fit-content;
+}
+
+.tab {
+  padding: 10px 24px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  background: #fff;
+  cursor: pointer;
+  border-right: 1px solid #ddd;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+}
+
+.tab:last-child {
+  border-right: none;
+}
+
+.tab:hover {
+  color: #e8192c;
+  background: #fff5f5;
+}
+
+.tab.tabActive {
+  background: #fff;
+  color: #333;
+  font-weight: 700;
+  box-shadow: inset 0 -2px 0 #e8192c;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Deal Card */
+.dealCard {
+  position: relative;
+  background: #fff;
+  border: 1px solid #eee;
+  transition: box-shadow 0.25s, transform 0.25s;
+  overflow: hidden;
+}
+
+.dealCard:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+.discountBadge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #e8192c;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 2px;
+  z-index: 3;
+}
+
+.cardImage {
+  display: block;
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #f8f8f8;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.dealCard:hover .cardImage img {
+  transform: scale(1.05);
+}
+
+.cardOverlay {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  background: rgba(255,255,255,0.95);
+  transition: bottom 0.25s;
+}
+
+.dealCard:hover .cardOverlay {
+  bottom: 0;
+}
+
+.overlayBtn {
+  width: 34px;
+  height: 34px;
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #555;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.overlayBtn:hover,
+.overlayBtn.wishlisted {
+  background: #e8192c;
+  border-color: #e8192c;
+  color: #fff;
+}
+
+.cardInfo {
+  padding: 14px;
+}
+
+.cardName {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+  transition: color 0.2s;
+}
+
+.cardName:hover {
+  color: #e8192c;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.reviews {
+  font-size: 11px;
+  color: #999;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #e8192c;
+}
+
+.original {
+  font-size: 13px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.addBtn {
+  width: 100%;
+  background: #e8192c;
+  color: #fff;
+  border: none;
+  height: 36px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 2px;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  margin-top: 14px;
+  font-family: inherit;
+}
+
+.addBtn:hover {
+  background: #c0141e;
+}
+
+.addBtn.added {
+  background: #28a745;
+}
+
+/* Empty */
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #aaa;
+}
+
+.empty i {
+  font-size: 48px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.empty p {
+  font-size: 15px;
+}
+
+/* Load More */
+.loadMore {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loadMoreBtn {
+  background: #e8192c;
+  color: #fff;
+  border: none;
+  padding: 12px 40px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.2s;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+
+.loadMoreBtn:hover {
+  background: #c0141e;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tab {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}

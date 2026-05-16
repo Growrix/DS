@@ -235,3 +235,32 @@ My recommendation is not to keep trying to “build the solar site” through th
 
 *** I need you to consider what I mentioned above and do another analyze and comeup with one concrete overall final plan. 
 
+
+
+
+------------------------------------------
+
+we have beed doing a lot with the DS but , not getting the expected results like I just got yesterday cloning/replicating sites with claude AI with sharing only the screenshots of the sites. And the results are amazing , perhaps it did not build all the pages , and did not copyright are rules as I did not mention in the prompt but it have replicated successfylly. They are as : 
+1. Claude Frontend\autostore 
+2. Claude Frontend\mezan-nextjs
+3. Claude Frontend\plumbing-template
+
+Now I have found a better way to build the templates and sites more easily without hasstleing with the DS. I have built another agent .github\agents\Claude_Frontend_Agent.md in order to do the same job here within this project. 
+I want a system now where this agent will build the sites as per shared screenshots and references, and each site will be saved in a separate folder "Templates" within the categorize folderizations, so that we can easily manage and reuse them for future projects. This way we can leverage the capabilities of the Claude Frontend Agent to quickly build high-quality templates and sites based on visual references, while also maintaining an organized structure for easy access and management of these assets for future use in our projects. The goal is to create a streamlined process for building and managing frontend templates that can be easily reused and adapted for different projects, ultimately enhancing our efficiency and ability to deliver high-quality websites with modern design and engaging user experience.
+
+And this is our main factory actually. we still need to make plan for the overal full build process. still need to think about the flow as wel. 
+
+So far now I am thinking :
+1. Base Foundation site first like DS we have now, but we will not have DS there. Instead we will have all the basic backends,devops and more all just except the frotned. the goal is to have a strong backend and infrastructure foundation that can support multiple frontend templates and sites without any issues. This way we can ensure that the backend is robust, scalable, and secure while also providing the necessary functionality to support the frontend requirements. The frontend can then be built separately using the Claude Frontend Agent based on the visual references and screenshots provided, allowing for more flexibility and creativity in the design and user experience of each site.
+
+But here we will not restrict or use complicated frotend architucture like the DS or any other. Here we will do the minimum clean setup for the frontend so that the claude agent will not to refactor anything. just start coding clean. we will only have the strong backend, which is production read . also all the basic integrations and devops setup in place, so that the frontend can be built and deployed without any issues. This way we can focus on building high-quality frontend templates with modern design and engaging user experience using the Claude Frontend Agent, while also ensuring that the backend is robust and can support the frontend requirements effectively.
+
+here our goal is to fast production and scaleability as well. 
+So the process will start with the cloning of the base foundation site, which will have a strong backend and infrastructure setup. Then we will use the Claude Frontend Agent to build the frontend templates and sites based on the visual references and screenshots provided. Each site will be saved in a separate folder within the "Templates" directory for easy management and reuse in future projects. This way we can quickly build high-quality frontend templates with modern design and engaging user experience while also ensuring that the backend is robust and can support the frontend requirements effectively. The overall goal is to create a streamlined process for building and managing frontend templates that can be easily reused and adapted for different projects, ultimately enhancing our efficiency and ability to deliver high-quality websites with modern design and engaging user experience.
+
+then I will share Screenshots > Full replicated website build> Exported and organized in Templates folder > Reused for building new sites with customizations as needed.
+
+We can use the same cloning process as we are doing now , but will change the output directory to "Templates" and also will have a standardized naming convention for the folders based on the site name or category. This way we can easily identify and manage the templates for different industries and services. The Claude Frontend Agent will be responsible for building the frontend templates based on the visual references provided, and each template will be saved in its respective folder within the "Templates" directory. This organized structure will allow us to quickly access and reuse the templates for future projects, making our workflow more efficient and scalable while maintaining high-quality design and user experience across all sites built using these templates.
+
+***your job*** is to understand what is my goal and what I want to achieve that mentioned above and comeup with the best organized plan as well. think with your brain. also analyze the current agentic system and workflow we have in place. One importnat note is : I want to build this new system without making any chaos in the existing systems, so I want to keep this new system separate but complementary to the existing systems. The goal is to leverage the strengths of the Claude Frontend Agent for building high-quality frontend templates based on visual references, while also maintaining a strong backend and infrastructure foundation that can support multiple frontend templates and sites without any issues. This way we can create a streamlined process for building and managing frontend templates that can be easily reused and adapted for different projects, ultimately enhancing our efficiency and ability to deliver high-quality websites with modern design and engaging user experience. So you can keep the DS separate as it is. We will work with the DS later on. 
+

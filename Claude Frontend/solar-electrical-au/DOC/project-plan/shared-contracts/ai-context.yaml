@@ -1,0 +1,17 @@
+version: 1
+folder: DOC/project-plan/shared-contracts
+purpose: Lock the system-wide blueprint before specialized planning or implementation continues.
+primary_docs:
+	- DOC/project-plan/shared-contracts/README.md
+	- DOC/project-plan/shared-contracts/system-blueprint.md
+required_inputs:
+	- DOC/project-plan/ai-context.yaml
+	- DOC/project-plan/commodity-trading-website-e2e-plan.md
+guide_sources:
+	- DOC/framework/guide/architecture/contract-first-delivery.md
+	- DOC/framework/guide/architecture/system-architecture.md
+	- DOC/framework/guide/architecture/module-boundaries.md
+invariants:
+	- No specialized role may invent routes, states, or ownership rules that conflict with the system blueprint.
+	- Public content and operational inquiry data remain separate systems of record.
+	- Phase 1 does not include a customer portal, supplier portal, or onsite transaction checkout.

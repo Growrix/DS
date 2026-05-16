@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "WHEELS & TIRES",
+    "slug": "wheels-tires",
+    "icon": "wheels",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=100&q=80"
+  },
+  {
+    "id": 2,
+    "name": "SMART DEVICES",
+    "slug": "smart-devices",
+    "icon": "smart",
+    "image": "https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=100&q=80"
+  },
+  {
+    "id": 3,
+    "name": "OILS & FLUIDS",
+    "slug": "oils-fluids",
+    "icon": "oils",
+    "image": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=100&q=80"
+  },
+  {
+    "id": 4,
+    "name": "LIGHTS & LIGHTING",
+    "slug": "lights-lighting",
+    "icon": "lights",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=100&q=80"
+  },
+  {
+    "id": 5,
+    "name": "REPLACEMENT PARTS",
+    "slug": "replacement-parts",
+    "icon": "parts",
+    "image": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=100&q=80"
+  },
+  {
+    "id": 6,
+    "name": "TOOLS & EQUIPMENT",
+    "slug": "tools-equipment",
+    "icon": "tools",
+    "image": "https://images.unsplash.com/photo-1504222490345-c075b7b543b9?w=100&q=80"
+  }
+]

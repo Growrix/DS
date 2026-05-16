@@ -1,0 +1,17 @@
+version: 1
+folder: DOC/project-plan/api-and-data
+purpose: Freeze endpoint groups, schemas, events, status models, and retention rules.
+primary_docs:
+	- DOC/project-plan/api-and-data/README.md
+	- DOC/project-plan/api-and-data/api-data-plan.md
+required_inputs:
+	- DOC/project-plan/shared-contracts/system-blueprint.md
+	- DOC/project-plan/backend/backend-plan.md
+guide_sources:
+	- DOC/framework/guide/api/api-design.md
+	- DOC/framework/guide/data/data-model.md
+	- DOC/framework/guide/process/privacy-retention-and-compliance.md
+invariants:
+	- Public APIs expose stable envelopes and never leak internal-only fields.
+	- Status models must stay aligned with shared contracts.
+	- Retention decisions must be explicit for every sensitive record type.

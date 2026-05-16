@@ -1,0 +1,24 @@
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.filled {
+  color: #f5a623;
+}
+
+.empty {
+  color: #ddd;
+}
+
+.sm i {
+  font-size: 11px;
+}
+
+.md i {
+  font-size: 14px;
+}
+
+.lg i {
+  font-size: 18px;
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "label": "HOME",
+    "href": "/",
+    "hasDropdown": true,
+    "children": [
+      { "label": "Home 1", "href": "/" },
+      { "label": "Home 2", "href": "/" },
+      { "label": "Home 3", "href": "/" }
+    ]
+  },
+  { "label": "DEALS", "href": "/daily-deals", "hasDropdown": false },
+  { "label": "UNDER $100", "href": "/under-100", "hasDropdown": false },
+  { "label": "NEW ARRIVALS", "href": "/new-arrivals", "hasDropdown": false },
+  { "label": "BLOG", "href": "/blog", "hasDropdown": false },
+  { "label": "ABOUT US", "href": "/about-us", "hasDropdown": false },
+  { "label": "CONTACT US", "href": "/contact", "hasDropdown": false }
+]
