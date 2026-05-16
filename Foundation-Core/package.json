@@ -8,9 +8,12 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
+    "test:unit": "vitest run tests/unit --coverage",
+    "test:integration": "vitest run tests/integration",
     "test": "vitest run --coverage",
     "test:watch": "vitest",
-    "verify": "npm run lint && npm run typecheck && npm run test && npm run build"
+    "smoke:runtime": "node ./scripts/runtime-smoke.mjs",
+    "verify": "npm run lint && npm run typecheck && npm run test && npm run build && npm run smoke:runtime"
   },
   "dependencies": {
     "next": "16.2.6",

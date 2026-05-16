@@ -28,7 +28,10 @@ Foundation Core is the reusable backend-first runtime for screenshot-driven fron
 - `export-manifest.md`
 
 ## Verification
-- Run `npm run verify` from `Foundation-Core/`.This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+- Run `npm run verify` from `Foundation-Core/`.
+- `npm run verify` includes lint, typecheck, unit + integration tests, build, and a managed live runtime smoke pass.
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
