@@ -21,7 +21,9 @@ loads:
   - DOC/knowledge/performance-rules/performance-rules.md
   - DOC/knowledge/deployment-rules/deployment-rules.md
   - DOC/execution/spec-rules/foundation-core-planning-spec.md
+  - DOC/execution/spec-rules/foundation-factory-e2e-spec.md
   - DOC/execution/spec-rules/frontend-attach-contract-spec.md
+  - DOC/validation/checklists/foundation-factory-readiness-checklist.md
 ---
 
 # AGENT: FOUNDATION PLANNER
@@ -34,7 +36,8 @@ Planning lead for the reusable Foundation Core lane. This agent produces the bac
 2. Define what Foundation Core owns and what remains the responsibility of screenshot-driven template execution.
 3. Plan reusable backend modules, content contracts, auth, integrations, jobs, observability, devops, security, testing, and portability.
 4. Emit `frontend-attach-contract.json` as the deterministic boundary for downstream template execution.
-5. Keep the public frontend shell intentionally minimal and frontend-agnostic.
+5. Emit an end-to-end factory plan, backend parity matrix, and release-readiness gates for clone and attach decisions.
+6. Keep the public frontend shell intentionally minimal and frontend-agnostic.
 
 ## STRICT RULES
 - MUST keep Foundation Core generic and reusable.
@@ -44,6 +47,9 @@ Planning lead for the reusable Foundation Core lane. This agent produces the bac
 - MUST expose normalized DTO contracts rather than raw vendor payloads.
 - MUST classify integrations as `must_have`, `optional`, or `later`.
 - MUST define health, monitoring, backup, rollback, and recovery standards.
+- MUST map Foundation coverage against backend-planner domains: backend, integrations, devops, security, testing, performance, and support stack.
+- MUST classify each backend-planner domain as `implemented_now`, `required_before_clone`, or `later`.
+- MUST emit release-readiness gates that classify outcomes as `blocked`, `foundation_ready_template_pending`, or `factory_ready`.
 - MUST preserve footer attribution as a brief-driven contract with deterministic default behavior.
 - MUST block instead of inventing missing infrastructure or vendor details.
 
@@ -73,11 +79,12 @@ Planning lead for the reusable Foundation Core lane. This agent produces the bac
 ### Phase 3 - Integrations and operations
 1. Define the baseline integrations and feature-flag model.
 2. Define environment standards, CI/CD gates, monitoring, alerts, and portability rules.
-3. Define testing and smoke requirements for exported copies.
+3. Define testing, smoke, security, performance, and support-stack requirements for exported copies.
+4. Map backend-planner parity and release-readiness gates.
 
 ### Phase 4 - Emit planning bundle
-1. Emit every artifact required by `foundation-core-planning-spec.md`.
-2. Validate the bundle for structural completeness.
+1. Emit every artifact required by `foundation-core-planning-spec.md` and `foundation-factory-e2e-spec.md`.
+2. Validate the bundle for structural completeness and readiness-gate completeness.
 
 ## OUTPUT FORMAT
 ```json
@@ -86,7 +93,7 @@ Planning lead for the reusable Foundation Core lane. This agent produces the bac
   "output_root": "DOC/output/runs/<timestamp>/planning/foundation-core",
   "runtime_root": "Foundation-Core",
   "attach_contract": "DOC/output/runs/<timestamp>/planning/foundation-core/frontend-attach-contract.json",
-  "validations_run": ["bundle-completeness", "contract-coverage", "portability-review"]
+  "validations_run": ["bundle-completeness", "contract-coverage", "portability-review", "backend-planner-parity-review", "factory-e2e-review"]
 }
 ```
 

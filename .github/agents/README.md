@@ -95,13 +95,13 @@ This lane is complementary. It does not replace `frontend_planner`, `frontend_de
 
 ### `foundation_planner`
 **Use when:** defining the reusable backend-first runtime that screenshot-driven templates will attach to.
-**Role:** plans `Foundation-Core/` as a standalone runtime system. Owns backend modules, content contracts, auth/session, integrations baseline, devops standards, portability rules, and `frontend-attach-contract.json`.
+**Role:** plans `Foundation-Core/` as a standalone runtime system. Owns backend modules, content contracts, auth/session, integrations baseline, devops standards, portability rules, `frontend-attach-contract.json`, the E2E factory plan, the backend parity matrix, and release-readiness gates.
 **Output root:** `DOC/output/runs/<timestamp>/planning/foundation-core/`
 **Important:** this lane stays frontend-agnostic and does not plan a public design system.
 
 ### `foundation_developer`
 **Use when:** the Foundation Core planning bundle is locked.
-**Role:** materializes `Foundation-Core/` as a standalone runtime with auth, content, forms, media, jobs, preview/admin surfaces, portability docs, and runtime validation.
+**Role:** materializes `Foundation-Core/` as a standalone runtime with auth, content, forms, media, jobs, preview/admin surfaces, portability docs, runtime validation, and a Foundation-scoped CI verification workflow.
 **Output root:** `Foundation-Core/`
 **Important:** this agent does not build template-specific public pages.
 

@@ -16,9 +16,11 @@ loads:
   - DOC/knowledge/testing-rules/testing-rules.md
   - DOC/knowledge/performance-rules/performance-rules.md
   - DOC/execution/spec-rules/foundation-core-planning-spec.md
+  - DOC/execution/spec-rules/foundation-factory-e2e-spec.md
   - DOC/execution/spec-rules/frontend-attach-contract-spec.md
   - DOC/execution/spec-templates/dev-server-checklist.template.md
   - DOC/execution/spec-templates/export-manifest.template.md
+  - DOC/validation/checklists/foundation-factory-readiness-checklist.md
 ---
 
 # AGENT: FOUNDATION DEVELOPER
@@ -31,10 +33,11 @@ Execution agent for the reusable Foundation Core runtime. It consumes the locked
 2. Scaffold and implement `Foundation-Core/` as a standalone runtime root.
 3. Implement auth, content, forms, media, jobs, events, health, monitoring, portability, and admin/preview surfaces.
 4. Emit `RUN.md`, `ENV.example`, `dev-server-checklist.md`, `export-manifest.md`, and `.audit/foundation-self-audit.md`.
-5. Emit the frontend attach contract and supporting runtime docs for screenshot-driven templates.
+5. Add a Foundation-scoped CI verification workflow under `.github/workflows/`.
+6. Emit the frontend attach contract and supporting runtime docs for screenshot-driven templates.
 
 ## STRICT RULES
-- MUST write Foundation Core runtime files only under `Foundation-Core/`.
+- MUST write Foundation Core runtime files under `Foundation-Core/` and any Foundation-scoped CI workflow under `.github/workflows/`.
 - MUST NOT modify `Templates/`, `Frontend-Master_DS/`, or `DS-Planning-Engine/` while building Foundation Core.
 - MUST NOT introduce a public design system or template-specific page implementation into Foundation Core.
 - MUST keep optional integrations non-blocking at boot.
@@ -42,6 +45,8 @@ Execution agent for the reusable Foundation Core runtime. It consumes the locked
 - MUST document runtime-root commands and recovery steps for Windows portability.
 - MUST validate from the `Foundation-Core/` root even when root shims exist.
 - MUST expose stable DTO contracts and machine-readable schema docs for downstream templates.
+- MUST keep Foundation verification aligned with the readiness checklist and release-readiness gates from planning.
+- MUST ensure CI executes the same verification command used locally for Foundation Core.
 
 ## INPUT FORMAT
 ```json
@@ -60,7 +65,8 @@ Execution agent for the reusable Foundation Core runtime. It consumes the locked
 ### Phase 1 - Validate planning bundle
 1. Verify all required planning artifacts exist.
 2. Validate `frontend-attach-contract.json` against `frontend-attach-contract-spec.md`.
-3. Block when the bundle is incomplete or structurally invalid.
+3. Validate the planning bundle against `foundation-factory-e2e-spec.md` and the readiness checklist.
+4. Block when the bundle is incomplete or structurally invalid.
 
 ### Phase 2 - Scaffold runtime
 1. Create the runtime root and baseline configs.
@@ -69,20 +75,23 @@ Execution agent for the reusable Foundation Core runtime. It consumes the locked
 
 ### Phase 3 - Wire operations
 1. Add CI/CD, smoke checks, monitoring hooks, and backup/recovery docs.
-2. Add `RUN.md`, `ENV.example`, `dev-server-checklist.md`, and `export-manifest.md`.
+2. Add a Foundation-scoped workflow under `.github/workflows/` that runs runtime-root verification.
+3. Add `RUN.md`, `ENV.example`, `dev-server-checklist.md`, and `export-manifest.md`.
 
 ### Phase 4 - Validate
-1. Run lint, typecheck, build, and smoke checks from `Foundation-Core/`.
-2. Emit `.audit/foundation-self-audit.md`.
+1. Run lint, typecheck, test, build, and smoke checks from `Foundation-Core/`.
+2. Confirm CI configuration executes the same verification command.
+3. Emit `.audit/foundation-self-audit.md`.
 
 ## OUTPUT FORMAT
 ```json
 {
   "status": "passed | failed",
   "runtime_root": "Foundation-Core",
-  "validations_run": ["lint", "typecheck", "build", "smoke", "foundation-self-audit"],
+  "validations_run": ["lint", "typecheck", "test", "build", "smoke", "ci-verify", "foundation-self-audit"],
   "attach_contract": "Foundation-Core/docs/contracts/frontend-attach-contract.json",
-  "audit_manifest": "Foundation-Core/.audit/foundation-self-audit.md"
+  "audit_manifest": "Foundation-Core/.audit/foundation-self-audit.md",
+  "ci_workflow": ".github/workflows/foundation-core-verify.yml"
 }
 ```
 
