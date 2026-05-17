@@ -1,0 +1,59 @@
+﻿Template Flow Export
+Created: 2026-05-17 15:53:53
+Source Root: F:\PROJECTS\DS
+
+Included directories:
+- Foundation-Core (excluding node_modules/.next/coverage/.git)
+- Templates/foundation-attached-starter (excluding node_modules/.next/coverage/.git)
+
+Included files:
+.github/copilot-instructions.md
+.github/agents/README.md
+.github/agents/foundation_planner.agent.md
+.github/agents/foundation_developer.agent.md
+.github/agents/template_import_attacher.agent.md
+.github/agents/template_post_import_continuation.agent.md
+.github/agents/template_deployment_operator.agent.md
+.github/workflows/foundation-core-verify.yml
+.github/workflows/foundation-factory-attached-e2e.yml
+DOC/agents/foundation_planner.agent.md
+DOC/agents/foundation_developer.agent.md
+DOC/agents/template_import_attacher.agent.md
+DOC/agents/template_post_import_continuation.agent.md
+DOC/agents/template_deployment_operator.agent.md
+DOC/core/anti-hallucination-rules.md
+DOC/core/devops-principles.md
+DOC/core/planning-principles.md
+DOC/core/quality-gates.md
+DOC/core/security-principles.md
+DOC/core/system-rules.md
+DOC/core/testing-principles.md
+DOC/execution/codegen-rules/cli-command-rules.md
+DOC/execution/codegen-rules/codegen-rules.md
+DOC/execution/codegen-rules/output-format-rules.md
+DOC/execution/spec-rules/foundation-core-planning-spec.md
+DOC/execution/spec-rules/foundation-factory-e2e-spec.md
+DOC/execution/spec-rules/frontend-attach-contract-spec.md
+DOC/execution/spec-rules/template-import-attach-execution-spec.md
+DOC/execution/spec-rules/template-post-import-continuation-spec.md
+DOC/execution/spec-rules/template-vercel-deployment-spec.md
+DOC/execution/spec-templates/dev-server-checklist.template.md
+DOC/execution/spec-templates/export-manifest.template.md
+DOC/knowledge/api-rules/api-rules.md
+DOC/knowledge/backend-rules/backend-rules.md
+DOC/knowledge/database-rules/database-rules.md
+DOC/knowledge/deployment-rules/deployment-rules.md
+DOC/knowledge/devops-rules/cicd-rules.md
+DOC/knowledge/devops-rules/devops-rules.md
+DOC/knowledge/devops-rules/monitoring-rules.md
+DOC/knowledge/frontend-rules/accessibility-rules.md
+DOC/knowledge/frontend-rules/frontend-rules.md
+DOC/knowledge/frontend-rules/motion-rules.md
+DOC/knowledge/frontend-rules/responsive-rules.md
+DOC/knowledge/performance-rules/performance-rules.md
+DOC/knowledge/security-rules/security-rules.md
+DOC/knowledge/testing-rules/testing-rules.md
+DOC/validation/checklists/foundation-factory-readiness-checklist.md
+DOC/validation/checklists/template-post-import-gap-closure-checklist.md
+DOC/validation/checklists/template-vercel-deployment-checklist.md
+DOC/validation/constraints/frontend-constraints.md
