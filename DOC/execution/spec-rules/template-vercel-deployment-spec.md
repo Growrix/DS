@@ -15,8 +15,10 @@ Define the governed deployment lane for normalized templates using Vercel as the
 
 ## Rules
 - Do not attempt deployment until local template verification is green.
+- Deployment readiness is a separate track from template-side UI wiring; it does not justify new upload UI, auth UI, or other template feature work.
 - Treat missing Vercel auth, project linkage, env secrets, or DNS/domain control as external blockers.
 - Keep deployment generic: no hardcoded client domain values in code or shared specs.
+- Keep Foundation-Core generic: only escalate Foundation changes when deployment reveals a real missing env or startup contract requirement.
 - Distinguish preview deployment checks from production deployment checks.
 - Validate Foundation attach URLs separately from public template URLs.
 - Record all deployment assumptions and outputs in `.audit/template-deployment-report.md`.
