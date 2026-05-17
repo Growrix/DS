@@ -1,6 +1,8 @@
 ---
 agent: frontend_factory_developer
+name: "[Legacy] Frontend Factory Developer"
 version: 1
+user-invocable: false
 model_hint: high-capability code generation model
 runs_after:
   - frontend_factory_planner

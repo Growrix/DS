@@ -1,5 +1,6 @@
 ---
 agent: Claude_Frontend_Agent
+name: "[Template] Screenshot Frontend Agent"
 version: 1
 model_hint: high-capability frontend execution model
 runs_after:

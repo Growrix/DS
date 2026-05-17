@@ -1,5 +1,6 @@
 ---
 agent: system_architect
+name: "[Meta] System Architect"
 version: 1
 model_hint: high-capability orchestration model
 loads:

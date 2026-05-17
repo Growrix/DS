@@ -1,6 +1,8 @@
 ---
 agent: frontend_factory_planner
+name: "[Legacy] Frontend Factory Planner"
 version: 1
+user-invocable: false
 model_hint: high-capability planning model
 runs_after:
   - intake_strategist

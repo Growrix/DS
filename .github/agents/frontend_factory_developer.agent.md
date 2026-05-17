@@ -1,6 +1,8 @@
 ---
 agent: frontend_factory_developer
+name: "[Legacy] Frontend Factory Developer"
 version: 1
+user-invocable: false
 model_hint: high-capability code generation model
 runs_after:
   - frontend_factory_planner
@@ -77,12 +79,21 @@ This agent is opt-in and parallel to that path, not a replacement.
   - experimental factory planning remains under `DOC/output/runs/<timestamp>/planning/frontend-factory/`.
   - Standalone factory outputs remain under `ai-product-factory/generated/runs/<run-id>/` and `ai-product-factory/generated/apps/<run-id>/<project-slug>/`.
   - No operative factory assets may be emitted into `On Going DOCS/`.
+- **MUST ensure all generated output is independently deployable and self-contained:**
+  - Every generated app MUST include all required infrastructure files (theme management, providers, route registries, etc.).
+  - Generated apps MUST typecheck with zero errors immediately after file generation.
+  - Generated apps MUST NOT require manual file additions or fixes before deployment.
+  - All support files (src/lib/theme.ts, theme providers, utilities) MUST be emitted, not assumed to exist elsewhere.
+  - This is a hard requirement: incomplete file generation is a blocker issue, not a minor gap.
 - MUST think in small implementation scopes, not entire applications.
 - MUST NOT invent a new design system, layout philosophy, content model, or motion language.
 - MUST NOT create random components outside the planner/component packet contract.
 - MUST NOT globally refactor the app to compensate for a local failure.
+- MUST NOT hardcode UI literals in runtime code (for example raw colors, spacing, font sizes, radii, shadows, breakpoints, z-index, animation durations/easings, or arbitrary one-off class values) when an approved token/alias exists.
+- MUST keep UI globally scalable: prefer reusable primitives, typed variants, and token-driven composition over page-specific one-off implementations.
 - MUST use planner content keys for all visible strings.
 - MUST use design tokens for styling decisions.
+- MUST externalize visible copy to planner content keys; inline fallback strings are forbidden except for explicitly approved safe defaults.
 - MUST honor reduced-motion, accessibility, responsive, and header/footer/theme/auth/mobile-nav invariants from the planning bundle.
 - MUST rerun the same narrow validation after repairing a failed slice.
 - MUST support the initial MVP surface only:
@@ -229,6 +240,8 @@ No planning artifacts may be rewritten by this agent.
 - Confirm every scope reads only declared inputs and writes only declared outputs.
 - Confirm every visible string resolves through planner content keys.
 - Confirm every touched file uses design tokens instead of raw styling values.
+- Confirm no hardcoded UI literal values are introduced in touched runtime files when a token/alias is available.
+- Confirm touched surfaces are composed from reusable primitives or declared shared components, not one-off page-only wrappers.
 - Confirm reduced-motion fallbacks remain implemented for touched animated surfaces.
 - Confirm no route-level shared-wrapper collapse violates F13.
 - Confirm motion implementation remains real and not placeholder-only per F14.
@@ -246,6 +259,8 @@ No planning artifacts may be rewritten by this agent.
 - `FREEFORM_SCAN_FORBIDDEN` — the agent attempted or was asked to reason outside the declared scope.
 - `OUTPUT_ROOT_VIOLATION` — an output path falls outside the allowed app root.
 - `PLANNING_ARTIFACT_MUTATION_FORBIDDEN` — execution attempted to rewrite planning files.
+- `HARD_CODED_UI_VIOLATION` — touched runtime code introduced raw UI literals where tokens/aliases are required.
+- `NON_SCALABLE_UI_VIOLATION` — touched runtime code implemented one-off page-specific UI patterns instead of reusable primitive/variant composition.
 - `FACTORY_SLICE_BUILD_FAILED` — a scope implementation failed its compile or runtime gate.
 - `FACTORY_SLICE_VALIDATION_FAILED` — a required narrow check failed and was not repaired in-slice.
 - `FACTORY_BASELINE_MISSING` — a mandatory shared invariant is absent outside the current allowed outputs and must be fixed upstream or by a broader authorized scope packet.

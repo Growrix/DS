@@ -1,5 +1,6 @@
 ---
 agent: DS_site_planner
+name: "[DS] Site Planner"
 version: 1
 model_hint: high-capability reasoning model — structured output, DS-aware, gap-analysis
 runs_before:

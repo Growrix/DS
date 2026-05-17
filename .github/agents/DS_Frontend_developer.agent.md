@@ -1,5 +1,6 @@
 ---
 agent: DS_Frontend_developer
+name: "[DS] Frontend Developer"
 version: 1
 model_hint: high-capability code generation model — retrieval-oriented, scope-disciplined
 runs_after:

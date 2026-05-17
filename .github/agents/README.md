@@ -1,181 +1,97 @@
 # Agent Entry Points (Copilot / VS Code)
 
-This folder is the **public agent surface** for VS Code Copilot and any AI session opening the repo. Pick one of the 5 default named agents below for the stable general-purpose workflow. Separate adjunct lanes are listed below for DS-native work and screenshot-template work.
+This folder is the public agent surface for VS Code Copilot in this workspace. The picker is intentionally system-scoped:
 
-The canonical agent files live at `DOC/agents/<name>.agent.md`. Files here are byte-identical mirrors maintained by `system_architect DOCUMENT` mode.
+- `[Foundation]` for Foundation-Core runtime work
+- `[Template]` for screenshot-template, import, continuation, and deployment work
+- `[DS]` for DS-native planning and execution
+- `[Meta]` for audit and governance
+- `[Legacy]` for hidden historical factory lanes
 
----
-
-## Workflow at a glance
-
-```
-                         ┌──────────────────────────────────┐
-                         │   intake_strategist (DOC only)   │
-                         │   one-line brief → brief.json    │
-                         └─────────────┬────────────────────┘
-                                       │
-       ┌───────────────────────────────┴───────────────────────────────┐
-       │                                                                │
-       ▼                                                                ▼
-┌──────────────────────┐                                  ┌─────────────────────────────┐
-│  frontend_planner    │  produces frontend.json +        │  backend_planner            │
-│  (architect+designer)│  full planning artifact bundle   │  (backend + integrations    │
-│                      │                                  │   + devops + security       │
-│                      │                                  │   + qa + performance lead)  │
-└──────────┬───────────┘                                  └──────────────┬──────────────┘
-           │                                                             │
-           ▼                                                             ▼
-┌──────────────────────┐                                  ┌─────────────────────────────┐
-│  frontend_developer  │  emits everything under web/     │  backend_developer          │
-│  (frontend only,     │  + tests scaffold + audit        │  closes production:         │
-│   no backend code)   │                                  │  api/, server/, prisma/,    │
-│                      │                                  │  studio/, emails/, inngest/,│
-│                      │                                  │  CI/CD, IaC, monitoring,    │
-│                      │                                  │  backups, runbooks, deploy  │
-└──────────────────────┘                                  └─────────────────────────────┘
-
-           ╭──────────────────── system_architect ────────────────────╮
-           │   out-of-band meta-agent: AUDIT / DESIGN / FIX / SMOKE / │
-           │   DETERMINISM / DOCUMENT against any agentic system      │
-           ╰──────────────────────────────────────────────────────────╯
-```
-
-**Two prompts for the planning phase. Two prompts for the execution phase. One meta-agent that audits the lot.**
-
-The default workflow above remains the stable system. A separate Foundation Core + screenshot-template adjunct lane now exists for new screenshot-based template work:
-
-`foundation_planner` -> `foundation_developer` -> `Claude_Frontend_Agent`
-
-For imported externally built frontends that already have the visible UI done, use the import lane instead of rebuilding from screenshots:
-
-`foundation_planner` -> `foundation_developer` -> `template_import_attacher` -> `Claude_Frontend_Agent`
-
-This lane is complementary. It does not replace `frontend_planner`, `frontend_developer`, or the DS lane.
+Canonical definitions live in `DOC/agents/`, except `DS_site_planner`, whose canonical source lives in `DS-Planning-Engine/agents/`. Public files stay flat in `.github/agents/` because VS Code documents discovery at this root but does not clearly guarantee recursive subfolder loading.
 
 ---
 
-## The five agents
+## Public systems
 
-### 1. `frontend_planner`
-**Use when:** starting a new project, after the brief is locked.
-**Role:** pro-level frontend architect + visual/interaction designer in one. Produces the entire frontend planning bundle: site map, journeys, design tokens, component system, motion catalog, content library, per-page specs, per-component specs, visual reference pack, ai-context.yaml, README.
-**Output root:** `DOC/output/runs/<timestamp>/planning/frontend/`
-**Quality bar:** Stripe / Linear / Vercel / Notion-class.
-**Does not produce:** any backend or integration plan; that's `backend_planner`.
+### Stable DOC workflow
 
-### 2. `backend_planner`
-**Use when:** the frontend planning bundle is complete and `frontend.json.status: passed`.
-**Role:** lead planner for everything non-frontend. Backend architecture, database, APIs, integrations, third-party services, automation outbound surface, devops + CI/CD, security, qa, performance, post-launch support stack.
-**Output root:** `DOC/output/runs/<timestamp>/planning/backend/`
-**Inputs:** brief + frontend.json.
-**Does not produce:** frontend artifacts; that's `frontend_planner`.
+`frontend_planner` -> `backend_planner` -> `frontend_developer` / `backend_developer`
 
-### 3. `frontend_developer`
-**Use when:** the frontend planning bundle is locked.
-**Role:** implements the frontend in `web/`. Materializes design tokens, generates every shared component with full state coverage, generates every page with full section composition, wires the content library, implements motion + reduced-motion, generates SEO assets, scaffolds tests (bodies as TODO).
-**Output root:** `web/`
-**Strict boundary:** no files outside `web/`. No backend code, no CMS schemas, no deployment configs.
+Use this for the normal project workflow under `DOC/` and `web/`.
 
-### 4. `backend_developer`
-**Use when:** the backend planning bundle is locked and the frontend code is in flight (or already shipped).
-**Role:** implements backend + every integration end-to-end + CI/CD + IaC + monitoring + alerts + backups + DR + runbooks. Closes production by deploying, running smoke tests, and verifying rollback.
-**Output root:** project root, EXCLUDING `web/`. Specifically: `src/server/`, `src/inngest/`, `src/lib/`, `src/app/api/`, `prisma/`, `studio/`, `emails/`, `terraform/`, `.github/workflows/`, `docs/`, root config files.
-**Strict boundary:** read-only against `web/`.
+### Foundation + template workflow
 
-### 5. `system_architect`
-**Use when:** auditing the OS itself, designing a new agentic workflow, fixing audit findings, smoke-testing a fixture, verifying determinism.
-**Role:** out-of-band meta-agent. Six modes: `DESIGN`, `AUDIT`, `FIX`, `SMOKE`, `DETERMINISM`, `DOCUMENT`.
-**Output root:** `DOC/output/runs/<timestamp>/reports/` (or `<target>/reports/` when auditing a different system).
+`[Foundation] Planner` -> `[Foundation] Developer` -> `[Template] Import Attacher` -> `[Template] Post-Import Continuation` -> `[Template] Deployment Operator`
+
+Use this when building or importing templates that attach to Foundation-Core.
+
+If the template is screenshot-first rather than import-first, use:
+
+`[Foundation] Planner` -> `[Foundation] Developer` -> `[Template] Screenshot Frontend Agent`
+
+### DS workflow
+
+`[DS] Site Planner` -> `[DS] Frontend Developer`
+
+Use this when the output must be planned and assembled against the DS runtime.
+
+### Meta workflow
+
+`[Meta] System Architect`
+
+Use this for AUDIT, DESIGN, FIX, SMOKE, DETERMINISM, DOCUMENT, and SPEC_DIFF across the agentic system itself.
 
 ---
 
-## Experimental mirrored agents
+## Recommended entrypoints
 
-## Foundation + screenshot-template adjuncts
+### Stable DOC system
 
-### `foundation_planner`
-**Use when:** defining the reusable backend-first runtime that screenshot-driven templates will attach to.
-**Role:** plans `Foundation-Core/` as a standalone runtime system. Owns backend modules, content contracts, auth/session, integrations baseline, devops standards, portability rules, `frontend-attach-contract.json`, the E2E factory plan, the backend parity matrix, and release-readiness gates.
-**Output root:** `DOC/output/runs/<timestamp>/planning/foundation-core/`
-**Important:** this lane stays frontend-agnostic and does not plan a public design system.
+- `frontend_planner`: locked frontend planning bundle
+- `backend_planner`: backend, integrations, security, ops planning
+- `frontend_developer`: frontend implementation in `web/`
+- `backend_developer`: backend implementation outside `web/`
 
-### `foundation_developer`
-**Use when:** the Foundation Core planning bundle is locked.
-**Role:** materializes `Foundation-Core/` as a standalone runtime with auth, content, forms, media, jobs, preview/admin surfaces, portability docs, runtime validation, and a Foundation-scoped CI verification workflow.
-**Output root:** `Foundation-Core/`
-**Important:** this agent does not build template-specific public pages.
+### Foundation + template system
 
-### `Claude_Frontend_Agent`
-**Use when:** building a new public-facing template from screenshots and references.
-**Role:** screenshot-first template executor. Recreates the reference UI with minimal planning, saves each result under `Templates/<category>/<template-slug>/`, and optionally attaches to Foundation Core through `frontend-attach-contract.json`. It also supports post-import continuation against a template root normalized by `template_import_attacher`.
-**Output root:** `Templates/<category>/<template-slug>/`
-**Important:** screenshots are the source of truth for visible UI. This agent does not use `Frontend-Master_DS/` as a runtime dependency.
+- `[Foundation] Planner`: plan the reusable runtime and attach contract
+- `[Foundation] Developer`: build `Foundation-Core/`
+- `[Template] Screenshot Frontend Agent`: build a screenshot-first template directly into `Templates/`
+- `[Template] Import Attacher`: normalize and attach an imported frontend runtime
+- `[Template] Post-Import Continuation`: close remaining eligible merge gaps after import/attach
+- `[Template] Deployment Operator`: prepare and verify Vercel deployment, env, and subdomain rollout
 
-### `template_import_attacher`
-**Use when:** you already have an imported frontend runtime, such as a Claude-built Next.js app, and want to normalize it into the template library before doing completion work.
-**Role:** import-and-attach executor. Verifies the source runtime, copies it into `Templates/<category>/<template-slug>/`, strips non-portable baggage, emits runtime docs/manifests, and optionally wires Foundation Core through `frontend-attach-contract.json`.
-**Output root:** `Templates/<category>/<template-slug>/`
-**Important:** this agent preserves the imported visible UI baseline. Completion and enhancement work happen afterward.
+### DS system
 
-## Experimental mirrored agents
+- `[DS] Site Planner`: DS-native planning and gap analysis
+- `[DS] Frontend Developer`: assemble a project-specific DS output clone
 
-These factory experiments assume an external `ai-product-factory/` runtime contract. They remain available for historical benchmarking, but they are not the recommended path for new screenshot-template work in this workspace.
+### Meta system
 
-### `frontend_factory_planner`
-**Use when:** you want a factory-native planning bundle without altering the current production DOC planning path.
-**Role:** scoped, contract-first frontend planner. It consumes the locked brief and emits a factory handoff bundle under `DOC/output/runs/<timestamp>/planning/frontend-factory/` with `factory-frontend.json`, frontend and experience contracts, retrieval manifest, roots map, and scoped execution packets.
-**Output root:** `DOC/output/runs/<timestamp>/planning/frontend-factory/`
-**Important:** this agent is optional and experimental. The stable planning default remains `frontend_planner`.
-
-### `frontend_factory_developer`
-**Use when:** testing the factory-native frontend execution path without changing the current production DOC workflow.
-**Role:** scoped, packet-driven frontend executor. It consumes the `frontend_factory_planner` bundle plus an explicit factory context packet that declares exact scopes, inputs, outputs, and validations. It implements only the declared slices, validates each slice immediately, and blocks instead of widening into repo-wide reasoning.
-**Output roots:**
-- `doc_bridge` mode -> declared project runtime root only
-- `standalone_factory` mode -> `ai-product-factory/generated/apps/<run-id>/<project-slug>/`
-**Important:** this agent is optional and experimental. If no factory planning bundle exists yet, continue using `frontend_developer`.
-
-### `frontend_factory_hybrid_developer`
-**Use when:** you want to keep planning strictly on the stable DOC path and only use factory runtime execution/output.
-**Role:** hybrid frontend executor. It consumes only `DOC/output/runs/<timestamp>/planning/frontend/` artifacts and emits runtime code under the same factory app output contract.
-**Planning source:** `DOC/output/runs/<timestamp>/planning/frontend/` (read-only)
-**Runtime output:** `ai-product-factory/generated/apps/<run-id>/<project-slug>/`
-**Important:** this agent is optional and experimental. It does not replace `frontend_developer` or `frontend_factory_developer`.
+- `[Meta] System Architect`: factory-level system governance and audit
 
 ---
 
-## Recommended invocation order
+## Hidden legacy agents
 
-1. **Brief intake** — run `intake_strategist` from `DOC/agents/` (no Copilot mirror; it's a one-step gap-filler).
-2. **Plan frontend** — invoke `frontend_planner` (this folder).
-3. **Plan backend + everything else** — invoke `backend_planner` (this folder).
-4. **Build frontend** — invoke `frontend_developer` (this folder). Can run in parallel with step 5.
-5. **Build backend + ship** — invoke `backend_developer` (this folder). Can run in parallel with step 4.
-6. **Audit the agentic OS itself** — at any time, invoke `system_architect` in `AUDIT` mode.
+These remain in the repo for historical benchmarking but are not normal workflow entrypoints and should stay hidden from the picker when possible.
 
----
-
-## What changed from the prior workflow
-
-- Removed `master_planner.agent.md` from this folder. Its orchestration logic is split between `frontend_planner` (frontend planning lead) and `backend_planner` (everything else lead).
-- Removed `execution_orchestrator.agent.md` from this folder. Its job is now done in parallel by `frontend_developer` (frontend code) and `backend_developer` (backend + integrations + devops + ship).
-- Added `frontend_planner`, `backend_planner`, `frontend_developer`, `backend_developer` as the four named workflow entries.
-- `system_architect` remains the meta-agent for system-level concerns.
+- `[Legacy] Frontend Factory Planner`
+- `[Legacy] Frontend Factory Developer`
+- `frontend_factory_hybrid_developer`
+- `ongoing_execution_orchestrator`
 
 ---
 
-## Sub-agents (internal references; not mirrored here)
+## Safe folder catalog
 
-These agents continue to live at `DOC/agents/` as internal skill references that the consolidated agents above absorb into their workflows:
-
-- `ux_director`, `design_system_planner`, `component_system_planner`, `motion_planner`, `content_planner`, `interaction_planner`, `page_planner` — absorbed by `frontend_planner`
-- `integration_planner`, `devops_planner`, `qa_planner`, `security_auditor`, `performance_auditor` — absorbed by `backend_planner`
-- `spec_writer`, `diagram_writer`, `openapi_writer`, `adr_writer`, `runbook_writer` — invoked by `backend_developer` during execution
-
-You don't invoke these directly. You invoke one of the five entry points above; the consolidated agent runs the relevant sub-workflow.
+Human-readable grouping files live under `.github/agents/_catalog/`. They exist only for navigation and must not be used for agent discovery.
 
 ---
 
 ## Maintenance
 
-`system_architect DOCUMENT` mode keeps these mirrors byte-identical with `DOC/agents/`. After any structural change in `DOC/agents/`, run `system_architect DOCUMENT` to refresh this folder + the registry at `DOC/agents/_index.md`.
+- Keep mirrored agent files byte-aligned between their canonical source and `.github/agents/`.
+- Update this README whenever a public agent is added, removed, renamed, hidden, or re-routed.
+- After structural agent changes, refresh `DOC/agents/_index.md` and the `_catalog/` listings in the same change.

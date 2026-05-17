@@ -8,7 +8,7 @@ tools:
   - edit
   - execute
   - todo
-user-invocable: true
+user-invocable: false
 ---
 
 # AGENT: ONGOING EXECUTION ORCHESTRATOR

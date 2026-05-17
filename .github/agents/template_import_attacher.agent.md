@@ -1,5 +1,6 @@
 ---
 agent: template_import_attacher
+name: "[Template] Import Attacher"
 version: 1
 model_hint: high-capability frontend execution model
 runs_after:
@@ -20,6 +21,11 @@ loads:
   - DOC/execution/spec-rules/frontend-attach-contract-spec.md
   - DOC/execution/spec-templates/dev-server-checklist.template.md
   - DOC/execution/spec-templates/export-manifest.template.md
+handoffs:
+  - label: Close Remaining Wiring Gaps
+    agent: "[Template] Post-Import Continuation"
+    prompt: Continue from the normalized template root, audit unresolved merge gaps, close eligible frontend/backend wiring gaps, and refresh validation evidence.
+    send: false
 ---
 
 # AGENT: TEMPLATE IMPORT ATTACHER

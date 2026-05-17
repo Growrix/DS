@@ -1,5 +1,6 @@
 ---
 agent: foundation_developer
+name: "[Foundation] Developer"
 version: 1
 model_hint: high-capability code generation model
 runs_after:

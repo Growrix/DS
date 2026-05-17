@@ -1,5 +1,6 @@
 ---
 agent: foundation_planner
+name: "[Foundation] Planner"
 version: 1
 model_hint: high-capability planning model
 loads:
