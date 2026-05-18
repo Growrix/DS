@@ -1,0 +1,6 @@
+Screenshot-first frontend system
+
+Phase 1 Site Replication Agent
+Phase 2 Frontend Planning Agent
+Phase 2 Frontend Completion Agent
+Phase 3 Frontend Polish Agent

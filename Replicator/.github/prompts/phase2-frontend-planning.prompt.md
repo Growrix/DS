@@ -1,7 +1,7 @@
 ---
-description: "Run a post-replication frontend audit using Frontend Audit Planner Agent and produce a ranked phase-2 backlog covering rebrand, missing flows, and route/state coverage gaps without implementing fixes yet."
+description: "Run a post-replication frontend audit using Phase 2 Frontend Planning Agent and produce a ranked phase-2 backlog covering rebrand, missing flows, and route/state coverage gaps without implementing fixes yet."
 ---
-Use Frontend Audit Planner Agent.
+Use Phase 2 Frontend Planning Agent.
 
 ## Inputs
 - Project folder: ${input:project_folder}

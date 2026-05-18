@@ -2,6 +2,7 @@
 
 This folder is the public agent surface for VS Code Copilot in this workspace. The picker is intentionally system-scoped:
 
+- `Phase 1-3` for screenshot-first frontend replication, completion, and polish
 - `[Foundation]` for Foundation-Core runtime work
 - `[Template]` for screenshot-template, import, continuation, and deployment work
 - `[DS]` for DS-native planning and execution
@@ -14,11 +15,17 @@ Canonical definitions live in `DOC/agents/`, except `DS_site_planner`, whose can
 
 ## Public systems
 
+### Screenshot-First Frontend workflow
+
+`Phase 1 Site Replication Agent` -> `Phase 2 Frontend Planning Agent` -> `Phase 2 Frontend Completion Agent` -> `Phase 3 Frontend Polish Agent`
+
+Use this as the default frontend lane when the source of truth is screenshot packs, reference captures, or an existing site's visual shell. This lane owns visual replication, rebrand, missing route/state completion, and final presentation polish for projects built under `FRONTEND DEV/`.
+
 ### Stable DOC workflow
 
 `frontend_planner` -> `backend_planner` -> `frontend_developer` / `backend_developer`
 
-Use this for the normal project workflow under `DOC/` and `web/`.
+Use this for the normal brief-first project workflow under `DOC/` and `web/`.
 
 ### Foundation + template workflow
 
@@ -53,11 +60,18 @@ Use this for AUDIT, DESIGN, FIX, SMOKE, DETERMINISM, DOCUMENT, and SPEC_DIFF acr
 - `frontend_developer`: frontend implementation in `web/`
 - `backend_developer`: backend implementation outside `web/`
 
+### Screenshot-first frontend system
+
+- `Phase 1 Site Replication Agent`: rebuild a site from screenshots into `FRONTEND DEV/<project>/`
+- `Phase 2 Frontend Planning Agent`: audit the replicated shell and produce the route/state/rebrand backlog
+- `Phase 2 Frontend Completion Agent`: implement the missing routes, flows, and owned branding without restarting the replica
+- `Phase 3 Frontend Polish Agent`: finish motion, accessibility, responsive tuning, and presentation cleanup after phase-2 truthfulness is complete
+
 ### Foundation + template system
 
 - `[Foundation] Planner`: plan the reusable runtime and attach contract
 - `[Foundation] Developer`: build `Foundation-Core/`
-- `[Template] Screenshot Frontend Agent`: build a screenshot-first template directly into `Templates/`
+- `[Template] Screenshot Frontend Agent`: build a screenshot-first template directly into `Templates/` when you are intentionally entering the Foundation/template lane
 - `[Template] Import Attacher`: normalize and attach an imported frontend runtime
 - `[Template] Post-Import Continuation`: close remaining eligible merge gaps after import/attach
 - `[Template] Deployment Operator`: prepare and verify Vercel deployment, env, and subdomain rollout
@@ -70,6 +84,15 @@ Use this for AUDIT, DESIGN, FIX, SMOKE, DETERMINISM, DOCUMENT, and SPEC_DIFF acr
 ### Meta system
 
 - `[Meta] System Architect`: factory-level system governance and audit
+
+---
+
+## Current boundaries
+
+- The screenshot-first frontend lane is the default path for screenshot-driven visual work.
+- `frontend_planner` remains the canonical producer for the frontend planning bundle consumed by `backend_planner`.
+- A dedicated screenshot-to-DOC bridge is not yet formalized, so do not assume phase 1-3 outputs can be fed directly into `backend_planner` without a translation step.
+- `Replicator/` remains an imported isolated bundle and reference package; the root `.github/agents` folder is the authoritative daily picker surface for this repo.
 
 ---
 

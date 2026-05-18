@@ -1,9 +1,9 @@
 ---
 description: "Kick off post-replication phase-2 work by planning rebrand and missing frontend completion first, then executing the completion pass, and handing off optional presentation polish to phase 3 only after core frontend work is done."
 ---
-Use Frontend Audit Planner Agent first for this project.
+Use Phase 2 Frontend Planning Agent first for this project.
 
-After the audit backlog is complete, use Frontend Finishing Agent to execute the phase-2 fixes.
+After the audit backlog is complete, use Phase 2 Frontend Completion Agent to execute the phase-2 fixes.
 
 If the project is frontend-complete and only presentation polish remains, finish with Frontend Polish Agent.
 
