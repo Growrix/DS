@@ -1,0 +1,1070 @@
+﻿.github/agents/_catalog/doc-system.txt
+.github/agents/_catalog/ds-system.txt
+.github/agents/_catalog/foundation-template-system.txt
+.github/agents/_catalog/meta-and-legacy.txt
+.github/agents/_catalog/README.txt
+.github/agents/backend_developer.agent.md
+.github/agents/backend_planner.agent.md
+.github/agents/Claude_Frontend_Agent.md
+.github/agents/DS_Frontend_developer.agent.md
+.github/agents/DS_site_planner.agent.md
+.github/agents/foundation_developer.agent.md
+.github/agents/foundation_planner.agent.md
+.github/agents/frontend_developer.agent.md
+.github/agents/frontend_factory_developer.agent.md
+.github/agents/frontend_factory_hybrid_developer.agent.md
+.github/agents/frontend_factory_planner.agent.md
+.github/agents/frontend_planner.agent.md
+.github/agents/ongoing_execution_orchestrator.agent.md
+.github/agents/README.md
+.github/agents/system_architect.agent.md
+.github/agents/template_deployment_operator.agent.md
+.github/agents/template_import_attacher.agent.md
+.github/agents/template_post_import_continuation.agent.md
+.github/copilot-instructions.md
+.github/workflows/agentic-audit.yml
+.github/workflows/foundation-core-verify.yml
+.github/workflows/foundation-factory-attached-e2e.yml
+ChatGPT Frontend/wega-next/README.md
+Claude Frontend/autostore/README.md
+Claude Frontend/mezan/README.md
+Claude Frontend/mezan-nextjs/mezan/AGENTS.md
+Claude Frontend/mezan-nextjs/mezan/README.md
+Claude Frontend/nexbuild/README.md
+Claude Frontend/optilux/AGENTS.md
+Claude Frontend/optilux/README.md
+Claude Frontend/plumbing-template/.claude/agents/e2e-planning-architect.md
+Claude Frontend/plumbing-template/.claude/agents/enterprise-testing-quality-enforcer.md
+Claude Frontend/plumbing-template/.claude/agents/strict-executor.md
+Claude Frontend/plumbing-template/.github/agents/e2e-planning-architect.agent.md
+Claude Frontend/plumbing-template/.github/agents/enterprise-testing-quality-enforcement-v2.agent.md
+Claude Frontend/plumbing-template/.github/agents/strict-executor.agent.md
+Claude Frontend/plumbing-template/.github/workflows/ci.yml
+Claude Frontend/plumbing-template/.venv/Lib/site-packages/pip/_vendor/README.rst
+Claude Frontend/plumbing-template/DOC/framework/guide/ai/ai-collaboration-playbook.md
+Claude Frontend/plumbing-template/DOC/framework/guide/ai/ai-context.yaml
+Claude Frontend/plumbing-template/DOC/framework/guide/api/api-design.md
+Claude Frontend/plumbing-template/DOC/framework/guide/architecture/contract-first-delivery.md
+Claude Frontend/plumbing-template/DOC/framework/guide/architecture/module-boundaries.md
+Claude Frontend/plumbing-template/DOC/framework/guide/architecture/system-architecture.md
+Claude Frontend/plumbing-template/DOC/framework/guide/backend/auth-authorization-and-rls.md
+Claude Frontend/plumbing-template/DOC/framework/guide/backend/backend-architecture.md
+Claude Frontend/plumbing-template/DOC/framework/guide/backend/backend-observability-and-reliability.md
+Claude Frontend/plumbing-template/DOC/framework/guide/backend/file-delivery-and-storage.md
+Claude Frontend/plumbing-template/DOC/framework/guide/backend/queue-payments-and-integrations.md
+Claude Frontend/plumbing-template/DOC/framework/guide/backend/service-design-and-domain-rules.md
+Claude Frontend/plumbing-template/DOC/framework/guide/data/data-model.md
+Claude Frontend/plumbing-template/DOC/framework/guide/engineering/delivery-roadmap.md
+Claude Frontend/plumbing-template/DOC/framework/guide/engineering/development-standards.md
+Claude Frontend/plumbing-template/DOC/framework/guide/frontend/accessibility-and-localization.md
+Claude Frontend/plumbing-template/DOC/framework/guide/frontend/component-and-styling-standards.md
+Claude Frontend/plumbing-template/DOC/framework/guide/frontend/data-fetching-and-state.md
+Claude Frontend/plumbing-template/DOC/framework/guide/frontend/frontend-architecture.md
+Claude Frontend/plumbing-template/DOC/framework/guide/frontend/frontend-performance-and-analytics.md
+Claude Frontend/plumbing-template/DOC/framework/guide/frontend/frontend-rules-and-design-system.md
+Claude Frontend/plumbing-template/DOC/framework/guide/frontend/realtime-chat-and-client-resilience.md
+Claude Frontend/plumbing-template/DOC/framework/guide/frontend/ui-ux-standards.md
+Claude Frontend/plumbing-template/DOC/framework/guide/operations/platform-governance-and-controls.md
+Claude Frontend/plumbing-template/DOC/framework/guide/operations/security-and-operations.md
+Claude Frontend/plumbing-template/DOC/framework/guide/process/change-management.md
+Claude Frontend/plumbing-template/DOC/framework/guide/process/contribution-guide.md
+Claude Frontend/plumbing-template/DOC/framework/guide/process/deployment-and-environments.md
+Claude Frontend/plumbing-template/DOC/framework/guide/process/incident-response.md
+Claude Frontend/plumbing-template/DOC/framework/guide/process/onboarding-playbook.md
+Claude Frontend/plumbing-template/DOC/framework/guide/process/privacy-retention-and-compliance.md
+Claude Frontend/plumbing-template/DOC/framework/guide/product/product-requirements.md
+Claude Frontend/plumbing-template/DOC/framework/guide/quality/enterprise-testing-and-quality-enforcement-v2.md
+Claude Frontend/plumbing-template/DOC/framework/guide/quality/qa-and-release-gates.md
+Claude Frontend/plumbing-template/DOC/framework/guide/quality/testing-strategy.md
+Claude Frontend/plumbing-template/DOC/framework/guide/README.md
+Claude Frontend/plumbing-template/DOC/framework/prompts/README.md
+Claude Frontend/plumbing-template/DOC/framework/roles/api-data-contract-architect.md
+Claude Frontend/plumbing-template/DOC/framework/roles/documentation-workflow-playbook.md
+Claude Frontend/plumbing-template/DOC/framework/roles/fullstack-contract-orchestrator.md
+Claude Frontend/plumbing-template/DOC/framework/roles/README.md
+Claude Frontend/plumbing-template/DOC/live-deployment-guide.md
+Claude Frontend/plumbing-template/DOC/production-deployment-guide.md
+Claude Frontend/plumbing-template/DOC/project-plan/api-and-data/README.md
+Claude Frontend/plumbing-template/DOC/project-plan/backend/README.md
+Claude Frontend/plumbing-template/DOC/project-plan/devops/README.md
+Claude Frontend/plumbing-template/DOC/project-plan/frontend/README.md
+Claude Frontend/plumbing-template/DOC/project-plan/qa/README.md
+Claude Frontend/plumbing-template/DOC/project-plan/README.md
+Claude Frontend/plumbing-template/DOC/project-plan/security/README.md
+Claude Frontend/plumbing-template/DOC/project-plan/shared-contracts/ai-context.yaml
+Claude Frontend/plumbing-template/DOC/project-plan/shared-contracts/README.md
+Claude Frontend/plumbing-template/DOC/sanity-setup-guide-bn.md
+Claude Frontend/plumbing-template/README.md
+Claude Frontend/solar-electrical-au/.github/agents/e2e-planning-architect.agent.md
+Claude Frontend/solar-electrical-au/.github/agents/enterprise-testing-quality-enforcement-v2.agent.md
+Claude Frontend/solar-electrical-au/.github/agents/strict-executor.agent.md
+Claude Frontend/solar-electrical-au/.github/workflows/ci.yml
+Claude Frontend/solar-electrical-au/DOC/framework/guide/ai/ai-collaboration-playbook.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/ai/ai-context.yaml
+Claude Frontend/solar-electrical-au/DOC/framework/guide/api/api-design.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/architecture/contract-first-delivery.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/architecture/module-boundaries.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/architecture/system-architecture.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/backend/auth-authorization-and-rls.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/backend/backend-architecture.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/backend/backend-observability-and-reliability.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/backend/file-delivery-and-storage.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/backend/queue-payments-and-integrations.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/backend/service-design-and-domain-rules.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/data/data-model.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/engineering/delivery-roadmap.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/engineering/development-standards.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/frontend/accessibility-and-localization.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/frontend/component-and-styling-standards.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/frontend/data-fetching-and-state.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/frontend/frontend-architecture.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/frontend/frontend-performance-and-analytics.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/frontend/frontend-rules-and-design-system.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/frontend/realtime-chat-and-client-resilience.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/frontend/ui-ux-standards.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/operations/platform-governance-and-controls.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/operations/security-and-operations.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/process/change-management.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/process/contribution-guide.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/process/deployment-and-environments.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/process/incident-response.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/process/onboarding-playbook.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/process/privacy-retention-and-compliance.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/product/product-requirements.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/quality/enterprise-testing-and-quality-enforcement-v2.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/quality/qa-and-release-gates.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/quality/testing-strategy.md
+Claude Frontend/solar-electrical-au/DOC/framework/guide/README.md
+Claude Frontend/solar-electrical-au/DOC/framework/prompts/README.md
+Claude Frontend/solar-electrical-au/DOC/framework/roles/api-data-contract-architect.md
+Claude Frontend/solar-electrical-au/DOC/framework/roles/documentation-workflow-playbook.md
+Claude Frontend/solar-electrical-au/DOC/framework/roles/fullstack-contract-orchestrator.md
+Claude Frontend/solar-electrical-au/DOC/framework/roles/README.md
+Claude Frontend/solar-electrical-au/DOC/live-deployment-guide.md
+Claude Frontend/solar-electrical-au/DOC/production-deployment-guide.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/admin-dashboard/README.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/analytics/README.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/api-and-data/README.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/backend/README.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/cms-content-operations/README.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/devops/README.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/frontend/README.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/integrations/README.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/qa/README.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/README.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/search/README.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/security/README.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/shared-contracts/ai-context.yaml
+Claude Frontend/solar-electrical-au/DOC/project-plan/shared-contracts/README.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/shared-contracts/system-blueprint.md
+Claude Frontend/solar-electrical-au/DOC/project-plan/supabase/README.md
+Claude Frontend/solar-electrical-au/DOC/sanity-setup-guide-bn.md
+Claude Frontend/solar-electrical-au/README.md
+DOC/agents/_index.md
+DOC/agents/adr_writer.agent.md
+DOC/agents/backend_developer.agent.md
+DOC/agents/backend_planner.agent.md
+DOC/agents/Claude_Frontend_Agent.agent.md
+DOC/agents/component_system_planner.agent.md
+DOC/agents/content_planner.agent.md
+DOC/agents/design_system_planner.agent.md
+DOC/agents/devops_planner.agent.md
+DOC/agents/diagram_writer.agent.md
+DOC/agents/DS_Frontend_developer.agent.md
+DOC/agents/execution_orchestrator.agent.md
+DOC/agents/foundation_developer.agent.md
+DOC/agents/foundation_planner.agent.md
+DOC/agents/frontend_developer.agent.md
+DOC/agents/frontend_factory_developer.agent.md
+DOC/agents/frontend_factory_hybrid_developer.agent.md
+DOC/agents/frontend_factory_planner.agent.md
+DOC/agents/frontend_planner.agent.md
+DOC/agents/intake_strategist.agent.md
+DOC/agents/integration_planner.agent.md
+DOC/agents/interaction_planner.agent.md
+DOC/agents/master_planner.agent.md
+DOC/agents/motion_planner.agent.md
+DOC/agents/openapi_writer.agent.md
+DOC/agents/page_planner.agent.md
+DOC/agents/performance_auditor.agent.md
+DOC/agents/qa_planner.agent.md
+DOC/agents/reviewer.agent.md
+DOC/agents/runbook_writer.agent.md
+DOC/agents/security_auditor.agent.md
+DOC/agents/spec_writer.agent.md
+DOC/agents/system_architect.agent.md
+DOC/agents/template_deployment_operator.agent.md
+DOC/agents/template_import_attacher.agent.md
+DOC/agents/template_post_import_continuation.agent.md
+DOC/agents/ux_director.agent.md
+DOC/core/anti-hallucination-rules.md
+DOC/core/system-rules.md
+DOC/execution/codegen-rules/cli-command-rules.md
+DOC/execution/codegen-rules/codegen-rules.md
+DOC/execution/codegen-rules/output-format-rules.md
+DOC/execution/spec-rules/adr-rules.md
+DOC/execution/spec-rules/component-system-spec.md
+DOC/execution/spec-rules/content-library-spec.md
+DOC/execution/spec-rules/design-system-spec.md
+DOC/execution/spec-rules/devops-system-spec.md
+DOC/execution/spec-rules/er-diagram-rules.md
+DOC/execution/spec-rules/foundation-core-planning-spec.md
+DOC/execution/spec-rules/foundation-factory-e2e-spec.md
+DOC/execution/spec-rules/frontend-attach-contract-spec.md
+DOC/execution/spec-rules/frontend-execution-contract-spec.md
+DOC/execution/spec-rules/master-ui-architecture-spec.md
+DOC/execution/spec-rules/motion-system-spec.md
+DOC/execution/spec-rules/openapi-rules.md
+DOC/execution/spec-rules/per-component-spec.md
+DOC/execution/spec-rules/per-feature-spec.md
+DOC/execution/spec-rules/performance-system-spec.md
+DOC/execution/spec-rules/per-integration-spec.md
+DOC/execution/spec-rules/per-page-spec.frontend-focus.md
+DOC/execution/spec-rules/per-page-spec.md
+DOC/execution/spec-rules/per-route-spec.md
+DOC/execution/spec-rules/qa-system-spec.md
+DOC/execution/spec-rules/runbook-rules.md
+DOC/execution/spec-rules/screenshot-template-execution-spec.md
+DOC/execution/spec-rules/security-system-spec.md
+DOC/execution/spec-rules/sequence-diagram-rules.md
+DOC/execution/spec-rules/site-inventory-spec.md
+DOC/execution/spec-rules/template-import-attach-execution-spec.md
+DOC/execution/spec-rules/template-post-import-continuation-spec.md
+DOC/execution/spec-rules/template-vercel-deployment-spec.md
+DOC/execution/spec-rules/visual-differentiation-map-spec.md
+DOC/execution/spec-templates/adr-spec.template.md
+DOC/execution/spec-templates/api-spec.template.md
+DOC/execution/spec-templates/backend-spec.template.md
+DOC/execution/spec-templates/database-spec.template.md
+DOC/execution/spec-templates/dev-server-checklist.template.md
+DOC/execution/spec-templates/export-manifest.template.md
+DOC/execution/spec-templates/frontend-spec.template.md
+DOC/execution/spec-templates/integration-spec.template.md
+DOC/execution/spec-templates/openapi-spec.template.yaml
+DOC/execution/spec-templates/plan-spec.template.md
+DOC/execution/spec-templates/runbook-spec.template.md
+DOC/execution/spec-templates/security-report-spec.template.md
+DOC/execution/spec-templates/validation-report.template.json
+DOC/flows/system-flows/spec-emission-flow.md
+DOC/flows/system-flows/validation-flow.md
+DOC/knowledge/api-rules/api-rules.md
+DOC/knowledge/architecture-templates/ai_saas.yaml
+DOC/knowledge/architecture-templates/api_saas.yaml
+DOC/knowledge/architecture-templates/content_saas.yaml
+DOC/knowledge/architecture-templates/marketing_site.yaml
+DOC/knowledge/architecture-templates/marketplace_saas.yaml
+DOC/knowledge/architecture-templates/standard_saas.yaml
+DOC/knowledge/automation-rules/automation-rules.md
+DOC/knowledge/automation-rules/outbound-event-taxonomy.md
+DOC/knowledge/automation-rules/outbound-webhook-signing.md
+DOC/knowledge/backend-rules/backend-rules.md
+DOC/knowledge/database-rules/database-rules.md
+DOC/knowledge/deployment-rules/deployment-rules.md
+DOC/knowledge/devops-rules/cicd-rules.md
+DOC/knowledge/devops-rules/devops-rules.md
+DOC/knowledge/devops-rules/monitoring-rules.md
+DOC/knowledge/frontend-rules/accessibility-rules.md
+DOC/knowledge/frontend-rules/activity-feed-rules.md
+DOC/knowledge/frontend-rules/ai-ux-rules.md
+DOC/knowledge/frontend-rules/brand-translation-rules.md
+DOC/knowledge/frontend-rules/comments-mentions-rules.md
+DOC/knowledge/frontend-rules/component-state-matrix.md
+DOC/knowledge/frontend-rules/content-rules.md
+DOC/knowledge/frontend-rules/design-tokens-rules.md
+DOC/knowledge/frontend-rules/empty-state-rules.md
+DOC/knowledge/frontend-rules/frontend-rules.md
+DOC/knowledge/frontend-rules/frontend-visual-structure-checklist.md
+DOC/knowledge/frontend-rules/in-app-help-rules.md
+DOC/knowledge/frontend-rules/motion-rules.md
+DOC/knowledge/frontend-rules/multi-tenant-ux-rules.md
+DOC/knowledge/frontend-rules/notification-ux-rules.md
+DOC/knowledge/frontend-rules/onboarding-rules.md
+DOC/knowledge/frontend-rules/page-archetype-rules.md
+DOC/knowledge/frontend-rules/project-archetypes.md
+DOC/knowledge/frontend-rules/quality-bar-scoring.md
+DOC/knowledge/frontend-rules/responsive-rules.md
+DOC/knowledge/frontend-rules/saved-views-rules.md
+DOC/knowledge/frontend-rules/undo-revert-rules.md
+DOC/knowledge/frontend-rules/visual-archetypes/ai-product.md
+DOC/knowledge/frontend-rules/visual-archetypes/bold-consumer.md
+DOC/knowledge/frontend-rules/visual-archetypes/dashboard-ops.md
+DOC/knowledge/frontend-rules/visual-archetypes/editorial-premium.md
+DOC/knowledge/frontend-rules/visual-archetypes/local-business-trust.md
+DOC/knowledge/frontend-rules/visual-archetypes/marketplace.md
+DOC/knowledge/frontend-rules/visual-archetypes/modern-saas.md
+DOC/knowledge/frontend-rules/visual-archetypes/portfolio-craft.md
+DOC/knowledge/frontend-rules/visual-archetypes/startup-conversion.md
+DOC/knowledge/industries/README.md
+DOC/knowledge/integration-rules/_index.md
+DOC/knowledge/integration-rules/_meta/role-matrix.json
+DOC/knowledge/integration-rules/_schema.md
+DOC/knowledge/integration-rules/ai/anthropic.yaml
+DOC/knowledge/integration-rules/ai/helicone.yaml
+DOC/knowledge/integration-rules/ai/langfuse.yaml
+DOC/knowledge/integration-rules/ai/openai.yaml
+DOC/knowledge/integration-rules/ai/pinecone.yaml
+DOC/knowledge/integration-rules/ai/turbopuffer.yaml
+DOC/knowledge/integration-rules/ai/vercel-ai-sdk.yaml
+DOC/knowledge/integration-rules/analytics/mixpanel.yaml
+DOC/knowledge/integration-rules/analytics/plausible.yaml
+DOC/knowledge/integration-rules/analytics/posthog.yaml
+DOC/knowledge/integration-rules/analytics/segment.yaml
+DOC/knowledge/integration-rules/analytics/vercel-analytics.yaml
+DOC/knowledge/integration-rules/auth/clerk.yaml
+DOC/knowledge/integration-rules/auth/permit-io.yaml
+DOC/knowledge/integration-rules/auth/supabase-auth.yaml
+DOC/knowledge/integration-rules/auth/workos.yaml
+DOC/knowledge/integration-rules/auth/workos-audit-logs.yaml
+DOC/knowledge/integration-rules/automation/make.yaml
+DOC/knowledge/integration-rules/automation/n8n.yaml
+DOC/knowledge/integration-rules/automation/paragon.yaml
+DOC/knowledge/integration-rules/automation/zapier.yaml
+DOC/knowledge/integration-rules/booking/calcom.yaml
+DOC/knowledge/integration-rules/booking/calendly.yaml
+DOC/knowledge/integration-rules/cache/upstash.yaml
+DOC/knowledge/integration-rules/cms/sanity.yaml
+DOC/knowledge/integration-rules/communications/360dialog.yaml
+DOC/knowledge/integration-rules/communications/twilio.yaml
+DOC/knowledge/integration-rules/communications/twilio-whatsapp.yaml
+DOC/knowledge/integration-rules/compliance/cookiebot.yaml
+DOC/knowledge/integration-rules/compliance/drata.yaml
+DOC/knowledge/integration-rules/compliance/vanta.yaml
+DOC/knowledge/integration-rules/crm/attio.yaml
+DOC/knowledge/integration-rules/crm/customerio.yaml
+DOC/knowledge/integration-rules/crm/hubspot.yaml
+DOC/knowledge/integration-rules/database/drizzle.yaml
+DOC/knowledge/integration-rules/database/neon-postgres.yaml
+DOC/knowledge/integration-rules/database/prisma.yaml
+DOC/knowledge/integration-rules/docs/mintlify.yaml
+DOC/knowledge/integration-rules/email/marketing/convertkit.yaml
+DOC/knowledge/integration-rules/email/marketing/customerio.yaml
+DOC/knowledge/integration-rules/email/marketing/loops.yaml
+DOC/knowledge/integration-rules/email/transactional/postmark.yaml
+DOC/knowledge/integration-rules/email/transactional/resend.yaml
+DOC/knowledge/integration-rules/email/transactional/sendgrid.yaml
+DOC/knowledge/integration-rules/enterprise/segment.yaml
+DOC/knowledge/integration-rules/enterprise/workos-sso.yaml
+DOC/knowledge/integration-rules/feedback/canny.yaml
+DOC/knowledge/integration-rules/feedback/featurebase.yaml
+DOC/knowledge/integration-rules/feedback/sprig.yaml
+DOC/knowledge/integration-rules/infra/cloudflare-dns.yaml
+DOC/knowledge/integration-rules/infra/netlify.yaml
+DOC/knowledge/integration-rules/infra/vercel.yaml
+DOC/knowledge/integration-rules/jobs/inngest.yaml
+DOC/knowledge/integration-rules/jobs/trigger-dev.yaml
+DOC/knowledge/integration-rules/maps/google-places.yaml
+DOC/knowledge/integration-rules/maps/mapbox.yaml
+DOC/knowledge/integration-rules/maps/mapbox-search.yaml
+DOC/knowledge/integration-rules/notifications/knock.yaml
+DOC/knowledge/integration-rules/notifications/novu.yaml
+DOC/knowledge/integration-rules/notifications/onesignal.yaml
+DOC/knowledge/integration-rules/observability/axiom.yaml
+DOC/knowledge/integration-rules/observability/betterstack-status.yaml
+DOC/knowledge/integration-rules/observability/betterstack-uptime.yaml
+DOC/knowledge/integration-rules/observability/checkly.yaml
+DOC/knowledge/integration-rules/observability/datadog.yaml
+DOC/knowledge/integration-rules/observability/sentry.yaml
+DOC/knowledge/integration-rules/onboarding/appcues.yaml
+DOC/knowledge/integration-rules/onboarding/userflow.yaml
+DOC/knowledge/integration-rules/payments/paddle.yaml
+DOC/knowledge/integration-rules/payments/stripe.yaml
+DOC/knowledge/integration-rules/payments/stripe-tax.yaml
+DOC/knowledge/integration-rules/realtime/liveblocks.yaml
+DOC/knowledge/integration-rules/realtime/pusher.yaml
+DOC/knowledge/integration-rules/realtime/supabase-realtime.yaml
+DOC/knowledge/integration-rules/search/algolia.yaml
+DOC/knowledge/integration-rules/search/meilisearch.yaml
+DOC/knowledge/integration-rules/search/typesense.yaml
+DOC/knowledge/integration-rules/security/cloudflare-turnstile.yaml
+DOC/knowledge/integration-rules/security/cloudflare-waf.yaml
+DOC/knowledge/integration-rules/security/hcaptcha.yaml
+DOC/knowledge/integration-rules/security/stripe-radar.yaml
+DOC/knowledge/integration-rules/signing/documenso.yaml
+DOC/knowledge/integration-rules/storage/r2.yaml
+DOC/knowledge/integration-rules/storage/s3.yaml
+DOC/knowledge/integration-rules/storage/uploadthing.yaml
+DOC/knowledge/integration-rules/support/crisp.yaml
+DOC/knowledge/integration-rules/support/helpscout.yaml
+DOC/knowledge/integration-rules/support/intercom.yaml
+DOC/knowledge/integration-rules/support/plain.yaml
+DOC/knowledge/integration-rules/video/livekit.yaml
+DOC/knowledge/integration-rules/video/mux-video.yaml
+DOC/knowledge/performance-rules/performance-rules.md
+DOC/knowledge/realtime-rules/realtime-rules.md
+DOC/knowledge/references/enterprise-level-guide/README.md
+DOC/knowledge/references/enterprise-level-guide/source/ai/ai-collaboration-playbook.md
+DOC/knowledge/references/enterprise-level-guide/source/ai/ai-context.yaml
+DOC/knowledge/references/enterprise-level-guide/source/api/api-design.md
+DOC/knowledge/references/enterprise-level-guide/source/architecture/contract-first-delivery.md
+DOC/knowledge/references/enterprise-level-guide/source/architecture/module-boundaries.md
+DOC/knowledge/references/enterprise-level-guide/source/architecture/system-architecture.md
+DOC/knowledge/references/enterprise-level-guide/source/backend/auth-authorization-and-rls.md
+DOC/knowledge/references/enterprise-level-guide/source/backend/backend-architecture.md
+DOC/knowledge/references/enterprise-level-guide/source/backend/backend-observability-and-reliability.md
+DOC/knowledge/references/enterprise-level-guide/source/backend/file-delivery-and-storage.md
+DOC/knowledge/references/enterprise-level-guide/source/backend/queue-payments-and-integrations.md
+DOC/knowledge/references/enterprise-level-guide/source/backend/service-design-and-domain-rules.md
+DOC/knowledge/references/enterprise-level-guide/source/data/data-model.md
+DOC/knowledge/references/enterprise-level-guide/source/engineering/delivery-roadmap.md
+DOC/knowledge/references/enterprise-level-guide/source/engineering/development-standards.md
+DOC/knowledge/references/enterprise-level-guide/source/frontend/accessibility-and-localization.md
+DOC/knowledge/references/enterprise-level-guide/source/frontend/component-and-styling-standards.md
+DOC/knowledge/references/enterprise-level-guide/source/frontend/data-fetching-and-state.md
+DOC/knowledge/references/enterprise-level-guide/source/frontend/frontend-architecture.md
+DOC/knowledge/references/enterprise-level-guide/source/frontend/frontend-performance-and-analytics.md
+DOC/knowledge/references/enterprise-level-guide/source/frontend/frontend-rules-and-design-system.md
+DOC/knowledge/references/enterprise-level-guide/source/frontend/realtime-chat-and-client-resilience.md
+DOC/knowledge/references/enterprise-level-guide/source/frontend/ui-ux-standards.md
+DOC/knowledge/references/enterprise-level-guide/source/operations/platform-governance-and-controls.md
+DOC/knowledge/references/enterprise-level-guide/source/operations/security-and-operations.md
+DOC/knowledge/references/enterprise-level-guide/source/process/change-management.md
+DOC/knowledge/references/enterprise-level-guide/source/process/contribution-guide.md
+DOC/knowledge/references/enterprise-level-guide/source/process/deployment-and-environments.md
+DOC/knowledge/references/enterprise-level-guide/source/process/incident-response.md
+DOC/knowledge/references/enterprise-level-guide/source/process/onboarding-playbook.md
+DOC/knowledge/references/enterprise-level-guide/source/process/privacy-retention-and-compliance.md
+DOC/knowledge/references/enterprise-level-guide/source/product/product-requirements.md
+DOC/knowledge/references/enterprise-level-guide/source/quality/enterprise-testing-and-quality-enforcement-v2.md
+DOC/knowledge/references/enterprise-level-guide/source/quality/qa-and-release-gates.md
+DOC/knowledge/references/enterprise-level-guide/source/quality/testing-strategy.md
+DOC/knowledge/references/enterprise-level-guide/source/README.md
+DOC/knowledge/references/README.md
+DOC/knowledge/security-rules/compliance-rules.md
+DOC/knowledge/security-rules/security-rules.md
+DOC/knowledge/skills/cache-invalidation-on-write-pattern.md
+DOC/knowledge/skills/cross-reference-validation-pattern.md
+DOC/knowledge/skills/frontmatter-schema-validation-pattern.md
+DOC/knowledge/skills/onboarding-checklist-pattern.md
+DOC/knowledge/skills/rbac-policy-evaluation-pattern.md
+DOC/knowledge/testing-rules/testing-rules.md
+DOC/knowledge/ux-patterns/bulk-actions-rules.md
+DOC/knowledge/ux-patterns/chart-rules.md
+DOC/knowledge/ux-patterns/drag-and-drop-rules.md
+DOC/knowledge/ux-patterns/inline-editing-rules.md
+DOC/knowledge/ux-patterns/keyboard-shortcut-rules.md
+DOC/knowledge/ux-patterns/rich-text-rules.md
+DOC/knowledge/ux-patterns/search-experience-rules.md
+DOC/output/README.md
+DOC/README.md
+DOC/validation/audit-fixtures/brief-ai-collaborative.json
+DOC/validation/audit-fixtures/brief-ai-product.json
+DOC/validation/audit-fixtures/brief-ecommerce.json
+DOC/validation/audit-fixtures/brief-local-services-electrical.json
+DOC/validation/audit-fixtures/brief-malformed.json
+DOC/validation/audit-fixtures/brief-marketing-quality-depth.json
+DOC/validation/audit-fixtures/brief-marketing-site-plumber.json
+DOC/validation/audit-fixtures/brief-portfolio.json
+DOC/validation/audit-fixtures/brief-saas-collaborative.json
+DOC/validation/audit-fixtures/brief-saas-standard.json
+DOC/validation/audit-fixtures/brief-unknown-feature.json
+DOC/validation/audit-fixtures/expected-outputs/brief-ai-collaborative.expected.json
+DOC/validation/audit-fixtures/expected-outputs/brief-ai-product.expected.json
+DOC/validation/audit-fixtures/expected-outputs/brief-ecommerce.expected.json
+DOC/validation/audit-fixtures/expected-outputs/brief-local-services-electrical.expected.json
+DOC/validation/audit-fixtures/expected-outputs/brief-malformed.expected.json
+DOC/validation/audit-fixtures/expected-outputs/brief-marketing-quality-depth.expected.json
+DOC/validation/audit-fixtures/expected-outputs/brief-marketing-site-plumber.expected.json
+DOC/validation/audit-fixtures/expected-outputs/brief-portfolio.expected.json
+DOC/validation/audit-fixtures/expected-outputs/brief-saas-collaborative.expected.json
+DOC/validation/audit-fixtures/expected-outputs/brief-saas-standard.expected.json
+DOC/validation/audit-fixtures/expected-outputs/brief-unknown-feature.expected.json
+DOC/validation/audit-report.template.md
+DOC/validation/audit-template.md
+DOC/validation/checklists/execution-acceptance-checklist.md
+DOC/validation/checklists/foundation-factory-readiness-checklist.md
+DOC/validation/checklists/integration-checklist.md
+DOC/validation/checklists/post-deploy-checklist.md
+DOC/validation/checklists/pre-build-checklist.md
+DOC/validation/checklists/pre-deployment-checklist.md
+DOC/validation/checklists/pre-planning-checklist.md
+DOC/validation/checklists/reviewer-audit-checklist.md
+DOC/validation/checklists/security-checklist.md
+DOC/validation/checklists/system-architect-factory-focus.checklist.md
+DOC/validation/checklists/template-post-import-gap-closure-checklist.md
+DOC/validation/checklists/template-vercel-deployment-checklist.md
+DOC/validation/constraints/accessibility-constraints.md
+DOC/validation/constraints/constraints.md
+DOC/validation/constraints/data-constraints.md
+DOC/validation/constraints/factory-system-first.constraint.md
+DOC/validation/constraints/frontend-constraints.md
+DOC/validation/constraints/integration-constraints.md
+DOC/validation/constraints/performance-constraints.md
+DOC/validation/constraints/security-constraints.md
+DOC/validation/constraints/testing-constraints.md
+DS-Planning-Engine/AGENTS.md
+DS-Planning-Engine/agents/DS_site_planner.agent.md
+DS-Planning-Engine/AI-AGENT-CONTRACT.md
+DS-Planning-Engine/core/ds-awareness-rules.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/.ai-scope.json
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/.github/copilot-instructions.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/.github/workflows/verify.yml
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/AGENTS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/AI-AGENT-CONTRACT.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/CONTRIBUTING.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/DS_TAKS_EXECUTION/tasks.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/00-OVERVIEW.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/01-TYPOGRAPHY.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/02-COLOR-SYSTEM.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/03-SPACING-LAYOUT.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/04-MOTION-ANIMATION.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/05-ELEVATION-DEPTH.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/06-BORDERS-RADIUS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/07-ICONOGRAPHY.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/08-RESPONSIVE-BREAKPOINTS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/09-ACCESSIBILITY.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/10-INTERACTIVE-STATES.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/11-FORM-ANATOMY.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/12-DATA-DISPLAY.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/13-NAVIGATION-PATTERNS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/14-OVERLAY-PATTERNS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/15-FEEDBACK-PATTERNS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/16-THEMING-ARCHITECTURE.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/17-CSS-ARCHITECTURE.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/18-TOKEN-ARCHITECTURE.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/19-COMPONENT-API-PATTERNS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/20-DOCUMENTATION-TESTING.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/21-SECTION-VARIANTS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/22-ARCHETYPE-THEMES.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/23-MOTION-PRESETS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/DS BUILDING/HandBook_Frontend/24-AI-AGENT-CONTRACT.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/PROTOTYPE TO DS/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/PROTOTYPE TO DS/REFERENCES.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/PROTOTYPE TO DS/START-HERE.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/PROTOTYPE TO DS/tasks.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/PROTOTYPE TO DS/templates/ai-execution-brief.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/PROTOTYPE TO DS/templates/ds-build-spec.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/PROTOTYPE TO DS/templates/ds-gap-audit.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/PROTOTYPE TO DS/templates/nextjs-build-spec.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/PROTOTYPE TO DS/templates/parity-checklist.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/PROTOTYPE TO DS/templates/prototype-intake.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-01-DOMAIN-MODELING.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-02-BILLING.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-03-TENANT-LIFECYCLE.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-04-BACKGROUND-JOBS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-05-EXTERNAL-INTEGRATIONS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-06-DATA-PRIVACY.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-07-EMAIL-NOTIFICATIONS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-08-FILE-STORAGE.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-09-CACHING.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-10-RATE-LIMITING.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-11-SCHEMA-EVOLUTION.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-12-ADMIN-OPERATIONS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-13-REAL-TIME.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/PART-14-ANALYTICS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC/SAAS HANDBOOK/TOC.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/CORE/CONSTITUTION.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/CORE/ENGINEERING-STANDARDS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/CORE/HANDBOOK-ROUTING.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/CORE/QUALITY-GATES.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/CORE/WORKFLOW.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/ARCHETYPES/B2B-SAAS-MARKETING.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/ARCHETYPES/EDITORIAL-BRAND.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/ARCHETYPES/ENTERPRISE-TRUST.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/ARCHETYPES/LOCAL-SERVICE-LEAD-GEN.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/ARCHETYPES/PRODUCT-LAUNCH.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/ARCHETYPES/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/MODES/BOLD-MARKETING.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/MODES/CLEAN-SAAS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/MODES/DENSE-DATA.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/MODES/EDITORIAL-NARRATIVE.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/MODES/MOBILE-NATIVE.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/MODES/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/OPERATING/AI-EXECUTION-FLOW.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/OPERATING/ANTI-GENERIC-REVIEW.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/OPERATING/CREATIVE-DIRECTION.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/OPERATING/DESIGN-DECISION-SYSTEM.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/OPERATING/MODE-SELECTION.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/OPERATING/PAGE-TYPE-TAXONOMY.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/OPERATING/THEME-PRESET-SYSTEM.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/OPERATING/WIREFRAME-STANDARDS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/PRESETS/EDITORIAL-PREMIUM.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/PRESETS/HIGH-ENERGY-LAUNCH.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/PRESETS/NEUTRAL-PROFESSIONAL.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/PRESETS/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/PRESETS/TECHNICAL-SHARP.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/PRESETS/WARM-HUMAN.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/REFERENCE/HERO-PATTERNS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/REFERENCE/LAYOUT-COMPOSITION-PATTERNS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/REFERENCE/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/REFERENCE/SECTION-RHYTHM.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/TEMPLATES/DESIGN-DECISION-BRIEF.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/TEMPLATES/THEME-PRESET.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/TEMPLATES/VISUAL-DIRECTION.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/DDS/TEMPLATES/WIREFRAME-BRIEF.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/REFERENCE/discussions/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/RUNNERS/AIDER.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/RUNNERS/COPILOT.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/api-architecture.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/architecture-overview.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/auth-architecture.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/backend-architecture.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/data-flow.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/error-handling-architecture.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/frontend-architecture.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/backend-node-guidelines.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/documentation-style.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/folder-naming-conventions.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/git-standards.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/pull-request-guidelines.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/react-nextjs-guidelines.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/typescript-style-guide.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/devops/backup-and-disaster-recovery.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/devops/ci-cd-pipelines.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/devops/cost-optimization.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/devops/deployment-guidelines.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/devops/environment-management.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/devops/logging.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/devops/monitoring.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/devops/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/glossary.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/operations/database-operations-standard.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/operations/feature-flags.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/operations/incident-response.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/operations/maintenance-routines.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/operations/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/operations/release-management.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/operations/versioning-policy.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/security/api-security.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/security/authentication-security.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/security/authorization-rules.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/security/data-protection.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/security/dependency-security.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/security/OWASP-mapping.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/security/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/security/secrets-management.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/security/secure-coding-checklist.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/security/security-overview.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/seo-performance/analytics-setup.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/seo-performance/lighthouse-standards.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/seo-performance/nextjs-seo-guidelines.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/seo-performance/performance-budget.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/seo-performance/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/seo-performance/seo-overview.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/seo-performance/structured-data.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/testing/e2e-testing.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/testing/integration-testing.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/testing/mocking-guidelines.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/testing/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/testing/test-coverage-standards.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/testing/testing-overview.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/testing/unit-testing.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/theming/accessibility-guidelines.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/theming/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/theming/tailwind-design-system.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/theming/theming-overview.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/theming/tokens.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/theming/ui-components.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STANDARDS/API-BACKEND-RULES.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STANDARDS/APP-STRUCTURE.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STANDARDS/SAAS-FOUNDATIONS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/STANDARDS/UI-DS-RULES.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/TEMPLATES/API-MAP.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/TEMPLATES/PLAN.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/TEMPLATES/PRD.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/TEMPLATES/ROUTE-MAP.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/TEMPLATES/SPEC.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/TEMPLATES/STARTER-BOOTSTRAP-CHECKLIST.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/TEMPLATES/TASK-FILE-QUEUE.template.txt
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/TEMPLATES/TASKS.template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/analyze.prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/clarify.prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/constitution.prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/implement.prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/plan.prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/specify.prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/tasks.prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/VENDOR/speckit/.specify/memory/constitution.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/VENDOR/speckit/.specify/templates/agent-file-template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/VENDOR/speckit/.specify/templates/plan-template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/VENDOR/speckit/.specify/templates/spec-template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/VENDOR/speckit/.specify/templates/tasks-template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_UNIVERSAL/VENDOR/speckit/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/ONGOING TASKS/DS-GAP-ANALYSIS.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/ONGOING TASKS/DS-IMPLEMENTATION-PLAN.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/ONGOING TASKS/tasks.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/gitstatus.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/Instructions.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/Advanced_SystemAudit_Prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/CMS Wordpress like Audit.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/comprehensive-feature-implementation-audit-prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/Expansion Instructions.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/feature-implementation-inventory-mapping-audit-prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/frontend-enhancement-audit-instructions.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/frontend-industry-standards-audit-instructions.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/index.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/post-implementation-documentation.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/Prototype Audit & Enhancement_Prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/Prototype vs Implimentation Audit_Prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/Prototype vs SOT Audit_Prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/SOT Sync Audit_Prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/Wordpress CMS Checklist.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/BACKEND/Backend_Planning_Prompt_Template_E2E_Audit_First.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/BACKEND/E2E_Feature_Validation_Prompt_Template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/BACKEND/E2E-CURRENT-STATE-AUDIT-RULES.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/BACKEND/testing-overview.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/AI Prompting Guideline.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/AI-STRICT-FRONTEND-PURGE-AND-REBUILD.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Component-Library-Checklist.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Design_system_Blueprint.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Design_system_Update.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Design-System.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/FRESH-START-LEGACY-PURGE-SOT-2026-02-04.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Frontend Planning Prompt.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Frontend-Atomic-Task-Breakdown-Instructions.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Frontend-Design-System.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Frontend-Industry-Standards-Best-Practices.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Frontend-Migration-Instruction-2026.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Frontend-Spec-Instructions.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Frontend-System-Audit-Instruction-2026.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/PROTOTYPE-TO-NEXTJS-PIXEL-PERFECT-MIGRATION.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Template_Comprehensive_UI UX.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/UNIVERSAL-PROTOTYPE-TO-DESIGN-SYSTEM-SOT-ADOPTION.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/POST FEATURE/feature-post-implementation-doc-template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/POST FEATURE/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/Prompt_templates/issue-fixing-phase-template.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/saas_plan.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/WORKFLOW/Design-System.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/WORKFLOW/Phase 0 Research & Planning.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/WORKFLOW/Phase 1  Building SOT.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/WORKFLOW/Phase 2 Frontend Prototype.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/WORKFLOW/Phase 3 Frontend Migration.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/WORKFLOW/Phase 4 Backend.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/WORKFLOW/Phase 5 Test.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/WORKFLOW/Phase 6 Enhancement.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/WORKFLOW/Phase 7 Post Feature.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/WORKFLOW/Phase 8 Visual issue fixing.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/DOC_WORKING/Prompts/WORKFLOW/RECOMMENDED-WORKFLOW-E2E.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/package.json
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/package-lock.json
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/src/ds/DESIGN-SYSTEM-ANATOMY.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/src/ds/DS-COVERAGE-CHECKLIST.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/src/ds/SEMANTIC-CLASSES-REGISTRY.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/src/ds/tokens/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/src/features/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/src/site/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/codegen/sunpath-solar/tsconfig.json
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/plan/brief.json
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/plan/content-library.json
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/plan/ds-gap-report.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/plan/pages/about.plan.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/plan/pages/commercial.plan.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/plan/pages/contact.plan.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/plan/pages/home.plan.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/plan/pages/how-it-works.plan.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/plan/pages/projects.plan.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/plan/pages/residential.plan.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/plan/plan.lock.json
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/plan/README.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/plan/site-plan.json
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/reports/ds-frontend-developer-sunpath-solar.md
+DS-Planning-Engine/output/runs/20260513-sunpath-solar/reports/execution_summary.json
+DS-Planning-Engine/README.md
+Foundation-Core/AGENTS.md
+Foundation-Core/dev-server-checklist.md
+Foundation-Core/docs/contracts/frontend-attach-contract.json
+Foundation-Core/docs/contracts/openapi.foundation.yaml
+Foundation-Core/export-manifest.md
+Foundation-Core/foundation.manifest.json
+Foundation-Core/README.md
+Foundation-Core/RUN.md
+Frontend-Master_DS/.github/copilot-instructions.md
+Frontend-Master_DS/.github/workflows/verify.yml
+Frontend-Master_DS/AGENTS.md
+Frontend-Master_DS/AI-AGENT-CONTRACT.md
+Frontend-Master_DS/CONTRIBUTING.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/00-OVERVIEW.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/01-TYPOGRAPHY.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/02-COLOR-SYSTEM.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/03-SPACING-LAYOUT.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/04-MOTION-ANIMATION.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/05-ELEVATION-DEPTH.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/06-BORDERS-RADIUS.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/07-ICONOGRAPHY.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/08-RESPONSIVE-BREAKPOINTS.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/09-ACCESSIBILITY.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/10-INTERACTIVE-STATES.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/11-FORM-ANATOMY.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/12-DATA-DISPLAY.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/13-NAVIGATION-PATTERNS.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/14-OVERLAY-PATTERNS.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/15-FEEDBACK-PATTERNS.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/16-THEMING-ARCHITECTURE.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/17-CSS-ARCHITECTURE.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/18-TOKEN-ARCHITECTURE.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/19-COMPONENT-API-PATTERNS.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/20-DOCUMENTATION-TESTING.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/21-SECTION-VARIANTS.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/22-ARCHETYPE-THEMES.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/23-MOTION-PRESETS.md
+Frontend-Master_DS/DOC/DS BUILDING/HandBook_Frontend/24-AI-AGENT-CONTRACT.md
+Frontend-Master_DS/DOC/PROTOTYPE TO DS/README.md
+Frontend-Master_DS/DOC/PROTOTYPE TO DS/templates/ds-build-spec.template.md
+Frontend-Master_DS/DOC/PROTOTYPE TO DS/templates/nextjs-build-spec.template.md
+Frontend-Master_DS/DOC/PROTOTYPE TO DS/templates/parity-checklist.template.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-01-DOMAIN-MODELING.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-02-BILLING.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-03-TENANT-LIFECYCLE.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-04-BACKGROUND-JOBS.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-05-EXTERNAL-INTEGRATIONS.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-06-DATA-PRIVACY.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-07-EMAIL-NOTIFICATIONS.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-08-FILE-STORAGE.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-09-CACHING.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-10-RATE-LIMITING.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-11-SCHEMA-EVOLUTION.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-12-ADMIN-OPERATIONS.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-13-REAL-TIME.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/PART-14-ANALYTICS.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/README.md
+Frontend-Master_DS/DOC/SAAS HANDBOOK/TOC.md
+Frontend-Master_DS/DOC_UNIVERSAL/CORE/ENGINEERING-STANDARDS.md
+Frontend-Master_DS/DOC_UNIVERSAL/CORE/HANDBOOK-ROUTING.md
+Frontend-Master_DS/DOC_UNIVERSAL/CORE/WORKFLOW.md
+Frontend-Master_DS/DOC_UNIVERSAL/DDS/ARCHETYPES/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/DDS/MODES/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/DDS/OPERATING/WIREFRAME-STANDARDS.md
+Frontend-Master_DS/DOC_UNIVERSAL/DDS/PRESETS/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/DDS/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/DDS/REFERENCE/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/REFERENCE/discussions/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/RUNNERS/AIDER.md
+Frontend-Master_DS/DOC_UNIVERSAL/RUNNERS/COPILOT.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/api-architecture.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/architecture-overview.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/auth-architecture.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/backend-architecture.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/data-flow.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/error-handling-architecture.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/frontend-architecture.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/architecture/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/backend-node-guidelines.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/documentation-style.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/folder-naming-conventions.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/git-standards.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/pull-request-guidelines.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/react-nextjs-guidelines.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/coding-standards/typescript-style-guide.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/devops/deployment-guidelines.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/devops/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/operations/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/operations/versioning-policy.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/security/authorization-rules.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/security/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/security/secure-coding-checklist.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/seo-performance/lighthouse-standards.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/seo-performance/nextjs-seo-guidelines.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/seo-performance/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/testing/mocking-guidelines.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/testing/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/testing/test-coverage-standards.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/theming/accessibility-guidelines.md
+Frontend-Master_DS/DOC_UNIVERSAL/STACK_PROFILES/NEXTJS-SAAS/theming/README.md
+Frontend-Master_DS/DOC_UNIVERSAL/STANDARDS/API-BACKEND-RULES.md
+Frontend-Master_DS/DOC_UNIVERSAL/STANDARDS/APP-STRUCTURE.md
+Frontend-Master_DS/DOC_UNIVERSAL/STANDARDS/SAAS-FOUNDATIONS.md
+Frontend-Master_DS/DOC_UNIVERSAL/STANDARDS/UI-DS-RULES.md
+Frontend-Master_DS/DOC_UNIVERSAL/TEMPLATES/SPEC.template.md
+Frontend-Master_DS/DOC_UNIVERSAL/TEMPLATES/STARTER-BOOTSTRAP-CHECKLIST.template.md
+Frontend-Master_DS/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/analyze.prompt.md
+Frontend-Master_DS/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/clarify.prompt.md
+Frontend-Master_DS/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/constitution.prompt.md
+Frontend-Master_DS/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/implement.prompt.md
+Frontend-Master_DS/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/plan.prompt.md
+Frontend-Master_DS/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/specify.prompt.md
+Frontend-Master_DS/DOC_UNIVERSAL/VENDOR/speckit/.github/prompts/tasks.prompt.md
+Frontend-Master_DS/DOC_UNIVERSAL/VENDOR/speckit/.specify/memory/constitution.md
+Frontend-Master_DS/DOC_UNIVERSAL/VENDOR/speckit/.specify/templates/agent-file-template.md
+Frontend-Master_DS/DOC_UNIVERSAL/VENDOR/speckit/.specify/templates/plan-template.md
+Frontend-Master_DS/DOC_UNIVERSAL/VENDOR/speckit/.specify/templates/spec-template.md
+Frontend-Master_DS/DOC_UNIVERSAL/VENDOR/speckit/.specify/templates/tasks-template.md
+Frontend-Master_DS/DOC_UNIVERSAL/VENDOR/speckit/README.md
+Frontend-Master_DS/DOC_WORKING/Prompts/Instructions.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/Expansion Instructions.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/frontend-enhancement-audit-instructions.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/frontend-industry-standards-audit-instructions.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/ADVANCED AUDIT/Wordpress CMS Checklist.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/BACKEND/E2E_Feature_Validation_Prompt_Template.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/BACKEND/E2E-CURRENT-STATE-AUDIT-RULES.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/AI Prompting Guideline.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Component-Library-Checklist.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Frontend-Atomic-Task-Breakdown-Instructions.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Frontend-Industry-Standards-Best-Practices.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Frontend-Migration-Instruction-2026.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Frontend-Spec-Instructions.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/Frontend-System-Audit-Instruction-2026.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/FRONTEND/README.md
+Frontend-Master_DS/DOC_WORKING/Prompts/PROMPTS & TEMPLATES/POST FEATURE/README.md
+Frontend-Master_DS/DOC_WORKING/Prompts/WORKFLOW/Design-System.md
+Frontend-Master_DS/DOC_WORKING/Prompts/WORKFLOW/Phase 0 Research & Planning.md
+Frontend-Master_DS/DOC_WORKING/Prompts/WORKFLOW/Phase 1  Building SOT.md
+Frontend-Master_DS/DOC_WORKING/Prompts/WORKFLOW/Phase 2 Frontend Prototype.md
+Frontend-Master_DS/DOC_WORKING/Prompts/WORKFLOW/Phase 3 Frontend Migration.md
+Frontend-Master_DS/DOC_WORKING/Prompts/WORKFLOW/Phase 4 Backend.md
+Frontend-Master_DS/DOC_WORKING/Prompts/WORKFLOW/Phase 5 Test.md
+Frontend-Master_DS/DOC_WORKING/Prompts/WORKFLOW/Phase 6 Enhancement.md
+Frontend-Master_DS/DOC_WORKING/Prompts/WORKFLOW/Phase 7 Post Feature.md
+Frontend-Master_DS/DOC_WORKING/Prompts/WORKFLOW/Phase 8 Visual issue fixing.md
+Frontend-Master_DS/DOC_WORKING/Prompts/WORKFLOW/RECOMMENDED-WORKFLOW-E2E.md
+Frontend-Master_DS/README.md
+Frontend-Master_DS/src/ds/DS-COVERAGE-CHECKLIST.md
+Frontend-Master_DS/src/ds/tokens/README.md
+Frontend-Master_DS/src/features/README.md
+Frontend-Master_DS/src/site/README.md
+On Going DOCS/DOC/Claude/Agentic_System_Audit_Report.md
+On Going DOCS/DOC/LIVE_DEPLOYMENT_GUIDE.md
+On Going DOCS/DOC/PRODUCTION_DEPLOYMENT_GUIDE.md
+On Going DOCS/DOC/PROJECT PLAN/Admin Dashboard/README.md
+On Going DOCS/DOC/PROJECT PLAN/API and Data/README.md
+On Going DOCS/DOC/PROJECT PLAN/Backend/README.md
+On Going DOCS/DOC/PROJECT PLAN/DevOps/README.md
+On Going DOCS/DOC/PROJECT PLAN/Frontend/00-master-ui-architecture.md
+On Going DOCS/DOC/PROJECT PLAN/Frontend/privacy-policy-page.md
+On Going DOCS/DOC/PROJECT PLAN/Frontend/README.md
+On Going DOCS/DOC/PROJECT PLAN/QA/README.md
+On Going DOCS/DOC/PROJECT PLAN/README.md
+On Going DOCS/DOC/PROJECT PLAN/Security/README.md
+On Going DOCS/DOC/PROJECT PLAN/Shared Contracts/ai-context.yaml
+On Going DOCS/DOC/PROJECT PLAN/Shared Contracts/README.md
+On Going DOCS/DOC/PROJECT PLAN/Supabase/README.md
+On Going DOCS/DOC/PROJECT PLAN/Tasks/README.md
+On Going DOCS/DOC/SANITY_SETUP_GUIDE_BN.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/ai/ai-collaboration-playbook.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/ai/ai-context.yaml
+On Going DOCS/DOC/Universal/Enterprise Level Guide/api/api-design.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/architecture/contract-first-delivery.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/architecture/module-boundaries.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/architecture/system-architecture.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/backend/auth-authorization-and-rls.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/backend/backend-architecture.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/backend/backend-observability-and-reliability.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/backend/file-delivery-and-storage.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/backend/queue-payments-and-integrations.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/backend/service-design-and-domain-rules.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/data/data-model.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/engineering/delivery-roadmap.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/engineering/development-standards.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/frontend/accessibility-and-localization.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/frontend/component-and-styling-standards.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/frontend/data-fetching-and-state.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/frontend/frontend-architecture.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/frontend/frontend-performance-and-analytics.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/frontend/frontend-rules-and-design-system.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/frontend/realtime-chat-and-client-resilience.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/frontend/ui-ux-standards.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/operations/platform-governance-and-controls.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/operations/security-and-operations.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/process/change-management.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/process/contribution-guide.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/process/deployment-and-environments.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/process/incident-response.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/process/onboarding-playbook.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/process/privacy-retention-and-compliance.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/product/product-requirements.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/quality/enterprise-testing-and-quality-enforcement-v2.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/quality/qa-and-release-gates.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/quality/testing-strategy.md
+On Going DOCS/DOC/Universal/Enterprise Level Guide/README.md
+On Going DOCS/DOC/Universal/GPT ROLES/API_Data_Contract_Architect.md
+On Going DOCS/DOC/Universal/GPT ROLES/Documentation_Workflow_Playbook.md
+On Going DOCS/DOC/Universal/GPT ROLES/Fullstack_Contract_Orchestrator.md
+On Going DOCS/DOC/Universal/GPT ROLES/README.md
+On Going DOCS/DOC/Universal/Prompts/README.md
+On Going DOCS/growrix-strict-executor.agent.md
+On Going DOCS/SAAS PLAN/factory_frontend_developer_agent.md
+On Going DOCS/SAAS PLAN/ultimate_saa_s_factory_system_blueprint_ai_readable_production_architecture.md
+On Going DOCS/Vite to next js/vite-to-nextjs-agent-build-prompt.md
+Template-Flow-Export-20260517-155351/.github/agents/foundation_developer.agent.md
+Template-Flow-Export-20260517-155351/.github/agents/foundation_planner.agent.md
+Template-Flow-Export-20260517-155351/.github/agents/README.md
+Template-Flow-Export-20260517-155351/.github/agents/template_deployment_operator.agent.md
+Template-Flow-Export-20260517-155351/.github/agents/template_import_attacher.agent.md
+Template-Flow-Export-20260517-155351/.github/agents/template_post_import_continuation.agent.md
+Template-Flow-Export-20260517-155351/.github/copilot-instructions.md
+Template-Flow-Export-20260517-155351/.github/workflows/foundation-core-verify.yml
+Template-Flow-Export-20260517-155351/.github/workflows/foundation-factory-attached-e2e.yml
+Template-Flow-Export-20260517-155351/DOC/agents/foundation_developer.agent.md
+Template-Flow-Export-20260517-155351/DOC/agents/foundation_planner.agent.md
+Template-Flow-Export-20260517-155351/DOC/agents/template_deployment_operator.agent.md
+Template-Flow-Export-20260517-155351/DOC/agents/template_import_attacher.agent.md
+Template-Flow-Export-20260517-155351/DOC/agents/template_post_import_continuation.agent.md
+Template-Flow-Export-20260517-155351/DOC/core/anti-hallucination-rules.md
+Template-Flow-Export-20260517-155351/DOC/core/system-rules.md
+Template-Flow-Export-20260517-155351/DOC/execution/codegen-rules/cli-command-rules.md
+Template-Flow-Export-20260517-155351/DOC/execution/codegen-rules/codegen-rules.md
+Template-Flow-Export-20260517-155351/DOC/execution/codegen-rules/output-format-rules.md
+Template-Flow-Export-20260517-155351/DOC/execution/spec-rules/foundation-core-planning-spec.md
+Template-Flow-Export-20260517-155351/DOC/execution/spec-rules/foundation-factory-e2e-spec.md
+Template-Flow-Export-20260517-155351/DOC/execution/spec-rules/frontend-attach-contract-spec.md
+Template-Flow-Export-20260517-155351/DOC/execution/spec-rules/template-import-attach-execution-spec.md
+Template-Flow-Export-20260517-155351/DOC/execution/spec-rules/template-post-import-continuation-spec.md
+Template-Flow-Export-20260517-155351/DOC/execution/spec-rules/template-vercel-deployment-spec.md
+Template-Flow-Export-20260517-155351/DOC/execution/spec-templates/dev-server-checklist.template.md
+Template-Flow-Export-20260517-155351/DOC/execution/spec-templates/export-manifest.template.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/api-rules/api-rules.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/backend-rules/backend-rules.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/database-rules/database-rules.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/deployment-rules/deployment-rules.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/devops-rules/cicd-rules.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/devops-rules/devops-rules.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/devops-rules/monitoring-rules.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/frontend-rules/accessibility-rules.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/frontend-rules/frontend-rules.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/frontend-rules/motion-rules.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/frontend-rules/responsive-rules.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/performance-rules/performance-rules.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/security-rules/security-rules.md
+Template-Flow-Export-20260517-155351/DOC/knowledge/testing-rules/testing-rules.md
+Template-Flow-Export-20260517-155351/DOC/validation/checklists/foundation-factory-readiness-checklist.md
+Template-Flow-Export-20260517-155351/DOC/validation/checklists/template-post-import-gap-closure-checklist.md
+Template-Flow-Export-20260517-155351/DOC/validation/checklists/template-vercel-deployment-checklist.md
+Template-Flow-Export-20260517-155351/DOC/validation/constraints/frontend-constraints.md
+Template-Flow-Export-20260517-155351/EXPORT-MANIFEST.txt
+Template-Flow-Export-20260517-155351/Foundation-Core/AGENTS.md
+Template-Flow-Export-20260517-155351/Foundation-Core/dev-server-checklist.md
+Template-Flow-Export-20260517-155351/Foundation-Core/docs/contracts/frontend-attach-contract.json
+Template-Flow-Export-20260517-155351/Foundation-Core/docs/contracts/openapi.foundation.yaml
+Template-Flow-Export-20260517-155351/Foundation-Core/export-manifest.md
+Template-Flow-Export-20260517-155351/Foundation-Core/foundation.manifest.json
+Template-Flow-Export-20260517-155351/Foundation-Core/README.md
+Template-Flow-Export-20260517-155351/Foundation-Core/RUN.md
+Template-Flow-Export-20260517-155351/Templates/foundation-attached-starter/AGENTS.md
+Template-Flow-Export-20260517-155351/Templates/foundation-attached-starter/dev-server-checklist.md
+Template-Flow-Export-20260517-155351/Templates/foundation-attached-starter/export-manifest.md
+Template-Flow-Export-20260517-155351/Templates/foundation-attached-starter/README.md
+Template-Flow-Export-20260517-155351/Templates/foundation-attached-starter/RUN.md
+Template-Flow-Export-20260517-155351/Templates/foundation-attached-starter/template.manifest.json
+Templates/foundation-attached-starter/AGENTS.md
+Templates/foundation-attached-starter/dev-server-checklist.md
+Templates/foundation-attached-starter/export-manifest.md
+Templates/foundation-attached-starter/README.md
+Templates/foundation-attached-starter/RUN.md
+Templates/foundation-attached-starter/template.manifest.json
+Templates/local-business/mezan/dev-server-checklist.md
+Templates/local-business/mezan/export-manifest.md
+Templates/local-business/mezan/README.md
+Templates/local-business/mezan/RUN.md
+Templates/local-business/mezan/template.manifest.json
+Templates/local-business/solar-electrical-au/dev-server-checklist.md
+Templates/local-business/solar-electrical-au/export-manifest.md
+Templates/local-business/solar-electrical-au/README.md
+Templates/local-business/solar-electrical-au/RUN.md
+Templates/local-business/solar-electrical-au/template.manifest.json
+Templates/local-business/solar-pro/AGENTS.md
+Templates/local-business/solar-pro/dev-server-checklist.md
+Templates/local-business/solar-pro/export-manifest.md
+Templates/local-business/solar-pro/README.md
+Templates/local-business/solar-pro/RUN.md
+Templates/local-business/solar-pro/template.manifest.json
+Templates/README.md

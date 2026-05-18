@@ -15,6 +15,7 @@
 ## Local modes
 - Standalone fallback: run `npm run dev`.
 - Attached mode: start `Foundation-Core` on `http://localhost:3000`, copy `ENV.example` to `.env.local`, then run `npm run dev:linked`.
+- If port `3001` is already occupied, either stop the conflicting process or run `npx next dev --port 3002` for a local smoke session.
 
 ## Attach check
 - Open `/api/template-attach-status` to confirm the template reports either `attached` or `mock-fallback`.

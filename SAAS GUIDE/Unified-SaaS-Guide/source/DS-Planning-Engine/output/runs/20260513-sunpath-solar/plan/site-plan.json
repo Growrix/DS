@@ -1,0 +1,382 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-13T00:00:00.000Z",
+  "lock_status": "partial_coverage",
+  "project": {
+    "name": "SunPath Solar",
+    "slug": "sunpath-solar",
+    "locale": "en-AU",
+    "business_type": "local-services",
+    "industry": "solar-installation",
+    "audience": "Australian homeowners and business owners considering solar panel installation and battery storage"
+  },
+  "brand": {
+    "archetype": "local-business-trust",
+    "theme_default": "light",
+    "voice": "Warm, straight-talking Australian tone. Confident without being pushy. Technical credibility balanced with everyday clarity.",
+    "motion_preset_hint": "rise-soft"
+  },
+  "site_map": {
+    "primary_nav": [
+      { "label": "Home",         "href": "/" },
+      { "label": "Residential",  "href": "/residential" },
+      { "label": "Commercial",   "href": "/commercial" },
+      { "label": "How It Works", "href": "/how-it-works" },
+      { "label": "Projects",     "href": "/projects" },
+      { "label": "About",        "href": "/about" }
+    ],
+    "primary_nav_cta": {
+      "label": "Get a Free Quote",
+      "href": "/contact"
+    },
+    "mobile_bottom_nav": [
+      { "label": "Home",        "href": "/",            "icon": "home" },
+      { "label": "Residential", "href": "/residential", "icon": "house" },
+      { "label": "Commercial",  "href": "/commercial",  "icon": "building" },
+      { "label": "Projects",    "href": "/projects",    "icon": "grid" },
+      { "label": "Get a Quote", "href": "/contact",     "icon": "phone" }
+    ],
+    "footer_columns": [
+      {
+        "heading": "Services",
+        "links": [
+          { "label": "Residential Solar", "href": "/residential" },
+          { "label": "Commercial Solar",  "href": "/commercial" },
+          { "label": "Battery Storage",   "href": "/residential#battery" },
+          { "label": "How It Works",      "href": "/how-it-works" }
+        ]
+      },
+      {
+        "heading": "Company",
+        "links": [
+          { "label": "About SunPath", "href": "/about" },
+          { "label": "Projects",      "href": "/projects" },
+          { "label": "Contact Us",    "href": "/contact" }
+        ]
+      },
+      {
+        "heading": "Contact",
+        "links": [
+          { "label": "1300 786 765",            "href": "tel:1300786765" },
+          { "label": "info@sunpathsolar.com.au", "href": "mailto:info@sunpathsolar.com.au" },
+          { "label": "Level 1, 42 George Street, Sydney NSW 2000", "href": "#" }
+        ]
+      },
+      {
+        "heading": "Legal",
+        "links": [
+          { "label": "Privacy Policy",    "href": "/privacy" },
+          { "label": "Terms of Service",  "href": "/terms" },
+          { "label": "CEC Accreditation", "href": "https://www.cleanenergycouncil.org.au/consumers/approved-solar-retailers" }
+        ]
+      }
+    ],
+    "footer_attribution": "© 2026 SunPath Solar Pty Ltd. All rights reserved. Clean Energy Council Accredited Retailer. ABN 12 345 678 901."
+  },
+  "pages": {
+    "home": {
+      "route": "/",
+      "title": "Solar Panel Installation Across Australia | SunPath Solar",
+      "meta_description": "SunPath Solar installs residential and commercial solar systems across Sydney, Melbourne, Brisbane, Perth and Adelaide. CEC accredited. Get a free quote today.",
+      "sections": [
+        {
+          "id": "home-hero",
+          "kind": "hero",
+          "variant": "hero-editorial-premium-1",
+          "variant_source": "cross-archetype-fallback",
+          "content": {
+            "kicker":              "home.hero.kicker",
+            "headline":            "home.hero.headline",
+            "subheadline":         "home.hero.subheadline",
+            "cta_primary_label":   "home.hero.cta_primary_label",
+            "cta_primary_href":    "home.hero.cta_primary_href",
+            "cta_secondary_label": "home.hero.cta_secondary_label",
+            "cta_secondary_href":  "home.hero.cta_secondary_href",
+            "image_alt":           "home.hero.image_alt"
+          }
+        },
+        {
+          "id": "home-stats",
+          "kind": "stats-band",
+          "variant": "stats-band-4col",
+          "variant_source": "cross-archetype-fallback",
+          "content": {
+            "stat_1_value": "home.stats.stat_1_value",
+            "stat_1_label": "home.stats.stat_1_label",
+            "stat_2_value": "home.stats.stat_2_value",
+            "stat_2_label": "home.stats.stat_2_label",
+            "stat_3_value": "home.stats.stat_3_value",
+            "stat_3_label": "home.stats.stat_3_label",
+            "stat_4_value": "home.stats.stat_4_value",
+            "stat_4_label": "home.stats.stat_4_label"
+          }
+        },
+        {
+          "id": "home-features",
+          "kind": "features",
+          "variant": "features-split-alternating",
+          "variant_source": "cross-archetype-fallback",
+          "content": {
+            "section_label":    "home.features.section_label",
+            "section_headline": "home.features.section_headline",
+            "row_1_headline":   "home.features.row_1_headline",
+            "row_1_body":       "home.features.row_1_body",
+            "row_1_cta_label":  "home.features.row_1_cta_label",
+            "row_1_cta_href":   "home.features.row_1_cta_href",
+            "row_1_image_alt":  "home.features.row_1_image_alt",
+            "row_2_headline":   "home.features.row_2_headline",
+            "row_2_body":       "home.features.row_2_body",
+            "row_2_cta_label":  "home.features.row_2_cta_label",
+            "row_2_cta_href":   "home.features.row_2_cta_href",
+            "row_2_image_alt":  "home.features.row_2_image_alt",
+            "row_3_headline":   "home.features.row_3_headline",
+            "row_3_body":       "home.features.row_3_body",
+            "row_3_cta_label":  "home.features.row_3_cta_label",
+            "row_3_cta_href":   "home.features.row_3_cta_href",
+            "row_3_image_alt":  "home.features.row_3_image_alt"
+          }
+        },
+        {
+          "id": "home-process",
+          "kind": "process-steps",
+          "variant": "process-steps-vertical",
+          "variant_source": "exact-archetype-match",
+          "content": {
+            "section_label":    "home.process.section_label",
+            "section_headline": "home.process.section_headline",
+            "step_1_number":    "home.process.step_1_number",
+            "step_1_title":     "home.process.step_1_title",
+            "step_1_body":      "home.process.step_1_body",
+            "step_2_number":    "home.process.step_2_number",
+            "step_2_title":     "home.process.step_2_title",
+            "step_2_body":      "home.process.step_2_body",
+            "step_3_number":    "home.process.step_3_number",
+            "step_3_title":     "home.process.step_3_title",
+            "step_3_body":      "home.process.step_3_body",
+            "step_4_number":    "home.process.step_4_number",
+            "step_4_title":     "home.process.step_4_title",
+            "step_4_body":      "home.process.step_4_body"
+          }
+        },
+        {
+          "id": "home-testimonials",
+          "kind": "testimonials",
+          "variant": "testimonials-marquee",
+          "variant_source": "cross-archetype-fallback",
+          "content": {
+            "section_label":    "home.testimonials.section_label",
+            "section_headline": "home.testimonials.section_headline",
+            "card_1_quote":     "home.testimonials.card_1_quote",
+            "card_1_name":      "home.testimonials.card_1_name",
+            "card_1_detail":    "home.testimonials.card_1_detail",
+            "card_2_quote":     "home.testimonials.card_2_quote",
+            "card_2_name":      "home.testimonials.card_2_name",
+            "card_2_detail":    "home.testimonials.card_2_detail",
+            "card_3_quote":     "home.testimonials.card_3_quote",
+            "card_3_name":      "home.testimonials.card_3_name",
+            "card_3_detail":    "home.testimonials.card_3_detail",
+            "card_4_quote":     "home.testimonials.card_4_quote",
+            "card_4_name":      "home.testimonials.card_4_name",
+            "card_4_detail":    "home.testimonials.card_4_detail",
+            "card_5_quote":     "home.testimonials.card_5_quote",
+            "card_5_name":      "home.testimonials.card_5_name",
+            "card_5_detail":    "home.testimonials.card_5_detail"
+          }
+        },
+        {
+          "id": "home-logos",
+          "kind": "logo-cloud",
+          "variant": "logo-cloud-grid",
+          "variant_source": "cross-archetype-fallback",
+          "content": {
+            "section_label": "home.logos.section_label",
+            "logo_1_name":   "home.logos.logo_1_name",
+            "logo_2_name":   "home.logos.logo_2_name",
+            "logo_3_name":   "home.logos.logo_3_name",
+            "logo_4_name":   "home.logos.logo_4_name",
+            "logo_5_name":   "home.logos.logo_5_name",
+            "logo_6_name":   "home.logos.logo_6_name"
+          }
+        },
+        {
+          "id": "home-cta",
+          "kind": "cta",
+          "variant": "cta-full-bleed",
+          "variant_source": "cross-archetype-fallback",
+          "content": {
+            "headline":           "home.cta.headline",
+            "subheadline":        "home.cta.subheadline",
+            "cta_primary_label":  "home.cta.cta_primary_label",
+            "cta_primary_href":   "home.cta.cta_primary_href",
+            "cta_secondary_label":"home.cta.cta_secondary_label",
+            "cta_secondary_href": "home.cta.cta_secondary_href"
+          }
+        }
+      ]
+    },
+    "residential": {
+      "route": "/residential",
+      "title": "Residential Solar Installation | SunPath Solar",
+      "meta_description": "SunPath Solar installs 6.6kW to 20kW+ residential solar systems across Australia. CEC accredited installers. Battery storage available. Get a free home assessment.",
+      "sections": [
+        { "id": "res-hero",         "kind": "hero",         "variant": "hero-editorial-premium-1",  "variant_source": "cross-archetype-fallback", "content": { "kicker": "residential.hero.kicker", "headline": "residential.hero.headline", "subheadline": "residential.hero.subheadline", "cta_primary_label": "residential.hero.cta_primary_label", "cta_primary_href": "residential.hero.cta_primary_href", "cta_secondary_label": "residential.hero.cta_secondary_label", "cta_secondary_href": "residential.hero.cta_secondary_href", "image_alt": "residential.hero.image_alt" } },
+        { "id": "res-features",     "kind": "features",     "variant": "features-split-alternating","variant_source": "cross-archetype-fallback", "content": { "section_label": "residential.features.section_label", "section_headline": "residential.features.section_headline", "row_1_headline": "residential.features.row_1_headline", "row_1_body": "residential.features.row_1_body", "row_1_cta_label": "residential.features.row_1_cta_label", "row_1_cta_href": "residential.features.row_1_cta_href", "row_1_image_alt": "residential.features.row_1_image_alt", "row_2_headline": "residential.features.row_2_headline", "row_2_body": "residential.features.row_2_body", "row_2_cta_label": "residential.features.row_2_cta_label", "row_2_cta_href": "residential.features.row_2_cta_href", "row_2_image_alt": "residential.features.row_2_image_alt", "row_3_headline": "residential.features.row_3_headline", "row_3_body": "residential.features.row_3_body", "row_3_cta_label": "residential.features.row_3_cta_label", "row_3_cta_href": "residential.features.row_3_cta_href", "row_3_image_alt": "residential.features.row_3_image_alt" } },
+        { "id": "res-stats",        "kind": "stats-band",   "variant": "stats-band-4col",           "variant_source": "cross-archetype-fallback", "content": { "stat_1_value": "residential.stats.stat_1_value", "stat_1_label": "residential.stats.stat_1_label", "stat_2_value": "residential.stats.stat_2_value", "stat_2_label": "residential.stats.stat_2_label", "stat_3_value": "residential.stats.stat_3_value", "stat_3_label": "residential.stats.stat_3_label", "stat_4_value": "residential.stats.stat_4_value", "stat_4_label": "residential.stats.stat_4_label" } },
+        { "id": "res-process",      "kind": "process-steps","variant": "process-steps-vertical",    "variant_source": "exact-archetype-match",    "content": { "section_label": "residential.process.section_label", "section_headline": "residential.process.section_headline", "step_1_number": "residential.process.step_1_number", "step_1_title": "residential.process.step_1_title", "step_1_body": "residential.process.step_1_body", "step_2_number": "residential.process.step_2_number", "step_2_title": "residential.process.step_2_title", "step_2_body": "residential.process.step_2_body", "step_3_number": "residential.process.step_3_number", "step_3_title": "residential.process.step_3_title", "step_3_body": "residential.process.step_3_body", "step_4_number": "residential.process.step_4_number", "step_4_title": "residential.process.step_4_title", "step_4_body": "residential.process.step_4_body" } },
+        { "id": "res-testimonials", "kind": "testimonials", "variant": "testimonials-marquee",      "variant_source": "cross-archetype-fallback", "content": { "section_label": "residential.testimonials.section_label", "section_headline": "residential.testimonials.section_headline", "card_1_quote": "residential.testimonials.card_1_quote", "card_1_name": "residential.testimonials.card_1_name", "card_1_detail": "residential.testimonials.card_1_detail", "card_2_quote": "residential.testimonials.card_2_quote", "card_2_name": "residential.testimonials.card_2_name", "card_2_detail": "residential.testimonials.card_2_detail", "card_3_quote": "residential.testimonials.card_3_quote", "card_3_name": "residential.testimonials.card_3_name", "card_3_detail": "residential.testimonials.card_3_detail" } },
+        { "id": "res-cta",          "kind": "cta",          "variant": "cta-full-bleed",            "variant_source": "cross-archetype-fallback", "content": { "headline": "residential.cta.headline", "subheadline": "residential.cta.subheadline", "cta_primary_label": "residential.cta.cta_primary_label", "cta_primary_href": "residential.cta.cta_primary_href", "cta_secondary_label": "residential.cta.cta_secondary_label", "cta_secondary_href": "residential.cta.cta_secondary_href" } }
+      ]
+    },
+    "commercial": {
+      "route": "/commercial",
+      "title": "Commercial Solar Installation for Australian Businesses | SunPath Solar",
+      "meta_description": "SunPath Solar installs commercial solar systems from 20kW to 500kW+ for Australian businesses. Reduce energy costs by up to 80%. Free commercial feasibility study.",
+      "sections": [
+        { "id": "com-hero",         "kind": "hero",         "variant": "hero-editorial-premium-1",  "variant_source": "cross-archetype-fallback", "content": { "kicker": "commercial.hero.kicker", "headline": "commercial.hero.headline", "subheadline": "commercial.hero.subheadline", "cta_primary_label": "commercial.hero.cta_primary_label", "cta_primary_href": "commercial.hero.cta_primary_href", "cta_secondary_label": "commercial.hero.cta_secondary_label", "cta_secondary_href": "commercial.hero.cta_secondary_href", "image_alt": "commercial.hero.image_alt" } },
+        { "id": "com-features",     "kind": "features",     "variant": "features-split-alternating","variant_source": "cross-archetype-fallback", "content": { "section_label": "commercial.features.section_label", "section_headline": "commercial.features.section_headline", "row_1_headline": "commercial.features.row_1_headline", "row_1_body": "commercial.features.row_1_body", "row_1_cta_label": "commercial.features.row_1_cta_label", "row_1_cta_href": "commercial.features.row_1_cta_href", "row_1_image_alt": "commercial.features.row_1_image_alt", "row_2_headline": "commercial.features.row_2_headline", "row_2_body": "commercial.features.row_2_body", "row_2_cta_label": "commercial.features.row_2_cta_label", "row_2_cta_href": "commercial.features.row_2_cta_href", "row_2_image_alt": "commercial.features.row_2_image_alt", "row_3_headline": "commercial.features.row_3_headline", "row_3_body": "commercial.features.row_3_body", "row_3_cta_label": "commercial.features.row_3_cta_label", "row_3_cta_href": "commercial.features.row_3_cta_href", "row_3_image_alt": "commercial.features.row_3_image_alt" } },
+        { "id": "com-stats",        "kind": "stats-band",   "variant": "stats-band-4col",           "variant_source": "cross-archetype-fallback", "content": { "stat_1_value": "commercial.stats.stat_1_value", "stat_1_label": "commercial.stats.stat_1_label", "stat_2_value": "commercial.stats.stat_2_value", "stat_2_label": "commercial.stats.stat_2_label", "stat_3_value": "commercial.stats.stat_3_value", "stat_3_label": "commercial.stats.stat_3_label", "stat_4_value": "commercial.stats.stat_4_value", "stat_4_label": "commercial.stats.stat_4_label" } },
+        { "id": "com-cases",        "kind": "case-studies", "variant": "case-studies-grid",         "variant_source": "cross-archetype-fallback", "content": { "section_label": "commercial.cases.section_label", "section_headline": "commercial.cases.section_headline", "card_1_title": "commercial.cases.card_1_title", "card_1_tags": "commercial.cases.card_1_tags", "card_1_image_alt": "commercial.cases.card_1_image_alt", "card_2_title": "commercial.cases.card_2_title", "card_2_tags": "commercial.cases.card_2_tags", "card_2_image_alt": "commercial.cases.card_2_image_alt", "card_3_title": "commercial.cases.card_3_title", "card_3_tags": "commercial.cases.card_3_tags", "card_3_image_alt": "commercial.cases.card_3_image_alt", "card_4_title": "commercial.cases.card_4_title", "card_4_tags": "commercial.cases.card_4_tags", "card_4_image_alt": "commercial.cases.card_4_image_alt" } },
+        { "id": "com-testimonials", "kind": "testimonials", "variant": "testimonials-marquee",      "variant_source": "cross-archetype-fallback", "content": { "section_label": "commercial.testimonials.section_label", "section_headline": "commercial.testimonials.section_headline", "card_1_quote": "commercial.testimonials.card_1_quote", "card_1_name": "commercial.testimonials.card_1_name", "card_1_detail": "commercial.testimonials.card_1_detail", "card_2_quote": "commercial.testimonials.card_2_quote", "card_2_name": "commercial.testimonials.card_2_name", "card_2_detail": "commercial.testimonials.card_2_detail", "card_3_quote": "commercial.testimonials.card_3_quote", "card_3_name": "commercial.testimonials.card_3_name", "card_3_detail": "commercial.testimonials.card_3_detail" } },
+        { "id": "com-cta",          "kind": "cta",          "variant": "cta-full-bleed",            "variant_source": "cross-archetype-fallback", "content": { "headline": "commercial.cta.headline", "subheadline": "commercial.cta.subheadline", "cta_primary_label": "commercial.cta.cta_primary_label", "cta_primary_href": "commercial.cta.cta_primary_href", "cta_secondary_label": "commercial.cta.cta_secondary_label", "cta_secondary_href": "commercial.cta.cta_secondary_href" } }
+      ]
+    },
+    "how-it-works": {
+      "route": "/how-it-works",
+      "title": "How Solar Installation Works | SunPath Solar",
+      "meta_description": "Learn how SunPath Solar's 4-step installation process works — from your free site assessment through to monitoring your savings. Simple, fast, and fully managed.",
+      "sections": [
+        { "id": "hiw-hero",     "kind": "hero",          "variant": "hero-editorial-premium-1",  "variant_source": "cross-archetype-fallback", "content": { "kicker": "how_it_works.hero.kicker", "headline": "how_it_works.hero.headline", "subheadline": "how_it_works.hero.subheadline", "cta_primary_label": "how_it_works.hero.cta_primary_label", "cta_primary_href": "how_it_works.hero.cta_primary_href", "image_alt": "how_it_works.hero.image_alt" } },
+        { "id": "hiw-process",  "kind": "process-steps", "variant": "process-steps-vertical",   "variant_source": "exact-archetype-match",    "content": { "section_label": "how_it_works.process.section_label", "section_headline": "how_it_works.process.section_headline", "step_1_number": "how_it_works.process.step_1_number", "step_1_title": "how_it_works.process.step_1_title", "step_1_body": "how_it_works.process.step_1_body", "step_2_number": "how_it_works.process.step_2_number", "step_2_title": "how_it_works.process.step_2_title", "step_2_body": "how_it_works.process.step_2_body", "step_3_number": "how_it_works.process.step_3_number", "step_3_title": "how_it_works.process.step_3_title", "step_3_body": "how_it_works.process.step_3_body", "step_4_number": "how_it_works.process.step_4_number", "step_4_title": "how_it_works.process.step_4_title", "step_4_body": "how_it_works.process.step_4_body" } },
+        { "id": "hiw-features", "kind": "features",      "variant": "features-split-alternating","variant_source": "cross-archetype-fallback", "content": { "section_label": "how_it_works.features.section_label", "section_headline": "how_it_works.features.section_headline", "row_1_headline": "how_it_works.features.row_1_headline", "row_1_body": "how_it_works.features.row_1_body", "row_1_cta_label": "how_it_works.features.row_1_cta_label", "row_1_image_alt": "how_it_works.features.row_1_image_alt", "row_2_headline": "how_it_works.features.row_2_headline", "row_2_body": "how_it_works.features.row_2_body", "row_2_cta_label": "how_it_works.features.row_2_cta_label", "row_2_image_alt": "how_it_works.features.row_2_image_alt", "row_3_headline": "how_it_works.features.row_3_headline", "row_3_body": "how_it_works.features.row_3_body", "row_3_cta_label": "how_it_works.features.row_3_cta_label", "row_3_image_alt": "how_it_works.features.row_3_image_alt" } },
+        { "id": "hiw-cta",      "kind": "cta",           "variant": "cta-full-bleed",           "variant_source": "cross-archetype-fallback", "content": { "headline": "how_it_works.cta.headline", "subheadline": "how_it_works.cta.subheadline", "cta_primary_label": "how_it_works.cta.cta_primary_label", "cta_primary_href": "how_it_works.cta.cta_primary_href", "cta_secondary_label": "how_it_works.cta.cta_secondary_label", "cta_secondary_href": "how_it_works.cta.cta_secondary_href" } }
+      ]
+    },
+    "projects": {
+      "route": "/projects",
+      "title": "Solar Installation Projects | SunPath Solar",
+      "meta_description": "Browse SunPath Solar's completed residential and commercial solar installations across Sydney, Melbourne, Brisbane, Perth, and Adelaide. See real systems on real rooftops.",
+      "sections": [
+        { "id": "prj-hero",  "kind": "hero",         "variant": "hero-editorial-premium-1","variant_source": "cross-archetype-fallback", "content": { "kicker": "projects.hero.kicker", "headline": "projects.hero.headline", "subheadline": "projects.hero.subheadline", "cta_primary_label": "projects.hero.cta_primary_label", "cta_primary_href": "projects.hero.cta_primary_href", "image_alt": "projects.hero.image_alt" } },
+        { "id": "prj-cases", "kind": "case-studies", "variant": "case-studies-grid",      "variant_source": "cross-archetype-fallback", "content": { "section_label": "projects.cases.section_label", "section_headline": "projects.cases.section_headline", "card_1_title": "projects.cases.card_1_title", "card_1_tags": "projects.cases.card_1_tags", "card_1_image_alt": "projects.cases.card_1_image_alt", "card_2_title": "projects.cases.card_2_title", "card_2_tags": "projects.cases.card_2_tags", "card_2_image_alt": "projects.cases.card_2_image_alt", "card_3_title": "projects.cases.card_3_title", "card_3_tags": "projects.cases.card_3_tags", "card_3_image_alt": "projects.cases.card_3_image_alt", "card_4_title": "projects.cases.card_4_title", "card_4_tags": "projects.cases.card_4_tags", "card_4_image_alt": "projects.cases.card_4_image_alt", "card_5_title": "projects.cases.card_5_title", "card_5_tags": "projects.cases.card_5_tags", "card_5_image_alt": "projects.cases.card_5_image_alt", "card_6_title": "projects.cases.card_6_title", "card_6_tags": "projects.cases.card_6_tags", "card_6_image_alt": "projects.cases.card_6_image_alt" } },
+        { "id": "prj-stats", "kind": "stats-band",   "variant": "stats-band-4col",        "variant_source": "cross-archetype-fallback", "content": { "stat_1_value": "projects.stats.stat_1_value", "stat_1_label": "projects.stats.stat_1_label", "stat_2_value": "projects.stats.stat_2_value", "stat_2_label": "projects.stats.stat_2_label", "stat_3_value": "projects.stats.stat_3_value", "stat_3_label": "projects.stats.stat_3_label", "stat_4_value": "projects.stats.stat_4_value", "stat_4_label": "projects.stats.stat_4_label" } },
+        { "id": "prj-cta",   "kind": "cta",          "variant": "cta-full-bleed",         "variant_source": "cross-archetype-fallback", "content": { "headline": "projects.cta.headline", "subheadline": "projects.cta.subheadline", "cta_primary_label": "projects.cta.cta_primary_label", "cta_primary_href": "projects.cta.cta_primary_href", "cta_secondary_label": "projects.cta.cta_secondary_label", "cta_secondary_href": "projects.cta.cta_secondary_href" } }
+      ]
+    },
+    "about": {
+      "route": "/about",
+      "title": "About SunPath Solar | CEC Accredited Australian Solar Installer",
+      "meta_description": "SunPath Solar is a CEC-accredited Australian solar installer with 12 years of experience across NSW, VIC, QLD, WA, and SA. Meet the team behind 2,400+ installations.",
+      "sections": [
+        { "id": "abt-hero",     "kind": "hero",       "variant": "hero-editorial-premium-1",  "variant_source": "cross-archetype-fallback", "content": { "kicker": "about.hero.kicker", "headline": "about.hero.headline", "subheadline": "about.hero.subheadline", "cta_primary_label": "about.hero.cta_primary_label", "cta_primary_href": "about.hero.cta_primary_href", "cta_secondary_label": "about.hero.cta_secondary_label", "cta_secondary_href": "about.hero.cta_secondary_href", "image_alt": "about.hero.image_alt" } },
+        { "id": "abt-features", "kind": "features",   "variant": "features-split-alternating","variant_source": "cross-archetype-fallback", "content": { "section_label": "about.features.section_label", "section_headline": "about.features.section_headline", "row_1_headline": "about.features.row_1_headline", "row_1_body": "about.features.row_1_body", "row_1_cta_label": "about.features.row_1_cta_label", "row_1_cta_href": "about.features.row_1_cta_href", "row_1_image_alt": "about.features.row_1_image_alt", "row_2_headline": "about.features.row_2_headline", "row_2_body": "about.features.row_2_body", "row_2_image_alt": "about.features.row_2_image_alt", "row_3_headline": "about.features.row_3_headline", "row_3_body": "about.features.row_3_body", "row_3_image_alt": "about.features.row_3_image_alt" } },
+        { "id": "abt-stats",    "kind": "stats-band", "variant": "stats-band-4col",           "variant_source": "cross-archetype-fallback", "content": { "stat_1_value": "about.stats.stat_1_value", "stat_1_label": "about.stats.stat_1_label", "stat_2_value": "about.stats.stat_2_value", "stat_2_label": "about.stats.stat_2_label", "stat_3_value": "about.stats.stat_3_value", "stat_3_label": "about.stats.stat_3_label", "stat_4_value": "about.stats.stat_4_value", "stat_4_label": "about.stats.stat_4_label" } },
+        { "id": "abt-logos",    "kind": "logo-cloud", "variant": "logo-cloud-grid",           "variant_source": "cross-archetype-fallback", "content": { "section_label": "about.logos.section_label", "logo_1_name": "about.logos.logo_1_name", "logo_2_name": "about.logos.logo_2_name", "logo_3_name": "about.logos.logo_3_name", "logo_4_name": "about.logos.logo_4_name", "logo_5_name": "about.logos.logo_5_name", "logo_6_name": "about.logos.logo_6_name", "logo_7_name": "about.logos.logo_7_name", "logo_8_name": "about.logos.logo_8_name" } },
+        { "id": "abt-cta",      "kind": "cta",        "variant": "cta-full-bleed",            "variant_source": "cross-archetype-fallback", "content": { "headline": "about.cta.headline", "subheadline": "about.cta.subheadline", "cta_primary_label": "about.cta.cta_primary_label", "cta_primary_href": "about.cta.cta_primary_href", "cta_secondary_label": "about.cta.cta_secondary_label", "cta_secondary_href": "about.cta.cta_secondary_href" } }
+      ]
+    },
+    "contact": {
+      "route": "/contact",
+      "title": "Get a Free Solar Quote | SunPath Solar",
+      "meta_description": "Contact SunPath Solar for a free solar quote across Sydney, Melbourne, Brisbane, Perth and Adelaide. Call 1300 786 765 or submit your details and we'll call you back within 4 business hours.",
+      "sections": [
+        { "id": "con-hero",     "kind": "hero",     "variant": "hero-editorial-premium-1",  "variant_source": "cross-archetype-fallback", "content": { "kicker": "contact.hero.kicker", "headline": "contact.hero.headline", "subheadline": "contact.hero.subheadline", "cta_primary_label": "contact.hero.cta_primary_label", "cta_primary_href": "contact.hero.cta_primary_href", "image_alt": "contact.hero.image_alt" } },
+        { "id": "con-features", "kind": "features", "variant": "features-split-alternating","variant_source": "cross-archetype-fallback", "content": { "section_label": "contact.features.section_label", "section_headline": "contact.features.section_headline", "row_1_headline": "contact.features.row_1_headline", "row_1_body": "contact.features.row_1_body", "row_1_cta_label": "contact.features.row_1_cta_label", "row_1_cta_href": "contact.features.row_1_cta_href", "row_1_image_alt": "contact.features.row_1_image_alt", "row_2_headline": "contact.features.row_2_headline", "row_2_body": "contact.features.row_2_body", "row_2_image_alt": "contact.features.row_2_image_alt", "row_3_headline": "contact.features.row_3_headline", "row_3_body": "contact.features.row_3_body", "row_3_image_alt": "contact.features.row_3_image_alt" } },
+        { "id": "con-cta",      "kind": "cta",      "variant": "cta-full-bleed",            "variant_source": "cross-archetype-fallback", "content": { "headline": "contact.cta.headline", "subheadline": "contact.cta.subheadline", "cta_primary_label": "contact.cta.cta_primary_label", "cta_primary_href": "contact.cta.cta_primary_href", "cta_secondary_label": "contact.cta.cta_secondary_label", "cta_secondary_href": "contact.cta.cta_secondary_href" } }
+      ]
+    }
+  },
+  "content_library": "plan/content-library.json",
+  "ds_dependency": {
+    "ds_contract_path": "Frontend-Master_DS/generated/ds.contract.json",
+    "ds_contract_version": "1.0",
+    "variants_used": [
+      "hero-editorial-premium-1",
+      "features-split-alternating",
+      "stats-band-4col",
+      "process-steps-vertical",
+      "testimonials-marquee",
+      "logo-cloud-grid",
+      "cta-full-bleed",
+      "case-studies-grid"
+    ],
+    "counts": {
+      "variants_available": 12,
+      "archetypes_available": 8,
+      "motion_presets_available": 8,
+      "themes_available": 2
+    }
+  },
+  "ds_gaps": [
+    {
+      "kind": "hero",
+      "archetype": "local-business-trust",
+      "needed_for": ["home", "residential", "commercial", "how-it-works", "projects", "about", "contact"],
+      "severity": "medium",
+      "fallback_variant_id": "hero-editorial-premium-1",
+      "recommended_variant_id": "hero-local-trust-photo",
+      "effort_estimate": "low-medium",
+      "notes": "local-business-trust archetype has no native hero variant. editorial-premium fallback is high-suitability (fullBleedPhotograph permission matches)."
+    },
+    {
+      "kind": "features",
+      "archetype": "local-business-trust",
+      "needed_for": ["home", "residential", "commercial", "how-it-works", "about", "contact"],
+      "severity": "medium",
+      "fallback_variant_id": "features-split-alternating",
+      "recommended_variant_id": "features-split-local",
+      "effort_estimate": "low",
+      "notes": "editorial-premium fallback is high-suitability. Minor aesthetic delta in spacing density."
+    },
+    {
+      "kind": "testimonials",
+      "archetype": "local-business-trust",
+      "needed_for": ["home", "residential", "commercial"],
+      "severity": "medium",
+      "fallback_variant_id": "testimonials-marquee",
+      "recommended_variant_id": "testimonials-grid-local",
+      "effort_estimate": "medium",
+      "notes": "modern-saas marquee fallback is medium-suitability. A grid with suburb display would be more trust-forward for local audiences."
+    },
+    {
+      "kind": "cta",
+      "archetype": "local-business-trust",
+      "needed_for": ["home", "residential", "commercial", "how-it-works", "projects", "about", "contact"],
+      "severity": "medium",
+      "fallback_variant_id": "cta-full-bleed",
+      "recommended_variant_id": "cta-trust-band",
+      "effort_estimate": "low",
+      "notes": "bold-consumer fallback is medium-suitability. Phone number prominence is handled via content but not baked into the variant layout."
+    },
+    {
+      "kind": "stats-band",
+      "archetype": "local-business-trust",
+      "needed_for": ["home", "residential", "commercial", "projects", "about"],
+      "severity": "medium",
+      "fallback_variant_id": "stats-band-4col",
+      "recommended_variant_id": null,
+      "effort_estimate": "low",
+      "notes": "modern-saas fallback is high-suitability. Stats band layout is effectively archetype-neutral. Low priority to build native variant."
+    },
+    {
+      "kind": "logo-cloud",
+      "archetype": "local-business-trust",
+      "needed_for": ["home", "about"],
+      "severity": "medium",
+      "fallback_variant_id": "logo-cloud-grid",
+      "recommended_variant_id": null,
+      "effort_estimate": "low",
+      "notes": "modern-saas fallback is high-suitability. Greyscale grid is archetype-neutral. Low priority."
+    },
+    {
+      "kind": "case-studies",
+      "archetype": "local-business-trust",
+      "needed_for": ["commercial", "projects"],
+      "severity": "medium",
+      "fallback_variant_id": "case-studies-grid",
+      "recommended_variant_id": null,
+      "effort_estimate": "low",
+      "notes": "portfolio-craft fallback is high-suitability for photographic project showcases. Low priority."
+    }
+  ],
+  "open_questions": []
+}

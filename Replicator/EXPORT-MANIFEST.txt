@@ -1,0 +1,14 @@
+Replicator Export Manifest
+Created: 2026-05-18
+Source Root: f:\PROJECTS\testing
+
+Included directories:
+- .github\agents
+- .github\prompts
+- .github\instructions
+- Backend & Deploy
+
+Export intent:
+- Preserve current phase-based agent surface and isolated backend/deploy lane
+- Enable copy/paste reuse in another existing project
+- Keep export system-only and portable

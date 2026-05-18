@@ -6,15 +6,16 @@
 - operation_mode: import_attach
 
 ## Validation Matrix
-- lint: pending
-- typecheck: pending
-- build: pending
-- smoke: pending
+- lint: passed (`npm run lint`)
+- typecheck: passed (`npm run typecheck`)
+- build: passed (`npm run build`)
+- smoke: passed (`npm run dev` launched from `Templates/local-business/mezan/`; `/` and `/api/template-attach-status` both responded on the first available local dev port)
 
 ## Import Integrity
 - visible baseline preserved from imported runtime
 - non-portable source baggage removed
 - Foundation attach route added without redesigning public UI
+- runtime root validated after normalization
 
 ## Status
-pending validation
+pass with follow-up content/compliance work still optional

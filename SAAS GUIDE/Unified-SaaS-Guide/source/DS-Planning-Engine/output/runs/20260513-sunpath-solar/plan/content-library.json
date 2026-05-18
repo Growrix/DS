@@ -1,0 +1,470 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-13T00:00:00.000Z",
+  "locale": "en-AU",
+  "project_slug": "sunpath-solar",
+
+  "home": {
+    "hero": {
+      "kicker": "Clean Energy Council Accredited · Serving NSW, VIC, QLD, WA, SA",
+      "headline": "Australia Runs Better on Solar",
+      "subheadline": "SunPath Solar designs, installs, and monitors residential and commercial solar systems across Australia. Free quotes, government rebate assistance, and next-week installation.",
+      "cta_primary_label": "Get Your Free Quote",
+      "cta_primary_href": "/contact",
+      "cta_secondary_label": "See Our Work",
+      "cta_secondary_href": "/projects",
+      "image_alt": "Solar panels installed on a tiled rooftop of an Australian family home with clear blue sky"
+    },
+    "stats": {
+      "stat_1_value": "2,400+",
+      "stat_1_label": "Systems Installed",
+      "stat_2_value": "12 Years",
+      "stat_2_label": "In Business",
+      "stat_3_value": "25 Years",
+      "stat_3_label": "Panel Warranty",
+      "stat_4_value": "$0",
+      "stat_4_label": "Quote Cost"
+    },
+    "features": {
+      "section_label": "What We Install",
+      "section_headline": "Solar Solutions for Homes and Businesses",
+      "row_1_headline": "Residential Solar",
+      "row_1_body": "From 6.6kW starter systems to 20kW+ premium setups with battery storage, we design every residential system around your roof, energy usage, and budget. STC rebate assistance included.",
+      "row_1_cta_label": "Explore Residential Solar",
+      "row_1_cta_href": "/residential",
+      "row_1_image_alt": "SunPath Solar technician installing panels on a suburban home roof in Sydney",
+      "row_2_headline": "Commercial Solar",
+      "row_2_body": "Reduce your business energy bill by up to 80%. We handle everything from feasibility through to grid connection, with systems from 20kW to 500kW+ for warehouses, factories, and offices.",
+      "row_2_cta_label": "Explore Commercial Solar",
+      "row_2_cta_href": "/commercial",
+      "row_2_image_alt": "Large commercial solar array installed on a warehouse rooftop in Melbourne",
+      "row_3_headline": "Battery Storage",
+      "row_3_body": "Store the sun and use it at night or during grid outages. We install Tesla Powerwall and Sungrow battery systems — fully integrated with your solar setup for maximum self-sufficiency.",
+      "row_3_cta_label": "Learn About Battery Storage",
+      "row_3_cta_href": "/residential#battery",
+      "row_3_image_alt": "Tesla Powerwall battery storage unit mounted on the exterior wall of an Australian home"
+    },
+    "process": {
+      "section_label": "How It Works",
+      "section_headline": "Solar in 4 Simple Steps",
+      "step_1_number": "1",
+      "step_1_title": "Free Site Assessment",
+      "step_1_body": "We review your energy bills, roof orientation, shading, and grid connection. You get a custom design and quote at no cost, no obligation.",
+      "step_2_number": "2",
+      "step_2_title": "System Design & Approval",
+      "step_2_body": "Our engineers design your system and handle all council and network approvals. We manage the paperwork so you don't have to.",
+      "step_3_number": "3",
+      "step_3_title": "Professional Installation",
+      "step_3_body": "Our CEC-accredited installers complete most residential jobs in a single day. We clean up, commission the system, and walk you through everything.",
+      "step_4_number": "4",
+      "step_4_title": "Monitor & Save",
+      "step_4_body": "Track your generation and savings in real time via your monitoring app. Our support team is available if you ever have questions."
+    },
+    "testimonials": {
+      "section_label": "What Our Customers Say",
+      "section_headline": "Trusted by Australians Across the Country",
+      "card_1_quote": "SunPath had our 13.3kW system designed, approved, and installed inside two weeks. Our bill went from $480 a quarter to virtually zero. Absolute legends.",
+      "card_1_name": "James & Sarah W.",
+      "card_1_detail": "Homeowners · Parramatta, NSW",
+      "card_2_quote": "We had three quotes and SunPath was the only one that bothered to come out and actually look at the roof. Professional from start to finish.",
+      "card_2_name": "Michelle T.",
+      "card_2_detail": "Business Owner · Brighton, VIC",
+      "card_3_quote": "The commercial system paid for itself in 18 months. The monitoring portal shows exactly what we're generating hour by hour. Very impressed.",
+      "card_3_name": "Darren K.",
+      "card_3_detail": "Operations Manager · Brendale, QLD",
+      "card_4_quote": "Couldn't believe how smooth the process was. We claimed the STCs without lifting a finger — SunPath handled every form.",
+      "card_4_name": "Priya & Raj N.",
+      "card_4_detail": "Homeowners · Norwood, SA",
+      "card_5_quote": "Best investment we've made in the house. Three years in, the system is generating exactly what they projected. Top-quality panels and workmanship.",
+      "card_5_name": "Craig M.",
+      "card_5_detail": "Homeowner · Subiaco, WA"
+    },
+    "logos": {
+      "section_label": "Accreditations & Partners",
+      "logo_1_name": "Clean Energy Council Accredited Retailer",
+      "logo_2_name": "Tesla Powerwall Certified Installer",
+      "logo_3_name": "Sungrow Authorised Installer",
+      "logo_4_name": "REC Solar Partner",
+      "logo_5_name": "SolarEdge Preferred Installer",
+      "logo_6_name": "Australian Solar Council Member"
+    },
+    "cta": {
+      "headline": "Get Your Free Solar Quote Today",
+      "subheadline": "Join 2,400+ Australians who've switched to solar with SunPath. No-obligation assessment. Government rebate assistance included.",
+      "cta_primary_label": "Request a Free Quote",
+      "cta_primary_href": "/contact",
+      "cta_secondary_label": "Call 1300 786 765",
+      "cta_secondary_href": "tel:1300786765"
+    }
+  },
+
+  "residential": {
+    "hero": {
+      "kicker": "For Australian Homeowners · CEC Accredited · 25-Year Warranty",
+      "headline": "Solar That Pays for Itself",
+      "subheadline": "We design residential solar systems that match your roof, your energy usage, and your budget. Most homes save $1,500–$2,800 per year from day one.",
+      "cta_primary_label": "Get a Free Home Assessment",
+      "cta_primary_href": "/contact",
+      "cta_secondary_label": "How It Works",
+      "cta_secondary_href": "/how-it-works",
+      "image_alt": "Aerial view of solar panels covering the full roof of an Australian family home in a leafy suburb"
+    },
+    "features": {
+      "section_label": "Residential Solar Packages",
+      "section_headline": "Every Home Is Different. Every System Is Custom.",
+      "row_1_headline": "6.6kW Starter System",
+      "row_1_body": "Ideal for 2–3 person households. Covers the average Australian home's daytime energy use. Eligible for maximum STC rebate. Installed in a single day.",
+      "row_1_cta_label": "Get a Quote for This System",
+      "row_1_cta_href": "/contact",
+      "row_1_image_alt": "SunPath installer mounting solar panel brackets on a suburban tile roof",
+      "row_2_headline": "13.3kW Premium System",
+      "row_2_body": "Our most popular package for 4+ person households with pool, EV, or high energy use. Pairs perfectly with a battery for near-zero bills.",
+      "row_2_cta_label": "Get a Quote for This System",
+      "row_2_cta_href": "/contact",
+      "row_2_image_alt": "Completed 13-panel solar installation on a modern single-storey Australian home",
+      "row_3_headline": "Tesla Powerwall Battery",
+      "row_3_body": "Add a 13.5kWh Powerwall to any system and store your own sunshine. Use it at night, during peak tariffs, or as backup power during outages. SunPath is Tesla-certified.",
+      "row_3_cta_label": "Add Battery Storage",
+      "row_3_cta_href": "/contact?type=battery",
+      "row_3_image_alt": "Tesla Powerwall unit installed in an Australian garage beside the meter board"
+    },
+    "stats": {
+      "stat_1_value": "$1,800",
+      "stat_1_label": "Avg. Annual Savings",
+      "stat_2_value": "4–6 yrs",
+      "stat_2_label": "Typical Payback Period",
+      "stat_3_value": "25 Years",
+      "stat_3_label": "Panel Performance Warranty",
+      "stat_4_value": "1 Day",
+      "stat_4_label": "Typical Install Time"
+    },
+    "process": {
+      "section_label": "Your Installation Journey",
+      "section_headline": "From Quote to Switch-On in Days, Not Weeks",
+      "step_1_number": "1",
+      "step_1_title": "Free Quote & Site Check",
+      "step_1_body": "We visit your home, assess your roof, check your bills, and design a system to your exact needs. No cost, no obligation — ever.",
+      "step_2_number": "2",
+      "step_2_title": "Council & Network Approval",
+      "step_2_body": "We lodge all permits and grid-connection applications on your behalf. We're used to the local networks across NSW, VIC, QLD, WA, and SA.",
+      "step_3_number": "3",
+      "step_3_title": "CEC-Accredited Installation",
+      "step_3_body": "Our licensed, CEC-accredited team completes most residential installations in a single day. All work is fully insured and workmanship-guaranteed for 10 years.",
+      "step_4_number": "4",
+      "step_4_title": "STC Rebate & Monitoring Setup",
+      "step_4_body": "We process your Small-scale Technology Certificate rebate and set up your monitoring app so you can track every kilowatt in real time."
+    },
+    "testimonials": {
+      "section_label": "Homeowner Reviews",
+      "section_headline": "What Australian Homeowners Are Saying",
+      "card_1_quote": "Our quarterly power bill dropped from $620 to $38. The whole process took nine days from quote to switch-on. Couldn't be happier.",
+      "card_1_name": "Lisa & Tom B.",
+      "card_1_detail": "Homeowners · Castle Hill, NSW",
+      "card_2_quote": "The team explained everything clearly and didn't oversell us on a system we didn't need. Very refreshing compared to other solar companies we spoke to.",
+      "card_2_name": "Andrew F.",
+      "card_2_detail": "Homeowner · Doncaster, VIC",
+      "card_3_quote": "We added the Powerwall 18 months after the panels and now we're nearly off-grid. SunPath made the whole thing seamless.",
+      "card_3_name": "Kylie & Marcus D.",
+      "card_3_detail": "Homeowners · Aspley, QLD"
+    },
+    "cta": {
+      "headline": "Find Out How Much You Can Save",
+      "subheadline": "Our free home solar assessment takes 30 minutes and shows you exactly what you'll save — with no obligation to proceed.",
+      "cta_primary_label": "Book a Free Assessment",
+      "cta_primary_href": "/contact",
+      "cta_secondary_label": "Call Us: 1300 786 765",
+      "cta_secondary_href": "tel:1300786765"
+    }
+  },
+
+  "commercial": {
+    "hero": {
+      "kicker": "For Australian Businesses · 20kW to 500kW+ · ROI in Under 4 Years",
+      "headline": "Cut Your Business Energy Bill by Up to 80%",
+      "subheadline": "SunPath Solar designs and installs large-scale commercial systems for warehouses, offices, factories, and shopping centres across Australia. Free commercial feasibility study included.",
+      "cta_primary_label": "Request a Commercial Feasibility Study",
+      "cta_primary_href": "/contact?type=commercial",
+      "cta_secondary_label": "View Commercial Projects",
+      "cta_secondary_href": "/projects",
+      "image_alt": "Aerial drone shot of a large commercial solar installation covering a warehouse rooftop in an Australian industrial estate"
+    },
+    "features": {
+      "section_label": "Commercial Solar Solutions",
+      "section_headline": "Engineered for Australian Business Conditions",
+      "row_1_headline": "Warehouses & Industrial",
+      "row_1_body": "Large flat or low-pitch rooftops are ideal for solar. We design systems from 50kW to 500kW+, fully engineered to your roof structure and three-phase power requirements.",
+      "row_1_cta_label": "Get Industrial Solar Quote",
+      "row_1_cta_href": "/contact?type=industrial",
+      "row_1_image_alt": "500kW commercial solar array on an industrial warehouse rooftop in Brisbane",
+      "row_2_headline": "Offices & Retail",
+      "row_2_body": "Offset your business's peak daytime consumption with a rooftop system designed around your operating hours. We handle network approvals and export agreements.",
+      "row_2_cta_label": "Get Office Solar Quote",
+      "row_2_cta_href": "/contact?type=office",
+      "row_2_image_alt": "Commercial solar panels installed across the rooftop of a modern Australian office building",
+      "row_3_headline": "C&I Battery Storage",
+      "row_3_body": "Add commercial-scale Sungrow battery systems to store solar generation and shift load away from expensive peak tariffs. Demand charge reduction of up to 40%.",
+      "row_3_cta_label": "Explore Commercial Batteries",
+      "row_3_cta_href": "/contact?type=commercial-battery",
+      "row_3_image_alt": "Sungrow commercial battery storage system installed in an Australian factory energy room"
+    },
+    "stats": {
+      "stat_1_value": "500kW+",
+      "stat_1_label": "Largest System Installed",
+      "stat_2_value": "Up to 80%",
+      "stat_2_label": "Energy Bill Reduction",
+      "stat_3_value": "Under 4 yrs",
+      "stat_3_label": "Typical Commercial ROI",
+      "stat_4_value": "100%",
+      "stat_4_label": "Australian Engineering Team"
+    },
+    "cases": {
+      "section_label": "Commercial Projects",
+      "section_headline": "Real Results for Australian Businesses",
+      "card_1_title": "Brendale Logistics — 320kW Warehouse System",
+      "card_1_tags": "Industrial · QLD · 320kW",
+      "card_1_image_alt": "320kW solar installation on a large logistics warehouse rooftop in Brendale, Queensland",
+      "card_2_title": "Port Melbourne Office Complex — 85kW Rooftop",
+      "card_2_tags": "Office · VIC · 85kW",
+      "card_2_image_alt": "85kW rooftop solar system on a commercial office building in Port Melbourne",
+      "card_3_title": "Osborne Park Showroom — 45kW + Battery",
+      "card_3_tags": "Retail · WA · 45kW + Sungrow Battery",
+      "card_3_image_alt": "45kW solar array with Sungrow battery storage at an Osborne Park automotive showroom",
+      "card_4_title": "Adelaide Food Processing Plant — 200kW",
+      "card_4_tags": "Industrial · SA · 200kW",
+      "card_4_image_alt": "200kW commercial solar installation on a food processing facility in Adelaide"
+    },
+    "testimonials": {
+      "section_label": "Business Reviews",
+      "section_headline": "What Australian Business Owners Are Saying",
+      "card_1_quote": "Our energy costs dropped 74% in the first year. The feasibility study was detailed and accurate — no surprises after installation.",
+      "card_1_name": "Brendan L., CFO",
+      "card_1_detail": "Logistics Company · Brendale, QLD",
+      "card_2_quote": "SunPath managed the entire project from council approval to grid connection. We didn't have to chase anyone for anything. Exceptional project management.",
+      "card_2_name": "Helen W., Facilities Director",
+      "card_2_detail": "Property Group · Melbourne, VIC",
+      "card_3_quote": "We had the system fully operational and cash-flow positive within 3.5 years. Best capital decision we've made in the last decade.",
+      "card_3_name": "Scott P., Director",
+      "card_3_detail": "Manufacturing · Adelaide, SA"
+    },
+    "cta": {
+      "headline": "Get a Free Commercial Feasibility Study",
+      "subheadline": "We'll analyse your energy bills, roof, and consumption patterns and show you the exact ROI before you commit to anything.",
+      "cta_primary_label": "Start My Feasibility Study",
+      "cta_primary_href": "/contact?type=commercial",
+      "cta_secondary_label": "Call 1300 786 765",
+      "cta_secondary_href": "tel:1300786765"
+    }
+  },
+
+  "how_it_works": {
+    "hero": {
+      "kicker": "Simple Process · Fully Managed · No Paperwork for You",
+      "headline": "Solar Has Never Been This Easy to Get Right",
+      "subheadline": "From your first free call to switch-on day, SunPath manages every step — design, permits, installation, and rebate processing. You just choose the system you want.",
+      "cta_primary_label": "Start with a Free Quote",
+      "cta_primary_href": "/contact",
+      "cta_secondary_label": null,
+      "image_alt": "SunPath Solar installer team arriving at an Australian home with equipment for installation day"
+    },
+    "process": {
+      "section_label": "The SunPath Process",
+      "section_headline": "4 Steps from Inquiry to Savings",
+      "step_1_number": "1",
+      "step_1_title": "Free Quote & Site Assessment",
+      "step_1_body": "We start with your electricity bills and a phone or video chat to understand your energy usage and goals. Then we visit your property to assess roof orientation, shading, structure, and existing switchboard. No cost, no obligation. You'll receive a custom proposal within 48 hours.",
+      "step_2_number": "2",
+      "step_2_title": "System Design & Paperwork",
+      "step_2_body": "Our engineers design your solar system — panel layout, inverter selection, tilt angles, and string configuration — optimised for your specific roof and energy pattern. We lodge all council permits and distributor connection applications (DNSP approval). Most approvals are completed within 5–10 business days.",
+      "step_3_number": "3",
+      "step_3_title": "Installation Day",
+      "step_3_body": "Our CEC-accredited installation team arrives on the scheduled day and completes most residential systems in 6–8 hours. We mount racking, install panels and inverter, wire the switchboard, and commission the system. We clean up fully before we leave and walk you through how everything works.",
+      "step_4_number": "4",
+      "step_4_title": "Rebates, Grid Connection & Monitoring",
+      "step_4_body": "We submit your Small-scale Technology Certificate (STC) rebate claim on your behalf — this is typically deducted directly from your system cost. Your network distributor connects you to the grid and activates your feed-in tariff. We set up your monitoring app so you can track generation and savings in real time from your phone."
+    },
+    "features": {
+      "section_label": "Good to Know",
+      "section_headline": "Questions We Hear Every Day",
+      "row_1_headline": "What If My Roof Is Tricky?",
+      "row_1_body": "No two Australian roofs are identical. Our engineers have designed systems for everything from Victorian terraces to corrugated iron sheds to flat commercial membranes. We use engineering-grade mounting systems rated to Australian wind and cyclone zones.",
+      "row_1_cta_label": "Talk to an Installer",
+      "row_1_image_alt": "SunPath engineer inspecting a complex multi-pitch roof with an assessment checklist",
+      "row_2_headline": "What Warranties Do I Get?",
+      "row_2_body": "Every SunPath installation includes: 25-year panel performance warranty, 10-year product warranty on panels, 10-year inverter warranty, 10-year SunPath workmanship warranty, and 5-year mounting warranty. All warranties are lodged and tracked in your customer portal.",
+      "row_2_cta_label": "Download Warranty Summary",
+      "row_2_image_alt": "SunPath warranty document and customer portal overview on a laptop screen",
+      "row_3_headline": "What If Something Goes Wrong?",
+      "row_3_body": "SunPath's monitoring platform flags performance drops automatically. If a fault is detected, our team contacts you before you notice anything. Most inverter issues are resolved remotely within 24 hours. On-site service visits are scheduled within 5 business days across all service areas.",
+      "row_3_cta_label": "View Our Aftercare Promise",
+      "row_3_image_alt": "SunPath monitoring dashboard showing live solar generation data on a smartphone"
+    },
+    "cta": {
+      "headline": "Ready to Start Your Solar Journey?",
+      "subheadline": "Step 1 is free and takes 30 minutes. No jargon, no pressure — just a straight answer about whether solar is right for you.",
+      "cta_primary_label": "Book Your Free Assessment",
+      "cta_primary_href": "/contact",
+      "cta_secondary_label": "Call 1300 786 765",
+      "cta_secondary_href": "tel:1300786765"
+    }
+  },
+
+  "projects": {
+    "hero": {
+      "kicker": "Completed Installations Across Australia",
+      "headline": "Real Work. Real Rooftops. Real Savings.",
+      "subheadline": "Browse SunPath Solar's portfolio of residential and commercial installations — from 6.6kW suburban rooftops to 500kW industrial arrays.",
+      "cta_primary_label": "Get a Quote for Your Property",
+      "cta_primary_href": "/contact",
+      "cta_secondary_label": null,
+      "image_alt": "Montage of four SunPath Solar installations — residential home, warehouse, office building, and rural property across Australia"
+    },
+    "cases": {
+      "section_label": "Our Work",
+      "section_headline": "Installations We're Proud Of",
+      "card_1_title": "Parramatta Family Home — 13.3kW + Powerwall",
+      "card_1_tags": "Residential · NSW · 13.3kW + 13.5kWh Battery",
+      "card_1_image_alt": "Completed 13.3kW solar and Tesla Powerwall installation on a family home in Parramatta, NSW",
+      "card_2_title": "Brendale Logistics Warehouse — 320kW",
+      "card_2_tags": "Commercial · QLD · 320kW",
+      "card_2_image_alt": "Aerial view of 320kW solar array on a logistics warehouse roof in Brendale, Queensland",
+      "card_3_title": "Brighton Period Home — 6.6kW Heritage Roof",
+      "card_3_tags": "Residential · VIC · 6.6kW · Heritage Constraints",
+      "card_3_image_alt": "6.6kW solar installation on a heritage-style period home in Brighton, Victoria",
+      "card_4_title": "Port Melbourne Office Complex — 85kW",
+      "card_4_tags": "Commercial · VIC · 85kW",
+      "card_4_image_alt": "85kW rooftop solar system on a commercial office building in Port Melbourne, Victoria",
+      "card_5_title": "Norwood Family Home — 10kW + Sungrow Battery",
+      "card_5_tags": "Residential · SA · 10kW + 9.6kWh Battery",
+      "card_5_image_alt": "10kW solar system with Sungrow battery storage on a contemporary home in Norwood, South Australia",
+      "card_6_title": "Osborne Park Automotive Showroom — 45kW",
+      "card_6_tags": "Commercial · WA · 45kW",
+      "card_6_image_alt": "45kW commercial solar installation on an automotive showroom in Osborne Park, Western Australia"
+    },
+    "stats": {
+      "stat_1_value": "2,400+",
+      "stat_1_label": "Completed Installations",
+      "stat_2_value": "5 States",
+      "stat_2_label": "NSW, VIC, QLD, WA, SA",
+      "stat_3_value": "6kW–500kW",
+      "stat_3_label": "System Size Range",
+      "stat_4_value": "100%",
+      "stat_4_label": "CEC Accredited Team"
+    },
+    "cta": {
+      "headline": "Let's Add Your Property to the List",
+      "subheadline": "Get a no-obligation quote for your home or business. Most assessments are completed within 48 hours.",
+      "cta_primary_label": "Request a Free Quote",
+      "cta_primary_href": "/contact",
+      "cta_secondary_label": "Call 1300 786 765",
+      "cta_secondary_href": "tel:1300786765"
+    }
+  },
+
+  "about": {
+    "hero": {
+      "kicker": "Australian Owned & Operated · 12 Years in Solar",
+      "headline": "We're in the Business of Saving Australians Money",
+      "subheadline": "SunPath Solar was founded in Sydney in 2014 by a team of electrical engineers who believed Australians deserved honest, no-jargon solar advice. We've installed more than 2,400 systems across five states and we're still a family business.",
+      "cta_primary_label": "Talk to Our Team",
+      "cta_primary_href": "/contact",
+      "cta_secondary_label": "See Our Work",
+      "cta_secondary_href": "/projects",
+      "image_alt": "SunPath Solar founding team standing in front of a completed rooftop installation at a Sydney home"
+    },
+    "features": {
+      "section_label": "Why SunPath",
+      "section_headline": "What Makes Us Different",
+      "row_1_headline": "CEC Accredited Retailer & Installer",
+      "row_1_body": "We're accredited by the Clean Energy Council as both a retailer and an installer — one of fewer than 5% of solar companies to hold both credentials. This means every system we sell is designed to CEC standards and installed by licensed electricians who are audited annually.",
+      "row_1_cta_label": "Verify Our Accreditation",
+      "row_1_cta_href": "https://www.cleanenergycouncil.org.au/consumers/approved-solar-retailers",
+      "row_1_image_alt": "Clean Energy Council accreditation certificate displayed in the SunPath Solar office",
+      "row_2_headline": "We're Here After the Install",
+      "row_2_body": "Many solar companies disappear after installation. Our support team monitors every system we've ever installed. If we detect a fault, we contact you proactively. Our 10-year workmanship warranty is backed by the company, not a third-party insurer.",
+      "row_2_cta_label": null,
+      "row_2_image_alt": "SunPath customer support team at their Sydney monitoring desk reviewing live solar system data",
+      "row_3_headline": "Honest Advice, Every Time",
+      "row_3_body": "We don't pay commission to our assessors based on system size. They're engineers, not salespeople. If a smaller system is genuinely right for your property, we'll tell you — and we'll explain exactly why.",
+      "row_3_cta_label": null,
+      "row_3_image_alt": "SunPath solar assessor reviewing energy bills with a homeowner at their kitchen table"
+    },
+    "stats": {
+      "stat_1_value": "2014",
+      "stat_1_label": "Founded in Sydney",
+      "stat_2_value": "2,400+",
+      "stat_2_label": "Systems Installed",
+      "stat_3_value": "48",
+      "stat_3_label": "Full-Time Team Members",
+      "stat_4_value": "5 States",
+      "stat_4_label": "NSW, VIC, QLD, WA, SA"
+    },
+    "logos": {
+      "section_label": "Accreditations & Partnerships",
+      "logo_1_name": "Clean Energy Council Accredited Retailer",
+      "logo_2_name": "Clean Energy Council Accredited Installer",
+      "logo_3_name": "Tesla Powerwall Certified Installer",
+      "logo_4_name": "Sungrow Authorised Installer",
+      "logo_5_name": "REC Solar Partner",
+      "logo_6_name": "SolarEdge Preferred Installer",
+      "logo_7_name": "Australian Solar Council Member",
+      "logo_8_name": "Master Electricians Australia"
+    },
+    "cta": {
+      "headline": "Talk to the Team Behind 2,400+ Installations",
+      "subheadline": "Get honest solar advice from engineers who've been doing this for 12 years. Free, no-obligation quote.",
+      "cta_primary_label": "Get Your Free Quote",
+      "cta_primary_href": "/contact",
+      "cta_secondary_label": "Call 1300 786 765",
+      "cta_secondary_href": "tel:1300786765"
+    }
+  },
+
+  "contact": {
+    "hero": {
+      "kicker": "Free Quote · No Obligation · Response Within 4 Hours",
+      "headline": "Get Your Free Solar Quote",
+      "subheadline": "Tell us about your property and we'll get back to you within 4 business hours with a custom solar recommendation and indicative pricing.",
+      "cta_primary_label": "Call Us Now: 1300 786 765",
+      "cta_primary_href": "tel:1300786765",
+      "cta_secondary_label": null,
+      "image_alt": "SunPath Solar assessor on the phone to a customer with a solar panel installation visible behind them"
+    },
+    "features": {
+      "section_label": "How to Reach Us",
+      "section_headline": "We're Easy to Get Hold Of",
+      "row_1_headline": "Phone & Email",
+      "row_1_body": "Call: 1300 786 765 (Mon–Fri 8am–6pm, Sat 9am–2pm AEST). Email: info@sunpathsolar.com.au. For after-hours emergencies with an existing system, call our support line: 1300 786 766.",
+      "row_1_cta_label": "Call 1300 786 765",
+      "row_1_cta_href": "tel:1300786765",
+      "row_1_image_alt": "SunPath Solar customer service team at desks in the Sydney office",
+      "row_2_headline": "Service Areas",
+      "row_2_body": "We service residential and commercial properties across New South Wales, Victoria, Queensland, Western Australia, and South Australia — including all major metro areas and most regional centres within 100km of a capital city.",
+      "row_2_cta_label": null,
+      "row_2_image_alt": "Map of Australia highlighting the five states serviced by SunPath Solar",
+      "row_3_headline": "What to Have Ready",
+      "row_3_body": "To get the most accurate quote fastest, have a recent electricity bill handy (quarterly usage in kWh), your roof material (tile, Colorbond, flat), and an idea of whether you're interested in battery storage. Everything else we'll figure out together.",
+      "row_3_cta_label": null,
+      "row_3_image_alt": "Homeowner reviewing an electricity bill at the kitchen table before calling SunPath Solar"
+    },
+    "cta": {
+      "headline": "Not Ready to Call? We'll Call You.",
+      "subheadline": "Leave your name and number below and a SunPath solar specialist will call you back within 4 business hours — no pressure, just straight advice.",
+      "cta_primary_label": "Request a Callback",
+      "cta_primary_href": "#callback-form",
+      "cta_secondary_label": "Email Us Instead",
+      "cta_secondary_href": "mailto:info@sunpathsolar.com.au"
+    }
+  },
+
+  "global": {
+    "site_name": "SunPath Solar",
+    "tagline": "Australia Runs Better on Solar",
+    "phone": "1300 786 765",
+    "phone_href": "tel:1300786765",
+    "email": "info@sunpathsolar.com.au",
+    "footer_legal": "© 2026 SunPath Solar Pty Ltd. All rights reserved. Clean Energy Council Accredited Retailer. ABN 12 345 678 901.",
+    "footer_tagline": "Honest solar advice for Australian homes and businesses since 2014.",
+    "nav_cta_label": "Get a Free Quote",
+    "nav_cta_href": "/contact"
+  }
+}

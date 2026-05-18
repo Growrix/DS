@@ -30,7 +30,7 @@
 - placeholder business content remains and should be handled in a continuation pass
 
 ## Validation status
-- lint: pending
-- typecheck: pending
-- build: pending
-- smoke: pending
+- lint: passed (`npm run lint`)
+- typecheck: passed (`npm run typecheck`)
+- build: passed (`npm run build`)
+- smoke: passed with `npm run dev` from `Templates/local-business/mezan/`; Next responded on the first available local dev port during smoke verification

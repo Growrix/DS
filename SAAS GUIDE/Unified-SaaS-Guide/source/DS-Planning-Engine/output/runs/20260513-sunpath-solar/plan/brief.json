@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-13T00:00:00.000Z",
+  "project": {
+    "name": "SunPath Solar",
+    "slug": "sunpath-solar",
+    "locale": "en-AU",
+    "business_type": "local-services",
+    "industry": "solar-installation",
+    "audience": "Australian homeowners and business owners considering solar panel installation and battery storage",
+    "primary_cta": {
+      "label": "Get Your Free Quote",
+      "destination": "/contact"
+    },
+    "secondary_cta": {
+      "label": "See Our Projects",
+      "destination": "/projects"
+    },
+    "services": [
+      "Residential solar panel installation",
+      "Commercial rooftop solar",
+      "Battery storage systems (Tesla Powerwall, Sungrow)",
+      "Solar system monitoring and maintenance",
+      "Government rebate (STC) assistance",
+      "Interest-free solar finance"
+    ],
+    "contact": {
+      "phone": "1300 786 765",
+      "email": "info@sunpathsolar.com.au",
+      "website": "https://www.sunpathsolar.com.au",
+      "address": "Level 1, 42 George Street, Sydney NSW 2000",
+      "service_areas": ["Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide"],
+      "service_states": ["NSW", "VIC", "QLD", "WA", "SA"],
+      "trading_hours": "Mon–Fri 8am–6pm, Sat 9am–2pm AEST"
+    }
+  },
+  "brand": {
+    "voice": "Warm, straight-talking Australian tone. Confident without being pushy. Technical credibility balanced with everyday clarity — we speak solar without jargon.",
+    "mood": "Trustworthy and sunlit. The visitor should feel like they're talking to a local expert who's been doing this for years, not a national call-centre.",
+    "archetype": "local-business-trust",
+    "theme_default": "light",
+    "archetype_resolution": {
+      "step_applied": "B — business_type primary archetype",
+      "business_type": "local-services",
+      "voice_signal": "warm, straight-talking, local credibility",
+      "mood_signal": "trustworthy, photographic, hand-shake",
+      "archetype_id": "local-business-trust",
+      "theme_default": "light",
+      "confidence": "high",
+      "rationale": "Solar installation is a considered local purchase. The homeowner or business owner is committing to a 25-year asset. The archetype must lead with trust signals, social proof, and local credibility — not SaaS modernity or editorial restraint. local-business-trust is the clear primary match. Theme light is the DS-preferred scheme for this archetype and aligns with outdoor, sunlit solar imagery."
+    }
+  },
+  "footer_attribution": {
+    "enabled": true,
+    "text": "© 2026 SunPath Solar Pty Ltd. All rights reserved. Clean Energy Council Accredited Retailer. ABN 12 345 678 901."
+  },
+  "open_questions": [],
+  "lock_status": "draft"
+}

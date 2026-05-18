@@ -1,0 +1,10 @@
+Meta system
+
+[Meta] System Architect
+
+Hidden legacy agents
+
+[Legacy] Frontend Factory Planner
+[Legacy] Frontend Factory Developer
+frontend_factory_hybrid_developer
+ongoing_execution_orchestrator
