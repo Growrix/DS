@@ -1,0 +1,8 @@
+Foundation + template system
+
+[Foundation] Planner
+[Foundation] Developer
+[Template] Screenshot Frontend Agent
+[Template] Import Attacher
+[Template] Post-Import Continuation
+[Template] Deployment Operator

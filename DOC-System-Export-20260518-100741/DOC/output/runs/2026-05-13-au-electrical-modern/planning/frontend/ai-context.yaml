@@ -1,0 +1,48 @@
+project:
+  id: electrical-service-provider-au
+  display_name: Electrical Service Provider AU
+  archetype: marketing_site
+  visual_archetype: knowledge/frontend-rules/visual-archetypes/local-business-trust.md
+  industry_pack: knowledge/industries/local-services.md
+planning_status: draft_assumption_led
+brief_status: DRAFT
+execution_readiness: blocked_pending_brief_lock
+human_first_stop: README.md
+ai_first_stop: master-ui-architecture.md
+read_order:
+  - README.md
+  - master-ui-architecture.md
+  - design-system.md
+  - component-system.md
+  - motion-system.md
+  - content-library.md
+  - content.en-AU.json
+  - interaction-matrix.md
+  - visual-differentiation-map.md
+  - pages/home.md
+  - pages/services.md
+  - pages/quote.md
+  - frontend-execution-contract.json
+  - frontend.json
+artifacts_present:
+  - README.md
+  - site-inventory.md
+  - master-ui-architecture.md
+  - design-system.md
+  - design-system.tokens.json
+  - component-system.md
+  - motion-system.md
+  - content-library.md
+  - content.en-AU.json
+  - interaction-matrix.md
+  - visual-differentiation-map.md
+  - visual-reference-pack.md
+  - pages/
+  - components/
+  - frontend-execution-contract.json
+  - frontend.json
+notes:
+  - This bundle is assumption-led and tailored to Australian electrical services lead generation.
+  - Do not treat emergency availability or license claims as publishable until the business confirms them.
+  - Route and content structure are implementation-ready, but summary status remains blocked until the brief is locked.
+  - Runtime execution must consume frontend-execution-contract.json once the brief is locked and the summary status is reissued as passed.

@@ -1,0 +1,9 @@
+﻿DOC System Export
+Created: 2026-05-18 10:18:05
+Source Root: F:\PROJECTS\DS
+
+Included:
+- DOC/ (excluding DOC/output/runs)
+- .github/agents/ (excluding .github/agents/_catalog)
+- .github/copilot-instructions.md
+- .github/agents/README.md

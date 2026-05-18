@@ -1,0 +1,1024 @@
+{
+  "status": "failed",
+  "failure_reason": "STALE_BRIEF",
+  "planning_root": "DOC/output/runs/2026-05-13-au-electrical-modern/planning/frontend",
+  "project": {
+    "name": "Electrical Service Provider AU",
+    "slug": "electrical-service-provider-au",
+    "project_root_slug": "electrical-service-provider-au-website",
+    "summary": "Modern, lead-focused local-service website plan for an Australian electrical company targeting homeowners and businesses with a call-first conversion model and a secondary structured quote path.",
+    "product_type": "marketing_site",
+    "business_type": "local_service",
+    "content_locales": [
+      "en-AU"
+    ]
+  },
+  "planning_artifacts": {
+    "frontend_summary": "frontend.json",
+    "site_inventory": "site-inventory.md",
+    "master_ui_architecture": "master-ui-architecture.md",
+    "design_tokens": "design-system.tokens.json",
+    "component_system": "component-system.md",
+    "motion_system": "motion-system.md",
+    "content_library": [
+      "content.en-AU.json"
+    ],
+    "page_specs": [
+      "pages/home.md",
+      "pages/services.md",
+      "pages/residential.md",
+      "pages/commercial.md",
+      "pages/emergency-electrician.md",
+      "pages/switchboard-upgrades.md",
+      "pages/ev-charger-installation.md",
+      "pages/smoke-alarm-compliance.md",
+      "pages/service-areas.md",
+      "pages/projects.md",
+      "pages/reviews.md",
+      "pages/about.md",
+      "pages/faq.md",
+      "pages/contact.md",
+      "pages/quote.md"
+    ]
+  },
+  "shared_surfaces": {
+    "theme_switcher_required": true,
+    "mobile_bottom_nav_required": true,
+    "auth_modal_required": true,
+    "primary_navigation_routes": [
+      "/",
+      "/services",
+      "/commercial",
+      "/projects",
+      "/service-areas",
+      "/contact"
+    ],
+    "mobile_bottom_nav_routes": [
+      "/",
+      "/services",
+      "/quote",
+      "/projects",
+      "/contact"
+    ],
+    "footer_attribution": {
+      "enabled": true,
+      "text": "Built and maintenance by",
+      "link_text": "Growrix OS",
+      "url": "https://www.growrixos.com",
+      "placement": "footer_bottom_bar",
+      "new_tab": true,
+      "aria_label": "Built and maintenance by Growrix OS (opens in a new tab)"
+    }
+  },
+  "runtime_design_tokens": {
+    "selectedPreset": {
+      "id": "local-business-trust-modern-electric"
+    },
+    "brand": {
+      "name": "Electrical Service Provider AU",
+      "tone": "modern-trustworthy",
+      "density": "balanced",
+      "palette": {
+        "primary": "#0F4C81",
+        "accent": "#F2A900",
+        "background": "#F6F8FB",
+        "text": "#102235"
+      }
+    },
+    "narrative": {
+      "direction": "Call-first local-service trust with modern, clear, and practical sales framing.",
+      "interactionEnergy": "measured",
+      "visualIdentity": "local-business-trust"
+    },
+    "theme": {
+      "light": {
+        "color": {
+          "background": "#F6F8FB",
+          "surface": "#FFFFFF",
+          "inset": "#EAF0F6",
+          "border": "#D7E1EC",
+          "text": "#102235",
+          "muted": "#5E7286",
+          "primary": "#0F4C81",
+          "accent": "#F2A900",
+          "destructive": "#C83A2D",
+          "success": "#13795B",
+          "warning": "#D97706",
+          "info": "#2D6FA3",
+          "focusRing": "#1F7AE0"
+        }
+      },
+      "dark": {
+        "color": {
+          "background": "#09131D",
+          "surface": "#112233",
+          "inset": "#163047",
+          "border": "#274764",
+          "text": "#F4F8FB",
+          "muted": "#A9BBCB",
+          "primary": "#69A6E3",
+          "accent": "#FFC247",
+          "destructive": "#F17263",
+          "success": "#52C19E",
+          "warning": "#F2B24C",
+          "info": "#79B7F2",
+          "focusRing": "#8BC2FF"
+        }
+      }
+    },
+    "typography": {
+      "fontFamilies": {
+        "display": "Space Grotesk",
+        "body": "Manrope",
+        "mono": "IBM Plex Mono"
+      },
+      "scale": {
+        "display-1": "4rem",
+        "display-2": "3.25rem",
+        "display-3": "2.5rem",
+        "h1": "3rem",
+        "h2": "2.25rem",
+        "h3": "1.75rem",
+        "body-lg": "1.125rem",
+        "body-md": "1rem",
+        "body-sm": "0.9375rem"
+      }
+    },
+    "spacing": {
+      "base": {
+        "1": 4,
+        "2": 8,
+        "3": 12,
+        "4": 16,
+        "6": 24,
+        "8": 32,
+        "10": 40,
+        "12": 48,
+        "16": 64,
+        "20": 80,
+        "24": 96,
+        "30": 120
+      },
+      "sectionY": {
+        "mobile": 40,
+        "tablet": 56,
+        "desktop": 80
+      }
+    },
+    "radii": {
+      "xs": 4,
+      "sm": 8,
+      "md": 12,
+      "lg": 16,
+      "xl": 20,
+      "2xl": 24,
+      "3xl": 32,
+      "full": 9999
+    },
+    "shadows": {
+      "1": "0 10px 24px rgba(16, 34, 53, 0.08)",
+      "2": "0 18px 40px rgba(16, 34, 53, 0.14)",
+      "3": "0 32px 80px rgba(9, 19, 29, 0.22)",
+      "focus": "0 0 0 2px rgba(31, 122, 224, 0.26)"
+    },
+    "motion": {
+      "duration": {
+        "fast": "140ms",
+        "base": "220ms",
+        "slow": "320ms",
+        "cinematic": "460ms"
+      },
+      "easing": {
+        "standard": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+        "spring": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "decel": "cubic-bezier(0.12, 0.84, 0.32, 1)",
+        "accel": "cubic-bezier(0.55, 0, 0.9, 0.2)"
+      }
+    }
+  },
+  "runtime_composition": {
+    "routePlans": [
+      {
+        "routeId": "/",
+        "routeKey": "home",
+        "userIntent": "Understand the offer, trust the business quickly, and call or request a quote.",
+        "creativeLatitude": "HIGH",
+        "heroArchetype": "asymmetric-trust-split",
+        "navVisible": true,
+        "mobileTabVisible": true,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Route opener", "contentSlots": ["headline", "cta", "trustSignals"], "archetypeId": "hero-asymmetric-trust-split" },
+          { "sectionId": "trust-strip", "purpose": "Immediate proof", "contentSlots": ["rating", "responsePromise", "licenseCue"], "archetypeId": "trust-strip-proof" },
+          { "sectionId": "audience-split", "purpose": "Residential or commercial routing", "contentSlots": ["residential", "commercial"], "archetypeId": "decision-split-dual-panel" },
+          { "sectionId": "service-grid", "purpose": "Specialist service overview", "contentSlots": ["services"], "archetypeId": "feature-grid-cards" },
+          { "sectionId": "proof-feature", "purpose": "Project and outcome proof", "contentSlots": ["projects", "reviews"], "archetypeId": "proof-feature-gallery" },
+          { "sectionId": "process", "purpose": "Expectations and response timing", "contentSlots": ["steps"], "archetypeId": "timeline-steps" },
+          { "sectionId": "faq", "purpose": "Objection handling", "contentSlots": ["questions"], "archetypeId": "faq-accordion" },
+          { "sectionId": "cta-band", "purpose": "Conversion reinforcement", "contentSlots": ["headline", "primaryCta"], "archetypeId": "cta-band-stack" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "Single-column priority order with trust and CTA above media.",
+          "desktop": "Asymmetric split with trust rail and dual-action cluster."
+        },
+        "media": {
+          "src": "asset-slot://home-hero-primary",
+          "alt": "Licensed electrician working at a residential switchboard"
+        }
+      },
+      {
+        "routeId": "/services",
+        "routeKey": "services",
+        "userIntent": "Find the right service path and choose the next route or contact action.",
+        "creativeLatitude": "MEDIUM",
+        "heroArchetype": "centered-editorial",
+        "navVisible": true,
+        "mobileTabVisible": true,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Services opener", "contentSlots": ["headline", "cta"], "archetypeId": "hero-centered-editorial" },
+          { "sectionId": "category-map", "purpose": "Service segmentation", "contentSlots": ["categories"], "archetypeId": "category-grid" },
+          { "sectionId": "proof", "purpose": "Cross-service trust", "contentSlots": ["proof"], "archetypeId": "proof-panel-split" },
+          { "sectionId": "process", "purpose": "Next-step clarity", "contentSlots": ["steps"], "archetypeId": "timeline-steps" },
+          { "sectionId": "cta-band", "purpose": "Conversion reinforcement", "contentSlots": ["primaryCta", "secondaryCta"], "archetypeId": "cta-band-stack" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "Category cards stack with visible summaries.",
+          "desktop": "Centered intro followed by balanced category grid."
+        },
+        "media": {
+          "src": "asset-slot://services-hero-grid",
+          "alt": "Electrical team working across residential and commercial environments"
+        }
+      },
+      {
+        "routeId": "/residential",
+        "routeKey": "residential",
+        "userIntent": "Confirm the team is a good fit for work at home.",
+        "creativeLatitude": "LOW",
+        "heroArchetype": "warm-trust-split",
+        "navVisible": true,
+        "mobileTabVisible": false,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Homeowner opener", "contentSlots": ["headline", "cta"], "archetypeId": "hero-warm-trust-split" },
+          { "sectionId": "job-types", "purpose": "Common residential jobs", "contentSlots": ["services"], "archetypeId": "service-card-grid" },
+          { "sectionId": "reassurance", "purpose": "Homeowner trust proof", "contentSlots": ["reviews", "guarantee"], "archetypeId": "testimonial-trust-split" },
+          { "sectionId": "process", "purpose": "Next steps", "contentSlots": ["steps"], "archetypeId": "timeline-steps" },
+          { "sectionId": "cta-band", "purpose": "Conversion reinforcement", "contentSlots": ["primaryCta", "secondaryCta"], "archetypeId": "cta-band-stack" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "CTA cluster above imagery and stacked service list.",
+          "desktop": "Warm split layout with softer proof framing."
+        },
+        "media": {
+          "src": "asset-slot://residential-hero-home-service",
+          "alt": "Electrician working inside a modern home"
+        }
+      },
+      {
+        "routeId": "/commercial",
+        "routeKey": "commercial",
+        "userIntent": "Verify commercial capability, reliability, and communication discipline.",
+        "creativeLatitude": "MEDIUM",
+        "heroArchetype": "metrics-rail-split",
+        "navVisible": true,
+        "mobileTabVisible": false,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Commercial capability opener", "contentSlots": ["headline", "metrics", "cta"], "archetypeId": "hero-metrics-rail" },
+          { "sectionId": "sector-map", "purpose": "Commercial scope map", "contentSlots": ["sectors"], "archetypeId": "sector-grid" },
+          { "sectionId": "case-proof", "purpose": "Operational proof", "contentSlots": ["caseStudy", "proofStats"], "archetypeId": "case-summary-panel" },
+          { "sectionId": "engagement-model", "purpose": "How work is handled", "contentSlots": ["steps"], "archetypeId": "operations-timeline" },
+          { "sectionId": "cta-band", "purpose": "Commercial enquiry reinforcement", "contentSlots": ["primaryCta", "secondaryCta"], "archetypeId": "cta-band-business" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "Metrics compress into chips and case summary stays visible early.",
+          "desktop": "Structured split with metrics rail and denser proof surfaces."
+        },
+        "media": {
+          "src": "asset-slot://commercial-hero-site",
+          "alt": "Commercial electrical work on a business site"
+        }
+      },
+      {
+        "routeId": "/emergency-electrician",
+        "routeKey": "emergencyElectrician",
+        "userIntent": "Reach help quickly when an electrical issue cannot wait.",
+        "creativeLatitude": "MEDIUM",
+        "heroArchetype": "call-first-urgency-rail",
+        "navVisible": true,
+        "mobileTabVisible": false,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Call-first opener", "contentSlots": ["headline", "primaryCta", "urgencyGuide"], "archetypeId": "hero-call-first-rail" },
+          { "sectionId": "urgent-scenarios", "purpose": "When to call now", "contentSlots": ["checklist"], "archetypeId": "warning-checklist" },
+          { "sectionId": "reassurance", "purpose": "Urgent trust proof", "contentSlots": ["proof", "responsePromise"], "archetypeId": "compact-proof-panel" },
+          { "sectionId": "triage", "purpose": "What happens after the call", "contentSlots": ["steps"], "archetypeId": "compact-step-rail" },
+          { "sectionId": "cta-band", "purpose": "Call reinforcement", "contentSlots": ["primaryCta", "secondaryCta"], "archetypeId": "cta-band-phone-first" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "Phone action appears before supporting copy and remains full-width.",
+          "desktop": "Vertical urgency rail beside call-first intro."
+        },
+        "media": {
+          "src": "asset-slot://emergency-hero-safe-urgent",
+          "alt": "Electrician responding to an urgent electrical fault"
+        }
+      },
+      {
+        "routeId": "/switchboard-upgrades",
+        "routeKey": "switchboardUpgrades",
+        "userIntent": "Understand when a switchboard upgrade is needed and request help.",
+        "creativeLatitude": "LOW",
+        "heroArchetype": "technical-proof-split",
+        "navVisible": true,
+        "mobileTabVisible": false,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Technical service opener", "contentSlots": ["headline", "cta"], "archetypeId": "hero-technical-proof" },
+          { "sectionId": "upgrade-reasons", "purpose": "Why upgrades matter", "contentSlots": ["reasons"], "archetypeId": "explainer-card-grid" },
+          { "sectionId": "process", "purpose": "Upgrade process", "contentSlots": ["steps", "proof"], "archetypeId": "timeline-proof-split" },
+          { "sectionId": "faq", "purpose": "Objection handling", "contentSlots": ["questions"], "archetypeId": "faq-accordion" },
+          { "sectionId": "cta-band", "purpose": "Quote reinforcement", "contentSlots": ["primaryCta", "secondaryCta"], "archetypeId": "cta-band-stack" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "Explanation panel leads before technical imagery.",
+          "desktop": "Image and explanatory panel split for clearer understanding."
+        },
+        "media": {
+          "src": "asset-slot://switchboard-hero-detail",
+          "alt": "Modern electrical switchboard close-up"
+        }
+      },
+      {
+        "routeId": "/ev-charger-installation",
+        "routeKey": "evChargerInstallation",
+        "userIntent": "Learn whether an EV charger install fits the property and take the next step.",
+        "creativeLatitude": "LOW",
+        "heroArchetype": "future-ready-media-split",
+        "navVisible": true,
+        "mobileTabVisible": false,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Future-ready opener", "contentSlots": ["headline", "cta"], "archetypeId": "hero-future-ready-split" },
+          { "sectionId": "use-cases", "purpose": "Install context map", "contentSlots": ["cards"], "archetypeId": "use-case-card-grid" },
+          { "sectionId": "process", "purpose": "Installation steps", "contentSlots": ["steps", "proof"], "archetypeId": "timeline-proof-split" },
+          { "sectionId": "faq", "purpose": "Confidence building", "contentSlots": ["questions"], "archetypeId": "faq-accordion" },
+          { "sectionId": "cta-band", "purpose": "Quote reinforcement", "contentSlots": ["primaryCta", "secondaryCta"], "archetypeId": "cta-band-stack" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "Copy and CTA appear before media.",
+          "desktop": "Airier split with media-forward framing."
+        },
+        "media": {
+          "src": "asset-slot://ev-hero-installation",
+          "alt": "EV charger installed beside a home garage"
+        }
+      },
+      {
+        "routeId": "/smoke-alarm-compliance",
+        "routeKey": "smokeAlarmCompliance",
+        "userIntent": "Understand smoke alarm compliance support and book it simply.",
+        "creativeLatitude": "LOW",
+        "heroArchetype": "checklist-centered",
+        "navVisible": true,
+        "mobileTabVisible": false,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Compliance opener", "contentSlots": ["headline", "cta", "checklist"], "archetypeId": "hero-checklist-centered" },
+          { "sectionId": "service-scope", "purpose": "What compliance support includes", "contentSlots": ["cards"], "archetypeId": "checklist-card-grid" },
+          { "sectionId": "process", "purpose": "Inspection and documentation flow", "contentSlots": ["steps", "proof"], "archetypeId": "timeline-proof-split" },
+          { "sectionId": "faq", "purpose": "Objection handling", "contentSlots": ["questions"], "archetypeId": "faq-accordion" },
+          { "sectionId": "cta-band", "purpose": "Conversion reinforcement", "contentSlots": ["primaryCta", "secondaryCta"], "archetypeId": "cta-band-stack" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "Checklist stays visible above fold with direct CTA beneath.",
+          "desktop": "Centered hero and structured compliance cards."
+        },
+        "media": {
+          "src": "asset-slot://smoke-hero-compliance",
+          "alt": "Smoke alarm compliance check inside a property"
+        }
+      },
+      {
+        "routeId": "/service-areas",
+        "routeKey": "serviceAreas",
+        "userIntent": "Check whether the business services the visitor's suburb or postcode.",
+        "creativeLatitude": "LOW",
+        "heroArchetype": "locality-cluster",
+        "navVisible": true,
+        "mobileTabVisible": false,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Locality opener", "contentSlots": ["headline", "cta"], "archetypeId": "hero-locality-cluster" },
+          { "sectionId": "coverage-clusters", "purpose": "Area groupings", "contentSlots": ["clusters"], "archetypeId": "locality-cluster-grid" },
+          { "sectionId": "work-types", "purpose": "Service relevance by area", "contentSlots": ["residential", "commercial"], "archetypeId": "audience-split-compact" },
+          { "sectionId": "faq", "purpose": "Coverage and timing reassurance", "contentSlots": ["questions"], "archetypeId": "faq-accordion" },
+          { "sectionId": "cta-band", "purpose": "Coverage confirmation action", "contentSlots": ["primaryCta", "secondaryCta"], "archetypeId": "cta-band-stack" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "Location clusters stack and quick-scan headings stay visible.",
+          "desktop": "Map-adjacent frame with clustered locality layout."
+        },
+        "media": {
+          "src": "asset-slot://areas-hero-locality",
+          "alt": "Map and suburb coverage concept for electrical service areas"
+        }
+      },
+      {
+        "routeId": "/projects",
+        "routeKey": "projects",
+        "userIntent": "Validate workmanship through real completed work.",
+        "creativeLatitude": "MEDIUM",
+        "heroArchetype": "gallery-proof",
+        "navVisible": true,
+        "mobileTabVisible": true,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Proof-led opener", "contentSlots": ["headline", "cta"], "archetypeId": "hero-gallery-proof" },
+          { "sectionId": "featured-projects", "purpose": "Outcome-led project proof", "contentSlots": ["projects"], "archetypeId": "project-feature-grid" },
+          { "sectionId": "trust-summary", "purpose": "Proof to reassurance bridge", "contentSlots": ["review", "promise"], "archetypeId": "testimonial-trust-split" },
+          { "sectionId": "cta-band", "purpose": "Conversion reinforcement", "contentSlots": ["primaryCta", "secondaryCta"], "archetypeId": "cta-band-stack" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "First proof item appears early and secondary items stack below.",
+          "desktop": "Gallery-led proof composition with outcome tags."
+        },
+        "media": {
+          "src": "asset-slot://projects-hero-featured",
+          "alt": "Completed electrical project with clean finished result"
+        }
+      },
+      {
+        "routeId": "/reviews",
+        "routeKey": "reviews",
+        "userIntent": "Use customer voice to confirm trust before making contact.",
+        "creativeLatitude": "LOW",
+        "heroArchetype": "testimonial-forward",
+        "navVisible": true,
+        "mobileTabVisible": false,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Social proof opener", "contentSlots": ["headline", "rating", "cta"], "archetypeId": "hero-testimonial-forward" },
+          { "sectionId": "review-clusters", "purpose": "Grouped customer voice", "contentSlots": ["reviews"], "archetypeId": "review-cluster-grid" },
+          { "sectionId": "trust-summary", "purpose": "Convert proof to action", "contentSlots": ["trust", "cta"], "archetypeId": "summary-band" },
+          { "sectionId": "cta-band", "purpose": "Conversion reinforcement", "contentSlots": ["primaryCta", "secondaryCta"], "archetypeId": "cta-band-stack" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "Featured review remains visible above fold and clusters stack vertically.",
+          "desktop": "Testimonial-led opener with grouped review density."
+        },
+        "media": {
+          "src": "asset-slot://reviews-hero-rating",
+          "alt": "Customer testimonial and rating proof presentation"
+        }
+      },
+      {
+        "routeId": "/about",
+        "routeKey": "about",
+        "userIntent": "Understand who the team is and how they work.",
+        "creativeLatitude": "LOW",
+        "heroArchetype": "team-standards-split",
+        "navVisible": true,
+        "mobileTabVisible": false,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Team and standards opener", "contentSlots": ["headline", "cta"], "archetypeId": "hero-team-standards" },
+          { "sectionId": "standards", "purpose": "Workmanship values", "contentSlots": ["values"], "archetypeId": "standards-card-grid" },
+          { "sectionId": "proof", "purpose": "Experience and proof cues", "contentSlots": ["projects", "reviews"], "archetypeId": "proof-strip" },
+          { "sectionId": "process", "purpose": "How the team works", "contentSlots": ["steps"], "archetypeId": "timeline-steps" },
+          { "sectionId": "cta-band", "purpose": "Conversion reinforcement", "contentSlots": ["primaryCta", "secondaryCta"], "archetypeId": "cta-band-stack" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "Copy leads and standards cards stack cleanly.",
+          "desktop": "Team imagery paired with standards and proof surfaces."
+        },
+        "media": {
+          "src": "asset-slot://about-hero-team",
+          "alt": "Electrical team portrait at a work site"
+        }
+      },
+      {
+        "routeId": "/faq",
+        "routeKey": "faq",
+        "userIntent": "Get quick answers to booking, pricing posture, timing, and area questions.",
+        "creativeLatitude": "LOW",
+        "heroArchetype": "utility-intro",
+        "navVisible": true,
+        "mobileTabVisible": false,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Utility opener", "contentSlots": ["headline", "cta"], "archetypeId": "hero-utility-intro" },
+          { "sectionId": "faq-groups", "purpose": "Question groups", "contentSlots": ["questions"], "archetypeId": "faq-group-stack" },
+          { "sectionId": "reassurance", "purpose": "Still unsure guidance", "contentSlots": ["note", "cta"], "archetypeId": "summary-band" },
+          { "sectionId": "cta-band", "purpose": "Conversion reinforcement", "contentSlots": ["primaryCta", "secondaryCta"], "archetypeId": "cta-band-stack" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "Utility intro stays compact and disclosure groups stack vertically.",
+          "desktop": "Minimal intro and dense disclosure layout."
+        },
+        "media": {
+          "src": "asset-slot://faq-hero-utility",
+          "alt": "Question and answer utility surface for electrical bookings"
+        }
+      },
+      {
+        "routeId": "/contact",
+        "routeKey": "contact",
+        "userIntent": "Reach the business through the fastest and clearest contact channel.",
+        "creativeLatitude": "LOW",
+        "heroArchetype": "contact-channel-split",
+        "navVisible": true,
+        "mobileTabVisible": true,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Contact-channel opener", "contentSlots": ["headline", "phone", "hours"], "archetypeId": "hero-contact-channel" },
+          { "sectionId": "channels", "purpose": "Direct contact options", "contentSlots": ["phone", "email", "hours"], "archetypeId": "utility-card-grid" },
+          { "sectionId": "guidance", "purpose": "Call versus quote guidance", "contentSlots": ["guidance"], "archetypeId": "summary-band" },
+          { "sectionId": "faq", "purpose": "Coverage and timing reassurance", "contentSlots": ["questions"], "archetypeId": "faq-accordion" },
+          { "sectionId": "cta-band", "purpose": "Call reinforcement", "contentSlots": ["primaryCta", "secondaryCta"], "archetypeId": "cta-band-phone-first" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "Phone and hours appear before lower-priority details.",
+          "desktop": "Channel split with stronger phone emphasis."
+        },
+        "media": {
+          "src": "asset-slot://contact-hero-utility",
+          "alt": "Direct contact channels for the electrical business"
+        }
+      },
+      {
+        "routeId": "/quote",
+        "routeKey": "quote",
+        "userIntent": "Submit a short, qualified quote request with minimal friction.",
+        "creativeLatitude": "MEDIUM",
+        "heroArchetype": "form-first-split",
+        "navVisible": true,
+        "mobileTabVisible": true,
+        "sectionSequence": [
+          { "sectionId": "hero", "purpose": "Form-first opener", "contentSlots": ["headline", "form", "cta"], "archetypeId": "hero-form-first-split" },
+          { "sectionId": "form-surface", "purpose": "Lead capture", "contentSlots": ["fields", "validation", "success"], "archetypeId": "form-surface-compact" },
+          { "sectionId": "next-steps", "purpose": "What happens next", "contentSlots": ["steps"], "archetypeId": "compact-step-rail" },
+          { "sectionId": "support", "purpose": "Trust and short FAQ", "contentSlots": ["trust", "questions"], "archetypeId": "support-proof-block" },
+          { "sectionId": "cta-band", "purpose": "Phone fallback reinforcement", "contentSlots": ["secondaryCta"], "archetypeId": "cta-band-phone-first" }
+        ],
+        "responsiveStrategy": {
+          "mobile": "Form appears immediately after intro with full-width phone fallback.",
+          "desktop": "Form-first split with reassurance rail."
+        },
+        "media": {
+          "src": "asset-slot://quote-hero-form-support",
+          "alt": "Electrical quote request form with support details"
+        }
+      }
+    ],
+    "visualDifferentiationMap": [
+      { "routeId": "/", "heroVariant": "asymmetric-trust-split", "mood": "restrained-cinematic", "density": "spacious" },
+      { "routeId": "/services", "heroVariant": "centered-editorial", "mood": "calm-precise", "density": "balanced" },
+      { "routeId": "/residential", "heroVariant": "warm-trust-split", "mood": "calm-precise", "density": "balanced" },
+      { "routeId": "/commercial", "heroVariant": "metrics-rail-split", "mood": "calm-precise", "density": "balanced-dense" },
+      { "routeId": "/emergency-electrician", "heroVariant": "call-first-urgency-rail", "mood": "calm-precise", "density": "compact" },
+      { "routeId": "/switchboard-upgrades", "heroVariant": "technical-proof-split", "mood": "calm-precise", "density": "balanced" },
+      { "routeId": "/ev-charger-installation", "heroVariant": "future-ready-media-split", "mood": "restrained-cinematic", "density": "balanced" },
+      { "routeId": "/smoke-alarm-compliance", "heroVariant": "checklist-centered", "mood": "calm-precise", "density": "balanced-dense" },
+      { "routeId": "/service-areas", "heroVariant": "locality-cluster", "mood": "calm-precise", "density": "balanced" },
+      { "routeId": "/projects", "heroVariant": "gallery-proof", "mood": "restrained-cinematic", "density": "balanced" },
+      { "routeId": "/reviews", "heroVariant": "testimonial-forward", "mood": "calm-precise", "density": "balanced-dense" },
+      { "routeId": "/about", "heroVariant": "team-standards-split", "mood": "calm-precise", "density": "balanced" },
+      { "routeId": "/faq", "heroVariant": "utility-intro", "mood": "calm-precise", "density": "dense" },
+      { "routeId": "/contact", "heroVariant": "contact-channel-split", "mood": "calm-precise", "density": "balanced" },
+      { "routeId": "/quote", "heroVariant": "form-first-split", "mood": "calm-precise", "density": "balanced" }
+    ],
+    "pageBriefs": [
+      { "routeId": "/", "title": "Home", "heroVariant": "asymmetric-trust-split", "primaryGoal": "Drive immediate trust and contact action.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "trust", "audienceSplit", "services", "proof", "process", "faq", "cta"], "content_keys_used": ["home.hero.eyebrow", "home.hero.headline", "home.hero.subheadline", "home.trust.heading", "home.split.heading", "home.services.heading", "home.proof.heading", "home.process.heading", "home.faq.heading", "home.cta.heading"], "sectionIds": ["hero", "trust-strip", "audience-split", "service-grid", "proof-feature", "process", "faq", "cta-band"], "sectionArchetypes": ["hero-asymmetric-trust-split", "trust-strip-proof", "decision-split-dual-panel", "feature-grid-cards", "proof-feature-gallery", "timeline-steps", "faq-accordion", "cta-band-stack"], "openQuestions": ["Replace the draft brand name with the real business name."] },
+      { "routeId": "/services", "title": "Services", "heroVariant": "centered-editorial", "primaryGoal": "Segment visitors into the right service path.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "categories", "proof", "process", "cta"], "content_keys_used": ["services.hero.eyebrow", "services.hero.headline", "services.hero.subheadline", "services.main.heading", "services.proof.heading", "services.cta.heading"], "sectionIds": ["hero", "category-map", "proof", "process", "cta-band"], "sectionArchetypes": ["hero-centered-editorial", "category-grid", "proof-panel-split", "timeline-steps", "cta-band-stack"], "openQuestions": [] },
+      { "routeId": "/residential", "title": "Residential", "heroVariant": "warm-trust-split", "primaryGoal": "Convert homeowners into quote requests or calls.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "jobTypes", "trust", "process", "cta"], "content_keys_used": ["residential.hero.eyebrow", "residential.hero.headline", "residential.hero.subheadline", "residential.main.heading", "residential.proof.heading", "residential.cta.heading"], "sectionIds": ["hero", "job-types", "reassurance", "process", "cta-band"], "sectionArchetypes": ["hero-warm-trust-split", "service-card-grid", "testimonial-trust-split", "timeline-steps", "cta-band-stack"], "openQuestions": [] },
+      { "routeId": "/commercial", "title": "Commercial", "heroVariant": "metrics-rail-split", "primaryGoal": "Capture commercial enquiries with confidence-focused proof.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "sectors", "caseProof", "engagementModel", "cta"], "content_keys_used": ["commercial.hero.eyebrow", "commercial.hero.headline", "commercial.hero.subheadline", "commercial.main.heading", "commercial.proof.heading", "commercial.cta.heading"], "sectionIds": ["hero", "sector-map", "case-proof", "engagement-model", "cta-band"], "sectionArchetypes": ["hero-metrics-rail", "sector-grid", "case-summary-panel", "operations-timeline", "cta-band-business"], "openQuestions": ["Confirm which commercial sectors to prioritise in the first release."] },
+      { "routeId": "/emergency-electrician", "title": "Emergency Electrician", "heroVariant": "call-first-urgency-rail", "primaryGoal": "Drive urgent phone calls with safe guidance.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "urgentScenarios", "trust", "triage", "cta"], "content_keys_used": ["emergency.hero.eyebrow", "emergency.hero.headline", "emergency.hero.subheadline", "emergency.main.heading", "emergency.proof.heading", "emergency.cta.heading"], "sectionIds": ["hero", "urgent-scenarios", "reassurance", "triage", "cta-band"], "sectionArchetypes": ["hero-call-first-rail", "warning-checklist", "compact-proof-panel", "compact-step-rail", "cta-band-phone-first"], "openQuestions": ["Confirm whether emergency service is truly 24-7 or same-day only."] },
+      { "routeId": "/switchboard-upgrades", "title": "Switchboard Upgrades", "heroVariant": "technical-proof-split", "primaryGoal": "Translate technical need into a clear quote path.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "reasons", "process", "faq", "cta"], "content_keys_used": ["switchboard.hero.eyebrow", "switchboard.hero.headline", "switchboard.hero.subheadline", "switchboard.main.heading", "switchboard.cta.heading"], "sectionIds": ["hero", "upgrade-reasons", "process", "faq", "cta-band"], "sectionArchetypes": ["hero-technical-proof", "explainer-card-grid", "timeline-proof-split", "faq-accordion", "cta-band-stack"], "openQuestions": [] },
+      { "routeId": "/ev-charger-installation", "title": "EV Charger Installation", "heroVariant": "future-ready-media-split", "primaryGoal": "Move EV charger interest toward a scoped quote.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "useCases", "process", "faq", "cta"], "content_keys_used": ["ev.hero.eyebrow", "ev.hero.headline", "ev.hero.subheadline", "ev.main.heading", "ev.cta.heading"], "sectionIds": ["hero", "use-cases", "process", "faq", "cta-band"], "sectionArchetypes": ["hero-future-ready-split", "use-case-card-grid", "timeline-proof-split", "faq-accordion", "cta-band-stack"], "openQuestions": [] },
+      { "routeId": "/smoke-alarm-compliance", "title": "Smoke Alarm Compliance", "heroVariant": "checklist-centered", "primaryGoal": "Convert compliance visitors through a low-friction quote path.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "serviceScope", "process", "faq", "cta"], "content_keys_used": ["smoke.hero.eyebrow", "smoke.hero.headline", "smoke.hero.subheadline", "smoke.main.heading", "smoke.cta.heading"], "sectionIds": ["hero", "service-scope", "process", "faq", "cta-band"], "sectionArchetypes": ["hero-checklist-centered", "checklist-card-grid", "timeline-proof-split", "faq-accordion", "cta-band-stack"], "openQuestions": [] },
+      { "routeId": "/service-areas", "title": "Service Areas", "heroVariant": "locality-cluster", "primaryGoal": "Confirm coverage and convert that certainty into contact.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "coverageClusters", "workTypes", "faq", "cta"], "content_keys_used": ["areas.hero.eyebrow", "areas.hero.headline", "areas.hero.subheadline", "areas.main.heading", "areas.cta.heading"], "sectionIds": ["hero", "coverage-clusters", "work-types", "faq", "cta-band"], "sectionArchetypes": ["hero-locality-cluster", "locality-cluster-grid", "audience-split-compact", "faq-accordion", "cta-band-stack"], "openQuestions": ["Confirm exact suburbs and postcodes for launch content."] },
+      { "routeId": "/projects", "title": "Projects", "heroVariant": "gallery-proof", "primaryGoal": "Use completed work to move visitors to a live enquiry.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "featuredProjects", "trustSummary", "cta"], "content_keys_used": ["projects.hero.eyebrow", "projects.hero.headline", "projects.hero.subheadline", "projects.main.heading", "projects.cta.heading"], "sectionIds": ["hero", "featured-projects", "trust-summary", "cta-band"], "sectionArchetypes": ["hero-gallery-proof", "project-feature-grid", "testimonial-trust-split", "cta-band-stack"], "openQuestions": ["Replace planned proof slots with real project photos and outcomes."] },
+      { "routeId": "/reviews", "title": "Reviews", "heroVariant": "testimonial-forward", "primaryGoal": "Turn customer voice into booking confidence.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "reviewClusters", "trustSummary", "cta"], "content_keys_used": ["reviews.hero.eyebrow", "reviews.hero.headline", "reviews.hero.subheadline", "reviews.main.heading", "reviews.cta.heading"], "sectionIds": ["hero", "review-clusters", "trust-summary", "cta-band"], "sectionArchetypes": ["hero-testimonial-forward", "review-cluster-grid", "summary-band", "cta-band-stack"], "openQuestions": ["Confirm which review sources can be published directly."] },
+      { "routeId": "/about", "title": "About", "heroVariant": "team-standards-split", "primaryGoal": "Humanise the business and reinforce standards before contact.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "standards", "proof", "process", "cta"], "content_keys_used": ["about.hero.eyebrow", "about.hero.headline", "about.hero.subheadline", "about.main.heading", "about.cta.heading"], "sectionIds": ["hero", "standards", "proof", "process", "cta-band"], "sectionArchetypes": ["hero-team-standards", "standards-card-grid", "proof-strip", "timeline-steps", "cta-band-stack"], "openQuestions": [] },
+      { "routeId": "/faq", "title": "FAQ", "heroVariant": "utility-intro", "primaryGoal": "Remove hesitation by answering common questions fast.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "faqGroups", "reassurance", "cta"], "content_keys_used": ["faq.hero.eyebrow", "faq.hero.headline", "faq.hero.subheadline", "faq.main.heading", "faq.cta.heading"], "sectionIds": ["hero", "faq-groups", "reassurance", "cta-band"], "sectionArchetypes": ["hero-utility-intro", "faq-group-stack", "summary-band", "cta-band-stack"], "openQuestions": [] },
+      { "routeId": "/contact", "title": "Contact", "heroVariant": "contact-channel-split", "primaryGoal": "Make the fastest contact channel obvious and frictionless.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "channels", "guidance", "faq", "cta"], "content_keys_used": ["contact.hero.eyebrow", "contact.hero.headline", "contact.hero.subheadline", "contact.main.heading", "contact.cta.heading"], "sectionIds": ["hero", "channels", "guidance", "faq", "cta-band"], "sectionArchetypes": ["hero-contact-channel", "utility-card-grid", "summary-band", "faq-accordion", "cta-band-phone-first"], "openQuestions": ["Confirm whether a dedicated business address should be published publicly."] },
+      { "routeId": "/quote", "title": "Quote", "heroVariant": "form-first-split", "primaryGoal": "Capture a short, qualified quote request.", "mandatoryUx": ["ThemeSwitcher", "MobileBottomNav", "AuthModal"], "required_content_slots": ["hero", "form", "nextSteps", "support", "cta"], "content_keys_used": ["quote.hero.eyebrow", "quote.hero.headline", "quote.hero.subheadline", "quote.main.heading", "quote.cta.heading", "component.quote_form.submit", "component.quote_form.success_title", "component.quote_form.success_body"], "sectionIds": ["hero", "form-surface", "next-steps", "support", "cta-band"], "sectionArchetypes": ["hero-form-first-split", "form-surface-compact", "compact-step-rail", "support-proof-block", "cta-band-phone-first"], "openQuestions": [] }
+    ],
+    "contentLibrary": {
+      "brand": {
+        "name": "Electrical Service Provider AU",
+        "phoneLabel": "1300 555 280",
+        "phoneHref": "tel:1300555280",
+        "email": "hello@electricalserviceprovider.au",
+        "hours": "Mon-Fri 7am-6pm",
+        "primaryArea": "Australian metro and suburb service areas"
+      },
+      "navigation": {
+        "primary": ["Home", "Services", "Commercial", "Projects", "Service Areas", "Contact"],
+        "mobile": ["Home", "Services", "Quote", "Projects", "Contact"]
+      },
+      "footer": {
+        "tagline": "Fast, trustworthy electrical help for homes and businesses.",
+        "hours": "Mon-Fri 7am-6pm",
+        "serviceAreas": "Serving metro and surrounding suburbs",
+        "attribution": {
+          "text": "Built and maintenance by",
+          "linkText": "Growrix OS",
+          "url": "https://www.growrixos.com"
+        }
+      },
+      "auth": {
+        "modal": {
+          "signInTitle": "Sign in to your client area",
+          "signUpTitle": "Create your client access",
+          "switchToSignIn": "Already have access? Sign in",
+          "switchToSignUp": "Need client access? Create an account"
+        }
+      },
+      "home": {
+        "hero": {
+          "eyebrow": "Local electrical help for homes and businesses",
+          "title": "Licensed electricians for urgent fixes, upgrades, and planned work.",
+          "description": "Call fast for faults and same-day needs, or request a quote for switchboards, EV chargers, smoke alarms, lighting, fit-outs, and maintenance.",
+          "primaryCta": "Call Now",
+          "primaryHref": "tel:1300555280",
+          "secondaryCta": "Request a Quote",
+          "secondaryHref": "/quote"
+        },
+        "trust": {
+          "title": "Proof before the first call",
+          "description": "Show ratings, license status, service area, and response promise within the first screen."
+        },
+        "audienceSplit": {
+          "title": "Residential and commercial electrical support"
+        },
+        "services": {
+          "title": "Specialist services people search for"
+        },
+        "proof": {
+          "title": "Recent work and measurable outcomes"
+        },
+        "process": {
+          "title": "A clearer process from first contact to job completion"
+        },
+        "faq": {
+          "title": "Questions customers ask before booking"
+        },
+        "cta": {
+          "title": "Need an electrician today or planning an upgrade?",
+          "body": "Choose the fastest path: call for urgent help or send a short quote request for planned work.",
+          "primaryCta": "Call Now",
+          "primaryHref": "tel:1300555280",
+          "secondaryCta": "Request a Quote",
+          "secondaryHref": "/quote"
+        }
+      },
+      "services": {
+        "hero": {
+          "title": "Electrical services built around real jobs, not generic trade lists.",
+          "description": "Show clear outcomes by service type, urgency, and buyer context so visitors self-qualify quickly."
+        },
+        "main": {
+          "title": "Core service categories"
+        },
+        "proof": {
+          "title": "Why customers choose this team"
+        },
+        "cta": {
+          "title": "Not sure which service fits your job?",
+          "primaryCta": "Call Now",
+          "secondaryCta": "Request a Quote"
+        }
+      },
+      "residential": {
+        "hero": {
+          "title": "Safe, tidy electrical work for homes, renovations, and upgrades.",
+          "description": "Focus on homeowner trust, safety upgrades, lighting, smoke alarms, switchboards, fault finding, and EV charger installs."
+        },
+        "main": {
+          "title": "Residential jobs people commonly book"
+        },
+        "proof": {
+          "title": "Homeowner reassurance"
+        },
+        "cta": {
+          "title": "Planning work at home?",
+          "primaryCta": "Request a Quote",
+          "secondaryCta": "Call Now"
+        }
+      },
+      "commercial": {
+        "hero": {
+          "title": "Reliable electrical support for offices, retail, hospitality, strata, and light industrial sites.",
+          "description": "Lead with compliance confidence, scheduling discipline, communication, and downtime awareness."
+        },
+        "main": {
+          "title": "Commercial capability"
+        },
+        "proof": {
+          "title": "Proof that matters to business buyers"
+        },
+        "cta": {
+          "title": "Need a dependable electrical partner for your site?",
+          "primaryCta": "Request an Assessment",
+          "secondaryCta": "Call Now"
+        }
+      },
+      "emergencyElectrician": {
+        "hero": {
+          "title": "Fast help when faults cannot wait.",
+          "description": "Use call-first language, safety-first guidance, and an honest response promise. Do not claim 24-7 unless verified."
+        },
+        "main": {
+          "title": "When to call immediately"
+        },
+        "proof": {
+          "title": "Urgent-response reassurance"
+        },
+        "cta": {
+          "title": "Need urgent electrical help?",
+          "primaryCta": "Call Now",
+          "secondaryCta": "Contact"
+        }
+      },
+      "switchboardUpgrades": {
+        "hero": {
+          "title": "Modern switchboard upgrades for safer, more reliable power.",
+          "description": "Explain safety, compliance, nuisance tripping, and when an upgrade is worth doing."
+        },
+        "main": {
+          "title": "Why switchboard work matters"
+        },
+        "cta": {
+          "title": "Need advice on your current switchboard?",
+          "primaryCta": "Request a Quote",
+          "secondaryCta": "Call Now"
+        }
+      },
+      "evChargerInstallation": {
+        "hero": {
+          "title": "EV charger installation planned around your home, usage, and power setup.",
+          "description": "Use modern, future-ready messaging without losing trust-led clarity."
+        },
+        "main": {
+          "title": "Home and commercial charging options"
+        },
+        "cta": {
+          "title": "Thinking about EV charging at home or work?",
+          "primaryCta": "Request a Quote",
+          "secondaryCta": "Call Now"
+        }
+      },
+      "smokeAlarmCompliance": {
+        "hero": {
+          "title": "Smoke alarm compliance for homeowners, landlords, and property managers.",
+          "description": "Make regulation-led work feel clear, practical, and low-friction."
+        },
+        "main": {
+          "title": "Compliance made easier"
+        },
+        "cta": {
+          "title": "Need smoke alarm compliance support?",
+          "primaryCta": "Request a Quote",
+          "secondaryCta": "Call Now"
+        }
+      },
+      "serviceAreas": {
+        "hero": {
+          "title": "Electrical services across metro and surrounding suburbs.",
+          "description": "Help visitors confirm postcode or suburb coverage before they call or enquire."
+        },
+        "main": {
+          "title": "Where service is available"
+        },
+        "cta": {
+          "title": "Not sure if your area is covered?",
+          "primaryCta": "Call Now",
+          "secondaryCta": "Request a Quote"
+        }
+      },
+      "projects": {
+        "hero": {
+          "title": "Proof of workmanship, communication, and clean handover.",
+          "description": "Use real jobs to validate capability across residential and commercial contexts."
+        },
+        "main": {
+          "title": "Featured electrical work"
+        },
+        "cta": {
+          "title": "Need something similar done?",
+          "primaryCta": "Request a Quote",
+          "secondaryCta": "Call Now"
+        }
+      },
+      "reviews": {
+        "hero": {
+          "title": "What customers say after the job is done matters.",
+          "description": "Concentrate testimonial proof where hesitant visitors can validate trust quickly."
+        },
+        "main": {
+          "title": "Verified customer voice"
+        },
+        "cta": {
+          "title": "Ready to experience the same level of service?",
+          "primaryCta": "Call Now",
+          "secondaryCta": "Request a Quote"
+        }
+      },
+      "about": {
+        "hero": {
+          "title": "A modern electrical business still needs to feel grounded and local.",
+          "description": "Use this route to explain standards, people, process, and the kinds of work the team stands behind."
+        },
+        "main": {
+          "title": "What builds trust here"
+        },
+        "cta": {
+          "title": "Want to speak with the team directly?",
+          "primaryCta": "Call Now",
+          "secondaryCta": "Request a Quote"
+        }
+      },
+      "faq": {
+        "hero": {
+          "title": "Answer the questions that slow down conversion.",
+          "description": "Use this route for pricing posture, timings, service areas, and common job concerns."
+        },
+        "main": {
+          "title": "Common electrical booking questions"
+        },
+        "cta": {
+          "title": "Still unsure?",
+          "primaryCta": "Call Now",
+          "secondaryCta": "Request a Quote"
+        }
+      },
+      "contact": {
+        "hero": {
+          "title": "Call, message, or send your details through the right channel.",
+          "description": "Keep contact routes simple, fast, and trustworthy."
+        },
+        "main": {
+          "title": "Direct contact options"
+        },
+        "cta": {
+          "title": "Need a faster answer?",
+          "primaryCta": "Call Now",
+          "secondaryCta": "Request a Quote"
+        }
+      },
+      "quote": {
+        "hero": {
+          "title": "Send the basics and get the right next step faster.",
+          "description": "Ask only for what quoting or dispatch needs: service, phone, postcode, and a short summary."
+        },
+        "main": {
+          "title": "A short quote form that respects your time"
+        },
+        "cta": {
+          "title": "Prefer to speak with someone first?",
+          "primaryCta": "Call Now",
+          "secondaryCta": "Request My Quote"
+        }
+      }
+    },
+    "componentSystem": {
+      "criticalComponents": [
+        "ThemeSwitcher",
+        "MobileBottomNav",
+        "AuthModal",
+        "AuthFormCard",
+        "SiteHeader",
+        "SiteFooter",
+        "QuoteFormCard"
+      ]
+    },
+    "motionSystem": {
+      "direction": "measured",
+      "reducedMotion": "Disable transform-heavy motion and keep opacity-first transitions, especially for hero reveals, modal transitions, and proof cards."
+    },
+    "frontendSummary": {
+      "publicRoutes": [
+        "/",
+        "/services",
+        "/residential",
+        "/commercial",
+        "/emergency-electrician",
+        "/switchboard-upgrades",
+        "/ev-charger-installation",
+        "/smoke-alarm-compliance",
+        "/service-areas",
+        "/projects",
+        "/reviews",
+        "/about",
+        "/faq",
+        "/contact",
+        "/quote"
+      ],
+      "authRoutes": [
+        "/sign-in",
+        "/sign-up"
+      ],
+      "routeCoverage": [
+        { "routeId": "/", "covered": true },
+        { "routeId": "/services", "covered": true },
+        { "routeId": "/residential", "covered": true },
+        { "routeId": "/commercial", "covered": true },
+        { "routeId": "/emergency-electrician", "covered": true },
+        { "routeId": "/switchboard-upgrades", "covered": true },
+        { "routeId": "/ev-charger-installation", "covered": true },
+        { "routeId": "/smoke-alarm-compliance", "covered": true },
+        { "routeId": "/service-areas", "covered": true },
+        { "routeId": "/projects", "covered": true },
+        { "routeId": "/reviews", "covered": true },
+        { "routeId": "/about", "covered": true },
+        { "routeId": "/faq", "covered": true },
+        { "routeId": "/contact", "covered": true },
+        { "routeId": "/quote", "covered": true }
+      ]
+    }
+  },
+  "runtime_build_plan": {
+    "stack": {
+      "framework": "Next.js",
+      "language": "TypeScript",
+      "styling": "Tailwind CSS",
+      "motion": "framer-motion with reduced-motion-aware variants and CSS fallback"
+    },
+    "routes": [
+      "/",
+      "/services",
+      "/residential",
+      "/commercial",
+      "/emergency-electrician",
+      "/switchboard-upgrades",
+      "/ev-charger-installation",
+      "/smoke-alarm-compliance",
+      "/service-areas",
+      "/projects",
+      "/reviews",
+      "/about",
+      "/faq",
+      "/contact",
+      "/quote"
+    ],
+    "components": [
+      "ThemeSwitcher",
+      "MobileBottomNav",
+      "AuthModal",
+      "AuthFormCard",
+      "QuoteFormCard",
+      "SiteHeader",
+      "SiteFooter",
+      "HeroSection",
+      "TrustStrip",
+      "ServiceCard",
+      "FAQAccordion",
+      "CTAConversionBand"
+    ],
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "lint": "eslint .",
+      "typecheck": "tsc --noEmit",
+      "test": "npm run test:unit && npm run test:a11y && npm run e2e:smoke",
+      "test:unit": "vitest run --config vitest.config.mjs",
+      "test:a11y": "node scripts/run-playwright.mjs a11y",
+      "e2e:smoke": "node scripts/run-playwright.mjs smoke",
+      "e2e:full": "node scripts/run-playwright.mjs full",
+      "audit:frontend": "node scripts/audit-frontend.mjs",
+      "release:check": "npm run lint && npm run typecheck && npm run test:unit && npm run test:a11y && npm run e2e:smoke && npm run build && npm run e2e:full && npm run audit:frontend"
+    },
+    "releaseGate": {
+      "smokeJourneys": [
+        "home route renders and exposes call plus quote actions",
+        "services route links to specialist service paths",
+        "quote route validates and submits successfully",
+        "mobile bottom navigation switches between configured routes",
+        "theme switcher toggles and persists",
+        "auth modal opens, switches mode, and closes correctly"
+      ],
+      "requiredChecks": [
+        "lint",
+        "typecheck",
+        "test:unit",
+        "test:a11y",
+        "e2e:smoke",
+        "build",
+        "e2e:full",
+        "audit:frontend"
+      ],
+      "publicRouteCoverage": [
+        "/",
+        "/services",
+        "/residential",
+        "/commercial",
+        "/emergency-electrician",
+        "/switchboard-upgrades",
+        "/ev-charger-installation",
+        "/smoke-alarm-compliance",
+        "/service-areas",
+        "/projects",
+        "/reviews",
+        "/about",
+        "/faq",
+        "/contact",
+        "/quote"
+      ]
+    },
+    "metadata": {
+      "projectName": "Electrical Service Provider AU",
+      "primaryCta": "Request a Quote",
+      "supportEmail": "hello@electricalserviceprovider.au"
+    }
+  }
+}
